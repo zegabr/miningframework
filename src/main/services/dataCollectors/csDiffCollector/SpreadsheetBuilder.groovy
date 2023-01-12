@@ -2,7 +2,6 @@ package services.dataCollectors.csDiffCollector
 
 import project.MergeCommit
 import project.Project
-import services.outputProcessors.S3MOutputProcessor
 import services.util.CSDiffMergeCommitSummary
 import services.util.CSDiffMergeScenarioSummary
 import services.util.Utils
