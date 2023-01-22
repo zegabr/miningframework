@@ -8,6 +8,6 @@ find . -type d -exec bash -c '
     done
 ' bash {} +
 
-find . -type f -name "result.csv" -delete
+find . -type f -name "results.csv" -delete
 
 find . -type d -empty -delete -not -path "*/\.*"
