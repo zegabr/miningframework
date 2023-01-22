@@ -1,29 +1,15 @@
 path,name
 https://github.com/matplotlib/matplotlib
-https://github.com/scikit-learn/scikit-learn
-https://github.com/google/jax
-https://github.com/heartexlabs/label-studio
-https://github.com/swisskyrepo/PayloadsAllTheThings
-https://github.com/vinta/awesome-python
-
 https://github.com/tensorflow/tensorflow
-https://github.com/scrapy/scrapy
 https://github.com/certbot/certbot
-
-https://github.com/httpie/httpie
-https://github.com/tornadoweb/tornado
-
 https://github.com/pallets/flask
 https://github.com/ipython/ipython
-https://github.com/getsentry/sentry
-
-https://github.com/django/django
-https://github.com/docker/compose
-https://github.com/binux/pyspider
-
 https://github.com/psf/requests
 https://github.com/saltstack/salt
-https://github.com/ansible/ansible
+https://github.com/scrapy/scrapy
+https://github.com/getsentry/sentry
+https://github.com/tornadoweb/tornado
+
 
 
 
