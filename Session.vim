@@ -2,8 +2,8 @@ let SessionLoad = 1
 let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
 let v:this_session=expand("<sfile>:p")
 let NetrwTopLvlMenu = "Netrw."
-let Tabline_session_data = "[{\"show_all_buffers\": true, \"name\": \"1\", \"allowed_buffers\": []}]"
 let NetrwMenuPriority =  80 
+let Tabline_session_data = "[{\"show_all_buffers\": true, \"name\": \"1\", \"allowed_buffers\": []}]"
 silent only
 silent tabonly
 cd ~/miningframework
@@ -16,7 +16,7 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +55 test.sh
+badd +67 test.sh
 badd +15 python_projects_backup.csv
 badd +1 python_projects.csv
 argglobal
@@ -35,11 +35,11 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 51 - ((50 * winheight(0) + 35) / 70)
+let s:l = 98 - ((67 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 51
+keepjumps 98
 normal! 0
 lcd ~/miningframework
 tabnext 1
@@ -54,6 +54,7 @@ if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
+nohlsearch
 let g:this_session = v:this_session
 let g:this_obsession = v:this_session
 doautoall SessionLoadPost
