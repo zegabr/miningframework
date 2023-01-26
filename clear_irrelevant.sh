@@ -17,6 +17,7 @@ find . -type d -exec bash -c '
 
                     merge_dir=$(pwd)
                     cd /home/ze/custom-separators-merge-tool/
+                    printf "running csdiff again for %s\n" "$d"
                     bash /home/ze/custom-separators-merge-tool/csdiff_v3.sh -s "( ) : ," temp/left.py temp/base.py  temp/right.py
                     cd "$merge_dir"
 
