@@ -3,7 +3,7 @@
 ./gradlew assemble
 
 rm -rf /home/ze/Desktop/mining_results/matplotlib_results/
-./gradlew run --args="-e .py -i injectors.CSDiffModule -l '( ) : ,' -s 01/01/2021 -u 01/11/2021 ./projects/matplotlib.csv /home/ze/Desktop/mining_results/matplotlib_results"
+./gradlew run --args="-e .py -i injectors.CSDiffModule -l '( ) : ,' -s 01/01/2021 -u 01/01/2022 ./projects/matplotlib.csv /home/ze/Desktop/mining_results/matplotlib_results"
 
 rm -rf /home/ze/Desktop/mining_results/tensorflow_results/
 ./gradlew run --args="-e .py -i injectors.CSDiffModule -l '( ) : ,' -s 01/09/2021 -u 01/01/2022 ./projects/tensorflow.csv /home/ze/Desktop/mining_results/tensorflow_results"
@@ -59,5 +59,5 @@ cat /home/ze/Desktop/mining_results/tornado_results/results.csv >> /home/ze/Desk
 
 # clearing miningframework mistakes
 cd /home/ze/Desktop/mining_results/
-bash /home/ze/Desktop/miningframework/clear_irrelevant.sh
+bash /home/ze/miningframework/clear_irrelevant.sh
 cd -
