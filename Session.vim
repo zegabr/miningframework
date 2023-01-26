@@ -17,14 +17,14 @@ else
   set shortmess=aoO
 endif
 badd +67 test.sh
-badd +185 dependencies/csdiff_v3.sh
+badd +196 dependencies/csdiff_v3.sh
 badd +132 dependencies/csdiff_v2.sh
 badd +1 python_projects.csv
-badd +24 clear_irrelevant.sh
+badd +17 clear_irrelevant.sh
 argglobal
 %argdel
 $argadd python_projects.csv
-edit clear_irrelevant.sh
+edit dependencies/csdiff_v3.sh
 argglobal
 balt test.sh
 setlocal fdm=manual
@@ -37,11 +37,11 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 17 - ((16 * winheight(0) + 35) / 70)
+let s:l = 181 - ((46 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 17
+keepjumps 181
 normal! 0
 lcd ~/miningframework
 tabnext 1
@@ -56,6 +56,7 @@ if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
+nohlsearch
 let g:this_session = v:this_session
 let g:this_obsession = v:this_session
 doautoall SessionLoadPost
