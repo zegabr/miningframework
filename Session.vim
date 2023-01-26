@@ -2,8 +2,8 @@ let SessionLoad = 1
 let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
 let v:this_session=expand("<sfile>:p")
 let NetrwTopLvlMenu = "Netrw."
-let NetrwMenuPriority =  80 
 let Tabline_session_data = "[{\"show_all_buffers\": true, \"name\": \"1\", \"allowed_buffers\": []}]"
+let NetrwMenuPriority =  80 
 silent only
 silent tabonly
 cd ~/miningframework
@@ -17,16 +17,16 @@ else
   set shortmess=aoO
 endif
 badd +1 ~/miningframework
-badd +3 test.sh
-badd +1 dependencies/csdiff_v3.sh
+badd +1 test.sh
+badd +185 dependencies/csdiff_v3.sh
 badd +132 dependencies/csdiff_v2.sh
 badd +1 python_projects.csv
 argglobal
 %argdel
 $argadd python_projects.csv
-edit dependencies/csdiff_v3.sh
+edit test.sh
 argglobal
-balt test.sh
+balt dependencies/csdiff_v3.sh
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -37,12 +37,12 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 185 - ((69 * winheight(0) + 35) / 70)
+let s:l = 1 - ((0 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 185
-normal! 0
+keepjumps 1
+normal! 011|
 lcd ~/miningframework
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
