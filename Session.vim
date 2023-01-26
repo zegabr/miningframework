@@ -1,9 +1,9 @@
 let SessionLoad = 1
 let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
 let v:this_session=expand("<sfile>:p")
-let Tabline_session_data = "[{\"show_all_buffers\": true, \"name\": \"1\", \"allowed_buffers\": []}]"
-let NetrwMenuPriority =  80 
 let NetrwTopLvlMenu = "Netrw."
+let NetrwMenuPriority =  80 
+let Tabline_session_data = "[{\"show_all_buffers\": true, \"name\": \"1\", \"allowed_buffers\": []}]"
 silent only
 silent tabonly
 cd ~/miningframework
@@ -16,15 +16,17 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +112 test.sh
+badd +1 ~/miningframework
+badd +3 test.sh
 badd +1 dependencies/csdiff_v3.sh
 badd +132 dependencies/csdiff_v2.sh
 badd +1 python_projects.csv
 argglobal
 %argdel
 $argadd python_projects.csv
-edit ~/miningframework
+edit dependencies/csdiff_v3.sh
 argglobal
+balt test.sh
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -35,11 +37,11 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 29 - ((28 * winheight(0) + 35) / 70)
+let s:l = 185 - ((69 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 29
+keepjumps 185
 normal! 0
 lcd ~/miningframework
 tabnext 1
