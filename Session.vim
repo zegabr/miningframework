@@ -16,7 +16,7 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +62 test.sh
+badd +22 test.sh
 badd +210 dependencies/csdiff_v3.sh
 badd +132 dependencies/csdiff_v2.sh
 badd +1 python_projects.csv
@@ -37,12 +37,12 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 7 - ((6 * winheight(0) + 35) / 70)
+let s:l = 9 - ((8 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 7
-normal! 0
+keepjumps 9
+normal! 054|
 lcd ~/miningframework
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
@@ -56,7 +56,6 @@ if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
-nohlsearch
 let g:this_session = v:this_session
 let g:this_obsession = v:this_session
 doautoall SessionLoadPost

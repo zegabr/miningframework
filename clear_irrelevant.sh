@@ -25,7 +25,7 @@ find . -type d -exec bash -c '
 
                 cd "$merge_dir_parent"
 
-                cmp -s "$d/csdiff.py" "$d/merge.py"
+                cmp -s "$d/csdiff.py" "$d/diff3.py"
                 if [ $? -eq 0 ]; then
                     rm -r "$d"
                 fi
