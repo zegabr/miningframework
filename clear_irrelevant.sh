@@ -5,7 +5,7 @@ find . -type d -exec bash -c '
         if [ -z "$(find "$d" -mindepth 1 -type d)" ]; then
             if [ ! -e "$d/csdiff.py" ]; then
                 rm -r "$d"
-            elif [ -e "$d/csdiff.py" -a -e "$d/merge.py" ] ; then
+            elif [ -e "$d/csdiff.py" -a -e "$d/diff3.py" ] ; then
 
                 # correct miningframework mistakes by re-running csdiff
                 merge_dir_parent=$(pwd)
