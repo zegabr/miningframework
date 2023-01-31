@@ -32,18 +32,23 @@ do
   ./gradlew run --args="-e .py -i injectors.CSDiffModule -l '( ) : ,' -s 29/01/2023 -u 31/01/2023 ./projects/${i}.csv "$results_path"/${i}_results"
 
   if [[ "$i" == "${names[0]}" ]]; then
-    head -n 1 "$results_path"/${i}_results/results.csv > "$results_path"/relevant.csv
     head -n 1 "$results_path"/${i}_results/results.csv > "$results_path"/all_results.csv
+    head -n 1 "$results_path"/${i}_results/results.csv > "$results_path"/relevant.csv
   fi
-    grep -e "false" "$results_path"/${i}_results/results.csv  >> "$results_path"/relevant.csv
     grep -e "true" -e "false" "$results_path"/${i}_results/results.csv >> "$results_path"/all_results.csv
-  # clearing miningframework mistakes
+  # clearing miningframework irrelevant cases (csdiff == diff3)
   cd "$results_path"/${i}_results/
+  echo "deleting diff3 == csdiff folders"
   bash "$miningframework_path"/clear_irrelevant.sh
   # populating relevant csv
   cd "$results_path"/${i}_results/${i}/
-  get_relevant_csv > "$results_path"/relevant.csv
+  echo "populating relevant.csv with only folders where csdiff != diff3"
+  get_relevant_csv >> "$results_path"/relevant.csv
   cd "$miningframework_path"/
+  # re_running csdiff v3 to see check for mistakes
+  cd "$results_path"/${i}_results/
+  echo "running csdiff again for the missing folders"
+  bash "$miningframework_path"/re_run_csdiffv3.sh
 done
 
 

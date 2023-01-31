@@ -4,29 +4,16 @@ find . -type d -exec bash -c '
     for d in "$@"; do
         if [ -z "$(find "$d" -mindepth 1 -type d)" ]; then
             if [ ! -e "$d/csdiff.py" ]; then
+
+                # delete folders that does not have csdiff (files with no merge conflict)
+                echo "deleting $d as it does not have csdiff.py inside"
                 rm -r "$d"
             elif [ -e "$d/csdiff.py" -a -e "$d/diff3.py" ] ; then
 
-                # # correct miningframework mistakes by re-running csdiff
-                # merge_dir_parent=$(pwd)
-                # cd "$d"
-
-                #     cp ./left.py /home/ze/custom-separators-merge-tool/temp/left.py
-                #     cp ./right.py /home/ze/custom-separators-merge-tool/temp/right.py
-                #     cp ./base.py /home/ze/custom-separators-merge-tool/temp/base.py
-
-                #     merge_dir=$(pwd)
-                #     cd /home/ze/custom-separators-merge-tool/
-                #     printf "running csdiff again for %s\n" "$d"
-                #     bash /home/ze/custom-separators-merge-tool/csdiff_v3.sh -s "( ) : ," temp/left.py temp/base.py  temp/right.py
-                #     cd "$merge_dir"
-
-                #     cp  /home/ze/custom-separators-merge-tool/temp/csdiff.py ./csdiff.py
-
-                # cd "$merge_dir_parent"
-
+                # delete folders that has csdiff == diff3
                 cmp -s "$d/csdiff.py" "$d/diff3.py"
                 if [ $? -eq 0 ]; then
+                    echo "deleting $d as it has csdiff == diff3"
                     rm -r "$d"
                 fi
             fi
@@ -37,4 +24,5 @@ find . -type d -exec bash -c '
 find . -type f -name "results.csv" -delete
 find . -type f -name "skipped-merge-commits.csv" -delete
 
+echo "deleting empty folders"
 find . -type d -empty -delete -not -path "*/\.*"
