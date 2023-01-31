@@ -29,7 +29,7 @@ get_relevant_csv(){
 for i in "${names[@]}"
 do
   rm -rf "$results_path"/${i}_results/
-  ./gradlew run --args="-e .py -i injectors.CSDiffModule -l '( ) : ,' -s 01/06/2021 -u 01/01/2022 ./projects/${i}.csv "$results_path"/${i}_results"
+  ./gradlew run --args="-e .py -i injectors.CSDiffModule -l '( ) : ,' -s 29/01/2023 -u 31/01/2023 ./projects/${i}.csv "$results_path"/${i}_results"
 
   if [[ "$i" == "${names[0]}" ]]; then
     head -n 1 "$results_path"/${i}_results/results.csv > "$results_path"/relevant.csv

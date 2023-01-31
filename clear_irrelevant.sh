@@ -7,23 +7,23 @@ find . -type d -exec bash -c '
                 rm -r "$d"
             elif [ -e "$d/csdiff.py" -a -e "$d/diff3.py" ] ; then
 
-                # correct miningframework mistakes by re-running csdiff
-                merge_dir_parent=$(pwd)
-                cd "$d"
+                # # correct miningframework mistakes by re-running csdiff
+                # merge_dir_parent=$(pwd)
+                # cd "$d"
 
-                    cp ./left.py /home/ze/custom-separators-merge-tool/temp/left.py
-                    cp ./right.py /home/ze/custom-separators-merge-tool/temp/right.py
-                    cp ./base.py /home/ze/custom-separators-merge-tool/temp/base.py
+                #     cp ./left.py /home/ze/custom-separators-merge-tool/temp/left.py
+                #     cp ./right.py /home/ze/custom-separators-merge-tool/temp/right.py
+                #     cp ./base.py /home/ze/custom-separators-merge-tool/temp/base.py
 
-                    merge_dir=$(pwd)
-                    cd /home/ze/custom-separators-merge-tool/
-                    printf "running csdiff again for %s\n" "$d"
-                    bash /home/ze/custom-separators-merge-tool/csdiff_v3.sh -s "( ) : ," temp/left.py temp/base.py  temp/right.py
-                    cd "$merge_dir"
+                #     merge_dir=$(pwd)
+                #     cd /home/ze/custom-separators-merge-tool/
+                #     printf "running csdiff again for %s\n" "$d"
+                #     bash /home/ze/custom-separators-merge-tool/csdiff_v3.sh -s "( ) : ," temp/left.py temp/base.py  temp/right.py
+                #     cd "$merge_dir"
 
-                    cp  /home/ze/custom-separators-merge-tool/temp/csdiff.py ./csdiff.py
+                #     cp  /home/ze/custom-separators-merge-tool/temp/csdiff.py ./csdiff.py
 
-                cd "$merge_dir_parent"
+                # cd "$merge_dir_parent"
 
                 cmp -s "$d/csdiff.py" "$d/diff3.py"
                 if [ $? -eq 0 ]; then
