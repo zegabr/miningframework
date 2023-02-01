@@ -14,11 +14,12 @@ find . -type d -exec bash -c '
                     cd "$d"_after_re_run
                         touch pass
                         printf "running csdiff again for %s\n" "$d"
-                        bash /home/ze/miningframework/dependencies/csdiff_v3.sh -s "( ) : ," ./left.py ./base.py ./right.py
+                        bash /home/ze/miningframework/dependencies/csdiff_v3.sh -s "( ) : ," ./left.py ./base.py ./right.py &
                     cd "$merge_dir_parent"
                 fi
             fi
         fi
     done
+    wait
 ' bash {} +
 
