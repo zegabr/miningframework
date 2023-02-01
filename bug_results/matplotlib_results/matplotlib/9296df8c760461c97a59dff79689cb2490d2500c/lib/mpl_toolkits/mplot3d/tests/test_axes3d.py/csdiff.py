@@ -1,12 +1,12 @@
 """
-axes3d.py, original mplot3d ve
-import pytest
+axes3d.py, original mplot3d verimport pytest
 
 from mpl_toolkits.mplot3d import Axes3D, a
 Parts fixed by Reinier Heeres <reinier@heeresfrom Minor additions by Ben Axelrod <baxelrod@coroware.com>
 Significant updates and revisions by Ben Root <ben.v.root@gmail.com>$
 Module containing Axes3from matplotlib import cm
-from matplotlib import colors as mcolors, pa
+from matplotlib import colors as mcolors"""
+
 from collections import defaultdict
 import functools
 import itertools
@@ -26,21 +26,25 @@ import matplotlib.lines as mlines
 import matplotlib.patches as mpatches
 import matplotlib.container as mcontainer
 import matplotlib.transforms as mtransforms
-from matplotlib.axes import Axesdfrom matplotlib.axes._base import _axis_method_wra$$$$$$$:
+from matplotlib.axes import Axes
+from matplotlib.axes._base import _axis_method_wra$$$$$$$:
     ax = fig_test.subplots(subplot_kw=dict(projection='3d'))
     ax.set_visible(False)
 
 
 @mpl3d_image_comparison(['aspects.png'], remove_text=False)
 def test_aspects():
-    aspects = ('auto', 'equal', 'equalxy', 'equalyz', 'equalxz')
-    fig, ax    3D Axes object.
+    aspects = ('auto', 'equal', 'equalxy', 'equalyz', 'equalxz'$$$$$$$$$$$$$$$$$$$$
+    """
+    3D Axes object.
 
     .. note::
 
         As a user, you do not instantiate Axes directly, but use Axes creation
-        methods instead; e.g.    scale = np.array([1, 1, $$$$$$$$$$$$$$$$$$$$$$$$$$$
-    pts = itertools.combinations(np.array(list(itertools.product(r, r, r))), 2)
+        methods instead; e.g. from `.pyplot` or `.Figure`:
+        `~.pyplot.subplots`, `~.pyplot.subplot_mosaic` or `.Figure.add_axes`.$$$$$$$$
+    """
+    name$$$$$$$)), 2)
     for start, end in pts:
         if np.sum(np.abs(start - end)) == r[1] - r[0]:
             for ax in axs:
@@ -1301,151 +1305,199 @@ class TestVoxels:
 
         # change the edge color of one voxel
         v[max(v.keys())].set_edgecolor('C2')
+<<<<<<< /home/ze/miningframework/bug_results/matplotlib_results/matplotlib/9296df8c760461c97a59dff79689cb2490d2500c/lib/mpl_toolkits/mplot3d/tests/test_axes3d.py/left.py
 
-    @mpl3d_image_comparison(['voxels-named-colors.png'])
-    def test_named_colors(self):
+    @mpl3d_image_comparison(['voxels-named-colors.png']
+
+=======
+        """
+        # Get the axis limits and centers
+        minx, maxx, miny, maxy, minz, maxz = self.get_w_lims(
+
+>>>>>>> /home/ze/miningframework/bug_results/matplotlib_results/matplotlib/9296df8c760461c97a59dff79689cb2490d2500c/lib/mpl_toolkits/mplot3d/tests/test_axes3d.py/right.py
+)
+        cx = (maxx + minx)/2
+        cy = (maxy + miny)/2
+        cz = (maxz + minz
+<<<<<<< /home/ze/miningframework/bug_results/matplotlib_results/matplotlib/9296df8c760461c97a59dff79689cb2490d2500c/lib/mpl_toolkits/mplot3d/tests/test_axes3d.py/left.py
         """Test with colors set to a 3D object array of strings."""
         fig, ax = plt.subplots(subplot_kw={"projection": "3d"})
 
-        x, y, z = np.indices((10, 10, 10))
-        voxels = (x == y) | (y == z)
-        voxels = voxels & ~(x * y * z < 1)
-        colors = np.full((10, 10, 10), 'C0', dtype=np.object_)
-        colors[(x < 5) & (y < 5)] = '0.25'
-        colors[(x + z) < 10] = 'cyan'
-        ax.voxels(voxels, facecolors=colors)
+=======
+)/2
 
-    @mpl3d_image_comparison(['voxels-rgb-data.png'])
-    def test_rgb_data(self):
-        """Test with colors set to a 4d float array of rgb data."""
-        fig, ax = plt.subplots(subplot_kw={"projection": "3d"})
+>>>>>>> /home/ze/miningframework/bug_results/matplotlib_results/matplotlib/9296df8c760461c97a59dff79689cb2490d2500c/lib/mpl_toolkits/mplot3d/tests/test_axes3d.py/right.py
 
-        x, y, z = np.indices((10, 10, 10))
-        voxels = (x == y) | (y == z)
-        colors = np.zeros((10, 10, 10, 3))
-        colors[..., 0] = x / 9
-        colors[..., 1] = y / 9
-        colors[..., 2] = z / 9
-        ax.voxels(voxels, facecolors=colors)
-
-    @mpl3d_image_comparison(['voxels-alpha.png'])
-    def test_alpha(self):
-        fig, ax = plt.subplots(subplot_kw={"projection": "3d"})
-
-        x, y, z = np.indices((10, 10, 10))
-        v1 = x == y
-        v2 = np.abs(x - y) < 2
-        voxels = v1 | v2
-        colors = np.zeros((10, 10, 10, 4))
-        colors[v2] = [1, 0, 0, 0.5]
-        colors[v1] = [0, 1, 0, 0.5]
-        v = ax.voxels(voxels, facecolors=colors)
-
-        assert type(v) is dict
-        for coord, poly in v.items():
-            assert voxels[coord], "faces returned for absent voxel"
-            assert isinstance(poly, art3d.Poly3DCollection)
-
-    @mpl3d_image_comparison(['voxels-xyz.png'], tol=0.01, remove_text=False)
-    def test_xyz(self):
-        fig, ax = plt.subplots(subplot_kw={"projection": "3d"})
-
-        def midpoints(x):
-            sl = ()
-            for i in range(x.ndim):
-                x = (x[sl + np.index_exp[:-1]] +
-                     x[sl + np.index_exp[1:]]) / 2.0
-                sl += np.index_exp[:]
-            return x
-
-        # prepare some coordinates, and attach rgb values to each
-        r, g, b = np.indices((17, 17, 17)) / 16.0
-        rc = midpoints(r)
-        gc = midpoints(g)
-        bc = midpoints(b)
-
-        # define a sphere about [0.5, 0.5, 0.5]
-        sphere = (rc - 0.5)**2 + (gc - 0.5)**2 + (bc - 0.5)**2 < 0.5**2
-
-        # combine the color components
-        colors = np.zeros(sphere.shape + (3,))
-        colors[..., 0] = rc
-        colors[..., 1] = gc
-        colors[..., 2] = bc
-
-        # and plot everything
-        ax.voxels(r, g, b, sphere,
-                  facecolors=colors,
-                  edgecolors=np.clip(2*colors - 0.5, 0, 1),  # brighter
-                  linewidth=0.5)
-
-    def test_calling_conventions(self):
-        x, y, z = np.indices((3, 4, 5))
-        filled = np.ones((2, 3, 4))
-
-        fig, ax = plt.subplots(subplot_kw={"projection": "3d"})
-
-        # all the valid calling conventions
-        for kw in (dict(), dict(edgecolor='k')):
-            ax.voxels(filled, **kw)
-            ax.voxels(filled=filled, **kw)
-            ax.voxels(x, y, z, filled, **kw)
-            ax.voxels(x, y, z, filled=filled, **kw)
-
-        # duplicate argument
-        with pytest.raises(TypeError, match='voxels'):
-            ax.voxels(x, y, z, filled, filled=filled)
-        # missing arguments
-        with pytest.raises(TypeError, match='voxels'):
-            ax.voxels(x, y)
-        # x, y, z are positional only - this passes them on as attributes of
-        # Poly3DCollection
-        with pytest.raises(AttributeError):
-            ax.voxels(filled=filled, x=x, y=y, z=z)
-
-
-def test_line3d_set_get_data_3d():
-    x, y, z = [0, 1], [2, 3], [4, 5]
-    x2, y2, z2 = [6, 7], [8, 9], [10, 11]
-    fig = plt.figure()
-    ax = fig.add_subplot(projection='3d')
-    lines = ax.plot(x, y, z)
-    line = lines[0]
-    np.testing.assert_array_equal((x, y, z), line.get_data_3d())
-    line.set_data_3d(x2, y2, z2)
-    np.testing.assert_array_equal((x2, y2, z2), line.get_data_3d())
-    line.set_xdata(x)
-    line.set_ydata(y)
-    line.set_3d_properties(zs=z, zdir='z')
-    np.testing.assert_array_equal((x, y, z), line.get_data_3d())
-    line.set_3d_properties(zs=0, zdir='z')
-    np.testing.assert_array_equal((x, y, np.zeros_like(z)), line.get_data_3d())
-
-
-@check_figures_equal(extensions=["png"])
-def test_inverted(fig_test, fig_ref):
 <<<<<<< /home/ze/miningframework/bug_results/matplotlib_results/matplotlib/9296df8c760461c97a59dff79689cb2490d2500c/lib/mpl_toolkits/mplot3d/tests/test_axes3d.py/left.py
+        x, y, z = np.indices((10, 10, 10)
 
 =======
+        # Scale the data range
+        dx = (maxx - minx
+
+>>>>>>> /home/ze/miningframework/bug_results/matplotlib_results/matplotlib/9296df8c760461c97a59dff79689cb2490d2500c/lib/mpl_toolkits/mplot3d/tests/test_axes3d.py/right.py
+)*scale_x
+        dy = (maxy - miny)
+<<<<<<< /home/ze/miningframework/bug_results/matplotlib_results/matplotlib/9296df8c760461c97a59dff79689cb2490d2500c/lib/mpl_toolkits/mplot3d/tests/test_axes3d.py/left.py
+ | (y == z)
+
+=======
+*scale_y
+
+>>>>>>> /home/ze/miningframework/bug_results/matplotlib_results/matplotlib/9296df8c760461c97a59dff79689cb2490d2500c/lib/mpl_toolkits/mplot3d/tests/test_axes3d.py/right.py
+        dz = (maxz - minz)*scale_z
+
+        # Set the scaled axis limits
+        self.set_xlim3d(cx - dx/2, cx + dx/2)
+        self.set_ylim3d(cy - dy/2, cy + dy/2)
+        self.set_zlim3d(cz - dz/2, cz + dz/2)
+
+    def set_zlabel(self, zlabel, fontdict=None, labelpad=None, **kwargs):
+        """
+        Set zlabel.  See doc for `.set_ylabel` for description.
+        """
+        if labelpad is not None:
+            self.zaxis.labelpad = labelpad
+        return self.zaxis.set_label_text(zlabel, fontdict, **kwargs)
+
+    def get_zlabel(self):
+        """
+        Get the z-label text string.
+        """
+        label = self.zaxis.get_label()
+        return label.get_text()
+
+    # Axes rectangle characteristics
+
+    def get_frame_on(self):
+        """Get whether the 3D axes panels are drawn."""
+        return self._frameon
+
+    def set_frame_on(self, b):
+        """
+        Set whether the 3D axes panels are drawn.
+
+        Parameters
+        ----------
+        b : bool
+        """
+        self._frameon = bool(b)
+        self.stale = True
+
+    def grid(self, visible=True, **kwargs):
+        """
+        Set / unset 3D grid.
+
+        .. note::
+
+            Currently, this function does not behave the same as
+            `.axes.Axes.grid`, but it is intended to eventually support that
+            behavior.
+        """
+        # TODO: Operate on each axes separately
+        if len(kwargs):
+            visible = True
+        self._draw_grid = visible
+        self.stale = True
+
+    def tick_params(self, axis='both', **kwargs):
+        """
+        Convenience method for changing the appearance of ticks and
+        tick labels.
+
+        See `.Axes.tick_params` for full documentation.  Because this function
+        applies to 3D Axes, *axis* can also be set to 'z', and setting *axis*
+        to 'both' autoscales all three axes.
+
+        Also, because of how Axes3D objects are drawn very differently
+        from regular 2D axes, some of these settings may have
+        ambiguous meaning.  For simplicity, the 'z' axis will
+        accept settings as if it was like the 'y' axis.
+
+        .. note::
+           Axes3D currently ignores some of these settings.
+        """
+        _api.check_in_list(['x', 'y', 'z', 'both'], axis=axis)
+        if axis in ['x', 'y', 'both']:
+            super().tick_params(axis, **kwargs)
+        if axis in ['z', 'both']:
+            zkw = dict(kwargs)
+            zkw.pop('top', None)
+            zkw.pop('bottom', None)
+            zkw.pop('labeltop', None)
+            zkw.pop('labelbottom', None)
+            self.zaxis.set_tick_params(**zkw)
+
+    # data limits, ticks, tick labels, and formatting
+
+    def invert_zaxis(self):
+        """
+        Invert the z-axis.
+        """
+        bottom, top = self.get_zlim()
+        self.set_zlim(top, bottom, auto=None)
+
+    zaxis_inverted = _axis_method_wrapper("zaxis", "get_inverted")
+
+    def get_zbound(self):
+        """
+        Return the lower and upper z-axis bounds, in increasing order.
+        """
+        bottom, top = self.get_zlim()
+        if bottom < top:
+            return bottom, top
+        else:
+            return top, bottom
+
+    def set_zbound(self, lower=None, upper=None):
+        """
+        Set the lower and upper numerical bounds of the z-axis.
+
+        This method will honor axes inversion regardless of parameter order.
+        It will not change the autoscaling setting (`.get_autoscalez_on()`).
+        """
+        if upper is None and np.iterable(lower):
+            lower, upper = lower
+
+        old_lower, old_upper = self.get_zbound()
+        if lower is None:
+            lower = old_lower
+        if upper is None:
+            upper = old_upper
+
+        self.set_zlim(sorted((lower, upper),
+                             reverse=bool(self.zaxis_inverted())),
+                      auto=None)
+
+    def text(self, x, y, z, s, zdir=None, **kwargs):
+        """
+        Add text to the plot.
+
+        Keyword arguments will be passed on to `.Axes.text`, except for the
+        *zdir* keyword, which sets the direction to be used as the z
+        direction.
+        """
+        text = super().text(x, y, s, **kwargs)
+        art3d.text_2d_to_3d(text, z, zdir)
+        return text
+
+    text3D = text
+    text2D = Axes.text
+
+    def plot(self, xs, ys, *args, zdir='z', **kwargs):
+        """
+        Plot 2D or 3D data.
+
+        Parameters
+        ----------
+        xs : 1D array-like
+            x coordinates of vertices.
+        ys : 1D array-like
+            y coordinates of vertices.
+        zs : float or 1D array-like
             z coordinates of vertices; either one for all points or one for
             each point.
-
->>>>>>> /home/ze/miningframework/bug_results/matplotlib_results/matplotlib/9296df8c760461c97a59dff79689cb2490d2500c/lib/mpl_toolkits/mplot3d/tests/test_axes3d.py/right.py
-<<<<<<< /home/ze/miningframework/bug_results/matplotlib_results/matplotlib/9296df8c760461c97a59dff79689cb2490d2500c/lib/mpl_toolkits/mplot3d/tests/test_axes3d.py/left.py
-    # Plot then invert.
-    ax = fig_test.add_subplot(projection="3d"
-
-=======
-        zdir 
-
->>>>>>> /home/ze/miningframework/bug_results/matplotlib_results/matplotlib/9296df8c760461c97a59dff79689cb2490d2500c/lib/mpl_toolkits/mplot3d/tests/test_axes3d.py/right.py
-<<<<<<< /home/ze/miningframework/bug_results/matplotlib_results/matplotlib/9296df8c760461c97a59dff79689cb2490d2500c/lib/mpl_toolkits/mplot3d/tests/test_axes3d.py/left.py
-)
-
-=======
-: {'x', 'y', 'z'}, default: 'z'
-
->>>>>>> /home/ze/miningframework/bug_results/matplotlib_results/matplotlib/9296df8c760461c97a59dff79689cb2490d2500c/lib/mpl_toolkits/mplot3d/tests/test_axes3d.py/right.py
+        zdir : {'x', 'y', 'z'}, default: 'z'
             When plotting 2D data, the direction to use as z.
         **kwargs
             Other arguments are forwarded to `matplotlib.axes.Axes.plot`.
@@ -1920,6 +1972,7 @@ def test_inverted(fig_test, fig_ref):
                 continue
 <<<<<<< /home/ze/miningframework/bug_results/matplotlib_results/matplotlib/9296df8c760461c97a59dff79689cb2490d2500c/lib/mpl_toolkits/mplot3d/tests/test_axes3d.py/left.py
 ).T
+    c = x + y
 
 =======
             topverts = art3d._paths_to_3d_segments(paths, z - dz)
@@ -2029,33 +2082,35 @@ def test_inverted(fig_test, fig_ref):
         had_data = self.has_data()
 
         jX, jY, jZ = art3d.rotate_axes(X, Y, Z, zdir)
-        cset = super(
+        cset = super().contour(jX, jY, jZ, *args, **kwargs)
+        self.add_contour_set(cset, extend3d, stride, zdir, offset)
 
-    fig = plt.figure()
-    ax = fig.add_subplot(projection='3d')
-    x = np.arange(10)
-    ax.plot(x, np.sin(x))
-    fig.canvas.draw()
-    assert ax.get_axis_position() == (False, True, False)
+        self.auto_scale_xyz(X, Y, Z, had_data)
+        return cset
 
+    contour3D = contour
 
-def test_margins():
-    fig = plt.figure()
-    ax = fig.add_subplot(projection='3d')
-    ax.margins(0.2)
-    assert ax.margins() == (0.2, 0.2, 0.2)
-    ax.margins(0.1, 0.2, 0.3)
-    assert ax.margins() == (0.1, 0.2, 0.3)
-    ax.margins(x=0)
-    assert ax.margins() == (0, 0.2, 0.3)
-    ax.margins(y=0.1)
-    assert ax.margins() == (0, 0.1, 0.3)
-    ax.margins(z=0)
-    assert ax.margins() == (0, 0.1, 0)
+    @_preprocess_data()
+    def tricontour(self, *args,
+                   extend3d=False, stride=5, zdir='z', offset=None, **kwargs):
+        """
+        Create a 3D contour plot.
 
+        .. note::
+            This method currently produces incorrect output due to a
+            longstanding bug in 3D PolyCollection rendering.
 
-@pytest.mark.parametrize('err, args, kwargs, match', (
-        (ValueError, (-1,), {}, r'margin must be greater than -0\.5'),
+        Parameters
+        ----------
+        X, Y, Z : array-like
+            Input data. See `.Axes.tricontour` for supported data shapes.
+        extend3d : bool, default: False
+            Whether to extend contour in 3D.
+        stride : int
+            Step size for extending contour.
+        zdir : {'x', 'y', 'z'}, default: 'z'
+            The direction to use.
+     (ValueError, (-1,), {}, r'margin must be greater than -0\.5'),
         (ValueError, (1, -1, 1), {}, r'margin must be greater than -0\.5'),
         (ValueError, (1, 1, -1), {}, r'margin must be greater than -0\.5'),
         (ValueError, tuple(), {'x': -1}, r'margin must be greater than -0\.5'),
@@ -2904,7 +2959,27 @@ def test_mutating_input_arrays_y_and_z(fig_test, fig_ref):
             If True, will plot the errorbars above the plot
             symbols. Default is below.
 
-        xlolims, ylolims, zlolims : bool, default
+        xlolims, ylolims, zlolims : bool, default: False
+            These arguments can be used to indicate that a value gives only
+            lower limits. In that case a caret symbol is used to indicate
+            this. *lims*-arguments may be scalars, or array-likes of the same
+            length as the errors. To use limits with inverted axes,
+            `~.Axes.set_xlim` or `~.Axes.set_ylim` must be called before
+            `errorbar`. Note the tricky parameter names: setting e.g.
+            *ylolims* to True means that the y-value is a *lower* limit of the
+            True value, so, only an *upward*-pointing arrow will be drawn!
+
+        xuplims, yuplims, zuplims : bool, default: False
+            Same as above, but for controlling the upper limits.
+
+        errorevery : int or (int, int), default: 1
+            draws error bars on a subset of the data. *errorevery* =N draws
+            error bars on the points (x[::N], y[::N], z[::N]).
+            *errorevery* =(start, N) draws error bars on the points
+            (x[start::N], y[start::N], z[start::N]). e.g. *errorevery* =(6, 3)
+            adds error bars to the data at (x[6], x[9], x[12], x[15], ...).
+            Used to avoid overlapping error bars when two series share x-axis
+            values.
 
 =======
 

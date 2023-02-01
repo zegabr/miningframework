@@ -63,60 +63,22 @@ parentFolder=$(echo "${myFile%/*}")
 myFileBaseName="$(basename "${myFile}")"
 fileExt=$([[ "$myFileBaseName" = *.* ]] && echo ".${myFileBaseName##*.}" || echo '')
 
-sedCommandMyFile=""
-sedCommandOldFile=""
-sedCommandYourFile=""
-
 myTempFile="${myFile}_temp${fileExt}"
 oldTempFile="${oldFile}_temp${fileExt}"
 yourTempFile="${yourFile}_temp${fileExt}"
 
 # Dynamically builds the sed command pipeline based on the number of synctatic separators provided
-for separator in "${separators[@]}";
-  do
-    # Treat some specific symbols that need to be escaped before including them into the regex
-    escapedSeparator=$separator
-    if [[ $separator = '\' || $separator = '[' || $separator = ']' || $separator = '+' || $separator = '.' || $separator = '*' || $separator = '?' || $separator = '^' || $separator = '$' ]]
-    then
-      escapedSeparator="\\${separator}"
-    fi
+# Build the base substitution script to be passed to the sed command
+sedScript=""
+for separator in "${separators[@]}"; do
+  escapedSeparator=$(printf '%s\n' "$separator" | sed 's/[\[\]\+\.\*\?^$]/\\&/g')
+  sedScript+="s/$escapedSeparator/\n\$\$\$\$\$\$\$$escapedSeparator\n\$\$\$\$\$\$\$/g;"
+done
 
-    # Build the base substitution script to be passed to the sed command
-    sedScript="s/$escapedSeparator/\n\$\$\$\$\$\$\$$escapedSeparator\n\$\$\$\$\$\$\$/g"
-
-    # When the separator is the first one in the array of separators, call sed with the substitution script and with the file
-    # When the separator is the last one in the array of separators, call the final sed with the substitution script (piping with the previous call) and output the result to a temp file
-    # When none of the above, call sed with the substitution script, piping with the previous call.
-
-
-    if [[ $separator = ${separators[0]} ]]
-    then
-      if [[ ${#separators[@]} = 1 ]]
-      then
-        sedCommandMyFile+="sed '${sedScript}' ${myFile} > $myTempFile"
-        sedCommandOldFile+="sed '${sedScript}' ${oldFile} > $oldTempFile"
-        sedCommandYourFile+="sed '${sedScript}' ${yourFile}  > $yourTempFile"
-      else
-        sedCommandMyFile+="sed '${sedScript}' ${myFile}"
-        sedCommandOldFile+="sed '${sedScript}' ${oldFile}"
-        sedCommandYourFile+="sed '${sedScript}' ${yourFile}"
-      fi
-    elif [[ $separator = ${separators[-1]} ]]
-    then
-      sedCommandMyFile+=" | sed '${sedScript}' > $myTempFile"
-      sedCommandOldFile+=" | sed '${sedScript}' > $oldTempFile"
-      sedCommandYourFile+=" | sed '${sedScript}' > $yourTempFile"
-    else
-      sedCommandMyFile+=" | sed '${sedScript}'"
-      sedCommandOldFile+=" | sed '${sedScript}'"
-      sedCommandYourFile+=" | sed '${sedScript}'"
-    fi
-  done
-
-# Perform the tokenization of the input files based on the provided separators
-eval ${sedCommandMyFile}
-eval ${sedCommandOldFile}
-eval ${sedCommandYourFile}
+# Perform the tokenization of the input file based on the provided separators
+sed -e "$sedScript" "$myFile" > "$myTempFile"
+sed -e "$sedScript" "$yourFile" > "$yourTempFile"
+sed -e "$sedScript" "$oldFile" > "$oldTempFile"
 
 # fix for bug that happens when strings like ======== appears in a multiline comment
 # this replace is undone at the end
