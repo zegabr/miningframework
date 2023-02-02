@@ -67,27 +67,32 @@ myTempFile="${myFile}_temp${fileExt}"
 oldTempFile="${oldFile}_temp${fileExt}"
 yourTempFile="${yourFile}_temp${fileExt}"
 
-# Dynamically builds the sed command pipeline based on the number of synctatic separators provided
-# Build the base substitution script to be passed to the sed command
-sedScript=""
-for separator in "${separators[@]}"; do
-  escapedSeparator=$(printf '%s\n' "$separator" | sed 's/[\[\]\+\.\*\?^$]/\\&/g')
-  sedScript+="s/$escapedSeparator/\n\$\$\$\$\$\$\$$escapedSeparator\n\$\$\$\$\$\$\$/g;"
-done
+add_dolar_sign_separators() {
+    local inputFile="$1"
+    awk -v seps="$(echo "${separators[@]}" | tr ' ' '\n')" '
+    BEGIN {
+    split(seps, separators, "\n")
 
-# Perform the tokenization of the input file based on the provided separators
-sed -e "$sedScript" "$myFile" > "$myTempFile"
-sed -e "$sedScript" "$yourFile" > "$yourTempFile"
-sed -e "$sedScript" "$oldFile" > "$oldTempFile"
+      separatorString=""
+      for (i in separators) {
+        separator = separators[i]
+        if (separator == "(" || separator == ")" || separator == "." || separator == "*" || separator == "^" || separator == "$" || separator == "[" || separator == "]") {
+          separator = "\\" separator
+        }
+        separatorString = separatorString separator "|"
+      }
+      sub(/\|$/, "", separatorString)
+    }
+    # also replacing = with $= to fix an issue with some python repos. this should be undone at the end
+    {
+      line = $0
+      gsub(separatorString, "\n$$$$$$$&\n$$$$$$$", line)
+      gsub("=", "$=", line)
+      print line
+    }
+    ' "$inputFile"
+}
 
-# fix for bug that happens when strings like ======== appears in a multiline comment
-# this replace is undone at the end
-sed -i 's/=/\$=/g' "$myTempFile"
-sed -i 's/=/\$=/g' "$oldTempFile"
-sed -i 's/=/\$=/g' "$yourTempFile"
-
-
-# this is a bash translation of csdiff_python.py of this repo
 get_indentation_level() {
     local line=$1
     echo $(expr "$line" : ' *')
@@ -107,6 +112,11 @@ add_separators_at_indentation_changes() {
     }
     ' "$inputFile"
 }
+
+# Perform the tokenization of the input file based on the provided separators
+add_dolar_sign_separators "$myFile" > "$myTempFile"
+add_dolar_sign_separators "$yourFile" > "$yourTempFile"
+add_dolar_sign_separators "$oldFile" > "$oldTempFile"
 
 # run the script to consider identation and override the temporary files again
 add_separators_at_indentation_changes "$myTempFile" > myOut
