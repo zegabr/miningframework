@@ -1,2 +1,2 @@
 project,merge commit,number of files modified for both branches,number of Merge files with conflicts,number of CSDiff files with conflicts, number of git merge files with conflicts,number of Merge conflicts,number of CSDiff conflicts,number of git merge conflicts,CSDiff and [diff3 -E -m] have the same outputs,actual merge and textual (diff3 -E -m) have same output,actual merge and csdiff have same output,actual merge and git merge have same output,notes,,,
-matplotlib,9296df8c760461c97a59dff79689cb2490d2500c,2,0,1,0,0,13,0,false,true,false,true,,,
+matplotlib,9296df8c760461c97a59dff79689cb2490d2500c,2,0,1,0,0,14,0,false,true,false,true,,,
