@@ -94,29 +94,29 @@ get_indentation_level() {
 }
 
 add_separators_at_indentation_changes() {
-    last_identation_level=0
-    while IFS= read -r line; do
-        current_identation_level=$(get_indentation_level "$line")
-        if [[ $current_identation_level != $last_identation_level ]]; then
-            printf "\$\$\$\$\$\$\$\n"
-        fi
-        printf "%s\n" "$line"
-        last_identation_level=$current_identation_level
-    done
+    local inputFile="$1"
+    awk '
+    BEGIN {last_identation_level = 0}
+    {
+        current_identation_level = length($0) - length(gensub(/^[ \t]+/, "", "g", $0))
+        if (current_identation_level != last_identation_level) {
+            printf("$$$$$$$\n")
+        }
+        print
+        last_identation_level = current_identation_level
+    }
+    ' "$inputFile"
 }
 
 # run the script to consider identation and override the temporary files again
-add_separators_at_indentation_changes < "$myTempFile" > myOut
-cat myOut > "$myTempFile"
-rm myOut
+add_separators_at_indentation_changes "$myTempFile" > myOut
+mv myOut "$myTempFile"
 
-add_separators_at_indentation_changes < "$oldTempFile" > oldOut
-cat oldOut > "$oldTempFile"
-rm oldOut
+add_separators_at_indentation_changes "$oldTempFile" > oldOut
+mv oldOut "$oldTempFile"
 
-add_separators_at_indentation_changes < "$yourTempFile" > yourOut
-cat yourOut > "$yourTempFile"
-rm yourOut
+add_separators_at_indentation_changes "$yourTempFile" > yourOut
+mv yourOut "$yourTempFile"
 
 # Runs diff3 against the tokenized inputs, generating a tokenized merged file
 midMergedFile="${parentFolder}/mid_merged${fileExt}"
@@ -129,10 +129,10 @@ rm "$yourTempFile"
 
 # Removes the tokens from the merged file, generating the final merged file
 mergedFile="${parentFolder}/merged${fileExt}"
-sed ':a;N;$!ba;s/\n\$\$\$\$\$\$\$//g' $midMergedFile > $mergedFile
+sed -i ':a;N;$!ba;s/\n\$\$\$\$\$\$\$//g' $midMergedFile
 
-# Removes the tokenized merged file
-rm "$midMergedFile"
+# Renames the tokenized mid merged file
+mv "$midMergedFile" "$mergedFile"
 
 # Get the names of left/base/right files
 ESCAPED_LEFT=$(printf '%s\n' "${myFile}" | sed -e 's/[\/&]/\\&/g')
