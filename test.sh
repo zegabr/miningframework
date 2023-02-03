@@ -40,20 +40,21 @@ do
   cd "$results_path"/${i}_results/
   echo "deleting diff3 == csdiff folders"
   bash "$miningframework_path"/clear_irrelevant.sh
-  # populating relevant csv
 
+# populating relevant csv
 if [ -d "$results_path"/${i}_results/${i}/ ]; then
   cd "$results_path"/${i}_results/${i}/
   echo "populating relevant.csv with only folders where csdiff != diff3"
   get_relevant_csv >> "$results_path"/relevant.csv
   cd "$miningframework_path"/
 fi
-  # re_running csdiff v3 to see check for mistakes
-  if [ "$(ls -A "$results_path" | wc -l)" -gt 1 ]; then
+
+# re_running csdiff v3 to see check for mistakes
+if [ "$(ls -A "$results_path" | wc -l)" -gt 1 ]; then
     cd "$results_path"/${i}_results/
     echo "running csdiff again for the missing folders"
     bash "$miningframework_path"/re_run_csdiffv3.sh
-  fi
+fi
 done
 
 
