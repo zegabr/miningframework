@@ -3,11 +3,13 @@
 find . -type d -exec bash -c '
     for d in "$@"; do
         if [ -z "$(find "$d" -mindepth 1 -type d)" ]; then
+
             if [ ! -e "$d/csdiff.py" ]; then
 
                 # delete folders that does not have csdiff (files with no merge conflict)
                 echo "deleting $d as it does not have csdiff.py inside"
                 rm -r "$d"
+
             elif [ -e "$d/csdiff.py" -a -e "$d/diff3.py" ] ; then
 
                 # delete folders that has csdiff == diff3
