@@ -2,7 +2,7 @@
 
 ./gradlew assemble
 
-names=(matplotlib)
+names=(matplotlib tensorflow certbot flask ipython requests salt scrapy sentry tornado)
 miningframework_path=$(pwd)
 results_path="$miningframework_path/mining_results"
 
@@ -28,24 +28,31 @@ get_relevant_csv(){
 
 for i in "${names[@]}"
 do
+    echo "removing last results"
     rm -rf "$results_path"/${i}_results/
-    ./gradlew run --args="-e .py -i injectors.CSDiffModule -l '( ) : ,' s 29/01/2023 -u 31/01/2023 ./projects/${i}.csv "$results_path"/${i}_results"
+    rm "$results_path"/all_results.csv
 
-    if [[ "$i" == "${names[0]}" ]]; then
-        head -n 1 "$results_path"/${i}_results/results.csv > "$results_path"/all_results.csv
-        head -n 1 "$results_path"/${i}_results/results.csv > "$results_path"/relevant.csv
+    echo "running mining framework"
+    ./gradlew run --args="-e .py -i injectors.CSDiffModule -l '( ) : ,' -s 01/01/2021 -u 01/01/2022 ./projects/${i}.csv "$results_path"/${i}_results"
+
+    if [[ -e "$results_path"/${i}_results/results.csv ]]; then
+        if [[ ! -e "$results_path"/all_results.csv ]]; then
+            echo "created all_results and relevant csvs"
+            head -n 1 "$results_path"/${i}_results/results.csv > "$results_path"/all_results.csv
+            head -n 1 "$results_path"/${i}_results/results.csv > "$results_path"/relevant.csv
+        fi
+        grep -e "true" -e "false" "$results_path"/${i}_results/results.csv >> "$results_path"/all_results.csv
     fi
-    grep -e "true" -e "false" "$results_path"/${i}_results/results.csv >> "$results_path"/all_results.csv
 
-    # # re_running csdiff v3 to see check for mistakes
-    # if [ "$(ls -A "$results_path" | wc -l)" -gt 1 ]; then
-    #     cd "$results_path"/${i}_results/
-    #     echo "running csdiff again for the missing folders"
-    #     bash "$miningframework_path"/re_run_csdiffv3.sh
-    # fi
+    # re_running csdiff v3 to see check for mistakes
+    if [ "$(ls -A "$results_path" | wc -l)" -gt 1 ]; then
+        cd "$results_path"/${i}_results/
+        echo "running csdiff again for the missing folders"
+        bash "$miningframework_path"/re_run_csdiffv3.sh
+    fi
 
     # clearing miningframework irrelevant cases (csdiff == diff3)
-    if [ -d "$results_path"/${i}_results/${i}/ ]; then
+    if [ -d "$results_path"/${i}_results/ ]; then
         cd "$results_path"/${i}_results/
         echo "deleting diff3 == csdiff folders"
         bash "$miningframework_path"/clear_irrelevant.sh
