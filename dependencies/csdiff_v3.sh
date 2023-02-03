@@ -139,10 +139,13 @@ rm "$yourTempFile"
 
 # Removes the tokens from the merged file, generating the final merged file
 mergedFile="${parentFolder}/merged${fileExt}"
-sed -i ':a;N;$!ba;s/\n\$\$\$\$\$\$\$//g' $midMergedFile
-
-# Renames the tokenized mid merged file
-mv "$midMergedFile" "$mergedFile"
+awk '
+  BEGIN {
+    RS="\n\\$\\$\\$\\$\\$\\$\\$"
+    ORS=""
+  }
+  {print}
+' $midMergedFile > $mergedFile
 
 # Get the names of left/base/right files
 ESCAPED_LEFT=$(printf '%s\n' "${myFile}" | sed -e 's/[\/&]/\\&/g')
