@@ -101,16 +101,25 @@ get_indentation_level() {
 add_separators_at_indentation_changes() {
     local inputFile="$1"
     awk '
-    BEGIN {last_identation_level = 0}
+    BEGIN {
+        last_identation_level = 0
+        last_line_is_empty = 1
+    }
     {
         current_identation_level = length($0) - length(gensub(/^[ \t]+/, "", "g", $0))
-        if (current_identation_level != last_identation_level) {
+        if (current_identation_level != last_identation_level && !last_line_is_empty) {
             printf("$$$$$$$\n")
         }
         print
+
         last_identation_level = current_identation_level
+        if (length($0) == 0 || $0 ~ /^[ \t]+$/) {
+            last_line_is_empty = 1
+        } else {
+            last_line_is_empty = 0
+        }
     }
-    ' "$inputFile" > "$inputfile".tmp && wait && mv "$inputfile".tmp "$inputFile"
+    ' "$inputFile" > "$inputfile".tmp && mv "$inputfile".tmp "$inputFile"
 }
 
 # Perform the tokenization of the input file based on the provided separators
@@ -124,7 +133,6 @@ add_separators_at_indentation_changes "$myTempFile"
 add_separators_at_indentation_changes "$oldTempFile"
 add_separators_at_indentation_changes "$yourTempFile"
 wait
-
 # Runs diff3 against the tokenized inputs, generating a tokenized merged file
 midMergedFile="${parentFolder}/mid_merged${fileExt}"
 diff3 -m -E "$myTempFile" "$oldTempFile" "$yourTempFile" > $midMergedFile
@@ -143,7 +151,7 @@ awk '
     ORS=""
   }
   {print}
-' $midMergedFile > "$mergedFile".tmp && wait && mv "$mergedFile".tmp "$mergedFile"
+' $midMergedFile > "$mergedFile".tmp && mv "$mergedFile".tmp "$mergedFile"
 rm "$midMergedFile"
 wait
 
@@ -187,8 +195,6 @@ BEGIN {}
 ' "$mergedFile" > "$mergedFile".tmp && wait && mv "$mergedFile".tmp "$mergedFile"
 
 sed -i -e "/^$comment_string/!s/\(=======\)\(.\+\)/\1\n\2/" $mergedFile
-sed -i -e "/^$comment_string/!s/=======/\n=======/" $mergedFile
-sed -i -e "/^$comment_string/!s/>>>>>>>/\n>>>>>>>/" $mergedFile
 sed -i -e :a -e '/^\n*$/{$d;N;ba' -e '}' "$mergedFile"
 wait
 
