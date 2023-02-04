@@ -187,8 +187,8 @@ BEGIN {}
 ' "$mergedFile" > "$mergedFile".tmp && wait && mv "$mergedFile".tmp "$mergedFile"
 
 sed -i -e "/^$comment_string/!s/\(=======\)\(.\+\)/\1\n\2/" $mergedFile
-sed -i -e "/^$comment_string/!s/=======/\n=======/" $mergedFile
-sed -i -e "/^$comment_string/!s/>>>>>>>/\n>>>>>>>/" $mergedFile
+# sed -i -e "/^$comment_string/!s/=======/\n=======/" $mergedFile
+# sed -i -e "/^$comment_string/!s/>>>>>>>/\n>>>>>>>/" $mergedFile
 sed -i -e :a -e '/^\n*$/{$d;N;ba' -e '}' "$mergedFile"
 wait
 
