@@ -8,7 +8,7 @@ find . -type d -exec bash -c '
 
                 # delete folders that does not have csdiff (files with no merge conflict)
                 echo "deleting $d as it does not have csdiff.py inside"
-                rm -r "$d"
+                rm -r "$d" &
 
             elif [ -e "$d/csdiff.py" -a -e "$d/diff3.py" ] ; then
 
@@ -16,11 +16,12 @@ find . -type d -exec bash -c '
                 cmp -s "$d/csdiff.py" "$d/diff3.py"
                 if [ $? -eq 0 ]; then
                     echo "deleting $d as it has csdiff == diff3"
-                    rm -r "$d"
+                    rm -r "$d" &
                 fi
             fi
         fi
     done
+    wait
 ' bash {} +
 
 find . -type f -name "results.csv" -delete

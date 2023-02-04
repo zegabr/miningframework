@@ -101,16 +101,24 @@ get_indentation_level() {
 add_separators_at_indentation_changes() {
     local inputFile="$1"
     awk '
-    BEGIN {last_identation_level = 0}
+    BEGIN {
+        last_identation_level = 0
+        last_line_is_empty = 1
+    }
     {
         current_identation_level = length($0) - length(gensub(/^[ \t]+/, "", "g", $0))
-        if (current_identation_level != last_identation_level) {
+        if (current_identation_level != last_identation_level && !last_line_is_empty) {
             printf("$$$$$$$\n")
         }
         print
         last_identation_level = current_identation_level
+        if (length($0) == 0 || $0 ~ /^[ \t]+$/) {
+            last_line_is_empty = 1
+        } else {
+            last_line_is_empty = 0
+        }
     }
-    ' "$inputFile" > "$inputfile".tmp && wait && mv "$inputfile".tmp "$inputFile"
+    ' "$inputFile" > "$inputfile".tmp && mv "$inputfile".tmp "$inputFile"
 }
 
 # Perform the tokenization of the input file based on the provided separators
@@ -142,8 +150,10 @@ awk '
     RS="\n\\$\\$\\$\\$\\$\\$\\$"
     ORS=""
   }
-  {print}
-' $midMergedFile > "$mergedFile".tmp && wait && mv "$mergedFile".tmp "$mergedFile"
+  {
+      print
+  }
+' $midMergedFile > "$mergedFile".tmp && mv "$mergedFile".tmp "$mergedFile"
 rm "$midMergedFile"
 wait
 
