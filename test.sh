@@ -6,6 +6,9 @@ names=(matplotlib tensorflow certbot flask ipython requests salt scrapy sentry t
 miningframework_path=$(pwd)
 results_path="$miningframework_path/mining_results"
 
+echo "deleting all_results"
+rm "$results_path"/all_results.csv
+
 get_relevant_csv(){
     # Store the output of ls -1 in an array
     arr=($(ls -1))
@@ -30,7 +33,6 @@ for i in "${names[@]}"
 do
     echo "removing last results"
     rm -rf "$results_path"/${i}_results/
-    rm "$results_path"/all_results.csv
 
     echo "running mining framework"
     ./gradlew run --args="-e .py -i injectors.CSDiffModule -l '( ) : ,' -s 01/01/2021 -u 01/01/2022 ./projects/${i}.csv "$results_path"/${i}_results"
