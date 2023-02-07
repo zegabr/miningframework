@@ -35,7 +35,7 @@ do
     rm -rf "$results_path"/${i}_results/
 
     echo "running mining framework"
-    ./gradlew run --args="-e .py -i injectors.CSDiffModule -l '( ) ,' -t 1 -s 01/01/2021 ./projects/${i}.csv "$results_path"/${i}_results"
+    ./gradlew run --args="-e .py -i injectors.CSDiffModule -l '( ) ,' -t 1 -s 01/01/2021 -u 01/01/2022 ./projects/${i}.csv "$results_path"/${i}_results"
 
     if [[ -e "$results_path"/${i}_results/results.csv ]]; then
         if [[ ! -e "$results_path"/all_results.csv ]]; then
