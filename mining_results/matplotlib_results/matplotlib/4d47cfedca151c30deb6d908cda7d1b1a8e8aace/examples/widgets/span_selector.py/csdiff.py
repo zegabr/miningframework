@@ -38,11 +38,11 @@ def onselect(xmin, xmax):
         ax2.set_xlim(region_x[0], region_x[-1])
         ax2.set_ylim(region_y.min(), region_y.max())
 <<<<<<< ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/examples/widgets/span_selector.py/left.py
-        fig.canvas.draw_idle
+        fig.canvas.draw_idle(
 =======
-        fig.canvas.draw
+        fig.canvas.draw(
 >>>>>>> ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/examples/widgets/span_selector.py/right.py
-()
+)
 
 
 #############################################################################

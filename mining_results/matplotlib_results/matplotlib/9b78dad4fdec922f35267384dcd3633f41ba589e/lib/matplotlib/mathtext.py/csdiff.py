@@ -30,36 +30,57 @@ from matplotlib.ft2font import FT2Image, LOAD_NO_HINTING
 from matplotlib.font_manager import FontProperties
 
 _log = logging.getLogger(__name__)
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
+
+
+@_api.caching_module_getattr
+class __getattr__:
+=======
 
 
 @_api.caching_module_getattr
 class __getattr__:
     locals().update({
-        name: _api.deprecated("3.4")(
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
+    locals(
+=======
+        name: _api.deprecated(
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
+).update({
+=======
+"3.4")(
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
+        name: _api.deprecated(
+=======
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
+"3.4")(
+=======
             property(lambda self, _mod=mod, _name=name: getattr(_mod, _name)))
-<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
-=======
-        for mod
 >>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
+            property(lambda self, _mod=mod, _name=name: getattr(_mod, _name)))
         for mod, names in [
-            (_mathtext,
-<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
- ["SHRINK_FACTOR"
+            (_mathtext, ["SHRINK_FACTOR", "GROW_FACTOR", "NUM_SIZE_LEVELS"]),
 =======
+        for mod,
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
  names in [
-            (_mathtext
->>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
-,
-<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
- "GROW_FACTOR", "NUM_SIZE_LEVELS"]
-=======
- ["SHRINK_FACTOR", "GROW_FACTOR", "NUM_SIZE_LEVELS"]
->>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
-),
+            (_mathtext, ["SHRINK_FACTOR", "GROW_FACTOR", "NUM_SIZE_LEVELS"]),
             (_mathtext_data, [
                 "latex_to_bakoma", "latex_to_cmex", "latex_to_standard",
                 "stix_virtual_fonts", "tex2uni"])]
         for name in names})
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
+            (_mathtext_data, [
+                "latex_to_bakoma", "latex_to_cmex", "latex_to_standard",
+                "stix_virtual_fonts", "tex2uni"])]
+        for name in names})
+=======
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
 
 
 get_unicode_index = _mathtext.get_unicode_index

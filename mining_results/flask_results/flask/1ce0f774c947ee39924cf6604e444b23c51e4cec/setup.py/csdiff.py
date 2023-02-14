@@ -8,11 +8,10 @@ setup(
         "Jinja2 >= 3.0",
         "itsdangerous >= 2.0",
 <<<<<<< ./flask/1ce0f774c947ee39924cf6604e444b23c51e4cec/setup.py/left.py
-        "click>=8.0"
+        "click>=8.0",
 =======
-        "click >= 7.1.2"
+        "click >= 7.1.2",
 >>>>>>> ./flask/1ce0f774c947ee39924cf6604e444b23c51e4cec/setup.py/right.py
-,
     ],
     extras_require={
         "async": ["asgiref >= 3.2"],

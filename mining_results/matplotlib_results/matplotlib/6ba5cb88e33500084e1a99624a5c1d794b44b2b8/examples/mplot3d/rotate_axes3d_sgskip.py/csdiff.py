@@ -43,14 +43,13 @@ for angle in range(0, 360*4 + 1):
         elev = azim = roll = angle_norm
 
     # Update the axis view and title
-    ax.view_init(elev, azim, roll)
-    plt.title('Elevation: %d°, Azimuth: %d°,
+    ax.view_init(
 <<<<<<< ./matplotlib/6ba5cb88e33500084e1a99624a5c1d794b44b2b8/examples/mplot3d/rotate_axes3d_sgskip.py/left.py
- Roll: %d°' % (elev, azim, roll
+elev, azim, roll)
 =======
- angle, 0
+30, angle, 0)
 >>>>>>> ./matplotlib/6ba5cb88e33500084e1a99624a5c1d794b44b2b8/examples/mplot3d/rotate_axes3d_sgskip.py/right.py
-))
+    plt.title('Elevation: %d°, Azimuth: %d°, Roll: %d°' % (elev, azim, roll))
 
     plt.draw()
     plt.pause(.001)

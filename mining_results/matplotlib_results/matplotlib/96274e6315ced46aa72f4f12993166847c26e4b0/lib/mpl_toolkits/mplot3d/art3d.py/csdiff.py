@@ -304,13 +304,13 @@ class Line3DCollection(LineCollection):
         """
 <<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/mplot3d/art3d.py/left.py
         # see _update_scalarmappable docstring for why this must be here
-        _update_scalarmappable
+        _update_scalarmappable(
 =======
         # see _update_scalarmappable docstring for why this must be here
         _update_scalarmappable(self)
         xyslist = [
 >>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/mplot3d/art3d.py/right.py
-(self)
+self)
         xyslist = [proj3d.proj_trans_points(points, self.axes.M)
                    for points in self._segments3d]
         segments_2d = [np.column_stack([xs, ys]) for xs, ys, zs in xyslist]

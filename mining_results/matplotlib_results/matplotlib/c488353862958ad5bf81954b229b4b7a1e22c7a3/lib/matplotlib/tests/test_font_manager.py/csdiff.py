@@ -13,13 +13,16 @@ import pytest
 from matplotlib.font_manager import (
     findfont, findSystemFonts, FontEntry, FontProperties, fontManager,
     json_dump, json_load, get_font, is_opentype_cff_font,
-    MSUserFontDirectories
 <<<<<<< ./matplotlib/c488353862958ad5bf81954b229b4b7a1e22c7a3/lib/matplotlib/tests/test_font_manager.py/left.py
-, _get_fontconfig_fonts
+    MSUserFontDirectories,
 =======
-, ft2font, ttfFontProperty, cbook
+    _get_fontconfig_fonts,
 >>>>>>> ./matplotlib/c488353862958ad5bf81954b229b4b7a1e22c7a3/lib/matplotlib/tests/test_font_manager.py/right.py
-)
+<<<<<<< ./matplotlib/c488353862958ad5bf81954b229b4b7a1e22c7a3/lib/matplotlib/tests/test_font_manager.py/left.py
+ _get_fontconfig_fonts)
+=======
+ ft2font, ttfFontProperty, cbook)
+>>>>>>> ./matplotlib/c488353862958ad5bf81954b229b4b7a1e22c7a3/lib/matplotlib/tests/test_font_manager.py/right.py
 from matplotlib import pyplot as plt, rc_context
 
 has_fclist = shutil.which('fc-list') is not None

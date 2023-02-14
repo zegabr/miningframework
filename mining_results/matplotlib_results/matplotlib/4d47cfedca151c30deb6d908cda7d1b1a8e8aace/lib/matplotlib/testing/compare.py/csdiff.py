@@ -137,21 +137,21 @@ class _GSConverter(_Converter):
         # GS> if nothing left on the stack; GS<n> if n items left on the stack.
         err = self._read_until(
 <<<<<<< ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/testing/compare.py/left.py
-(b"GS<", b"GS>"
+(b"GS<", b"GS>"))
 =======
-(b"GS<", b"GS>")
->>>>>>> ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/testing/compare.py/right.py
-))
+(b"GS<", b"GS>"))
         stack = ""
-        if err.endswith(b"GS<"):
+        if err.endswith(
+>>>>>>> ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/testing/compare.py/right.py
+b"GS<"):
 <<<<<<< ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/testing/compare.py/left.py
-            stack = self._read_until
-=======
         stack = ""
         if err.endswith(b"GS<"):
-            stack = self._read_until
+            stack = self._read_until(
+=======
+            stack = self._read_until(
 >>>>>>> ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/testing/compare.py/right.py
-(b">")
+b">")
         if stack or not os.path.exists(dest):
             stack_size = int(stack[:-1]) if stack else 0
             self._proc.stdin.write(b"pop\n" * stack_size)

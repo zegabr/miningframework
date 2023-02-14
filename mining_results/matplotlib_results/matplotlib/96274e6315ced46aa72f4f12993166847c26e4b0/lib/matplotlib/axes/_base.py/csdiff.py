@@ -3063,11 +3063,11 @@ class _AxesBase(martist.Artist):
         `~.Artist.set_zorder` method of each axis.
         """
 <<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_base.py/left.py
-        _api.check_in_list
+        _api.check_in_list(
 =======
-        cbook._check_in_list
+        cbook._check_in_list(
 >>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_base.py/right.py
-(['x', 'y', 'both'], axis=axis)
+['x', 'y', 'both'], axis=axis)
         if axis in ['x', 'both']:
             self.xaxis.grid(b, which=which, **kwargs)
         if axis in ['y', 'both']:

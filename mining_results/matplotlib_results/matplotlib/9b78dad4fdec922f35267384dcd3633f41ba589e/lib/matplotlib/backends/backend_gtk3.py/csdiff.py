@@ -31,40 +31,20 @@ except ValueError as e:
 from gi.repository import Gio, GLib, GObject, Gtk, Gdk
 <<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
 from . import _backend_gtk
-from ._backend_gtk import 
-=======
-from ._backend_gtk import 
->>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
-(
-<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
-    _create_application
-=======
+from ._backend_gtk import (
     _create_application, _shutdown_application,
     backend_version, _BackendGTK, _NavigationToolbar2GTK,
-    TimerGTK as TimerGTK3
->>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
-<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
-, _shutdown_application,
-=======
-,
->>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
-<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
-    backend_version
-=======
-    ConfigureSubplotsGTK as ConfigureSubplotsGTK3
->>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
-,
-<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
- _BackendGTK, _NavigationToolbar2GTK,
-=======
->>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
-<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
-    TimerGTK as TimerGTK3
-=======
-    RubberbandGTK as RubberbandGTK3
->>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
-,
+    TimerGTK as TimerGTK3,
 )
+=======
+from ._backend_gtk import (
+    _create_application, _shutdown_application,
+    backend_version, _BackendGTK, _NavigationToolbar2GTK,
+    TimerGTK as TimerGTK3,
+    ConfigureSubplotsGTK as ConfigureSubplotsGTK3,
+    RubberbandGTK as RubberbandGTK3,
+)
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
 
 
 _log = logging.getLogger(__name__)
@@ -362,15 +342,13 @@ class FigureManagerGTK3(FigureManagerBase):
         self.window.set_wmclass("matplotlib", "Matplotlib")
 <<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
         icon_ext = "png" if sys.platform == "win32" else "svg"
-        self.window.set_icon_from_file
+        self.window.set_icon_from_file(
 =======
-        self.window.set_icon_from_file
+        self.window.set_icon_from_file(
 >>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
-(
 <<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
             str(cbook._get_data_path(f"images/matplotlib.{icon_ext}")))
 =======
-window_icon)
 >>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
 
         self.vbox = Gtk.Box()
@@ -503,7 +481,16 @@ class NavigationToolbar2GTK3(_NavigationToolbar2GTK, Gtk.Toolbar):
             button._signal_handler = button.connect(
                 'clicked', getattr(self, callback))
             button.set_tooltip_text(tooltip_text)
-            self.insert(button, -1)
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
+            self.insert(
+=======
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
+button,
+=======
+            self.insert(button,
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
+ -1)
 
         # This filler item ensures the toolbar is always at least two text
         # lines high. Otherwise the canvas gets redrawn as the mouse hovers
@@ -569,9 +556,8 @@ class NavigationToolbar2GTK3(_NavigationToolbar2GTK, Gtk.Toolbar):
             self.canvas.figure.savefig(fname, format=fmt)
         except Exception as e:
             dialog = Gtk.MessageDialog(
-                parent=self.canvas.get_toplevel(), message_format=str(e)
+                parent=self.canvas.get_toplevel(), message_format=str(e),
 <<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
-,
                 type=Gtk.MessageType.ERROR, buttons=Gtk.ButtonsType.OK)
             dialog.run()
             dialog.destroy()
@@ -795,12 +781,8 @@ def error_msg_gtk(msg, parent=None):
 
 
 Toolbar = ToolbarGTK3
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
 backend_tools._register_tool_class(
-<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
-=======
-_BackendGTK):
->>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
-<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
     FigureCanvasGTK3, _backend_gtk.ConfigureSubplotsGTK)
 backend_tools._register_tool_class(
     FigureCanvasGTK3, _backend_gtk.RubberbandGTK)
@@ -811,6 +793,10 @@ class _BackendGTK3(_BackendGTK):
     FigureCanvas = FigureCanvasGTK3
     FigureManager = FigureManagerGTK3
 =======
+
+
+@_Backend.export
+class _BackendGTK3(_BackendGTK):
     FigureCanvas = FigureCanvasGTK3
     FigureManager = FigureManagerGTK3
 >>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py

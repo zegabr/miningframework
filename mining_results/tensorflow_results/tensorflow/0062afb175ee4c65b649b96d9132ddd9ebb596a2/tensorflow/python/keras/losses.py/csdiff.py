@@ -2069,12 +2069,14 @@ def get(identifier):
     return None
   if isinstance(identifier,
 <<<<<<< ./tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/left.py
- str
+ str) or isinstance(
 =======
  str):
-    identifier = str(identifier
+    identifier = str(identifier)
+    return deserialize(identifier)
+  if isinstance(
 >>>>>>> ./tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/right.py
-) or isinstance(identifier, dict):
+identifier, dict):
     return deserialize(identifier)
   if callable(identifier):
     return identifier

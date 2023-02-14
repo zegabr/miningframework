@@ -1273,56 +1273,65 @@ class Artist:
             # from Artist first and from ScalarMappable second, so
             # Artist.format_cursor_data would always have precedence over
             # ScalarMappable.format_cursor_data.
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
             n = self.cmap.N
             if np.ma.getmask(data):
                 return "[]"
+=======
+            n = self.cmap.N
+            if np.ma.getmask(
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
             normed = self.norm(
+=======
+data):
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
 <<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
 data)
-            if np.isfinite(normed):
-                # Midpoints of neighboring color intervals.
-                neighbors = self.norm.inverse
+=======
+                return "[]"
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
+=======
+            normed = self.norm(
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
+            if np.isfinite(
 =======
 data)
 >>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
-(
+normed):
 <<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
-=======
-            if np.isfinite
->>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
-                    (int(self.norm(normed):
                 # Midpoints of neighboring color intervals.
                 neighbors = self.norm.inverse(
-                    (int(self.norm(data)
-<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
- * n) + np.array([0, 1])
 =======
- * n) + np.array([0, 1])) / n)
+            if np.isfinite(
 >>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
-                delta = abs(neighbors - data)
 <<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
- / n)
-                delta = abs(neighbors - data).max
+                    (int(self.norm(
 =======
-.max
+normed):
+                # Midpoints of neighboring color intervals.
+                neighbors = self.norm.inverse(
+                    (int(self.norm(
 >>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
-()
+data) * n) + np.array([0, 1])) / n)
+                delta = abs(neighbors - data).max()
 <<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
                 g_sig_digits = cbook._g_sig_digits(data, delta)
 =======
-                g_sig_digits = cbook._g_sig_digits
+                g_sig_digits = cbook._g_sig_digits(data, delta)
+            else:
+                g_sig_digits = 3  # Consistent with default below.
+            return "[{:-#.{}g}]".format(
 >>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
 <<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
             else:
                 g_sig_digits = 3  # Consistent with default below.
-            return "[{:-#.{}g}]".format(data, g_sig_digits
+            return "[{:-#.{}g}]".format(data, g_sig_digits)
 =======
-(data, delta)
-            else:
-                g_sig_digits = 3  # Consistent with default below.
-            return "[{:-#.{}g}]".format(data, g_sig_digits
+data, g_sig_digits)
 >>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
-)
         else:
             try:
                 data[0]

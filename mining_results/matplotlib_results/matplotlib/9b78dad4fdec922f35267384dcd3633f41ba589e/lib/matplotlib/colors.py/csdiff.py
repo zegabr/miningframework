@@ -395,25 +395,28 @@ def to_hex(c, keep_alpha=False):
     ----------
     c : :doc:`color </tutorials/colors/colors>` or `numpy.ma.masked`
 
-    keep_alpha: bool
+    keep_alpha: bool, default: False
 =======
     Parameters
     ----------
     c : :doc:`color </tutorials/colors/colors>` or `numpy.ma.masked`
 
-    keep_alpha: bool, default: False
+    keep_alpha: bool,
 >>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/colors.py/right.py
 <<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/colors.py/left.py
-, default: False
-      If False
-=======
-      If False
->>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/colors.py/right.py
-, use the ``#rrggbb`` format, otherwise use ``#rrggbbaa``.
+      If False, use the ``#rrggbb`` format, otherwise use ``#rrggbbaa``.
 
     Returns
     -------
     str
+=======
+ default: False
+      If False, use the ``#rrggbb`` format, otherwise use ``#rrggbbaa``.
+
+    Returns
+    -------
+    str
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/colors.py/right.py
       ``#rrggbb`` or ``#rrggbbaa`` hex color string
     """
     c = to_rgba(c)

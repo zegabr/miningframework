@@ -1422,7 +1422,7 @@ class Axis(martist.Artist):
 <<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/left.py
         TOGGLE = object()
         UNSET = object()
-        visible = kwargs.pop
+        visible = kwargs.pop('visible', UNSET)
 =======
         TOGGLE = object()
         UNSET = object()
@@ -1433,11 +1433,8 @@ class Axis(martist.Artist):
                 if kwargs:  # grid(color='r')
                     b = True
                 else:  # grid()
-                    b = TOGGLE
-            else:  # grid(visible=v)
 >>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/right.py
 <<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/left.py
-('visible', UNSET)
 
         if b is None:
             if visible is UNSET:
@@ -1448,13 +1445,15 @@ class Axis(martist.Artist):
             else:  # grid(visible=v)
                 b = visible
         else:
-            if visible is not UNSET and bool
+            if visible is not UNSET and bool(
 =======
+                    b = TOGGLE
+            else:  # grid(visible=v)
                 b = visible
         else:
-            if visible is not UNSET and bool
+            if visible is not UNSET and bool(
 >>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/right.py
-(b) != bool(visible):
+b) != bool(visible):
                 # grid(True, visible=False), grid(False, visible=True)
                 raise ValueError(
                     "'b' and 'visible' specify inconsistent grid visibilities")
@@ -1469,8 +1468,17 @@ class Axis(martist.Artist):
         _api.check_in_list(['major', 'minor', 'both'], which=which)
         gridkw = {'grid_' + item[0]: item[1] for item in kwargs.items()}
         if which in ['minor', 'both']:
+<<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/left.py
+            gridkw['gridOn'] = (
+=======
             gridkw['gridOn'] = (not self._minor_tick_kw['gridOn']
+>>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/right.py
+<<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/left.py
+not self._minor_tick_kw['gridOn']
                                 if b is TOGGLE else b)
+=======
+                                if b is TOGGLE else b)
+>>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/right.py
             self.set_tick_params(which='minor', **gridkw)
         if which in ['major', 'both']:
             gridkw['gridOn'] = (not self._major_tick_kw['gridOn']

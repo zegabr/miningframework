@@ -625,16 +625,23 @@ def _calc_offsets(summed_sizes, karray):
     return offsets
 
 
-# Helper for HBoxDivider/VBoxDivider (see above re: variable naming).
-def _locate(
 <<<<<<< ./matplotlib/2a267871953254b50e95c4adb4638abc5ef194ce/lib/mpl_toolkits/axes_grid1/axes_divider.py/left.py
-x
+# Helper for HBoxDivider/VBoxDivider (see above re: variable naming).
+def _locate(x,
 =======
-self, nx, 0, nx1 if nx1 is not None else nx + 1, 1)
+        Parameters
+        ----------
+        nx, nx1 : int
+            Integers specifying the column-position of the
+            cell. When *nx1* is None, a single *nx*-th column is
+            specified. Otherwise location of columns spanning between *nx*
+            to *nx1* (but excluding *nx1*-th column) is specified.
+        """
+        return AxesLocator(self, nx, 0, nx1 if nx1 is not None else nx + 1, 1)
 
-    def _locate(self, x
+    def _locate(self, x,
 >>>>>>> ./matplotlib/2a267871953254b50e95c4adb4638abc5ef194ce/lib/mpl_toolkits/axes_grid1/axes_divider.py/right.py
-, y, w, h, summed_widths, equal_heights, fig_w, fig_h, anchor):
+ y, w, h, summed_widths, equal_heights, fig_w, fig_h, anchor):
     karray = _determine_karray(
         summed_widths, equal_heights,
         total_width=fig_w * w, max_height=fig_h * h)

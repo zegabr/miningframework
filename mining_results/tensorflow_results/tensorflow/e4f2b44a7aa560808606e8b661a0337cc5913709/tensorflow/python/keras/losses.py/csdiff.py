@@ -1406,13 +1406,13 @@ def categorical_hinge(y_true, y_pred):
 <<<<<<< ./tensorflow/e4f2b44a7aa560808606e8b661a0337cc5913709/tensorflow/python/keras/losses.py/left.py
   Usage:
   ```python
-  y_true = np.random.randint
+  y_true = np.random.randint(
 =======
   Standalone usage:
 
-  >>> y_true = np.random.randint
+  >>> y_true = np.random.randint(
 >>>>>>> ./tensorflow/e4f2b44a7aa560808606e8b661a0337cc5913709/tensorflow/python/keras/losses.py/right.py
-(0, 3, size=(2,))
+0, 3, size=(2,))
   y_true = tf.keras.utils.to_categorical(y_true, num_classes=3)
   y_pred = np.random.random(size=(2, 3))
   loss = tf.keras.losses.categorical_hinge(y_true, y_pred)

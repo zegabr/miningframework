@@ -534,18 +534,28 @@ class _ImageBase(martist.Artist, cm.ScalarMappable):
                 # we have re-set the vmin/vmax to account for small errors
                 # that may have moved input values in/out of range
                 s_vmin, s_vmax = vrange
-                if isinstance(self.norm, mcolors.LogNorm) and s_vmin <= 0:
+                if isinstance(self.norm, mcolors.LogNorm)
+<<<<<<< ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/image.py/left.py
+ and s_vmin <= 0:
                     # Don't give 0 or negative values to LogNorm
-                    s_vmin = np.finfo(scaled_dtype).eps
+                    s_vmin = np.finfo(
+=======
+ and s_vmin <= 0:
+>>>>>>> ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/image.py/right.py
+<<<<<<< ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/image.py/left.py
+scaled_dtype).eps
+=======
+                    # Don't give 0 or negative values to LogNorm
+                    s_vmin = np.finfo(
+>>>>>>> ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/image.py/right.py
 <<<<<<< ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/image.py/left.py
                 # Block the norm from sending an update signal during the
                 # temporary vmin/vmax change
                 with self.norm.callbacks.blocked():
-                    with cbook._setattr_cm
 =======
-                with cbook._setattr_cm
+scaled_dtype).eps
 >>>>>>> ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/image.py/right.py
-(self.norm,
+                    with cbook._setattr_cm(self.norm,
                                            vmin=s_vmin,
                                            vmax=s_vmax,
                                            ):

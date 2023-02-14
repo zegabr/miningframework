@@ -560,20 +560,35 @@ def _warn_if_global_cmap_modified(cmap):
             removal="3.6",
             message="You are modifying the state of a globally registered "
 <<<<<<< ./matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/colors.py/left.py
-                    "colormap. This has been deprecated since %(since)s and "
+                    "colormap. This has been deprecated since %(
 =======
                     "colormap. This has been deprecated since %(since)s and "
-                    "%
+                    "%(
 >>>>>>> ./matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/colors.py/right.py
 <<<<<<< ./matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/colors.py/left.py
-                    "%(removal)s
+since)s and "
 =======
-(removal)s
+removal)s, you will not be able to modify a "
 >>>>>>> ./matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/colors.py/right.py
-, you will not be able to modify a "
+<<<<<<< ./matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/colors.py/left.py
+                    "%(
+=======
+                    "registered colormap in-place. To remove this warning,
+>>>>>>> ./matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/colors.py/right.py
+<<<<<<< ./matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/colors.py/left.py
+removal)s, you will not be able to modify a "
+=======
+ "
+>>>>>>> ./matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/colors.py/right.py
+<<<<<<< ./matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/colors.py/left.py
                     "registered colormap in-place. To remove this warning, "
                     "you can make a copy of the colormap first. "
-                    f'cmap = mpl.cm.get_cmap("{cmap.name}").copy()'
+                    f'cmap = mpl.cm.get_cmap(
+=======
+                    "you can make a copy of the colormap first. "
+                    f'cmap = mpl.cm.get_cmap(
+>>>>>>> ./matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/colors.py/right.py
+"{cmap.name}").copy()'
         )
 
 

@@ -1028,11 +1028,10 @@ class TextBox(AxesWidget):
             transform=self.ax.transAxes, verticalalignment='center',
             horizontalalignment='left',
 <<<<<<< ./matplotlib/707ffe85a2b6e9610172cf420acb98ff3b39dc5a/lib/matplotlib/widgets.py/left.py
- horizontalalignment=ha
+ horizontalalignment=ha)
 =======
- parse_math=False
+ parse_math=False)
 >>>>>>> ./matplotlib/707ffe85a2b6e9610172cf420acb98ff3b39dc5a/lib/matplotlib/widgets.py/right.py
-)
 
         self._observers = cbook.CallbackRegistry()
 

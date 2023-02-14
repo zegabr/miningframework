@@ -141,30 +141,31 @@ class SubplotBase:
             if label_position == "right":
                 self.set_ylabel("")
             self.yaxis.set_tick_params(which="both", labelright=False)
-            if self.yaxis.offsetText.get_position(
+            if self.yaxis.offsetText.get_position()[0] == 1:
+                self.yaxis.offsetText.set_visible(
 <<<<<<< ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/left.py
-)[0] == 1:
+False)
 =======
 
     try:
 >>>>>>> ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/right.py
-                self.yaxis.offsetText.set_visible(False)
 
     def _make_twin_axes(self, *args, **kwargs):
         """Make a twinx axes of self. This is used for twinx and twiny."""
         if 'sharex' in kwargs and 'sharey' in kwargs:
             # The following line is added in v2.2 to avoid breaking Seaborn,
+            # which currently uses this internal API.
+            if kwargs["sharex"] is not self and kwargs["sharey"] is not self:
 <<<<<<< ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/left.py
+                raise ValueError(
 =======
         # if we have already wrapped this class, declare victory!
         if issubclass(axes_class, SubplotBase):
             return axes_class
 
-        return type
+        return type(
 >>>>>>> ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/right.py
-            # which currently uses this internal API.
-            if kwargs["sharex"] is not self and kwargs["sharey"] is not self:
-                raise ValueError("Twinned Axes may share only one axis")
+"Twinned Axes may share only one axis")
         twin = self.figure.add_subplot(self.get_subplotspec(), *args, **kwargs)
         self.set_adjustable('datalim')
         twin.set_adjustable('datalim')

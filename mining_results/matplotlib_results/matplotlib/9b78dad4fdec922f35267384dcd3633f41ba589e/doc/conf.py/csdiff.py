@@ -615,12 +615,12 @@ if link_github:
         version = parse(matplotlib.__version__)
 <<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/doc/conf.py/left.py
         tag = 'main' if version.is_devrelease else f'v{version.public}'
-        return 
+        return (
 =======
         tag = 'master' if version.is_devrelease else f'v{version.public}'
-        return 
+        return (
 >>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/doc/conf.py/right.py
-("https://github.com/matplotlib/matplotlib/blob"
+"https://github.com/matplotlib/matplotlib/blob"
                 f"/{tag}/lib/{fn}{linespec}")
 else:
     extensions.append('sphinx.ext.viewcode')

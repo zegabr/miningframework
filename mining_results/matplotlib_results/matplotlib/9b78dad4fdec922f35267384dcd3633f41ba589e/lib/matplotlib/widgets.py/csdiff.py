@@ -2262,13 +2262,30 @@ class SpanSelector(_SelectorWidget):
                                              direction=self.direction,
                                              line_props=props,
                                              useblit=self.useblit)
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
+
+    @property
+    def _handles_artists(self):
+        if self._edge_handles is not None:
+=======
 
     @property
     def _handles_artists(self):
         if self._edge_handles is not None:
             return self._edge_handles.artists
         else:
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
+            return self._edge_handles.artists
+=======
+            return (
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
+        else:
             return ()
+=======
+)
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
 
     def _set_cursor(self, enabled):
         """Update the canvas cursor based on direction of the selector."""
@@ -2847,17 +2864,21 @@ class RectangleSelector(_SelectorWidget):
 
 <<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
         if self._interactive:
+            self._handle_props = {
 =======
         if self._interactive:
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
+                'markeredgecolor': (
+=======
             self._handle_props = {
 >>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
 <<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
-            self._handle_props = {
-                'markeredgecolor': 
+self._props or {})
 =======
-                'markeredgecolor': 
+                'markeredgecolor': (self._props or {})
 >>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
-(self._props or {}).get(
+.get(
                     'edgecolor', 'black'),
                 **cbook.normalize_kwargs(handle_props, Line2D)}
 
@@ -3459,9 +3480,20 @@ class PolygonSelector(_SelectorWidget):
         self._active_handle_idx = -1
         self.grab_range = grab_range
 
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
         self.set_visible(True)
+=======
+        self.set_visible(
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
 
-    line = _api.deprecated("3.5")(
+    line = _api.deprecated(
+=======
+True)
+
+    line = _api.deprecated(
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
+"3.5")(
         property(lambda self: self._selection_artist)
         )
 

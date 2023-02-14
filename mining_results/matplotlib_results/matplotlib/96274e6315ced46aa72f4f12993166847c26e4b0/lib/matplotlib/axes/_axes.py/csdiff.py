@@ -5887,17 +5887,23 @@ default: :rc:`scatter.edgecolors`
         if shading is None:
             shading = rcParams['pcolor.shading']
         shading = shading.lower()
-        X, Y, C, shading = self._pcolorargs('pcolor', *args, shading=shading,
+        X, Y, C, shading = self._pcolorargs('pcolor', *args,
 <<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/left.py
+ shading=shading,
+                                            kwargs=kwargs)
 =======
+ shading=shading,
 >>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/right.py
-                                            kwargs=kwargs
 <<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/left.py
-                                            kwargs=kwargs
+        Ny,
 =======
+                                            kwargs=kwargs)
 >>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/right.py
-)
+<<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/left.py
+ Nx = X.shape
+=======
         Ny, Nx = X.shape
+>>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/right.py
 
         # convert to MA, if necessary.
         C = ma.asarray(C)

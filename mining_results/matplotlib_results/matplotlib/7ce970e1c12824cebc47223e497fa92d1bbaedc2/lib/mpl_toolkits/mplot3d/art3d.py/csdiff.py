@@ -559,7 +559,12 @@ class Path3DCollection(PathCollection):
         # grab the current sizes and linewidths to preserve them
         self._sizes3d = self._sizes
         self._linewidths3d = self._linewidths
-        xs
+        xs, ys, zs = self._offsets3d
+
+        # Sort the points based on z coordinates
+        # Performance optimization: Create a sorted index array and reorder
+        # points and point properties according to the index array
+        self._z_markers_idx = slice(-1)
 =======
         # In the base draw methods we access the attributes directly which
         # means we can not resolve the shuffling in the getter methods like
@@ -573,14 +578,13 @@ class Path3DCollection(PathCollection):
         # Grab the current sizes and linewidths to preserve them.
         self._sizes3d = self._sizes
         self._linewidths3d = self._linewidths
-        xs
->>>>>>> ./matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
-, ys, zs = self._offsets3d
+        xs, ys, zs = self._offsets3d
 
         # Sort the points based on z coordinates
         # Performance optimization: Create a sorted index array and reorder
         # points and point properties according to the index array
         self._z_markers_idx = slice(-1)
+>>>>>>> ./matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
         self._vzs = None
         self.stale = True
 
@@ -659,24 +663,26 @@ class Path3DCollection(PathCollection):
         # We need this check here to make sure we do not double-apply the depth
         #  based alpha shading when the edge color is "face" which means the
         #  edge colour should be identical to the face colour.
-        if cbook._str_equal
+        if cbook._str_equal(
 =======
         # We need this check here to make sure we do not double-apply the depth
         # based alpha shading when the edge color is "face" which means the
         # edge colour should be identical to the face colour.
-        if cbook._str_equal
+        if cbook._str_equal(
 >>>>>>> ./matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
-(self._edgecolors, 'face'):
-            return self.get_facecolor()
+self._edgecolors, 'face'):
+            return self.get_facecolor(
 <<<<<<< ./matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+)
 =======
+)
 >>>>>>> ./matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 <<<<<<< ./matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
-        return self._maybe_depth_shade_and_sort_colors
+        return self._maybe_depth_shade_and_sort_colors(
 =======
-        return self._maybe_depth_shade_and_sort_colors
+        return self._maybe_depth_shade_and_sort_colors(
 >>>>>>> ./matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
-(super().get_edgecolor())
+super().get_edgecolor())
 
 
 def patch_collection_2d_to_3d(col, zs=0, zdir='z', depthshade=True):
@@ -825,8 +831,6 @@ class Poly3DCollection(PolyCollection):
             # to the 3D versions.
             #
             # We hold the 3D versions in a fixed order (the order the user
-            # passed in) and sort the 2D version by view depth.
-            self.update_scalarmappable
 =======
         if self._A is not None:
             # force update of color mapping because we re-order them
@@ -834,23 +838,20 @@ class Poly3DCollection(PolyCollection):
             # this, but we will never port the color mapped values back
             # to the 3D versions.
             #
-            # We hold the 3D versions in a fixed order 
+            # We hold the 3D versions in a fixed order (the order the user
+            # passed in)
 >>>>>>> ./matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
-(
 <<<<<<< ./matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
-=======
-the order the user
             # passed in) and sort the 2D version by view depth.
-            copy_state = self._update_dict['array']
-            self.update_scalarmappable(
->>>>>>> ./matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
-)
-<<<<<<< ./matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+            self.update_scalarmappable()
             if self._face_is_mapped:
                 self._facecolor3d = self._facecolors
             if self._edge_is_mapped:
                 self._edgecolor3d = self._edgecolors
 =======
+ and sort the 2D version by view depth.
+            copy_state = self._update_dict['array']
+            self.update_scalarmappable()
             if copy_state:
                 if self._face_is_mapped:
                     self._facecolor3d = self._facecolors

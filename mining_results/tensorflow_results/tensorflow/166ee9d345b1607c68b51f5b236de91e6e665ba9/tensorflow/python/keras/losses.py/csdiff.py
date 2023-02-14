@@ -1637,8 +1637,13 @@ def log_cosh(y_true, y_pred):
 def categorical_crossentropy(y_true,
                              y_pred,
                              from_logits=False,
-                             label_smoothing=.0,
-                             axis=-1):
+<<<<<<< ./tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
+                             label_smoothing=.0)
+=======
+                             label_smoothing=0,
+                             axis=-1)
+>>>>>>> ./tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/right.py
+:
   """Computes the categorical crossentropy loss.
 
   Standalone usage:
@@ -1685,8 +1690,13 @@ def categorical_crossentropy(y_true,
 def _ragged_tensor_categorical_crossentropy(y_true,
                                             y_pred,
                                             from_logits=False,
-                                            label_smoothing=.0,
-                                            axis=-1):
+<<<<<<< ./tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
+                                            label_smoothing=.0)
+=======
+                                            label_smoothing=0,
+                                            axis=-1)
+>>>>>>> ./tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/right.py
+:
   """Implements support for handling RaggedTensors.
 
   Args:
@@ -1780,15 +1790,15 @@ def _ragged_tensor_sparse_categorical_crossentropy(y_true,
               'keras.losses.binary_crossentropy')
 @dispatch.add_dispatch_support
 def binary_crossentropy(y_true,
+<<<<<<< ./tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
+ y_pred, from_logits=False, label_smoothing=.0)
+=======
                         y_pred,
                         from_logits=False,
                         label_smoothing=0,
-<<<<<<< ./tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
- label_smoothing=.0
-=======
-                        axis=-1
+                        axis=-1)
 >>>>>>> ./tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/right.py
-):
+:
   """Computes the binary crossentropy loss.
 
   Standalone usage:
@@ -1833,8 +1843,13 @@ def binary_crossentropy(y_true,
 def _ragged_tensor_binary_crossentropy(y_true,
                                        y_pred,
                                        from_logits=False,
-                                       label_smoothing=.0,
-                                       axis=-1):
+<<<<<<< ./tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
+                                       label_smoothing=.0)
+=======
+                                       label_smoothing=0,
+                                       axis=-1)
+>>>>>>> ./tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/right.py
+:
   """Implements support for handling RaggedTensors.
 
   Args:

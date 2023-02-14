@@ -808,26 +808,36 @@ class Axis(martist.Artist):
         # Clear the callback registry for this axis, or it may "leak"
         self.callbacks = cbook.CallbackRegistry()
 
+<<<<<<< ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/left.py
         # whether the grids are on
         self._major_tick_kw['gridOn'] = (
+=======
+        # whether the grids are on
+        self._major_tick_kw['gridOn'] = (
+                mpl.rcParams['axes.grid'] and
+                mpl.rcParams['axes.grid.which'] in (
+>>>>>>> ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/right.py
 <<<<<<< ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/left.py
                 mpl.rcParams['axes.grid'] and
                 mpl.rcParams['axes.grid.which'] in ('both', 'major')
 =======
-                mpl.rcParams['axes.grid'] and
-                mpl.rcParams['axes.grid.which'] in ('both', 'major'
+'both', 'major')
 >>>>>>> ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/right.py
-))
+)
 <<<<<<< ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/left.py
         self._minor_tick_kw['gridOn'] = (
-                mpl.rcParams['axes.grid'] and
-                mpl.rcParams['axes.grid.which'] in 
 =======
-        self._minor_tick_kw['gridOn'] = 
->>>>>>> ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/right.py
-('both', 'minor')
+        self._minor_tick_kw['gridOn'] = (
                 mpl.rcParams['axes.grid'] and
-                mpl.rcParams['axes.grid.which'] in ('both', 'minor'))
+                mpl.rcParams['axes.grid.which'] in (
+>>>>>>> ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/right.py
+<<<<<<< ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/left.py
+                mpl.rcParams['axes.grid'] and
+                mpl.rcParams['axes.grid.which'] in ('both', 'minor')
+=======
+'both', 'minor')
+>>>>>>> ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/right.py
+)
         self.reset_ticks()
 
         self.converter = None
@@ -2272,9 +2282,22 @@ class XAxis(Axis):
         self.stale = True
 
     def get_tick_space(self):
+<<<<<<< ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/left.py
         ends = mtransforms.Bbox.from_bounds(0, 0, 1, 1)
+=======
+        ends = mtransforms.Bbox.from_bounds(
+>>>>>>> ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/right.py
+<<<<<<< ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/left.py
+        ends = ends.transformed(self.axes.transAxes -
+=======
+0, 0, 1, 1)
+>>>>>>> ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/right.py
+                                self.figure.dpi_scale_trans)
+<<<<<<< ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/left.py
+=======
         ends = ends.transformed(self.axes.transAxes -
                                 self.figure.dpi_scale_trans)
+>>>>>>> ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/right.py
         length = ends.width * 72
         # There is a heuristic here that the aspect ratio of tick text
         # is no more than 3:1
@@ -2534,9 +2557,22 @@ class YAxis(Axis):
         self.stale = True
 
     def get_tick_space(self):
+<<<<<<< ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/left.py
         ends = mtransforms.Bbox.from_bounds(0, 0, 1, 1)
+=======
+        ends = mtransforms.Bbox.from_bounds(
+>>>>>>> ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/right.py
+<<<<<<< ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/left.py
+        ends = ends.transformed(self.axes.transAxes -
+=======
+0, 0, 1, 1)
+>>>>>>> ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/right.py
+                                self.figure.dpi_scale_trans)
+<<<<<<< ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/left.py
+=======
         ends = ends.transformed(self.axes.transAxes -
                                 self.figure.dpi_scale_trans)
+>>>>>>> ./matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/right.py
         length = ends.height * 72
         # Having a spacing of at least 2 just looks good.
         size = self._get_tick_label_size('y') * 2

@@ -58,12 +58,12 @@ class SpiderMiddlewareManager(MiddlewareManager):
 
     def _evaluate_iterable(self, response, spider, iterable, exception_processor_index, recover_to):
 <<<<<<< ./scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
-            def _process_exception
+            def _process_exception(
 =======
         try:
 >>>>>>> ./scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
 <<<<<<< ./scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
-(ex):
+ex):
 =======
             for r in iterable:
                 yield r
@@ -95,11 +95,11 @@ class SpiderMiddlewareManager(MiddlewareManager):
             else:
                 return _evaluate_normal_iterable(iterable)
 
-        def process_spider_exception
+        def process_spider_exception(
 =======
-    def _process_spider_exception
+    def _process_spider_exception(
 >>>>>>> ./scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
-(self, response, spider, _failure, start_index=0):
+self, response, spider, _failure, start_index=0):
         exception = _failure.value
         # don't handle _InvalidOutput exception
         if isinstance(exception, _InvalidOutput):
@@ -129,11 +129,11 @@ class SpiderMiddlewareManager(MiddlewareManager):
                 iter_class = MutableAsyncChain
             else:
                 iter_class = MutableChain
-            recovered = iter_class
+            recovered = iter_class(
 =======
-        recovered = MutableChain
+        recovered = MutableChain(
 >>>>>>> ./scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
-()
+)
 
         method_list = islice(self.methods['process_spider_output'], start_index, None)
         for method_index, method in enumerate(method_list, start=start_index):
@@ -155,11 +155,11 @@ class SpiderMiddlewareManager(MiddlewareManager):
                 raise _InvalidOutput(msg)
 
 <<<<<<< ./scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
-            return iter_class
+            return iter_class(
 =======
-        return MutableChain
+        return MutableChain(
 >>>>>>> ./scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
-(result, recovered)
+result, recovered)
 
     def _process_callback_output(self, response, spider, result):
 <<<<<<< ./scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
@@ -167,18 +167,18 @@ class SpiderMiddlewareManager(MiddlewareManager):
                 iter_class = MutableAsyncChain
             else:
                 iter_class = MutableChain
-            recovered = iter_class
+            recovered = iter_class(
 =======
-        recovered = MutableChain
+        recovered = MutableChain(
 >>>>>>> ./scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
-()
+)
         result = self._evaluate_iterable(response, spider, result, 0, recovered)
 <<<<<<< ./scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
-            return iter_class
+            return iter_class(
 =======
-        return MutableChain
+        return MutableChain(
 >>>>>>> ./scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
-(self._process_spider_output(response, spider, result), recovered)
+self._process_spider_output(response, spider, result), recovered)
 
     def scrape_response(self, scrape_func, response, request, spider):
         def process_callback_output(result):

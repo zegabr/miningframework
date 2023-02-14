@@ -65,7 +65,6 @@ def has_flag(self, flagname):
             # https://github.com/pypa/setuptools/issues/2698
             if type(exc).__name__ != "CompileError":
                 raise
-            return False
 >>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setup.py/right.py
             # https://github.com/pypa/setuptools/issues/2698
             if type(exc).__name__ != "CompileError":

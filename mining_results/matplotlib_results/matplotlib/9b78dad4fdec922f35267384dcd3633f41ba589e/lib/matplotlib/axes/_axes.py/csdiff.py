@@ -2879,9 +2879,26 @@ class Axes(_AxesBase):
             _process_plot_format(markerfmt)
 
         if basefmt is None:
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
+            basefmt = (
+=======
             basefmt = (args[2] if len(args) > 2 else
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
+args[2] if len(args) > 2 else
+=======
                        "C2-" if rcParams["_internal.classic_mode"] else "C3-")
-        basestyle, basemarker, basecolor = _process_plot_format(basefmt)
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
+                       "C2-" if rcParams["_internal.classic_mode"] else "C3-")
+=======
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
+        basestyle,
+=======
+        basestyle,
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
+ basemarker, basecolor = _process_plot_format(basefmt)
 
         # New behaviour in 3.1 is to use a LineCollection for the stemlines
         if use_line_collection:
@@ -4616,18 +4633,18 @@ default: :rc:`scatter.edgecolors`
 <<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
 
         if marginals:
+            xorig = x.copy()
+            yorig = y.copy()
 =======
 
         if marginals:
-            xorig = x.copy()
-            yorig = y.copy
+            xorig = x.copy(
 >>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
 <<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
-            xorig = x.copy()
-            yorig = y.copy()
 
 =======
-()
+)
+            yorig = y.copy()
 
 >>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
         if xscale == 'log':
@@ -4818,14 +4835,29 @@ default: :rc:`scatter.edgecolors`
             C = np.ones(len(x))
 
         def coarse_bin(x, y, bin_edges):
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
             """
             Sort x-values into bins defined by *bin_edges*, then for all the
             corresponding y-values in each bin use *reduce_c_function* to
             compute the bin value.
             """
             nbins = len(bin_edges) - 1
+=======
+            """
+            Sort x-values into bins defined by *bin_edges*, then for all the
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
             # Sort x-values into bins
-            bin_idxs = np.searchsorted(bin_edges, x) - 1
+            bin_idxs = np.searchsorted(
+=======
+            corresponding y-values in each bin use *reduce_c_function* to
+            compute the bin value.
+            """
+            nbins = len(bin_edges) - 1
+            # Sort x-values into bins
+            bin_idxs = np.searchsorted(
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
+bin_edges, x) - 1
             mus = np.zeros(nbins) * np.nan
             for i in range(nbins):
                 # Get y-values for each bin
@@ -5818,14 +5850,16 @@ default: :rc:`scatter.edgecolors`
         collection = mcoll.PolyCollection(
 <<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
 =======
-            verts
 >>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
 <<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
-            verts, array=C, cmap=cmap, norm=norm, alpha=alpha, **kwargs
+            verts,
 =======
-, array=C, cmap=cmap, norm=norm, alpha=alpha, **kwargs
 >>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
-)
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
+ array=C, cmap=cmap, norm=norm, alpha=alpha, **kwargs)
+=======
+            verts, array=C, cmap=cmap, norm=norm, alpha=alpha, **kwargs)
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
         collection._scale_norm(norm, vmin, vmax)
         self._pcolor_grid_deprecation_helper()
 
@@ -6290,11 +6324,23 @@ default: :rc:`scatter.edgecolors`
         contours = mcontour.QuadContourSet(self, *args, **kwargs)
         self._request_autoscale_view()
         return contours
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
+
+    @_preprocess_data()
+=======
 
     @_preprocess_data()
     @docstring.dedent_interpd
+    def contourf(
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
+    @docstring.dedent_interpd
     def contourf(self, *args, **kwargs):
         """
+=======
+self, *args, **kwargs):
+        """
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
         Plot filled contours.
 
         Call signature::
@@ -7081,18 +7127,8 @@ such objects
         self.set_ylabel('Power Spectral Density (%s)' % psd_units)
         self.grid(True)
 
-        vmin,
-<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
- vmax = self.get_ybound()
-=======
- vmax = self.get_ybound(
->>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
-<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
-=======
-)
-        step = max
->>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
-        step = max(10 * int(10 * int(np.log10(vmax - vmin)), 1)
+        vmin, vmax = self.get_ybound()
+        step = max(10 * int(np.log10(vmax - vmin)), 1)
         ticks = np.arange(math.floor(vmin), math.ceil(vmax) + 1, step)
         self.set_yticks(ticks)
 
@@ -7194,17 +7230,7 @@ such objects
         self.grid(True)
 
         vmin, vmax = self.get_ybound()
-        step = max(10 * int(np.log10(
-<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
-vmax - vmin)
-=======
-vmax - vmin
->>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
-), 1)
-<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
-=======
-, 1)
->>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
+        step = max(10 * int(np.log10(vmax - vmin)), 1)
         ticks = np.arange(math.floor(vmin), math.ceil(vmax) + 1, step)
         self.set_yticks(ticks)
 

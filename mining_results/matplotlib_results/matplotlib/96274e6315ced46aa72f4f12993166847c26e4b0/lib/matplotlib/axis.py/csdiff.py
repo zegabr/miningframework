@@ -1387,14 +1387,8 @@ class Axis(martist.Artist):
         """
         if b is not None:
             if 'visible' in kwargs and bool(b) != bool(kwargs['visible']):
-<<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axis.py/left.py
                 raise ValueError(
                     "'b' and 'visible' specify inconsistent grid visibilities")
-=======
-                raise ValueError(
-                    "'b' and 'visible' specify inconsistent grid visibilities")
-            if kwargs and not b:  # something false-like but not None
->>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axis.py/right.py
             if kwargs and not b:  # something false-like but not None
                 _api.warn_external('First parameter to grid() is false, '
                                    'but line properties are supplied. The '

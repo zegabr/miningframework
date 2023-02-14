@@ -361,8 +361,6 @@ def show(*args, **kwargs):
     `.pyplot.savefig` afterwards would save a new and thus empty figure. This
     limitation of command order does not apply if the show is non-blocking or
     if you keep a reference to the figure and use `.Figure.savefig`.
-
-    **Auto-show in jupyter notebooks**
 >>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
 
 <<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
@@ -384,6 +382,8 @@ def show(*args, **kwargs):
     the end of every cell by default. Thus, you usually don't have to call it
     explicitly there.
 =======
+    **Auto-show in jupyter notebooks**
+
     The jupyter backends (activated via ``%matplotlib inline``,
     ``%matplotlib notebook``, or ``%matplotlib widget``), call ``show()`` at
     the end of every cell by default. Thus, you usually don't have to call it

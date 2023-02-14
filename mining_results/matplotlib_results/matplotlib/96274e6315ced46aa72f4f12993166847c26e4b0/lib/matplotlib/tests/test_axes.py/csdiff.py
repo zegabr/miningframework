@@ -4655,18 +4655,8 @@ def test_twin_spines_on_top():
 
 
 @pytest.mark.parametrize("grid_which, major_visible, minor_visible", [
-    ("both", True, True)
-<<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/left.py
-,
-    ("major", True, False)
-=======
-,
->>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/right.py
-<<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/left.py
-,
-=======
+    ("both", True, True),
     ("major", True, False),
->>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/right.py
     ("minor", False, True),
 ])
 def test_rcparam_grid_minor(grid_which, major_visible, minor_visible):
@@ -4675,25 +4665,11 @@ def test_rcparam_grid_minor(grid_which, major_visible, minor_visible):
     fig.canvas.draw()
     assert all(tick.gridline.get_visible() == major_visible
                for tick in ax.xaxis.majorTicks)
-    assert all
-<<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/left.py
-=======
-(tick.gridline.get_visible
->>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/right.py
-(tick.gridline.get_visible() == minor_visible
-               for tick in ax.xaxis.minorTicks)
-<<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/left.py
-
-
-def test_grid
-=======
-) == minor_visible
+    assert all(tick.gridline.get_visible() == minor_visible
                for tick in ax.xaxis.minorTicks)
 
 
-def test_grid
->>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/right.py
-():
+def test_grid():
     fig, ax = plt.subplots()
     ax.grid()
     fig.canvas.draw()
@@ -4701,9 +4677,19 @@ def test_grid
     ax.grid(visible=False)
     fig.canvas.draw()
     assert not ax.xaxis.majorTicks[0].gridline.get_visible()
+<<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/left.py
     ax.grid(visible=True)
     fig.canvas.draw()
+=======
+    ax.grid(visible=True)
+>>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/right.py
+    assert ax.xaxis.majorTicks[0].gridline.get_visible(
+<<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/left.py
+)
+=======
+    fig.canvas.draw()
     assert ax.xaxis.majorTicks[0].gridline.get_visible()
+>>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/right.py
     ax.grid()
     fig.canvas.draw()
     assert not ax.xaxis.majorTicks[0].gridline.get_visible()

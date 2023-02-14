@@ -471,26 +471,32 @@ class _ImageBase(martist.Artist, cm.ScalarMappable):
                 # do not run the vmin/vmax through the same pipeline we can
                 # have values close or equal to the boundaries end up on the
                 # wrong side.
-                vmin, vmax = self.norm.vmin,
 <<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/image.py/left.py
- self.norm.vmax
-                if vmin is np.ma.masked:
-                    vmin
+                vmin, vmax = self.norm.vmin, self.norm.vmax
 =======
- self.norm.vmax
->>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/image.py/right.py
-<<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/image.py/left.py
-, vmax = a_min, a_max
-=======
+                vmin, vmax = self.norm.vmin, self.norm.vmax
                 if vmin is np.ma.masked:
 >>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/image.py/right.py
 <<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/image.py/left.py
-                vrange = np.array
+                if vmin is np.ma.masked:
 =======
-                    vmin, vmax = a_min, a_max
-                vrange = np.array
+                    vmin,
 >>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/image.py/right.py
-([vmin, vmax], dtype=scaled_dtype)
+<<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/image.py/left.py
+                    vmin,
+=======
+ vmax = a_min, a_max
+>>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/image.py/right.py
+<<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/image.py/left.py
+ vmax = a_min, a_max
+=======
+                vrange = np.array(
+>>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/image.py/right.py
+<<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/image.py/left.py
+                vrange = np.array([vmin, vmax], dtype=scaled_dtype)
+=======
+[vmin, vmax], dtype=scaled_dtype)
+>>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/image.py/right.py
 
                 A_scaled -= a_min
                 vrange -= a_min

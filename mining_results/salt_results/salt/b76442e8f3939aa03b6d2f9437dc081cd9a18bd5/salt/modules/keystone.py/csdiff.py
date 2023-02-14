@@ -397,17 +397,26 @@ def endpoint_list(profile=None, **connection_args):
     ret = {}
 
     for endpoint in kstone.endpoints.list():
+<<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
         ret[endpoint.id] = {
-            value: getattr(endpoint, value)
+=======
+        ret[endpoint.id] = {
+            value: getattr(
+>>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
+<<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+            value: getattr(
+=======
+>>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
+endpoint, value)
             for value in dir(endpoint)
             if not value.startswith("_")
             and isinstance(getattr(endpoint, value), (
 <<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
-(str,)
+(str,),
 =======
-str
+str,
 >>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
-, dict, bool))
+ dict, bool))
         }
     return ret
 
@@ -570,26 +579,17 @@ def role_list(profile=None, **connection_args):
     kstone = auth(profile, **connection_args)
     ret = {}
     for role in kstone.roles.list():
-<<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
         ret[role.name] = {
-=======
-        ret[role.name] = {
-            value: getattr
->>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
-<<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
-            value: getattr
-=======
->>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
-(role, value)
+            value: getattr(role, value)
             for value in dir(role)
             if not value.startswith("_")
             and isinstance(getattr(role, value), (
 <<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
-(str,)
+(str,),
 =======
-str
+str,
 >>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
-, dict, bool))
+ dict, bool))
         }
     return ret
 
@@ -660,11 +660,11 @@ def service_get(service_id=None, name=None, profile=None, **connection_args):
         if not value.startswith("_")
         and isinstance(getattr(service, value), (
 <<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
-(str,)
+(str,),
 =======
-str
+str,
 >>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
-, dict, bool))
+ dict, bool))
     }
     return ret
 
@@ -688,11 +688,11 @@ def service_list(profile=None, **connection_args):
             if not value.startswith("_")
             and isinstance(getattr(service, value), (
 <<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
-(str,)
+(str,),
 =======
-str
+str,
 >>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
-, dict, bool))
+ dict, bool))
         }
     return ret
 
@@ -838,26 +838,17 @@ def tenant_get(tenant_id=None, name=None, profile=None, **connection_args):
     if not tenant_id:
         return {"Error": "Unable to resolve tenant id"}
     tenant = getattr(kstone, _TENANTS, None).get(tenant_id)
-<<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
     ret[tenant.name] = {
-=======
-    ret[tenant.name] = {
-        value: getattr
->>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
-<<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
-        value: getattr
-=======
->>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
-(tenant, value)
+        value: getattr(tenant, value)
         for value in dir(tenant)
         if not value.startswith("_")
         and isinstance(getattr(tenant, value), (
 <<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
-(str,)
+(str,),
 =======
-str
+str,
 >>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
-, dict, bool))
+ dict, bool))
     }
     return ret
 
@@ -911,17 +902,26 @@ def tenant_list(profile=None, **connection_args):
     ret = {}
 
     for tenant in getattr(kstone, _TENANTS, None).list():
+<<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
         ret[tenant.name] = {
-            value: getattr(tenant, value)
+=======
+        ret[tenant.name] = {
+            value: getattr(
+>>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
+<<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+            value: getattr(
+=======
+>>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
+tenant, value)
             for value in dir(tenant)
             if not value.startswith("_")
             and isinstance(getattr(tenant, value), (
 <<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
-(str,)
+(str,),
 =======
-str
+str,
 >>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
-, dict, bool))
+ dict, bool))
         }
     return ret
 
@@ -998,11 +998,11 @@ def tenant_update(
         if not value.startswith("_")
         and isinstance(getattr(updated, value), (
 <<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
-(str,)
+(str,),
 =======
-str
+str,
 >>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
-, dict, bool))
+ dict, bool))
     }
 
 
@@ -1100,11 +1100,11 @@ def user_list(profile=None, **connection_args):
             if not value.startswith("_")
             and isinstance(getattr(user, value, None), (
 <<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
-(str,)
+(str,),
 =======
-str
+str,
 >>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
-, dict, bool))
+ dict, bool))
         }
         tenant_id = getattr(user, "tenantId", None)
         if tenant_id:
@@ -1140,26 +1140,17 @@ def user_get(user_id=None, name=None, profile=None, **connection_args):
         log.error(msg)
         return {"Error": msg}
 
-<<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
     ret[user.name] = {
-=======
-    ret[user.name] = {
-        value: getattr
->>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
-<<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
-        value: getattr
-=======
->>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
-(user, value, None)
+        value: getattr(user, value, None)
         for value in dir(user)
         if not value.startswith("_")
         and isinstance(getattr(user, value, None), (
 <<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
-(str,)
+(str,),
 =======
-str
+str,
 >>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
-, dict, bool))
+ dict, bool))
     }
 
     tenant_id = getattr(user, "tenantId", None)
@@ -1437,7 +1428,18 @@ role_id=ce377245c4ec9b70e1c639c89e8cead4
             "id"
         )
     else:
-        user = next(iter(user_get(user_id, profile=profile, **connection_args).keys()))[
+        user = next(iter(user_get(user_id, profile=profile, **connection_args)
+<<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+.keys()
+=======
+.keys(
+>>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
+)
+<<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+)[
+=======
+))[
+>>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
             "name"
         ]
     if not user_id:
@@ -1508,7 +1510,18 @@ role_id=ce377245c4ec9b70e1c639c89e8cead4
             "id"
         )
     else:
-        user = next(iter(user_get(user_id, profile=profile, **connection_args).keys()))[
+        user = next(iter(user_get(user_id, profile=profile, **connection_args)
+<<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+.keys()
+=======
+.keys(
+>>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
+)
+<<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+)[
+=======
+))[
+>>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
             "name"
         ]
     if not user_id:
@@ -1585,17 +1598,26 @@ tenant_id=7167a092ece84bae8cead4bf9d15bb3b
 
     if _OS_IDENTITY_API_VERSION > 2:
         for role in kstone.roles.list(user=user_id, project=tenant_id):
+<<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
             ret[role.name] = {
-                value: getattr(role, value)
+=======
+            ret[role.name] = {
+                value: getattr(
+>>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
+<<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+                value: getattr(
+=======
+>>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
+role, value)
                 for value in dir(role)
                 if not value.startswith("_")
                 and isinstance(getattr(role, value), (
 <<<<<<< ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
-(str,)
+(str,),
 =======
-str
+str,
 >>>>>>> ./salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
-, dict, bool))
+ dict, bool))
             }
     else:
         for role in kstone.roles.roles_for_user(user=user_id, tenant=tenant_id):

@@ -608,23 +608,55 @@ class FreeType(SetupPackage):
 
         print(f"Building freetype in {src_path}")
         if sys.platform != 'win32':  # compilation on non-windows
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
             env = {
                 **env,
+=======
+            env = {
+                **env,
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
                 **{
                     var: value
-                    for var, value in sysconfig.get_config_vars().items()
+                    for var, value in sysconfig.get_config_vars().items(
+=======
+                **{
+                    var: value
+                    for var, value in sysconfig.get_config_vars().items(
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
+)
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+=======
+                    if var in {"CC", "CFLAGS", "CXX", "CXXFLAGS", "LD",
+                               "LDFLAGS"}
+                },
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
                     if var in {"CC", "CFLAGS", "CXX", "CXXFLAGS", "LD",
                                "LDFLAGS"}
                 },
             }
             env["CFLAGS"] = env.get("CFLAGS", "") + " -fPIC"
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
             configure = [
-                "./configure", "--with-zlib=no", "--with-bzip2=no",
+=======
+            }
+            env["CFLAGS"] = env.get(
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+                "./configure",
+=======
+"CFLAGS", "") + " -fPIC"
+            configure = [
+                "./configure",
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
+ "--with-zlib=no", "--with-bzip2=no",
                 "--with-png=no", "--with-harfbuzz=no", "--enable-static",
 <<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
                 "--disable-shared"
             ]
-            host = sysconfig.get_config_var
+            host = sysconfig.get_config_var('BUILD_GNU_TYPE')
+            if host is not None:  # May be unset on PyPy.
+                configure.append(
 =======
                 "--disable-shared"
             ]
@@ -632,13 +664,21 @@ class FreeType(SetupPackage):
             if host is not None:  # May be unset on PyPy.
 >>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
 <<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
-('BUILD_GNU_TYPE')
-            if host is not None:  # May be unset on PyPy.
-                configure.append(f"--host={host}")
+f"--host={host}")
 =======
-                configure.append(f"--host={host}")
+                configure.append(
 >>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
-            subprocess.check_call(configure, env=env, cwd=src_path)
+f"--host={host}")
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+            subprocess.check_call(
+=======
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
+<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+configure, env=env,
+=======
+            subprocess.check_call(configure, env=env,
+>>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
+ cwd=src_path)
             if 'GNUMAKE' in env:
                 make = env['GNUMAKE']
             elif 'MAKE' in env:

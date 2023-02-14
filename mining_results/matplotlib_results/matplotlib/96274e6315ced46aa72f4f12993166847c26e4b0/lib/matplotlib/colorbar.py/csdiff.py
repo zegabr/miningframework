@@ -787,12 +787,7 @@ class ColorbarBase:
             self._add_solids_patches(X, Y, C, mappable)
         else:
             self._add_solids_pcolormesh(X, Y, C)
-        self.dividers.set_segments(
-            np.dstack([X, Y])[1:-1] if self.drawedges else [])
-
-    def _add_solids_pcolormesh(self, X, Y, C):
 <<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/colorbar.py/left.py
-        _log.debug
 =======
         """
         Draw the colors using `~.axes.Axes.pcolormesh`;
@@ -802,9 +797,12 @@ class ColorbarBase:
             # trim the last one to be compatible with old behavior.
             C = C[:-1]
         if self.orientation == 'vertical':
-            args = 
 >>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/colorbar.py/right.py
-('Setting pcolormesh')
+        self.dividers.set_segments(
+            np.dstack([X, Y])[1:-1] if self.drawedges else [])
+
+    def _add_solids_pcolormesh(self, X, Y, C):
+        _log.debug('Setting pcolormesh')
         if C.shape[0] == Y.shape[0]:
             # trim the last one to be compatible with old behavior.
             C = C[:-1]

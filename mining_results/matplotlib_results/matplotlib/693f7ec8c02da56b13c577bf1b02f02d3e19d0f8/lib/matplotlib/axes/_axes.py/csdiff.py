@@ -2632,17 +2632,8 @@ class Axes(_AxesBase):
                     ha = 'right' if dat < 0 else 'left'  # also handles NaN
                     va = 'center'
 
-            if np.isnan
-<<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/left.py
-(dat):
-=======
-(dat):
+            if np.isnan(dat):
                 lbl = ''
->>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/right.py
-<<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/left.py
-                lbl = ''
-=======
->>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/right.py
 
             annotation = self.annotate(fmt % value if lbl is None else lbl,
                                        xy, xytext, textcoords="offset points",
@@ -3368,11 +3359,40 @@ class Axes(_AxesBase):
 
         # Eject any line-specific information from format string, as it's not
         # needed for bars or caps.
+<<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/left.py
         for key in ['marker', 'markersize', 'markerfacecolor',
                     'markeredgewidth', 'markeredgecolor', 'markevery',
+=======
+        for key in ['marker',
+>>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/right.py
+ 'markersize', 'markerfacecolor',
+<<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/left.py
                     'linestyle', 'fillstyle', 'drawstyle', 'dash_capstyle',
+=======
+>>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/right.py
+                    'markeredgewidth',
+<<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/left.py
+                    'dash_joinstyle',
+=======
+ 'markeredgecolor', 'markevery',
+>>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/right.py
+<<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/left.py
+ 'solid_capstyle', 'solid_joinstyle']:
+=======
+>>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/right.py
+<<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/left.py
+            base_style.pop(
+=======
+                    'linestyle',
+>>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/right.py
+<<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/left.py
+key,
+=======
+ 'fillstyle', 'drawstyle', 'dash_capstyle',
                     'dash_joinstyle', 'solid_capstyle', 'solid_joinstyle']:
-            base_style.pop(key, None)
+            base_style.pop(key,
+>>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/right.py
+ None)
 
         # Make the style dict for the line collections (the bars).
         eb_lines_style = {**base_style, 'color': ecolor}

@@ -1729,15 +1729,17 @@ default: %(va)s
         gridspec_kw = gridspec_kw or {}
         # special-case string input
         if isinstance(mosaic, str):
-            mosaic = self._normalize_grid_string(
 <<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
-mosaic)
-        # Only accept strict bools to allow a possible future API expansion.
-        _api.check_isinstance(bool, sharex=sharex, sharey=sharey
+            mosaic = self._normalize_grid_string(mosaic)
 =======
-mosaic
+            mosaic = self._normalize_grid_string(
 >>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
-)
+<<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+        # Only accept strict bools to allow a possible future API expansion.
+        _api.check_isinstance(bool, sharex=sharex, sharey=sharey)
+=======
+mosaic)
+>>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 
         def _make_array(inp):
             """
@@ -1848,21 +1850,16 @@ mosaic
                 this_level[(start_row, start_col)] = (name, slc, 'axes')
 
             # do the same thing for the nested mosaics (simpler because these
-            # can not be spans yet!
-<<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
-)
-            for 
-=======
-)
->>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
-<<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
-(j
-=======
-            for (j
->>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
-, k), nested_mosaic in nested.items():
+            # can not be spans yet!)
+            for (j, k), nested_mosaic in nested.items():
                 this_level[(j, k)] = (None, nested_mosaic, 'nested')
 
+<<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+            # now go through the things in this level and add them
+            # in order left-to-right top-to-bottom
+            for key in sorted(this_level):
+                name,
+=======
             # now go through the things in this level and add them
             # in order left-to-right top-to-bottom
             for key in sorted(this_level):
@@ -1876,20 +1873,29 @@ mosaic
                     if name in output:
                         raise ValueError(f"There are duplicate keys {name} "
                                          f"in the layout\n{mosaic!r}")
+>>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+<<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+ arg, method = this_level[key]
+=======
                     ax = self.add_subplot(
-                        gs[slc], **{'label': str(
-<<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
-name), **subplot_kw}
-=======
-name)
 >>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+                # we are doing some hokey function dispatch here based
+                # on the 'method' string stashed above to sort out if this
+                # element is an axes or a nested mosaic.
+                if method == 'axes':
 <<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
-                    
+                    slc = arg
+                    # add a single axes
+                    if name in output:
+                        raise ValueError(f"There are duplicate keys {name} "
+                                         f"in the layout\n{mosaic!r}")
+                    ax = self.add_subplot(
+                        gs[slc],
 =======
-, **subplot_kw}
-                    
+                        gs[slc],
 >>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
-)
+ **{'label': str(name), **subplot_kw}
+                    )
                     output[name] = ax
                 elif method == 'nested':
                     nested_mosaic = arg
@@ -1925,12 +1931,12 @@ mosaic))
                 ax.sharex(ax0)
                 ax._label_outer_xaxis()
             if sharey:
-                ax.sharey(ax0
+                ax.sharey(ax0)
+                ax._label_outer_yaxis(
 =======
-mosaic
+mosaic)
 >>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 )
-                ax._label_outer_yaxis()
         for k, ax in ret.items():
             if isinstance(k, str):
                 ax.set_label(k)
@@ -2048,21 +2054,21 @@ class SubFigure(FigureBase):
         dx = wr[self._subplotspec.colspan].sum() / wr.sum()
         dy = hr[self._subplotspec.rowspan].sum() / hr.sum()
         x0 = wr[:self._subplotspec.colspan.start].sum() / wr.sum()
+        y0 = 1 - hr[:self._subplotspec.rowspan.stop].sum()
 <<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
-        y0 = 1 - hr[:self._subplotspec.rowspan.stop].sum
+ / hr.sum(
 =======
-(wr[:self._subplotspec.colspan.start]) / np.sum(wr)
+:
+            x0 += np.sum(wr[:self._subplotspec.colspan.start]) / np.sum(wr)
 
         y0 = 0
-        if not self._subplotspec.is_last_row
->>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
-() / hr.sum(
-<<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
-=======
-hr[:self._subplotspec.rowspan.stop]) /
-                       np.sum
+        if not self._subplotspec.is_last_row(
 >>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 )
+<<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+=======
+np.sum(hr[:self._subplotspec.rowspan.stop]) /
+>>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
         if self.bbox_relative is None:
             self.bbox_relative = Bbox.from_bounds(x0, y0, dx, dy)
         else:

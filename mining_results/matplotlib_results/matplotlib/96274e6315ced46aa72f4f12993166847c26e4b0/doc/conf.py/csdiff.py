@@ -391,7 +391,9 @@ fontpkg = r"""
  \setmonofont{FreeMono}[
   Extension      = .otf,
   UprightFont    = *,
-  ItalicFont     = *Oblique
+  ItalicFont     = *Oblique,
+  BoldFont       = *Bold,
+  BoldItalicFont = *BoldOblique,
 =======
 
 # Keep babel usage also with xelatex (Sphinx default is polyglossia)
@@ -405,46 +407,41 @@ latex_elements['fontpkg'] = r'\setmainfont{DejaVu Serif}'
 # Additional stuff for the LaTeX preamble.
 latex_elements['preamble'] = r"""
 >>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
-,
+]}
+% needed for \mathbb (blackboard alphabet) to actually work
+\usepackage{unicode-math}
+\IfFontExistsTF{XITS Math}{
 <<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
-  BoldFont       = *Bold
+ \setmathfont{XITS Math}
+}{
+ \setmathfont{XITSMath-Regular}[
 =======
    \usepackage{expdlist}
    \let\latexdescription=\description
    \def\description{\latexdescription{}{} \breaklabel}
    % But expdlist old LaTeX package requires fixes:
-   % 1
+   % 1)
 >>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
 <<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
-,
-=======
-) remove extra space
->>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
-<<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
-  BoldItalicFont = *BoldOblique,
-]}
-% needed for \mathbb (blackboard alphabet) to actually work
-\usepackage{unicode-math}
-\IfFontExistsTF{XITS Math}{
- \setmathfont{XITS Math}
-}{
- \setmathfont{XITSMath-Regular}[
   Extension      = .otf,
+=======
+ remove extra space
+>>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
+<<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
 =======
    \usepackage{etoolbox}
    \makeatletter
    \patchcmd\@item{{\@breaklabel} }{{\@breaklabel}}{}{}
    \makeatother
-   % 2
+   % 2)
 >>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
+<<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
 ]}
 """
 latex_elements['fontpkg'] = fontpkg
 
 # Sphinx <1.8.0 or >=2.0.0 does this by default, but the 1.8.x series
-# did not for latex_engine = 'xelatex' (as it used Latin Modern font)
-<<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
-.
+# did not for latex_engine = 'xelatex' (as it used Latin Modern font).
 # We need this for code-blocks as FreeMono has wide glyphs.
 latex_elements['fvset'] = r'\fvset{fontsize=\small}'
 # Fix fancyhdr complaining about \headheight being too small
@@ -454,30 +451,30 @@ latex_elements['passoptionstopackages'] = r"""
 
 # Additional stuff for the LaTeX preamble.
 latex_elements['preamble'] = r"""
-   % One line per author on title page
-   \DeclareRobustCommand{\and}%
-     {\end{tabular}\kern-\tabcolsep\\\begin{tabular}[t]{c}}%
 =======
  fix bug in expdlist's way of breaking the line after long item label
 >>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
 <<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
+   % One line per author on title page
+   \DeclareRobustCommand{\and}%
+     {\end{tabular}\kern-\tabcolsep\\\begin{tabular}[t]{c}}%
    \usepackage{etoolbox}
    \AtBeginEnvironment{sphinxthebibliography}{\appendix\part{Appendices}}
    \usepackage{expdlist}
    \let\latexdescription=\description
    \def\description{\latexdescription{}{} \breaklabel}
    % But expdlist old LaTeX package requires fixes:
-   % 1
+   % 1) remove extra space
+   \makeatletter
+   \patchcmd\@item{{\@breaklabel} }{{\@breaklabel}}{}{}
+   \makeatother
+   % 2)
 =======
    \makeatletter
    \def\breaklabel{%
 >>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
 <<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
-) remove extra space
-   \makeatletter
-   \patchcmd\@item{{\@breaklabel} }{{\@breaklabel}}{}{}
-   \makeatother
-   % 2) fix bug in expdlist's way of breaking the line after long item label
+ fix bug in expdlist's way of breaking the line after long item label
    \makeatletter
    \def\breaklabel{%
        \def\@breaklabel{%

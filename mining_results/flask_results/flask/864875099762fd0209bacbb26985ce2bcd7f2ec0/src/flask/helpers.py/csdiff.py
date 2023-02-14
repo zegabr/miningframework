@@ -775,12 +775,41 @@ class locked_cached_property(werkzeug.utils.cached_property):
 
     def __set__(self, obj: object, value: t.Any) -> None:
         with self.lock:
+            super()
 <<<<<<< ./flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/helpers.py/left.py
-            super
+.__set__(obj,
 =======
-            value = fspath
+
+    @property
+    def static_folder(self):
+        """The absolute path to the configured static folder."""
+        if self._static_folder is not None:
+            return os.path.join(self.root_path, self._static_folder)
+
+    @static_folder.setter
+    def static_folder(self, value):
+        if value is not None:
+            value = fspath(value).rstrip(r"\/")
+        self._static_folder = value
+
+    @property
+    def static_url_path(self):
+        """The URL prefix that the static route will be accessible from.
+
+        If it was not configured during init, it is derived from
+        :attr:`static_folder`.
+        """
+        if self._static_url_path is not None:
+            return self._static_url_path
+
+        if self.static_folder is not None:
+            basename = os.path.basename(self.static_folder)
+            return ("/" + basename).rstrip("/")
+
+    @static_url_path.setter
+    def static_url_path(self,
 >>>>>>> ./flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/helpers.py/right.py
-().__set__(obj, value)
+ value)
 
     def __delete__(self, obj: object) -> None:
         with self.lock:

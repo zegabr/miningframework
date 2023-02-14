@@ -136,18 +136,12 @@ class TestStrCategoryLocator:
     @pytest.mark.parametrize("plotter", PLOT_LIST, ids=PLOT_IDS)
     def test_StrCategoryLocatorPlot(self, plotter):
 <<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/tests/test_category.py/left.py
-        ax = plt.figure
+        ax = plt.figure().subplots()
+        plotter(
 =======
-        plotter
+        plotter(
 >>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/tests/test_category.py/right.py
-(
-<<<<<<< ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/tests/test_category.py/left.py
-).subplots()
-        plotter(ax, [1, 2, 3], ["a"
-=======
-ax, [1, 2, 3], ["a"
->>>>>>> ./matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/tests/test_category.py/right.py
-, "b", "c"])
+ax, [1, 2, 3], ["a", "b", "c"])
         np.testing.assert_array_equal(ax.yaxis.major.locator(), range(3))
 
 

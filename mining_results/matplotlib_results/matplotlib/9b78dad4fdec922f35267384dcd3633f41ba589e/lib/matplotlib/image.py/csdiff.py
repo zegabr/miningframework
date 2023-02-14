@@ -523,33 +523,23 @@ class _ImageBase(martist.Artist, cm.ScalarMappable):
 <<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/left.py
                 # Block the norm from sending an update signal during the
                 # temporary vmin/vmax change
-                with self.norm.callbacks.blocked
+                with self.norm.callbacks.blocked(
 =======
                 # Block the norm from sending an update signal during the
                 # temporary vmin/vmax change
                 with self.norm.callbacks.blocked():
-                    with cbook._setattr_cm
+                    with cbook._setattr_cm(
 >>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/right.py
-(
+), \
+                     cbook._setattr_cm(
 <<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/left.py
-)
+self.norm, vmin=s_vmin, vmax=s_vmax)
 =======
-                                           vmin=s_vmin
+                                           vmin=s_vmin,
+                                           vmax=s_vmax,
+                                           )
 >>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/right.py
-, \
-                     cbook._setattr_cm
-<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/left.py
-(self.norm, vmin=s_vmin
-=======
-                                           vmax=s_vmax
->>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/right.py
-,
-<<<<<<< ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/left.py
- vmax=s_vmax
-=======
-                                           
->>>>>>> ./matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/right.py
-):
+:
                         output = self.norm(resampled_masked)
             else:
                 if A.ndim == 2:  # _interpolation_stage == 'rgba'

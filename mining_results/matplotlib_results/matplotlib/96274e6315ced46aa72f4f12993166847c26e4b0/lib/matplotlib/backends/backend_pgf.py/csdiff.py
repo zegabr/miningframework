@@ -306,6 +306,10 @@ class LatexManager:
             [self.texcommand, "-halt-on-error"],
             stdin=subprocess.PIPE, stdout=subprocess.PIPE,
             encoding="utf-8", cwd=self.tmpdir)
+<<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/left.py
+
+        def finalize_latex(
+=======
 
         def finalize_latex(latex):
             latex.kill()
@@ -313,22 +317,27 @@ class LatexManager:
 
         self._finalize_latex = weakref.finalize(
             self, finalize_latex, self.latex)
+>>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/right.py
+latex):
+            latex.kill()
+            latex.communicate()
+
+        self._finalize_latex = weakref.finalize(
+            self, finalize_latex, self.latex)
+<<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/left.py
         # write header with 'pgf_backend_query_start' token
         self._stdin_writeln(self._build_latex_header())
         # read all lines until our 'pgf_backend_query_start' token appears
         self._expect("*pgf_backend_query_start")
         self._expect_prompt()
-<<<<<<< ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/left.py
 
-    @_api.deprecated
-=======
-
-    @cbook.deprecated
->>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/right.py
-("3.3")
+    @_api.deprecated("3.3")
     def latex_stdin_utf8(self):
         return self.latex.stdin
 
+=======
+
+>>>>>>> ./matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/right.py
     def get_width_height_descent(self, text, prop):
         """
         Get the width, total height and descent for a text typeset by the
