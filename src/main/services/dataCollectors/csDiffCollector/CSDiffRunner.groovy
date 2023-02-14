@@ -1,13 +1,10 @@
 package services.dataCollectors.csDiffCollector
 
-import com.google.common.io.Files
-import org.apache.commons.io.FileUtils;
 import util.ProcessRunner;
 import services.util.Utils
 
 import java.nio.file.Path;
 import java.nio.file.Paths
-import java.nio.file.StandardCopyOption;
 
 public class CSDiffRunner {
     static final Path CS_DIFF_PATH = Paths.get("dependencies/csdiff_v3.sh")
@@ -17,7 +14,7 @@ public class CSDiffRunner {
      * @param languageSeparators
      */
     static void collectCSDiffResults(List<Path> mergeScenarios, String languageSeparators) {
-        mergeScenarios.parallelStream()
+        mergeScenarios.stream()
                 .forEach(mergeScenario -> runCSDiffForMergeScenario(languageSeparators, mergeScenario))
     }
 
