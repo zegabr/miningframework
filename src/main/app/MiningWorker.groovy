@@ -42,7 +42,7 @@ class MiningWorker implements Runnable {
                 def (mergeCommits, skipped) = project.getMergeCommits(arguments.getSinceDate(), arguments.getUntilDate())
                 for (mergeCommit in mergeCommits) {
                     try {
-                        if (commitFilter.applyFilter(project, mergeCommit)) {
+                        if (commitFilter.applyFilter(project, mergeCommit) && mergeCommit.getSHA().equals("9296df8c760461c97a59dff79689cb2490d2500c")) {
                             println "${project.getName()} - Merge commit: ${mergeCommit.getSHA()}"
 
                             runDataCollectors(project, mergeCommit)

@@ -5,6 +5,7 @@ import org.apache.commons.io.FileUtils;
 import util.ProcessRunner;
 import services.util.Utils
 
+import java.nio.charset.StandardCharsets
 import java.nio.file.Path;
 import java.nio.file.Paths
 import java.nio.file.StandardCopyOption;
@@ -17,7 +18,7 @@ public class CSDiffRunner {
      * @param languageSeparators
      */
     static void collectCSDiffResults(List<Path> mergeScenarios, String languageSeparators) {
-        mergeScenarios.parallelStream()
+        mergeScenarios.stream()
                 .forEach(mergeScenario -> runCSDiffForMergeScenario(languageSeparators, mergeScenario))
     }
 
@@ -31,6 +32,22 @@ public class CSDiffRunner {
 
     private static void runCSDiffProcess(String languageSeparators, Path leftFile, Path baseFile, Path rightFile) {
         Process csDiff = ProcessRunner.startProcess(buildCSDiffProcess(languageSeparators, leftFile, baseFile, rightFile))
+        try (BufferedReader inputStreamReader = new BufferedReader(new InputStreamReader(csDiff.getInputStream()))) {
+            StringBuilder outputBuilder = new StringBuilder();
+
+            // Read the output of the process line by line and append it to the StringBuilder
+            String line;
+            while ((line = inputStreamReader.readLine()) != null) {
+                outputBuilder.append(line).append(System.lineSeparator());
+            }
+
+            // Print the contents of the StringBuilder
+            System.out.println(outputBuilder.toString());
+        } catch (IOException e) {
+            // Handle any exceptions that may occur while reading the InputStream
+            e.printStackTrace();
+        }
+
 
         csDiff.waitFor()
     }

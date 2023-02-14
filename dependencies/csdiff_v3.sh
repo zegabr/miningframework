@@ -70,18 +70,19 @@ yourTempFile="${yourFile}_temp${fileExt}"
 add_dolar_sign_separators() {
     local inputFile="$1"
     awk -v seps="$(echo "${separators[@]}" | tr ' ' '\n')" '
+    # https://www.regular-expressions.info/charclass.html here is how to match any character. Only some of them need to be escaped
     BEGIN {
     split(seps, separators, "\n")
 
-      separatorString=""
+      separatorString="["
       for (i in separators) {
         separator = separators[i]
-        if (separator == "(" || separator == ")" || separator == "." || separator == "*" || separator == "^" || separator == "$" || separator == "[" || separator == "]") {
+        if (separator == "]" || separator == "\\" || separator == "^" || separator == "-") {
           separator = "\\" separator
         }
-        separatorString = separatorString separator "|"
+        separatorString = separatorString separator
       }
-      sub(/\|$/, "", separatorString)
+        separatorString = separatorString "]"
     }
     # also replacing = with $= to fix an issue with some python repos. this should be undone at the end
     {
