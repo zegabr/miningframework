@@ -31,6 +31,7 @@ get_relevant_csv(){
 
 for i in "${names[@]}"
 do
+    cd "$miningframework_path"/
     echo "removing last results"
     rm -rf "$results_path"/${i}_results/
 
@@ -65,7 +66,6 @@ do
       cd "$results_path"/${i}_results/${i}/
       echo "populating relevant.csv with only folders where csdiff != diff3"
       get_relevant_csv >> "$results_path"/relevant.csv
-      cd "$miningframework_path"/
     fi
 done
 
