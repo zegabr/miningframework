@@ -86,7 +86,7 @@ add_dolar_sign_separators() {
     # also replacing = with $= to fix an issue with some python repos. this should be undone at the end
     {
       line = $0
-      gsub(separatorString, "&\n$$$$$$$", line)
+      gsub(separatorString, "\n$$$$$$$&\n$$$$$$$", line)
       gsub("=", "$=", line)
       print line
     }
