@@ -67,73 +67,57 @@ myTempFile="${myFile}_temp${fileExt}"
 oldTempFile="${oldFile}_temp${fileExt}"
 yourTempFile="${yourFile}_temp${fileExt}"
 
-add_dolar_sign_separators() {
-    local inputFile="$1"
-    awk -v seps="$(echo "${separators[@]}" | tr ' ' '\n')" '
-    # https://www.regular-expressions.info/charclass.html here is how to match any character. Only some of them need to be escaped
-    BEGIN {
-    split(seps, separators, "\n")
+# Dynamically builds the sed command pipeline based on the number of synctatic separators provided
+# Build the base substitution script to be passed to the sed command
+sedScript=""
+for separator in "${separators[@]}"; do
+  escapedSeparator=$(printf '%s\n' "$separator" | sed 's/[\[\]\+\.\*\?^$]/\\&/g')
+  sedScript+="s/$escapedSeparator/\n\$\$\$\$\$\$\$$escapedSeparator\n\$\$\$\$\$\$\$/g;"
+done
 
-      separatorString="["
-      for (i in separators) {
-        separator = separators[i]
-        if (separator == "]" || separator == "\\" || separator == "^" || separator == "-") {
-          separator = "\\" separator
-        }
-        separatorString = separatorString separator
-      }
-        separatorString = separatorString "]"
-    }
-    # also replacing = with $= to fix an issue with some python repos. this should be undone at the end
-    {
-      line = $0
-      gsub(separatorString, "\n$$$$$$$&\n$$$$$$$", line)
-      gsub("=", "$=", line)
-      print line
-    }
-    ' "$inputFile"
-}
+# Perform the tokenization of the input file based on the provided separators
+sed -e "$sedScript" "$myFile" > "$myTempFile"
+sed -e "$sedScript" "$yourFile" > "$yourTempFile"
+sed -e "$sedScript" "$oldFile" > "$oldTempFile"
 
+# fix for bug that happens when strings like ======== appears in a multiline comment
+# this replace is undone at the end
+sed -i 's/=/\$=/g' "$myTempFile"
+sed -i 's/=/\$=/g' "$oldTempFile"
+sed -i 's/=/\$=/g' "$yourTempFile"
+
+
+# this is a bash translation of csdiff_python.py of this repo
 get_indentation_level() {
     local line=$1
     echo $(expr "$line" : ' *')
 }
 
 add_separators_at_indentation_changes() {
-    local inputFile="$1"
-    awk '
-    BEGIN {
-        last_identation_level = 0
-        last_line_is_empty = 1
-    }
-    {
-        current_identation_level = length($0) - length(gensub(/^[ \t]+/, "", "g", $0))
-        if (current_identation_level != last_identation_level && !last_line_is_empty) {
-            printf("$$$$$$$\n")
-        }
-        print
-
-        last_identation_level = current_identation_level
-        if (length($0) == 0 || $0 ~ /^[ \t]+$/) {
-            last_line_is_empty = 1
-        } else {
-            last_line_is_empty = 0
-        }
-    }
-    ' "$inputFile" > "$inputfile".tmp && mv "$inputfile".tmp "$inputFile"
+    last_identation_level=0
+    while IFS= read -r line; do
+        current_identation_level=$(get_indentation_level "$line")
+        if [[ $current_identation_level != $last_identation_level ]]; then
+            printf "\$\$\$\$\$\$\$\n"
+        fi
+        printf "%s\n" "$line"
+        last_identation_level=$current_identation_level
+    done
 }
 
-# Perform the tokenization of the input file based on the provided separators
-add_dolar_sign_separators "$myFile" > "$myTempFile"
-add_dolar_sign_separators "$yourFile" > "$yourTempFile"
-add_dolar_sign_separators "$oldFile" > "$oldTempFile"
-wait
+# run the script to consider identation and override the temporary files again
+add_separators_at_indentation_changes < "$myTempFile" > myOut
+cat myOut > "$myTempFile"
+rm myOut
 
-# run the script to consider identation
-add_separators_at_indentation_changes "$myTempFile"
-add_separators_at_indentation_changes "$oldTempFile"
-add_separators_at_indentation_changes "$yourTempFile"
-wait
+add_separators_at_indentation_changes < "$oldTempFile" > oldOut
+cat oldOut > "$oldTempFile"
+rm oldOut
+
+add_separators_at_indentation_changes < "$yourTempFile" > yourOut
+cat yourOut > "$yourTempFile"
+rm yourOut
+
 # Runs diff3 against the tokenized inputs, generating a tokenized merged file
 midMergedFile="${parentFolder}/mid_merged${fileExt}"
 diff3 -m -E "$myTempFile" "$oldTempFile" "$yourTempFile" > $midMergedFile
@@ -142,19 +126,13 @@ diff3 -m -E "$myTempFile" "$oldTempFile" "$yourTempFile" > $midMergedFile
 rm "$myTempFile"
 rm "$oldTempFile"
 rm "$yourTempFile"
-wait
 
 # Removes the tokens from the merged file, generating the final merged file
 mergedFile="${parentFolder}/merged${fileExt}"
-awk '
-  BEGIN {
-    RS="\n\\$\\$\\$\\$\\$\\$\\$"
-    ORS=""
-  }
-  {print}
-' $midMergedFile > "$mergedFile".tmp && mv "$mergedFile".tmp "$mergedFile"
+sed ':a;N;$!ba;s/\n\$\$\$\$\$\$\$//g' $midMergedFile > $mergedFile
+
+# Removes the tokenized merged file
 rm "$midMergedFile"
-wait
 
 # Get the names of left/base/right files
 ESCAPED_LEFT=$(printf '%s\n' "${myFile}" | sed -e 's/[\/&]/\\&/g')
@@ -165,10 +143,9 @@ ESCAPED_TEMP_LEFT=$(printf '%s\n' "$myTempFile" | sed -e 's/[\/&]/\\&/g')
 ESCAPED_TEMP_BASE=$(printf '%s\n' "$oldTempFile" | sed -e 's/[\/&]/\\&/g')
 ESCAPED_TEMP_RIGHT=$(printf '%s\n' "$yourTempFile" | sed -e 's/[\/&]/\\&/g')
 
-# # TODO: make this universal to other languages, here it will work with python
+# Fix the merged file line breaks that got messed up by the CSDiff algorithm.
+# TODO: make this universal to other languages, here it will work with python
 comment_string="#"
-
-# # Fix the merged file line breaks that got messed up by the CSDiff algorithm.
 sed -i -e "/^$comment_string/!s/\(<<<<<<< $ESCAPED_TEMP_LEFT\)\(.\+\)/\1\n\2/" $mergedFile
 sed -i -e "/^$comment_string/!s/\(<<<<<<< $ESCAPED_TEMP_BASE\)\(.\+\)/\1\n\2/" $mergedFile
 sed -i -e "/^$comment_string/!s/\(<<<<<<< $ESCAPED_TEMP_RIGHT\)\(.\+\)/\1\n\2/" $mergedFile
@@ -178,40 +155,14 @@ sed -i -e "/^$comment_string/!s/\(||||||| $ESCAPED_TEMP_RIGHT\)\(.\+\)/\1\n\2/" 
 sed -i -e "/^$comment_string/!s/\(>>>>>>> $ESCAPED_TEMP_RIGHT\)\(.\+\)/\1\n\2/" $mergedFile
 sed -i -e "/^$comment_string/!s/\(>>>>>>> $ESCAPED_TEMP_LEFT\)\(.\+\)/\1\n\2/" $mergedFile
 sed -i -e "/^$comment_string/!s/\(>>>>>>> $ESCAPED_TEMP_BASE\)\(.\+\)/\1\n\2/" $mergedFile
-sed -i -e '$a\ ' "$mergedFile"
-wait
-
-
-awk -v c_str="$comment_string" -v left="$ESCAPED_LEFT" -v base="$ESCAPED_BASE" -v right="$ESCAPED_RIGHT" \
-  -v t_left="$ESCAPED_TEMP_LEFT" -v t_base="$ESCAPED_TEMP_BASE" -v t_right="$ESCAPED_TEMP_RIGHT" '
-BEGIN {}
-{
-  if ($0 !~ "^" c_str) {
-    gsub(t_left, left, $0)
-    gsub(t_base, base, $0)
-    gsub(t_right, right, $0)
-  }
-  print $0
-}
-' "$mergedFile" > "$mergedFile".tmp && wait && mv "$mergedFile".tmp "$mergedFile"
-
 sed -i -e "/^$comment_string/!s/\(=======\)\(.\+\)/\1\n\2/" $mergedFile
+sed -i -e "/^$comment_string/!s/$ESCAPED_TEMP_LEFT/$ESCAPED_LEFT/g" $mergedFile
+sed -i -e "/^$comment_string/!s/$ESCAPED_TEMP_BASE/$ESCAPED_BASE/g" $mergedFile
+sed -i -e "/^$comment_string/!s/$ESCAPED_TEMP_RIGHT/$ESCAPED_RIGHT/g" $mergedFile
+sed -i -e "/^$comment_string/!s/=======/\n=======/" $mergedFile
+sed -i -e "/^$comment_string/!s/>>>>>>>/\n>>>>>>>/" $mergedFile
 sed -i -e :a -e '/^\n*$/{$d;N;ba' -e '}' "$mergedFile"
-wait
-
-# undoing replacement made at the beginning this should be made only after processing the "=======" strings above
-awk '
-{
-  gsub("\\$=", "=", $0)
-  print $0
-}
-' "$mergedFile" > "$mergedFile".tmp && wait && mv "$mergedFile".tmp "$mergedFile"
-
-# remove last empty line (at some point in this script we are inserting a new one)
-# TODO: find where we are inserting a new line to csdiff, treat this case ahd remove this code below
-if [ -z "$(tail -c 1 "$mergedFile")" ]; then
-    sed -i '$ d' "$mergedFile"
-fi
+sed -i 's/\$=/=/g' "$mergedFile"
 
 mv "$mergedFile" "${parentFolder}/csdiff${fileExt}"
 
