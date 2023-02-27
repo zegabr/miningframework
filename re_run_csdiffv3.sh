@@ -8,7 +8,7 @@ find . -type d -exec bash -c '
                 if [ $? -eq 1 ]; then
                     # re-run csdiff in the folder
                     printf "running csdiff again for %s\n" "$d"
-                    bash /home/ze/miningframework/dependencies/csdiff_v3.sh -s "( ) , :" "$d"/left.py "$d"/base.py "$d"/right.py
+                    bash /home/ze/miningframework/dependencies/csdiff_v3.sh -s "( , :" "$d"/left.py "$d"/base.py "$d"/right.py
                 fi
             fi
         fi
