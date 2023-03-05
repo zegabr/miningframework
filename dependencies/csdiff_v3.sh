@@ -121,6 +121,17 @@ add_separators_at_indentation_changes() {
     ' "$inputFile" > "$inputfile".tmp && mv "$inputfile".tmp "$inputFile"
 }
 
+remove_duplicated_separators() {
+    local inputFile="$1"
+    awk '
+    NR==1 {lastline=$0}
+    /$$$$$$$/{
+    if (lastline != $0)
+        {print}
+    }
+    {lastline=$0}' "$inputFile" > "$inputfile".tmp && mv "$inputfile".tmp "$inputFile"
+}
+
 # Perform the tokenization of the input file based on the provided separators
 add_dolar_sign_separators "$myFile" > "$myTempFile"
 add_dolar_sign_separators "$yourFile" > "$yourTempFile"
@@ -132,6 +143,12 @@ add_separators_at_indentation_changes "$myTempFile"
 add_separators_at_indentation_changes "$oldTempFile"
 add_separators_at_indentation_changes "$yourTempFile"
 wait
+
+# fix different number of lines separating between same code block
+# this will reduce number of conflicts between same content
+remove_duplicated_separators "$myTempFile"
+remove_duplicated_separators "$oldTempFile"
+remove_duplicated_separators "$yourTempFile"
 
 # Runs diff3 against the tokenized inputs, generating a tokenized merged file
 midMergedFile="${parentFolder}/mid_merged${fileExt}"
