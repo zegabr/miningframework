@@ -13,9 +13,9 @@ find . -type d -exec bash -c '
             elif [ -e "$d/csdiff.py" -a -e "$d/diff3.py" ] ; then
 
                 # delete folders that has csdiff == diff3
-                if cmp -s <(grep -v '^$' "$d/csdiff.py") <(grep -v '^$' "$d/diff3.py"); then
+                if cmp --silent <(grep -v '^\s*$' $d/csdiff.py) <(grep -v '^\s*$' $d/diff3.py); then
                     echo "deleting $d as it has csdiff == diff3"
-                    rm -r "$d" &
+                    # rm -r "$d" &
                 fi
             fi
         fi

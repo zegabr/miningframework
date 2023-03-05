@@ -2,7 +2,8 @@
 
 ./gradlew assemble
 
-names=(matplotlib tensorflow certbot flask ipython requests salt scrapy sentry tornado)
+names=(flask)
+# matplotlib tensorflow certbot  ipython requests salt scrapy sentry tornado
 miningframework_path=$(pwd)
 results_path="$miningframework_path/mining_results"
 

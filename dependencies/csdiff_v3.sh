@@ -124,10 +124,11 @@ add_separators_at_indentation_changes() {
 remove_duplicated_separators() {
     local inputFile="$1"
     awk '
-    NR==1 {lastline=$0}
-    /$$$$$$$/{
-    if (lastline != $0)
-        {print}
+    BEGIN {lastline = "$$$$$$$"}
+    {
+        if ($0 != lastline || lastline != "$$$$$$$" ) {
+            {print}
+        }
     }
     {lastline=$0}' "$inputFile" > "$inputfile".tmp && mv "$inputfile".tmp "$inputFile"
 }
@@ -146,9 +147,10 @@ wait
 
 # fix different number of lines separating between same code block
 # this will reduce number of conflicts between same content
-remove_duplicated_separators "$myTempFile"
-remove_duplicated_separators "$oldTempFile"
-remove_duplicated_separators "$yourTempFile"
+# remove_duplicated_separators "$myTempFile"
+# remove_duplicated_separators "$oldTempFile"
+# remove_duplicated_separators "$yourTempFile"
+# wait
 
 # Runs diff3 against the tokenized inputs, generating a tokenized merged file
 midMergedFile="${parentFolder}/mid_merged${fileExt}"
