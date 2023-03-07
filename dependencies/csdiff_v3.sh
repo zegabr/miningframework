@@ -93,11 +93,6 @@ add_dolar_sign_separators() {
     ' "$inputFile"
 }
 
-get_indentation_level() {
-    local line=$1
-    echo $(expr "$line" : ' *')
-}
-
 add_separators_at_indentation_changes() {
     local inputFile="$1"
     awk '
