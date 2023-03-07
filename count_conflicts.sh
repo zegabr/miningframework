@@ -36,8 +36,8 @@ for dir in $(find . -name "csdiff.py" -type f | xargs dirname | sort | uniq); do
   fi
 done
 
-echo "csdiff with conflicts = " $csdiff_files_with_conflicts
-echo "diff3 with conflicts = " $diff3_files_with_conflicts
+echo "csdiff files with conflicts = " $csdiff_files_with_conflicts
+echo "diff3 files with conflicts = " $diff3_files_with_conflicts
 echo "csdiff conflicts = " $csdiff_conflicts
 echo "diff3 conflicts = " $diff3_conflicts
 echo "csdiff files different than diff3 and equal to merge =" $files_with_csdiff_different_than_diff3_and_equal_to_merge
