@@ -1,3 +1,3 @@
-def to_string(l: List) -> str:
+def to_string(l: List[str]) -> str:
     if len(l) == 0: return ""
-    return ",".join(str(item) for item in l)
+    return "..".join(l)
