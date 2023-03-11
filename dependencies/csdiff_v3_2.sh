@@ -101,7 +101,7 @@ add_dolar_sign_separators() {
         }
 
         # fix = character issue for some python files with big comments (this is undone in the end)
-        gsub("=", "$=", line)
+        gsub("=", "$=", output)
         # print the modified line
         print output
     }
