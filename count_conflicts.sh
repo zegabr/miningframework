@@ -42,3 +42,19 @@ echo "diff3 files with conflicts = " $diff3_files_with_conflicts
 echo "csdiff conflicts = " $csdiff_conflicts
 echo "diff3 conflicts = " $diff3_conflicts
 echo "csdiff files different than diff3 and equal to merge =" $files_with_csdiff_different_than_diff3_and_equal_to_merge
+
+echo
+# Set the directory to search in (defaults to current directory)
+DIR=${1:-.}
+
+# Search for the strings A, B, C, and D and count the number of matches
+COUNTaFP=$(rg -c "YYYaFPYYY" "$DIR" | awk -F ':' '{sum += $2} END {print sum}')
+COUNTaFN=$(rg -c "YYYaFNYYY" "$DIR" | awk -F ':' '{sum += $2} END {print sum}')
+COUNTCR=$(rg -c "YYYCRYYY" "$DIR" | awk -F ':' '{sum += $2} END {print sum}')
+COUNTdiff3FP=$(rg -c "YYYdiff3FPYYY" "$DIR" | awk -F ':' '{sum += $2} END {print sum}')
+
+# Print the results
+echo "aFP: $COUNTaFP"
+echo "aFN: $COUNTaFN"
+echo "conflitos resolvidos: $COUNTCR"
+echo "diff3 FPs: $COUNTdiff3FP"
