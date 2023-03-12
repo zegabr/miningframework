@@ -31,6 +31,7 @@ for dir in $(find . -name "csdiff.py" -type f | xargs dirname | sort | uniq); do
   if [ $? -ne 0 ]; then
     cmp --silent <(grep -v '^\s*$' $dir/csdiff.py) <(grep -v '^\s*$' $dir/merge.py)
     if [ $? -eq 0 ]; then
+        echo "$dir"
       files_with_csdiff_different_than_diff3_and_equal_to_merge=$((files_with_csdiff_different_than_diff3_and_equal_to_merge + 1))
     fi
   fi
