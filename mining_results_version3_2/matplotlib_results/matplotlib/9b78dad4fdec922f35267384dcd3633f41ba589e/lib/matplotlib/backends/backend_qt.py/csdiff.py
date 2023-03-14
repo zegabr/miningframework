@@ -335,7 +335,8 @@ class FigureCanvasQT(QtWidgets.QWidget, FigureCanvasBase):
         if steps:
             FigureCanvasBase.scroll_event(
                 self, x, y, steps, guiEvent=event)
-
+# CaFP
+# CaFP
     def keyPressEvent(self, event):
         key = self._get_key(event)
         if key is not None:
@@ -620,7 +621,8 @@ class FigureManagerQT(FigureManagerBase):
         extra_height = self.window.height() - self.canvas.height()
         self.canvas.resize(width, height)
         self.window.resize(width + extra_width, height + extra_height)
-
+# CaFP
+# CaFP
     def show(self):
         self.window.show()
         if mpl.rcParams['figure.raise_window']:

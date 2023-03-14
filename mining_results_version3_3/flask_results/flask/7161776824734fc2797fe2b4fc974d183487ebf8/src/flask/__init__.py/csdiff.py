@@ -50,3 +50,4 @@ __version__ = "
 2.0.2.dev0
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/flask_results/flask/7161776824734fc2797fe2b4fc974d183487ebf8/src/flask/__init__.py/right.py
 "
+# CReduzido

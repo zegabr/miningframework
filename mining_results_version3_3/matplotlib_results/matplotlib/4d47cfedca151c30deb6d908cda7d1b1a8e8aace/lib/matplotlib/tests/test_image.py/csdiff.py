@@ -1337,7 +1337,15 @@ vmin=1, vmax=data.max(
     cmap = plt.get_cmap('viridis').with_extremes(under='w')
     ax.imshow(data, norm=colors.Normalize(vmin=1, vmax=data.max()),
               interpolation='nearest', cmap=cmap)
-
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
 
 @check_figures_equal()
 def test_spy_box(fig_test, fig_ref):

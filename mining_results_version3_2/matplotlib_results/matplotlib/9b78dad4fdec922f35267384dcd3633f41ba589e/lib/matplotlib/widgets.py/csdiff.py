@@ -1704,7 +1704,7 @@ class MultiCursor(Widget):
 =======
         Use blitting for faster drawing if supported by the backend.
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
-
+# CReduzido
     horizOn : bool, default: False
         Whether to draw the horizontal line.
 
@@ -2295,7 +2295,8 @@ self):
         else:
             return ()
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
-
+# CaFP
+# CaFP
     def _set_cursor(self, enabled):
         """Update the canvas cursor based on direction of the selector."""
         if enabled:
@@ -2896,6 +2897,9 @@ class RectangleSelector(_SelectorWidget):
                 'markeredgecolor': 
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
 (self._props or {}).get(
+# CaFP
+# CaFP
+
                     'edgecolor', 'black'),
                 **cbook.normalize_kwargs(handle_props, Line2D)}
 
@@ -3144,6 +3148,10 @@ class RectangleSelector(_SelectorWidget):
                     if self._active_handle in ['N', 'S'] + self._corner_order:
                         y1 = event.ydata
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
+# CaFP
+# CaFP
+# CaFP
+# CaFP
 
         # move existing shape
         elif (self._active_handle == 'C' or
@@ -3258,6 +3266,9 @@ class RectangleSelector(_SelectorWidget):
             self._corner_handles.set_data
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
 (*self.corners)
+# CaFP
+# CaFP
+
             self._edge_handles.set_data(*self.edge_centers)
             self._center_handle.set_data(*self.center)
         self.set_visible(self.visible)

@@ -626,3 +626,4 @@ matplotlib.__version__)
                 f"/{tag}/lib/{fn}{linespec}")
 else:
     extensions.append('sphinx.ext.viewcode')
+# CReduzido

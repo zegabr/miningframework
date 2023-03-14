@@ -230,6 +230,7 @@ def test_interruptible_core_debugger():
 
     tracer_orig = sys.gettrace()
     try:
+        # CReduzido
 <<<<<<< /home/ze/miningframework/mining_results_version3_3/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/left.py
         with patch.object
 =======

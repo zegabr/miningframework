@@ -15,6 +15,7 @@ click >= 7.1.2
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/flask_results/flask/1ce0f774c947ee39924cf6604e444b23c51e4cec/setup.py/right.py
 ",
     ],
+    # CReduzido
     extras_require={
         "async": ["asgiref >= 3.2"],
         "dotenv": ["python-dotenv"],

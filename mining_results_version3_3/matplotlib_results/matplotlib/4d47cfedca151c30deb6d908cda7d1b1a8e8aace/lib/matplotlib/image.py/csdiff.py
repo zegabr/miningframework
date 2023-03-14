@@ -545,6 +545,7 @@ class _ImageBase(martist.Artist, cm.ScalarMappable):
 =======
                 with cbook._setattr_cm
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/image.py/right.py
+# CReduzido
 (self.norm,
                                            vmin=s_vmin,
                                            vmax=s_vmax,

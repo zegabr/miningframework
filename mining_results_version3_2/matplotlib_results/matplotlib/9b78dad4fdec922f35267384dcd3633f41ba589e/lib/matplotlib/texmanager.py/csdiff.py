@@ -257,6 +257,8 @@ class TexManager:
         basefile = self.get_basefile(tex, fontsize)
         dvifile = '%s.dvi' % basefile
         if not os.path.exists(dvifile):
+# CaFP
+# CaFP
 <<<<<<< /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/texmanager.py/left.py
             texfile = Path(self.make_tex
 =======

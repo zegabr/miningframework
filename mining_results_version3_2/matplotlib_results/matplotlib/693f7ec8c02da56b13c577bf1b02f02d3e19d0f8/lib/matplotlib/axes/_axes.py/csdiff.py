@@ -2657,6 +2657,10 @@ class Axes(_AxesBase):
             if np.isnan(dat):
                 lbl = ''
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/right.py
+# CaFP
+# CaFP
+# CaFP
+# CaFP
 
             annotation = self.annotate(fmt % value if lbl is None else lbl,
                                        xy, xytext, textcoords="offset points",
@@ -3404,6 +3408,10 @@ class Axes(_AxesBase):
 =======
             base_style.pop(key, None)
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/right.py
+# CaFP
+# CaFP
+# CaFP
+# CaFP
 
         # Make the style dict for the line collections (the bars).
         eb_lines_style = {**base_style, 'color': ecolor}

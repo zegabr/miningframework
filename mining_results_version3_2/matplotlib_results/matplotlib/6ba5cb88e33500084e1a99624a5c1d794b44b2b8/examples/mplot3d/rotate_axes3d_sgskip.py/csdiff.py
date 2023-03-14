@@ -50,6 +50,6 @@ elev, azim, roll)
 30, angle, 0)
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/6ba5cb88e33500084e1a99624a5c1d794b44b2b8/examples/mplot3d/rotate_axes3d_sgskip.py/right.py
     plt.title('Elevation: %d°, Azimuth: %d°, Roll: %d°' % (elev, azim, roll))
-
+# CReduzido
     plt.draw()
     plt.pause(.001)

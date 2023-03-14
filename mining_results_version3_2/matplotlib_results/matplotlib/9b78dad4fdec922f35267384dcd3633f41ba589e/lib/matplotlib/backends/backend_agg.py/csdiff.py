@@ -162,6 +162,8 @@ class RendererAgg(RendererBase):
                         "(rcParams['path.simplify_threshold'] = "
                         f"{mpl.rcParams['path.simplify_threshold']:.2f} by "
                         "
+# CaFP
+# CaFP
 <<<<<<< /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
 default and path.simplify_threshold = "
                         f
@@ -235,7 +237,8 @@ default and path.simplify_threshold = "
 
                 raise OverflowError(msg) from None
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
-
+# CaFP
+# CaFP
     def draw_mathtext(self, gc, x, y, s, prop, angle):
         """Draw mathtext using :mod:`matplotlib.mathtext`."""
         ox, oy, width, height, descent, font_image, used_characters = \

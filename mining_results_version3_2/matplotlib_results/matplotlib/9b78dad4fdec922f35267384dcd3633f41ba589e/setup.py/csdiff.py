@@ -58,6 +58,7 @@ def has_flag(self, flagname):
         f.write('int main (int argc, char **argv) { return 0; }')
         try:
             self.compile([f.name], extra_postargs=[flagname])
+            # CaFP
 <<<<<<< /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setup.py/left.py
         except Exception as exc:
 =======

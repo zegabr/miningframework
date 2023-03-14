@@ -648,7 +648,8 @@ class Axes3D(Axes):
                 scalez = False
         self._request_autoscale_view(tight=tight, scalex=scalex, scaley=scaley,
                                      scalez=scalez)
-
+# CaFP
+# CaFP
     def auto_scale_xyz(self, X, Y, Z=None, had_data=None):
         # This updates the bounding boxes as to keep a record as to what the
         # minimum sized rectangular volume holds the data.

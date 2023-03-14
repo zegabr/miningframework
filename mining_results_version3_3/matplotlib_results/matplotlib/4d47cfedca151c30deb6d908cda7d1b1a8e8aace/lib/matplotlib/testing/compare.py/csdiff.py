@@ -160,6 +160,9 @@ GS<", b"GS>
             stack = self._read_until
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/testing/compare.py/right.py
 (b">")
+# CaFP
+# CaFP
+# CaFP
         if stack or not os.path.exists(dest):
             stack_size = int(stack[:-1]) if stack else 0
             self._proc.stdin.write(b"pop\n" * stack_size)

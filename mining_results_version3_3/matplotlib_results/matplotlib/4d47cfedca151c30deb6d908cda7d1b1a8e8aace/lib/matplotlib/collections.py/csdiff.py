@@ -1482,6 +1482,8 @@ class LineCollection(Collection):
                 in path.iter_segments
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/collections.py/right.py
 (simplify=False)
+# CaFP
+# CaFP
             ]
             vertices = np.asarray(vertices)
             segments.append(vertices)

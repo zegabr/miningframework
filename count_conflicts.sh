@@ -31,7 +31,7 @@ for dir in $(find . -name "csdiff.py" -type f | xargs dirname | sort | uniq); do
   if [ $? -ne 0 ]; then
     cmp --silent <(grep -v '^\s*$' $dir/csdiff.py) <(grep -v '^\s*$' $dir/merge.py)
     if [ $? -eq 0 ]; then
-        echo "$dir"
+        # echo "$dir"
       files_with_csdiff_different_than_diff3_and_equal_to_merge=$((files_with_csdiff_different_than_diff3_and_equal_to_merge + 1))
     fi
   fi
@@ -48,13 +48,15 @@ echo
 DIR=${1:-.}
 
 # Search for the strings A, B, C, and D and count the number of matches
-COUNTaFP=$(rg -c "YYYaFPYYY" "$DIR" | awk -F ':' '{sum += $2} END {print sum}')
-COUNTaFN=$(rg -c "YYYaFNYYY" "$DIR" | awk -F ':' '{sum += $2} END {print sum}')
-COUNTCR=$(rg -c "YYYCRYYY" "$DIR" | awk -F ':' '{sum += $2} END {print sum}')
-COUNTdiff3FP=$(rg -c "YYYdiff3FPYYY" "$DIR" | awk -F ':' '{sum += $2} END {print sum}')
+COUNTaFP=$(rg -c "CaFP" "$DIR" | awk -F ':' '{sum += $2} END {print sum}')
+COUNTaFN=$(rg -c "CaFN" "$DIR" | awk -F ':' '{sum += $2} END {print sum}')
+COUNTCReduzido=$(rg -c "CReduzido" "$DIR" | awk -F ':' '{sum += $2} END {print sum}')
+COUNTCResolvido=$(rg -c "CResolvido" "$DIR" | awk -F ':' '{sum += $2} END {print sum}')
+COUNTdiff3FP=$(rg -c "D3FP" "$DIR" | awk -F ':' '{sum += $2} END {print sum}')
 
 # Print the results
-echo "aFP: $COUNTaFP"
-echo "aFN: $COUNTaFN"
-echo "conflitos resolvidos: $COUNTCR"
-echo "diff3 FPs: $COUNTdiff3FP"
+# echo "aFP: $COUNTaFP"
+# echo "aFN: $COUNTaFN"
+# echo "diff3 FPs: $COUNTdiff3FP"
+# echo "conflitos reduzidos: $COUNTCReduzido"
+# echo "conflitos resolvidos: $COUNTCResolvido"

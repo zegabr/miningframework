@@ -352,7 +352,7 @@ class FigureManagerGTK3(FigureManagerBase):
 =======
 window_icon)
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
-
+# CReduzido
         self.vbox = Gtk.Box()
         self.vbox.set_property("orientation", Gtk.Orientation.VERTICAL)
         self.window.add(self.vbox)
@@ -560,7 +560,7 @@ class NavigationToolbar2GTK3(_NavigationToolbar2GTK, Gtk.Toolbar):
 e), parent=self)
 
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
-
+# CReduzido
 class ToolbarGTK3(ToolContainerBase, Gtk.Box):
     _icon_extension = '-symbolic.svg'
 

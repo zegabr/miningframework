@@ -1656,6 +1656,7 @@ self, mosaic, *, sharex=False, sharey=False,
 self, mosaic, *, subplot_kw=None, gridspec_kw=None,
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
                        subplot_kw=None, gridspec_kw=None, empty_sentinel='.'):
+                       # CReduzido
         """
         Build a layout of Axes based on ASCII art or nested lists.
 
@@ -1752,6 +1753,7 @@ bool, sharex=sharex, sharey=sharey)
 =======
 mosaic)
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+                       # CReduzido
 
         def _make_array(inp):
             """
@@ -1897,6 +1899,8 @@ None, nested_mosaic, 'nested')
                     slc = arg
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
                     # add a single axes
+                    # CaFP
+                    # CaFP
                     if name in output:
                         raise ValueError(f"There are duplicate keys {name} "
                                          f"in the layout\n{mosaic!r}")
@@ -1950,6 +1954,7 @@ gs, mosaic, *_identify_keys_and_nested
 mosaic))
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
         for k, ax in ret.items():
+            # CReduzido
             if isinstance(k, str):
                 ax.set_label(k)
         return ret
@@ -2077,6 +2082,7 @@ wr[:self._subplotspec.colspan.start]) / np.sum(wr)
             y0 += 1 - (np.sum(hr[:self._subplotspec.rowspan.stop]) /
                        np.sum(hr))
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+        # CReduzido
         if self.bbox_relative is None:
             self.bbox_relative = Bbox.from_bounds(x0, y0, dx, dy)
         else:

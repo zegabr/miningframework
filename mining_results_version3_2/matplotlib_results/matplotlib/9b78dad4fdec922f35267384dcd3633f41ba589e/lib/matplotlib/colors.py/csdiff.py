@@ -1130,6 +1130,8 @@ class Normalize:
         """
         self._vmin = _sanitize_extrema(vmin)
         self._vmax = _sanitize_extrema(vmax)
+# CaFP
+# CaFP
 <<<<<<< /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/colors.py/left.py
         self._clip = clip
         self._scale = None
@@ -1221,7 +1223,6 @@ class Normalize:
         """
         self.callbacks.process('changed')
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/colors.py/right.py
-
     @staticmethod
     def process_value(value):
         """

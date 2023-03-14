@@ -4,7 +4,7 @@
 
 names=(matplotlib tensorflow certbot flask ipython requests salt scrapy sentry tornado)
 miningframework_path=$(pwd)
-results_path="$miningframework_path/mining_results_version3_2"
+results_path="$miningframework_path/mining_results_version3_4"
 
 echo "deleting all_results"
 rm "$results_path"/all_results.csv

@@ -383,6 +383,8 @@ class FigureCanvasTk(FigureCanvasBase):
                     self.stop_event_loop)
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/backends/_backend_tk.py/right.py
         self._master.mainloop()
+# CaFP
+# CaFP
 
     def stop_event_loop(self):
         # docstring inherited

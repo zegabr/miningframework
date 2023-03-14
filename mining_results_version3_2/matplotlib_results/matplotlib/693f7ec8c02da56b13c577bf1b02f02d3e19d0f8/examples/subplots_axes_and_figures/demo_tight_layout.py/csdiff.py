@@ -149,3 +149,4 @@ plt.show()
 #    - `matplotlib.figure.Figure.add_gridspec`
 #    - `matplotlib.figure.Figure.add_subplot`
 #    - `matplotlib.pyplot.subplot2grid`
+# CReduzido

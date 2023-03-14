@@ -530,6 +530,11 @@ class GridSpecFromSubplotSpec(GridSpecBase):
         width_ratios : array-like of length *ncols*, optional
             See `GridSpecBase` for details.
         """
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
         self._wspace = wspace
         self._hspace = hspace
         self._subplot_spec = subplot_spec

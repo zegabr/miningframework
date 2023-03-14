@@ -168,6 +168,8 @@ _freetype_hashes = {
     '2.10.1':
         '3a60d391fd579440561bf0e7f31af2222bc610ad6ce4d9d7bd2165bca8669110',
 }
+# CaFP
+# CaFP
 <<<<<<< /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
 # This is the version of FreeType to use when building a local version.  It
 # must match the value in lib/matplotlib.__init__.py and also needs to be
@@ -534,6 +536,8 @@ def add_libagg_flags_and_sources(ext):
     ext.sources.extend(
         os.path.join("extern", "agg24-svn", "src", x) for x in agg_sources)
 
+# CaFP
+# CaFP
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
 def get_ccompiler():
@@ -556,10 +560,6 @@ def get_ccompiler():
             return True
 
     build_ext = Distribution({"ext_modules": L()}).get_command_obj(
->>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
-    
-=======
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
 "
 <<<<<<< /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py

@@ -4950,6 +4950,8 @@ default: :rc:`scatter.edgecolors`
     @_preprocess_data()
     @docstring.dedent_interpd
     def quiver(
+# CaFP
+# CaFP
 <<<<<<< /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
 self, *args, **kwargs):
         """%(quiver_doc)s""

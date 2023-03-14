@@ -1308,6 +1308,9 @@ class LocationEvent(Event):
         is not over an Axes.
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backend_bases.py/right.py
     """
+# CaFP
+# CaFP
+
 
     lastevent = None  # the last event that was triggered before this one
 

@@ -42,7 +42,7 @@ def onselect(xmin, xmax):
 =======
         fig.canvas.draw
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/examples/widgets/span_selector.py/right.py
-()
+() # CReduzido
 
 
 #############################################################################

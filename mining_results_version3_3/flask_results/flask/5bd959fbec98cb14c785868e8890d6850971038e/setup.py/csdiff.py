@@ -38,3 +38,4 @@ click >= 5.1, < 8.0
         "dotenv": ["python-dotenv"],
     },
 )
+# CReduzido

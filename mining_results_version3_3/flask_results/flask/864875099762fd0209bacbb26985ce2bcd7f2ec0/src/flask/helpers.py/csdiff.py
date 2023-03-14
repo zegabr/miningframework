@@ -783,7 +783,7 @@ class locked_cached_property(werkzeug.utils.cached_property):
             value = fspath(value).rstrip(r"\/")
         self._static_folder = value
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/flask_results/flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/helpers.py/right.py
-
+# CReduzido
     def __delete__(self, obj: object) -> None:
         with self.lock:
             super().__delete__(obj)

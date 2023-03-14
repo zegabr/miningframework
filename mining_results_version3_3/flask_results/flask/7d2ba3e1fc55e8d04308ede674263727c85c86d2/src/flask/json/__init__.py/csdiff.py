@@ -185,7 +185,7 @@ def loads(s, app=None, **kwargs):
 =======
 `json.loads`.
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/flask_results/flask/7d2ba3e1fc55e8d04308ede674263727c85c86d2/src/flask/json/__init__.py/right.py
-
+# CaFN CReduzido
     .. versionchanged:: 1.0.3
         ``app`` can be passed directly, rather than requiring an app
         context for configuration.
