@@ -55,8 +55,8 @@ COUNTCResolvido=$(rg -c "CResolvido" "$DIR" | awk -F ':' '{sum += $2} END {print
 COUNTdiff3FP=$(rg -c "D3FP" "$DIR" | awk -F ':' '{sum += $2} END {print sum}')
 
 # Print the results
-# echo "aFP: $COUNTaFP"
-# echo "aFN: $COUNTaFN"
-# echo "diff3 FPs: $COUNTdiff3FP"
-# echo "conflitos reduzidos: $COUNTCReduzido"
-# echo "conflitos resolvidos: $COUNTCResolvido"
+echo "aFP: $COUNTaFP"
+echo "aFN: $COUNTaFN"
+echo "diff3 FPs: $COUNTdiff3FP"
+echo "conflitos reduzidos: $COUNTCReduzido"
+echo "conflitos resolvidos: $COUNTCResolvido"
