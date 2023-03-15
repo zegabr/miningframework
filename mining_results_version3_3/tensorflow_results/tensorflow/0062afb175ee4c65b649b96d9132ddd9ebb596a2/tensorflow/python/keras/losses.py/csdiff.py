@@ -257,7 +257,6 @@ class LossFunctionWrapper(Loss):
 
     ag_fn = autograph.tf_convert(self.fn, ag_ctx.control_status_ctx())
     return ag_fn(y_true, y_pred, **self._fn_kwargs)
-
   def get_config(self):
     config = {}
     for k, v in self._fn_kwargs.items():
@@ -2068,7 +2067,7 @@ def get(identifier):
   if identifier is None:
     return None
   if isinstance(identifier, str) or isinstance(identifier, dict):
-    return deserialize(identifier)
+    return deserialize(identifier) # CaFN
   if callable(identifier):
     return identifier
   raise ValueError(

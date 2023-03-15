@@ -665,6 +665,9 @@ class Axes3D(Axes):
 =======
 X)
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/right.py
+# CaFP
+# CaFP
+
 , np.ravel(Y)]), not had_data)
         else:
             self.xy_dataLim.update_from_data_x(X, not had_data)

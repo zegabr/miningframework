@@ -624,3 +624,4 @@ if link_github:
                 f"/{tag}/lib/{fn}{linespec}")
 else:
     extensions.append('sphinx.ext.viewcode')
+# CReduzido

@@ -188,6 +188,7 @@ def process_chain(callbacks, input, *a, **kw):
 =======
 def process_chain(callbacks: Iterable[Callable], input, *a, **kw) -> Deferred:
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/defer.py/right.py
+    # CResolvido
     """Return a Deferred built by chaining the given callbacks"""
     d = Deferred()
     for x in callbacks:
@@ -235,7 +236,7 @@ def iter_errback(iterable: Iterable, errback: Callable, *a, **kw) -> Generator:
         except Exception:
             errback(failure.Failure(), *a, **kw)
 
-
+# CResolvido
 <<<<<<< /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/defer.py/left.py
 async def aiter_errback(aiterable, errback, *a, **kw):
     """Wraps an async iterable calling an errback if an error is caught while

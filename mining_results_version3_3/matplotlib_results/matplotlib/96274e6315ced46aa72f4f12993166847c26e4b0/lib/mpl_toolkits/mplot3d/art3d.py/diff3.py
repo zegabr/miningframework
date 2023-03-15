@@ -314,7 +314,7 @@ class Line3DCollection(LineCollection):
             proj3d.proj_trans_points(points, renderer.M) for points in
             self._segments3d]
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/mplot3d/art3d.py/right.py
-        segments_2d = [np.column_stack([xs, ys]) for xs, ys, zs in xyslist]
+        segments_2d = [np.column_stack([xs, ys]) for xs, ys, zs in xyslist] # CReduzido
         LineCollection.set_segments(self, segments_2d)
 
         # FIXME
@@ -496,7 +496,7 @@ class Patch3DCollection(PatchCollection):
         # see _update_scalarmappable docstring for why this must be here
         _update_scalarmappable(self)
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/mplot3d/art3d.py/right.py
-        xs, ys, zs = self._offsets3d
+        xs, ys, zs = self._offsets3d # CResolvido
         vxs, vys, vzs, vis = proj3d.proj_transform_clip(xs, ys, zs,
                                                         self.axes.M)
 
@@ -563,7 +563,7 @@ class Path3DCollection(PathCollection):
         self._sizes3d = self.get_sizes()
         self._linewidth3d = self.get_linewidth()
         self.stale = True
-
+# CResolvido
 <<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/mplot3d/art3d.py/left.py
     def get_depthshade(self):
         return self._depthshade
@@ -613,7 +613,7 @@ class Path3DCollection(PathCollection):
         xs, ys, zs = self._offsets3d
         vxs, vys, vzs, vis = proj3d.proj_transform_clip(xs, ys, zs,
                                                         self.axes.M)
-
+# CResolvido
         fcs = (_zalpha(self._facecolor3d, vzs) if self._depthshade else
                self._facecolor3d)
         ecs = (_zalpha(self._edgecolor3d, vzs) if self._depthshade else
@@ -935,7 +935,8 @@ class Poly3DCollection(PolyCollection):
         PolyCollection.set_edgecolor(self, colors)
         self._edgecolor3d = PolyCollection.get_edgecolor(self)
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/mplot3d/art3d.py/right.py
-
+# CResolvido
+# CResolvido
     def set_alpha(self, alpha):
         # docstring inherited
         artist.Artist.set_alpha(self, alpha)

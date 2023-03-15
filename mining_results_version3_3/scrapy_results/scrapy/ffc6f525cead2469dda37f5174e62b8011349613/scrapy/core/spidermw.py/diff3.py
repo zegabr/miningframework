@@ -93,7 +93,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
                 raise
             recover_to.extend(exception_result)
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/core/spidermw.py/right.py
-
+# CResolvido
     def _process_spider_exception(self, response: Response, spider: Spider, _failure: Failure,
                                   start_index: int = 0) -> Union[Failure, MutableChain]:
         exception = _failure.value
@@ -153,6 +153,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
             return MutableAsyncChain(result, recovered)
         else:
             return MutableChain(result, recovered)
+# CResolvido
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/core/spidermw.py/left.py
     def _process_callback_output(self, response, spider, result):

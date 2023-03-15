@@ -19,7 +19,7 @@ from matplotlib.font_manager import (
 =======
     _get_fontconfig_fonts, ft2font, ttfFontProperty, cbook
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/c488353862958ad5bf81954b229b4b7a1e22c7a3/lib/matplotlib/tests/test_font_manager.py/right.py
-)
+) # CReduzido
 from matplotlib import pyplot as plt, rc_context
 
 has_fclist = shutil.which('fc-list') is not None

@@ -29,7 +29,7 @@ from typing import (
     Union
 )
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/c105a7a85f5df28abf4b9251d09da8d367fb4454/scrapy/utils/defer.py/right.py
-
+# CReduzido
 from twisted.internet import defer
 from twisted.internet.defer import Deferred, DeferredList, ensureDeferred
 from twisted.internet.task import Cooperator

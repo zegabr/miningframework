@@ -1406,7 +1406,7 @@ class Axis(martist.Artist):
                                      'grid will be enabled.')
                 b = True
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axis.py/right.py
-        which = which.lower()
+        which = which.lower() # CResolvido
         _api.check_in_list(['major', 'minor', 'both'], which=which)
         gridkw = {'grid_' + item[0]: item[1] for item in kwargs.items()}
         if 'grid_visible' in gridkw:

@@ -1416,7 +1416,7 @@ def categorical_hinge(y_true, y_pred):
   assert np.array_equal(loss.numpy(), np.maximum(0., neg - pos + 1.))
   ```
 =======
-  Standalone usage:
+  Standalone usage: # CResolvido
 
   >>> y_true = np.random.randint(0, 3, size=(2,))
   >>> y_true = tf.keras.utils.to_categorical(y_true, num_classes=3)

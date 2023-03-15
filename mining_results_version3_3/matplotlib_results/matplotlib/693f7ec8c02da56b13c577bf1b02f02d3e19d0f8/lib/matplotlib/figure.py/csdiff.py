@@ -1743,6 +1743,9 @@ bool, sharex=sharex, sharey=sharey
 mosaic
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 )
+# CReduzido
+
+
 
         def _make_array(inp):
             """
@@ -1877,6 +1880,11 @@ j, k)
  nested_mosaic in nested.items()
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 :
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+
                 this_level[(j, k)] = (None, nested_mosaic, 'nested')
 
             # now go through the things in this level and add them
@@ -1948,6 +1956,7 @@ mosaic))
 mosaic
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 )
+# CReduzido
             if sharey:
                 ax.sharey(ax0)
                 ax._label_outer_yaxis()
@@ -2079,6 +2088,7 @@ class SubFigure(FigureBase):
             y0 += 1 - (np.sum(hr[:self._subplotspec.rowspan.stop]
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 ) / hr.sum()
+# CReduzido
         if self.bbox_relative is None:
             self.bbox_relative = Bbox.from_bounds(x0, y0, dx, dy)
         else:

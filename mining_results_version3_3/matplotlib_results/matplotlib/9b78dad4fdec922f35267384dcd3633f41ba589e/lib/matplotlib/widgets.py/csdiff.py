@@ -1695,6 +1695,7 @@ class MultiCursor(Widget):
     useblit : bool, default: True
         Use blitting for faster drawing if supported by the backend.
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
+# CReduzido
 
     horizOn : bool, default: False
         Whether to draw the horizontal line.
@@ -2286,6 +2287,8 @@ self):
             return (
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
 )
+# CaFP
+# CaFP
 
     def _set_cursor(self, enabled):
         """Update the canvas cursor based on direction of the selector."""

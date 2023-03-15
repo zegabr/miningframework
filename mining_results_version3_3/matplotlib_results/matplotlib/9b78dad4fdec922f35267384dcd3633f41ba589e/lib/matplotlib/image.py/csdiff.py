@@ -545,6 +545,7 @@ class _ImageBase(martist.Artist, cm.ScalarMappable):
                                            
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/right.py
 ):
+# CReduzido
                         output = self.norm(resampled_masked)
             else:
                 if A.ndim == 2:  # _interpolation_stage == 'rgba'

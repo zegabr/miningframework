@@ -132,7 +132,7 @@ def _compute_signature(parameters, access_key_secret, method, path):
         val = str(parameters[key]).encode("utf-8")
         pairs.append(_quote(key, safe="") + "=" + _quote(val, safe="-_~"))
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/right.py
-    qs = "&".join(pairs)
+    qs = "&".join(pairs) # CResolvido
     string_to_sign += qs
 
     h = hmac.new(access_key_secret, digestmod=sha256)

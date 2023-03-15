@@ -724,7 +724,7 @@ def test_load_from_url():
     with urllib.request.urlopen(url) as file:
         plt.imread(file)
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_image.py/right.py
-
+# CResolvido
 
 @image_comparison(['log_scale_image'], remove_text=True)
 def test_log_scale_image():

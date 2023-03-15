@@ -1026,13 +1026,14 @@ class TextBox(AxesWidget):
         self.text_disp = self.ax.text(
             self.DIST, 0.5, initial,
             transform=self.ax.transAxes, verticalalignment='center',
-            horizontalalignment='left',
+            horizontalalignment='left', # CaFN
 <<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/707ffe85a2b6e9610172cf420acb98ff3b39dc5a/lib/matplotlib/widgets.py/left.py
  horizontalalignment=ha
 =======
  parse_math=False
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/707ffe85a2b6e9610172cf420acb98ff3b39dc5a/lib/matplotlib/widgets.py/right.py
 )
+# CReduzido
 
         self._observers = cbook.CallbackRegistry()
 

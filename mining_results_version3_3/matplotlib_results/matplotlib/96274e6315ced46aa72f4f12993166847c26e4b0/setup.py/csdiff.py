@@ -144,6 +144,8 @@ class BuildExtraLibraries(BuildExtCommand):
 'CPPFLAGS', enable_lto
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/right.py
 )
+# CaFP
+# CaFP
         cxxflags, enable_lto = prepare_flags('CXXFLAGS', enable_lto)
         ldflags, enable_lto = prepare_flags('LDFLAGS', enable_lto)
 

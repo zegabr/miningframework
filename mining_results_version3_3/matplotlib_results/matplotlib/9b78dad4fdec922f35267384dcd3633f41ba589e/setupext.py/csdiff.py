@@ -666,6 +666,12 @@ LDFLAGS"}
             env["CFLAGS"] = env.get
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
 ("CFLAGS", "") + " -fPIC"
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+
             configure = [
                 "./configure", "--with-zlib=no", "--with-bzip2=no",
                 "--with-png=no", "--with-harfbuzz=no", "--enable-static",

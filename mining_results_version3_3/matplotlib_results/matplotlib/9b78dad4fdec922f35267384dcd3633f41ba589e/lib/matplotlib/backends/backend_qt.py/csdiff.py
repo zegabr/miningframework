@@ -341,6 +341,10 @@ pixelDelta doc: pixelDelta is sometimes not
                 or QtWidgets.QApplication.instance().platformName
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_qt.py/right.py
 () == "xcb"):
+# CaFP
+# CaFP
+# CaFP
+# CaFP
             steps = event.angleDelta().y() / 120
         else:
             steps = event.pixelDelta().y()

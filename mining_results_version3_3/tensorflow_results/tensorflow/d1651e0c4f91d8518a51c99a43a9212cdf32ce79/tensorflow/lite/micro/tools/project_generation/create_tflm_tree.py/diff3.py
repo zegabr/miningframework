@@ -140,7 +140,7 @@ def _create_examples_tree(prefix_dir, examples_list):
         # in-place find and replace.
         print(line.replace(text_to_replace, ""), end="")
 
-
+# CResolvido
 if __name__ == "__main__":
   parser = argparse.ArgumentParser(
       description="Starting script for TFLM project generation")

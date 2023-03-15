@@ -51,6 +51,7 @@ for angle in range(0, 360*4 + 1):
  angle, 0
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/6ba5cb88e33500084e1a99624a5c1d794b44b2b8/examples/mplot3d/rotate_axes3d_sgskip.py/right.py
 ))
+# CReduzido
 
     plt.draw()
     plt.pause(.001)

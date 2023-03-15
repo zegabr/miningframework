@@ -1641,7 +1641,7 @@ def categorical_crossentropy(y_true,
                              label_smoothing=.0
 =======
                              label_smoothing=0,
-                             axis=-1
+                             axis=-1# CReduzido
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/right.py
 ):
   """Computes the categorical crossentropy loss.
@@ -1694,7 +1694,7 @@ def _ragged_tensor_categorical_crossentropy(y_true,
                                             label_smoothing=.0
 =======
                                             label_smoothing=0,
-                                            axis=-1
+                                            axis=-1# CReduzido
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/right.py
 ):
   """Implements support for handling RaggedTensors.
@@ -1796,7 +1796,7 @@ def binary_crossentropy(y_true,
 <<<<<<< /home/ze/miningframework/mining_results_version3_3/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
  label_smoothing=.0
 =======
-                        axis=-1
+                        axis=-1# CReduzido
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/right.py
 ):
   """Computes the binary crossentropy loss.
@@ -1847,9 +1847,10 @@ def _ragged_tensor_binary_crossentropy(y_true,
                                        label_smoothing=.0
 =======
                                        label_smoothing=0,
-                                       axis=-1
+                                       axis=-1# CReduzido
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/right.py
 ):
+
   """Implements support for handling RaggedTensors.
 
   Args:

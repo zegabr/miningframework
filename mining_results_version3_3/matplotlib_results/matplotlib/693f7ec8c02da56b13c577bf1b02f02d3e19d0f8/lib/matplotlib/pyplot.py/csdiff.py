@@ -389,6 +389,7 @@ def show(*args, **kwargs):
     explicitly there.
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
     """
+    # CaFP
     _warn_if_gui_out_of_main_thread()
     return _backend_mod.show(*args, **kwargs)
 
@@ -1544,7 +1545,7 @@ def subplot_mosaic(mosaic, *, sharex=False, sharey=False,
 =======
         mosaic
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
-,
+, # CReduzido
         subplot_kw=subplot_kw, gridspec_kw=gridspec_kw,
         empty_sentinel=empty_sentinel
     )

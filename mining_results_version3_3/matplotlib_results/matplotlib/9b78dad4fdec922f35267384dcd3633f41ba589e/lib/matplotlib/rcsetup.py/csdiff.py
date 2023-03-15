@@ -501,6 +501,8 @@ def validate_markevery(s):
 =======
  float)
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/rcsetup.py/right.py
+# CaFP
+# CaFP
 , or list[int]
     """
     # Validate s against type slice float int and None

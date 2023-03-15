@@ -766,6 +766,7 @@ class ColorbarBase:
             `~.Axes.set_ylabel`.
             Supported keywords are *labelpad* and `.Text` properties.
         """
+        # CResolvido
 <<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/colorbar.py/left.py
         if self.orientation == "vertical":
             self.ax.set_ylabel(label, loc=loc, **kwargs)

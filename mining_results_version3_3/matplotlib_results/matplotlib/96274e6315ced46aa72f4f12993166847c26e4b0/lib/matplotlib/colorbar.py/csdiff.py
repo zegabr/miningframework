@@ -803,7 +803,7 @@ class ColorbarBase:
             C = C[:-1]
         if self.orientation == 'vertical'
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/colorbar.py/right.py
-:-1]
+:-1] # CaFP
         self.solids = self.ax.pcolormesh(
             X, Y, C, cmap=self.cmap, norm=self.norm, alpha=self.alpha,
             edgecolors='none', shading='flat')

@@ -1465,6 +1465,10 @@ class Axis(martist.Artist):
             if visible is not UNSET and bool
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/right.py
 (b) != bool(visible):
+# CaFP
+# CaFP
+# CaFP
+# CaFP
                 # grid(True, visible=False), grid(False, visible=True)
                 raise ValueError(
                     "'b' and 'visible' specify inconsistent grid visibilities")

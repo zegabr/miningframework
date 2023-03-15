@@ -504,6 +504,8 @@ class Patch3DCollection(PatchCollection):
     def get_edgecolor
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 (self):
+# CaFP
+# CaFP
         # We need this check here to make sure we do not double-apply the depth
         # based alpha shading when the edge color is "face" which means the
         # edge colour should be identical to the face colour.
@@ -633,7 +635,10 @@ class Path3DCollection(PathCollection):
 =======
             self._linewidth3d = lw
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
-
+# CaFP
+# CaFP
+# CaFP
+# CaFP
     def get_depthshade(self):
         return self._depthshade
 
@@ -713,6 +718,7 @@ class Path3DCollection(PathCollection):
         if cbook._str_equal(self._edgecolors, 'face'
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 ):
+# CReduzido
             return self.get_facecolor()
         return self._maybe_depth_shade_and_sort_colors(super().get_edgecolor())
 
@@ -897,6 +903,7 @@ the order the user
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
         txs, tys, tzs = proj3d._proj_transform_vec(self._vec, self.axes.M)
         xyzlist = [(txs[sl], tys[sl], tzs[sl]) for sl in self._segslices]
+# CReduzido
 
         # This extra fuss is to re-order face / edge colors
         cface = self._facecolor3d

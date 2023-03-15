@@ -9,7 +9,7 @@ from matplotlib.testing.widgets import do_event, get_ax, mock_event
 from matplotlib.testing.decorators import image_comparison
 from matplotlib.testing.widgets import do_event, get_ax, mock_event
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_widgets.py/right.py
-
+# CResolvido
 from numpy.testing import assert_allclose
 
 import pytest

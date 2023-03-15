@@ -11,7 +11,7 @@ from urllib.parse import urljoin, urlencode, urlsplit, urlunsplit
 from typing import Iterable, List, Optional, Tuple, Type, TypeVar, Union
 from urllib.parse import urljoin, urlencode
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/16be658a319937a3863145a71f6a45c30bac7090/scrapy/http/request/form.py/right.py
-
+# CResolvido
 from lxml.html import FormElement, HtmlElement, HTMLParser, SelectElement
 from parsel.selector import create_root_node
 from w3lib.html import strip_html5_whitespace

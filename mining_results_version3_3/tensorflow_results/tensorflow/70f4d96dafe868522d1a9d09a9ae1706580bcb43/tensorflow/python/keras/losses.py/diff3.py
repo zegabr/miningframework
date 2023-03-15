@@ -1649,7 +1649,7 @@ def categorical_crossentropy(y_true,
   return backend.categorical_crossentropy(
       y_true, y_pred, from_logits=from_logits)
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/tensorflow_results/tensorflow/70f4d96dafe868522d1a9d09a9ae1706580bcb43/tensorflow/python/keras/losses.py/right.py
-
+# CResolvido
 
 @dispatch.dispatch_for_types(categorical_crossentropy,
                              ragged_tensor.RaggedTensor)
@@ -1767,6 +1767,7 @@ def binary_crossentropy(y_true, y_pred, from_logits=False, label_smoothing=0, ax
       backend.binary_crossentropy(
           y_true, y_pred, from_logits=from_logits), axis=-1)
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/tensorflow_results/tensorflow/70f4d96dafe868522d1a9d09a9ae1706580bcb43/tensorflow/python/keras/losses.py/right.py
+# CResolvido
 
 
 @dispatch.dispatch_for_types(binary_crossentropy, ragged_tensor.RaggedTensor)

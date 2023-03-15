@@ -1431,7 +1431,7 @@ def subplots(nrows=1, ncols=1, sharex=False, sharey=False, squeeze=True,
                        gridspec_kw=gridspec_kw)
     return fig, axs
 
-
+# CResolvido
 <<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
 def subplot_mosaic(mosaic, *, sharex=False, sharey=False,
                    subplot_kw=None, gridspec_kw=None, empty_sentinel='.',

@@ -142,6 +142,7 @@ class TestStrCategoryLocator:
         plotter
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/tests/test_category.py/right.py
 (ax, [1, 2, 3], ["a", "b", "c"])
+# CaFP
         np.testing.assert_array_equal(ax.yaxis.major.locator(), range(3))
 
 

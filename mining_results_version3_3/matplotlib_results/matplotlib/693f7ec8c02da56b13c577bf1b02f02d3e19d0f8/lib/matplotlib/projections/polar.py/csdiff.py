@@ -1072,6 +1072,8 @@ orig_lim)  # un-accept the change
 "The angle range must be less than a full circle"
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/projections/polar.py/right.py
 )
+# CaFP
+# CaFP
         return tuple(np.rad2deg((new_min, new_max)))
 
     def set_theta_offset(self, offset):

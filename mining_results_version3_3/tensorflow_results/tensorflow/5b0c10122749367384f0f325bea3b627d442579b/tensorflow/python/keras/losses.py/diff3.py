@@ -1654,7 +1654,7 @@ def categorical_crossentropy(y_true,
                                  lambda: y_true)
   return K.categorical_crossentropy(y_true, y_pred, from_logits=from_logits)
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/tensorflow_results/tensorflow/5b0c10122749367384f0f325bea3b627d442579b/tensorflow/python/keras/losses.py/right.py
-
+# CResolvido
 
 @dispatch.dispatch_for_types(categorical_crossentropy,
                              ragged_tensor.RaggedTensor)

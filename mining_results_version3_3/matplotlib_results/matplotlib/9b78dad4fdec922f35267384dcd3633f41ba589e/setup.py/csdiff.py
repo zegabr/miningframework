@@ -81,6 +81,8 @@ class NoopTestCommand(setuptools.command.test.test)
                 raise
             return False
     return True
+# CaFP
+# CaFP
 
 
 class BuildExtraLibraries(setuptools.command.build_ext.build_ext):

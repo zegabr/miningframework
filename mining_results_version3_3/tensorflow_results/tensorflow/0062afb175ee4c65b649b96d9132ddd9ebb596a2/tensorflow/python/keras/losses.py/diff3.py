@@ -260,6 +260,7 @@ class LossFunctionWrapper(Loss):
 
   def get_config(self):
     config = {}
+    # CResolvido
 <<<<<<< /home/ze/miningframework/mining_results_version3_3/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/left.py
     for k, v in self._fn_kwargs.items():
       config[k] = K.eval(v) if tf_utils.is_tensor_or_variable(v) else v

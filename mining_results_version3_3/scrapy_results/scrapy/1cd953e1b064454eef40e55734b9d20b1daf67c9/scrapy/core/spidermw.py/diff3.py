@@ -125,7 +125,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
             except Exception as ex:
                 exception_result = self._process_spider_exception(response, spider, Failure(ex), method_index + 1)
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
-                if isinstance(exception_result, Failure):
+                if isinstance(exception_result, Failure): # CReduzido
                     raise
                 return exception_result
             if _isiterable(result):
@@ -188,7 +188,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
         def process_callback_output(result):
             return self._process_callback_output(response, spider, result)
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
-
+# CReduzido
 <<<<<<< /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
         def process_spider_output(result, start_index=0):
             # items in this iterable do not need to go through the process_spider_output
@@ -232,7 +232,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
         def process_spider_exception(_failure):
             return self._process_spider_exception(response, spider, _failure)
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
-
+# CReduzido
         dfd = mustbe_deferred(self._process_spider_input, scrape_func, response, request, spider)
         dfd.addCallbacks(callback=process_callback_output, errback=process_spider_exception)
         return dfd

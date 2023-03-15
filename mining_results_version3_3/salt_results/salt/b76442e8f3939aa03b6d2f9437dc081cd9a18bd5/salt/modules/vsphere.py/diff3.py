@@ -10417,6 +10417,7 @@ def list_tags(
     ca_bundle=None,
 ):
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/vsphere.py/right.py
+    # CResolvido
     """
     List existing tags a user has access to.
 

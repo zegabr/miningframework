@@ -87,6 +87,7 @@ class BaseFFTOpsTest(test.TestCase):
                                       'yet supported in ROCm.')
   def _check_grad_complex(self, func, x, y, result_is_complex=True,
                           rtol=1e-2, atol=1e-2):
+                          # CResolvido
 <<<<<<< /home/ze/miningframework/mining_results_version3_3/tensorflow_results/tensorflow/31f8ace638e9c308f96f757f0a1c4d6ba676b381/tensorflow/python/kernel_tests/signal/fft_ops_test.py/left.py
     with self.cached_session(use_gpu=True):
 =======
