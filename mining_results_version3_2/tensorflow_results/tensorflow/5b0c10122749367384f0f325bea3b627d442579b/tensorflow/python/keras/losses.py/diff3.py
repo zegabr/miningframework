@@ -1652,7 +1652,7 @@ def categorical_crossentropy(y_true,
 =======
   y_true = smart_cond.smart_cond(label_smoothing, _smooth_labels,
                                  lambda: y_true)
-  return K.categorical_crossentropy(y_true, y_pred, from_logits=from_logits)
+  return K.categorical_crossentropy(y_true, y_pred, from_logits=from_logits) # CResolvido
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/tensorflow_results/tensorflow/5b0c10122749367384f0f325bea3b627d442579b/tensorflow/python/keras/losses.py/right.py
 
 

@@ -340,6 +340,7 @@ def show(*args, **kwargs):
 
     See Also
     --------
+    # CaFP
 <<<<<<< /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
     ion : Enable interactive mode, which shows / updates the figure after
           every plotting command, so that calling ``show()`` is not necessary.
@@ -1444,7 +1445,7 @@ def subplots(nrows=1, ncols=1, sharex=False, sharey=False, squeeze=True,
 
 def subplot_mosaic(
 <<<<<<< /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
-mosaic, *, sharex=False, sharey=False,
+mosaic, *, sharex=False, sharey=False, #CReduzido
                    subplot_kw=None, gridspec_kw=None, empty_sentinel='.',
 =======
 mosaic, *, subplot_kw=None, gridspec_kw=None,
@@ -1531,7 +1532,7 @@ mosaic, *, subplot_kw=None, gridspec_kw=None,
 <<<<<<< /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
         mosaic, sharex=sharex, sharey=sharey,
 =======
-        mosaic,
+        mosaic, # CReduzido
         subplot_kw=subplot_kw,
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
         subplot_kw=subplot_kw, gridspec_kw=gridspec_kw,

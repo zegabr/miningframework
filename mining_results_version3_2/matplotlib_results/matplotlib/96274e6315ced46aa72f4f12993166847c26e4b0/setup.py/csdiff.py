@@ -113,7 +113,12 @@ class BuildExtraLibraries(BuildExtCommand):
         def prepare_flags(name, enable_lto):
             """
             Prepare *FLAGS from the environment.
-
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
 <<<<<<< /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/left.py
             If set, return them, and also check whether LTO is disabled in each
             one, raising an error if Matplotlib config explicitly enabled LTO.

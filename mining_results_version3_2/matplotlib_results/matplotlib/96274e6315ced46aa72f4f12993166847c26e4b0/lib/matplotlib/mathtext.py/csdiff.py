@@ -432,7 +432,7 @@ class MathTextParser:
 
         The results are cached, so multiple calls to `parse`
 <<<<<<< /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/mathtext.py/left.py
-        with the same expression should be fast.
+        with the same expression should be fast. # CReduzido
 =======
 """
       | \\| / \\backslash \\uparrow \\downarrow \\updownarrow \\Uparrow

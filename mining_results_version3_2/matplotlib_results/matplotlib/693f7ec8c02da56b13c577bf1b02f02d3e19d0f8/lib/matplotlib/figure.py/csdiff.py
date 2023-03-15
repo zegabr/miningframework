@@ -2088,7 +2088,7 @@ wr[:self._subplotspec.colspan.start]) / np.sum(wr)
         else:
             self.bbox_relative.p0 = (x0, y0)
             self.bbox_relative.p1 = (x0 + dx, y0 + dy)
-
+            
     def get_constrained_layout(self):
         """
         Return whether constrained layout is being used.

@@ -487,9 +487,9 @@ class Patch3DCollection(PatchCollection):
     @_api.delete_parameter('3.4', 'renderer')
     def do_3d_projection(self, renderer=None):
         # see _update_scalarmappable docstring for why this must be here
-        _update_scalarmappable(self)
+        _update_scalarmappable(self) # CaFN
         # see _update_scalarmappable docstring for why this must be here
-        _update_scalarmappable(self)
+        _update_scalarmappable(self) # CaFN
         xs, ys, zs = self._offsets3d
         vxs, vys, vzs, vis = proj3d.proj_transform_clip(xs, ys, zs,
                                                         self.axes.M)

@@ -8,7 +8,7 @@ async def collect_asyncgen(result):
 =======
 from collections.abc import AsyncIterable
 
-
+# CReduzido
 async def collect_asyncgen(result: AsyncIterable):
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/asyncgen.py/right.py
     results = []

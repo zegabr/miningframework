@@ -208,7 +208,7 @@ import logging
 import xml.etree.ElementTree as ET
 =======
 
-import logging
+import logging # CaFP
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/proxy/panos.py/right.py
 
 import salt.exceptions

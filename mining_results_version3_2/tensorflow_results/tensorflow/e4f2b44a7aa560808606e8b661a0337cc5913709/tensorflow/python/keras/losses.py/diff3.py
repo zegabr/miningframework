@@ -1425,7 +1425,7 @@ def categorical_hinge(y_true, y_pred):
   >>> assert loss.shape == (2,)
   >>> pos = np.sum(y_true * y_pred, axis=-1)
   >>> neg = np.amax((1. - y_true) * y_pred, axis=-1)
-  >>> assert np.array_equal(loss.numpy(), np.maximum(0., neg - pos + 1.))
+  >>> assert np.array_equal(loss.numpy(), np.maximum(0., neg - pos + 1.)) # CResolvido
 
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/tensorflow_results/tensorflow/e4f2b44a7aa560808606e8b661a0337cc5913709/tensorflow/python/keras/losses.py/right.py
   Args:

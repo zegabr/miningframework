@@ -3065,7 +3065,7 @@ class _AxesBase(martist.Artist):
 <<<<<<< /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_base.py/left.py
         _api.check_in_list
 =======
-        cbook._check_in_list
+        cbook._check_in_list # CReduzido
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_base.py/right.py
 (['x', 'y', 'both'], axis=axis)
         if axis in ['x', 'both']:

@@ -149,7 +149,7 @@ class Request(object_ref):
 =======
     def replace(self, *args, **kwargs):
         """Create a new Request with the same attributes except for those given new values"""
-        for x in self.attributes:
+        for x in self.attributes: # CResolvido
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/right.py
             kwargs.setdefault(x, getattr(self, x))
         cls = kwargs.pop('cls', self.__class__)

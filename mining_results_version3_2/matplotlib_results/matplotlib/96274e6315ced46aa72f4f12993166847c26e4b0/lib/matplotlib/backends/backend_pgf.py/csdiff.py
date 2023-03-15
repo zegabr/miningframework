@@ -11,7 +11,7 @@ import re
 import shutil
 import subprocess
 from tempfile import TemporaryDirectory
-from tempfile import TemporaryDirectory
+from tempfile import TemporaryDirectory # CaFN
 import weakref
 
 from PIL import Image

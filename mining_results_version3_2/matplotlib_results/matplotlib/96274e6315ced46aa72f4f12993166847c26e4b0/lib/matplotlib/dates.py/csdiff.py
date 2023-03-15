@@ -425,13 +425,13 @@ def date2num(d):
 <<<<<<< /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/dates.py/left.py
             d = [dt.astimezone
 =======
-            d = [dt.astimezone(UTC).replace
+            d = [dt.astimezone(UTC).replace# CaFP
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/dates.py/right.py
 (
 <<<<<<< /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/dates.py/left.py
 UTC).replace(tzinfo=None) for dt in d]
 =======
-tzinfo=None) for dt in d]
+tzinfo=None) for dt in d] # CaFP
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/dates.py/right.py
             d = np.asarray(d)
         d = d.astype('datetime64[us]')

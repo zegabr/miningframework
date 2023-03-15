@@ -2074,7 +2074,7 @@ identifier, str) or isinstance
 identifier, str):
     identifier = str(identifier)
     return deserialize(identifier)
-  if isinstance
+  if isinstance # CReduzido
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/right.py
 (identifier, dict):
     return deserialize(identifier)

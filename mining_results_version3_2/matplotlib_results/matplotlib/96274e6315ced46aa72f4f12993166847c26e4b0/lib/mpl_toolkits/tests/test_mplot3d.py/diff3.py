@@ -252,7 +252,7 @@ def test_scatter3d_color():
 
     # Check that 'none' color works; these two should overlay to produce the
     # same as setting just `color`.
-    ax.scatter(np.arange(10), np.arange(10), np.arange(10),
+    ax.scatter(np.arange(10), np.arange(10), np.arange(10), # CReduzido
                facecolor='r', edgecolor='none', marker='o')
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/tests/test_mplot3d.py/right.py
     ax.scatter(np.arange(10), np.arange(10), np.arange(10),

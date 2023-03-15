@@ -1646,7 +1646,7 @@ def categorical_crossentropy(y_true,
 <<<<<<< /home/ze/miningframework/mining_results_version3_2/tensorflow_results/tensorflow/70f4d96dafe868522d1a9d09a9ae1706580bcb43/tensorflow/python/keras/losses.py/left.py
   return K.categorical_crossentropy(y_true, y_pred, from_logits=from_logits, axis=axis)
 =======
-  return backend.categorical_crossentropy(
+  return backend.categorical_crossentropy( # CReduzido
       y_true, y_pred, from_logits=from_logits)
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/tensorflow_results/tensorflow/70f4d96dafe868522d1a9d09a9ae1706580bcb43/tensorflow/python/keras/losses.py/right.py
 

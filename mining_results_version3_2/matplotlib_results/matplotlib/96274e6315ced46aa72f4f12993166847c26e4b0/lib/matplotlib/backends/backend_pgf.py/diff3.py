@@ -14,7 +14,7 @@ import subprocess
 from tempfile import TemporaryDirectory
 =======
 import sys
-import tempfile
+import tempfile # CResolvido
 from tempfile import TemporaryDirectory
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/right.py
 import weakref

@@ -267,7 +267,7 @@ class LossFunctionWrapper(Loss):
 =======
     for k, v in self._fn_kwargs.items():
       config[k] = backend.eval(v) if tf_utils.is_tensor_or_variable(v) else v
-    base_config = super(LossFunctionWrapper, self).get_config()
+    base_config = super(LossFunctionWrapper, self).get_config() # CResolvido
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/right.py
     return dict(list(base_config.items()) + list(config.items()))
 

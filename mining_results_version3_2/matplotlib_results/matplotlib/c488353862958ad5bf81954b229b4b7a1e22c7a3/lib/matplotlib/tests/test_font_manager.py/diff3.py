@@ -10,7 +10,7 @@ import warnings
 import numpy as np
 import pytest
 
-from matplotlib.font_manager import (
+from matplotlib.font_manager import ( # CReduzido
 <<<<<<< /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/c488353862958ad5bf81954b229b4b7a1e22c7a3/lib/matplotlib/tests/test_font_manager.py/left.py
     findfont, findSystemFonts, FontEntry, FontProperties, fontManager,
     json_dump, json_load, get_font, is_opentype_cff_font,
@@ -284,7 +284,7 @@ def test_fontentry_dataclass():
     assert entry._repr_html_() == "<span style='font-family:font-name'>font-name</span>"
 
 
-@pytest.mark.skipif(sys.platform == 'win32', reason='Linux or OS only')
+@pytest.mark.skipif(sys.platform == 'win32', reason='Linux or OS only') # CReduzido
 def test_get_font_names():
     paths_mpl = [cbook._get_data_path('fonts', subdir) for subdir in ['ttf']]
     fonts_mpl = findSystemFonts(paths_mpl, fontext='ttf')

@@ -186,7 +186,7 @@ def parallel_async(async_iterable, count, callable, *args, **named):
 
 def process_chain(callbacks, input, *a, **kw):
 =======
-def process_chain(callbacks: Iterable[Callable], input, *a, **kw) -> Deferred:
+def process_chain(callbacks: Iterable[Callable], input, *a, **kw) -> Deferred: # CResolvido
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/defer.py/right.py
     """Return a Deferred built by chaining the given callbacks"""
     d = Deferred()
@@ -253,7 +253,7 @@ async def aiter_errback(aiterable, errback, *a, **kw):
 
 def deferred_from_coro(o):
 =======
-def deferred_from_coro(o) -> Any:
+def deferred_from_coro(o) -> Any: # CResolvido
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/defer.py/right.py
     """Converts a coroutine into a Deferred, or returns the object as is if it isn't a coroutine"""
     if isinstance(o, Deferred):

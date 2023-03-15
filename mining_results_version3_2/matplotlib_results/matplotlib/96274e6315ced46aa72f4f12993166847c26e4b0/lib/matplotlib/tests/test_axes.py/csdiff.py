@@ -4672,7 +4672,7 @@ def test_rcparam_grid_minor(grid_which, major_visible, minor_visible):
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/left.py
                for tick in ax.xaxis.majorTicks)
-    assert all
+    assert all # CaFP
 =======
     assert all
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/right.py

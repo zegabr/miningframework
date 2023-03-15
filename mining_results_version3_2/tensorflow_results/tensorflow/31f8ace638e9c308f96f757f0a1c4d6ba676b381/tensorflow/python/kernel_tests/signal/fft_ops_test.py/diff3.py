@@ -94,7 +94,7 @@ class BaseFFTOpsTest(test.TestCase):
       self.skipTest("Complex datatype not yet supported in ROCm.")
       return
     with self.cached_session():
-
+# CaFN (resolveu errado)
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/tensorflow_results/tensorflow/31f8ace638e9c308f96f757f0a1c4d6ba676b381/tensorflow/python/kernel_tests/signal/fft_ops_test.py/right.py
       def f(inx, iny):
         inx.set_shape(x.shape)

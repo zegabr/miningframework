@@ -27,7 +27,7 @@ def _isiterable(possible_iterator):
 ScrapeFunc = Callable[[Union[Response, Failure], Request, Spider], Any]
 
 
-def _isiterable(o) -> bool:
+def _isiterable(o) -> bool: # CReduzido
     return isinstance(o, Iterable)
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/core/spidermw.py/right.py
 
@@ -85,7 +85,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
                            exception_processor_index: int, recover_to: MutableChain) -> Generator:
         try:
             for r in iterable:
-                yield r
+                yield r # CResolvido
         except Exception as ex:
             exception_result = self._process_spider_exception(response, spider, Failure(ex),
                                                               exception_processor_index)
@@ -158,7 +158,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
     def _process_callback_output(self, response, spider, result):
         if isinstance(result, collections.abc.AsyncIterator):
             recovered = MutableAsyncChain()
-        else:
+        else: # CResolvido
             recovered = MutableChain()
 =======
     def _process_callback_output(self, response: Response, spider: Spider, result: Iterable) -> MutableChain:

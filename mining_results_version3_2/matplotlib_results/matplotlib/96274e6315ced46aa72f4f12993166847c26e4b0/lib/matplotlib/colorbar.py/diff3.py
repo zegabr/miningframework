@@ -771,7 +771,7 @@ class ColorbarBase:
             self.ax.set_ylabel(label, loc=loc, **kwargs)
 =======
         Draw the colors using `~.axes.Axes.pcolormesh`;
-        optionally add separators.
+        optionally add separators. # CReduzido
         """
         if C.shape[0] == Y.shape[0]:
             # trim the last one to be compatible with old behavior.

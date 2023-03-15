@@ -166,7 +166,7 @@ if __name__ == "__main__":
       default="",
       help="Additional TFLM Makefile options. For example: "
       "--makefile_options=\"TARGET=<target> "
-      "OPTIMIZED_KERNEL_DIR=<optimized_kernel_dir> "
+      "OPTIMIZED_KERNEL_DIR=<optimized_kernel_dir> " # CResolvido
       "TARGET_ARCH=corex-m4\"")
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/tensorflow_results/tensorflow/d1651e0c4f91d8518a51c99a43a9212cdf32ce79/tensorflow/lite/micro/tools/project_generation/create_tflm_tree.py/right.py
   args = parser.parse_args()

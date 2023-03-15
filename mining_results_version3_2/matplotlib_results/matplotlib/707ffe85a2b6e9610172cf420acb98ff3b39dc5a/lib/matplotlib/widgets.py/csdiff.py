@@ -1027,7 +1027,7 @@ class TextBox(AxesWidget):
 <<<<<<< /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/707ffe85a2b6e9610172cf420acb98ff3b39dc5a/lib/matplotlib/widgets.py/left.py
             self.DIST, 0.5, initial, transform=self.ax.transAxes,
 =======
-            self.DIST_FROM_LEFT, 0.5, initial,
+            self.DIST_FROM_LEFT, 0.5, initial, # CReduzido
             transform=self.ax.transAxes, verticalalignment='center',
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/707ffe85a2b6e9610172cf420acb98ff3b39dc5a/lib/matplotlib/widgets.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/707ffe85a2b6e9610172cf420acb98ff3b39dc5a/lib/matplotlib/widgets.py/left.py

@@ -1396,7 +1396,7 @@ class Axis(martist.Artist):
                                    'grid will be enabled.')
                 b = True
 =======
-        if b is not None:
+        if b is not None: # CResolvido
             if 'visible' in kwargs and bool(b) != bool(kwargs['visible']):
                 raise ValueError(
                     "'b' and 'visible' specify inconsistent grid visibilities")
