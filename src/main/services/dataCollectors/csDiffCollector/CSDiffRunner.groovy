@@ -7,7 +7,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths
 
 public class CSDiffRunner {
-    static final Path CS_DIFF_PATH = Paths.get("dependencies/csdiff_v3_4.sh")
+    static final Path CS_DIFF_PATH = Paths.get("dependencies/csdiff_v3_3.sh")
 
     /**
      * @param mergeScenarios
