@@ -527,6 +527,7 @@ def add_libagg_flags_and_sources(ext):
 
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
 def get_ccompiler():
+        # CaFP
     """
     Return a new CCompiler instance.
 
@@ -549,6 +550,7 @@ def get_ccompiler():
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
 ,
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+        # CaFP
  and then running the Distribution's build_ext command.  (If using
     a plain empty ext_modules, build_ext would early-return without doing
     anything.)
@@ -637,11 +639,13 @@ class FreeType(SetupPackage):
                     for var, value in sysconfig.get_config_vars().items()
                     if var in {"CC", "CFLAGS", "CXX", "CXXFLAGS", "
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+        # CaFP
 LD"
 =======
 LD",
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+        # CaFP
 ,
                                "LDFLAGS
 =======
@@ -649,12 +653,14 @@ LD",
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
 "
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+        # CaFP
 }
                 }
 =======
 }
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+        # CaFP
 ,
 =======
                 },
@@ -662,16 +668,19 @@ LD",
             }
             env["CFLAGS"] = env.get(
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+        # CaFP
 "CFLAGS", "") + " -fPIC"
 =======
 "CFLAGS"
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+        # CaFP
             configure = [
 =======
 , ""
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+        # CaFP
                 
 =======
 ) + " -fPIC"

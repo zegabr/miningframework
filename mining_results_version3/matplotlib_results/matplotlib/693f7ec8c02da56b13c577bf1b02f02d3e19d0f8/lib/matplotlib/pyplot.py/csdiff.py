@@ -359,11 +359,13 @@ def show(*args, **kwargs):
     if you keep a reference to the figure and use `.Figure.savefig`.
 =======
  Disable interactive mode.
+# CaFP
     savefig : Save the figure to an image file instead of showing it on screen.
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
 
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
     **Auto-show in jupyter notebooks**
+# CaFP
 
     The jupyter backends (activated via ``%matplotlib inline``,
     ``%matplotlib notebook``, or ``%matplotlib widget``), call ``show()`` at

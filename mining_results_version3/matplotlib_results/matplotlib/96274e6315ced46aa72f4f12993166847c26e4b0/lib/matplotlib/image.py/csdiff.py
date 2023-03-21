@@ -475,12 +475,12 @@ class _ImageBase(martist.Artist, cm.ScalarMappable):
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/image.py/left.py
  self.norm.vmax
 =======
- self.norm.vmax
+ self.norm.vmax # CaFP
                 if vmin is np.ma.masked:
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/image.py/right.py
                 if vmin is np.ma.masked
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/image.py/left.py
-:
+:# CaFP
                     vmin, vmax = a_min, a_max
 =======
                     vmin, vmax = a_min, a_max
@@ -489,7 +489,7 @@ class _ImageBase(martist.Artist, cm.ScalarMappable):
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/image.py/left.py
                 vrange = np.array([vmin, vmax], dtype=scaled_dtype
 =======
-([vmin, vmax], dtype=scaled_dtype
+([vmin, vmax], dtype=scaled_dtype# CaFP
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/image.py/right.py
 )
 

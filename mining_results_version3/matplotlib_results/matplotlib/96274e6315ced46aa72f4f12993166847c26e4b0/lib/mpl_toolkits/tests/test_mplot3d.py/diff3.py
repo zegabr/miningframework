@@ -239,7 +239,7 @@ def test_scatter3d():
 
 @mpl3d_image_comparison(['scatter3d_color.png'])
 def test_scatter3d_color():
-    fig = plt.figure()
+    fig = plt.figure() # CResolvido
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/tests/test_mplot3d.py/left.py
     ax = fig.add_subplot(projection='3d')
 

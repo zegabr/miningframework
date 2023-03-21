@@ -136,6 +136,9 @@ class _GSConverter(_Converter):
         self._proc.stdin.flush()
         # GS> if nothing left on the stack; GS<n> if n items left on the stack.
         err = self._read_until(
+# CaFP
+# CaFP
+
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/testing/compare.py/left.py
 (b"GS<", b"GS>"))
         stack = ""

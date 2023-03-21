@@ -255,7 +255,7 @@ def test_fontinfo():
         'hspace with invalid value',
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_mathtext.py/left.py
         'frac without parameters',
-        'frac with empty parameters',
+        'frac with empty parameters', # CaFP
 =======
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_mathtext.py/right.py
         'binom without parameters',

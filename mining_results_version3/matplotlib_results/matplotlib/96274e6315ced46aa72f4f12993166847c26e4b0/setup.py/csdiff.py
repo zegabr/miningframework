@@ -124,7 +124,7 @@ class BuildExtraLibraries(BuildExtCommand):
                                          '{0} contains -fno-lto'.format(name)
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/left.py
 )
-                    enable_lto = False
+                    enable_lto = False # CaFP
                 return [os.environ[name]]
 =======
 )
@@ -133,7 +133,7 @@ class BuildExtraLibraries(BuildExtCommand):
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/left.py
 , enable_lto
-            return []
+            return [] # CaFP
 =======
             return []
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/right.py

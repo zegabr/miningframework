@@ -523,7 +523,7 @@ class _ImageBase(martist.Artist, cm.ScalarMappable):
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/left.py
                 # Block the norm from sending an update signal during the
                 # temporary vmin/vmax change
-                with self.norm.callbacks.blocked
+                with self.norm.callbacks.blocked #CaFP
 =======
                 # Block the norm from sending an update signal during the
                 # temporary vmin/vmax change
@@ -534,14 +534,14 @@ class _ImageBase(martist.Artist, cm.ScalarMappable):
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/left.py
 )
 =======
-                                           vmin=s_vmin
+                                           vmin=s_vmin#CaFP
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/right.py
 , \
                      cbook._setattr_cm
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/left.py
 (self.norm, vmin=s_vmin
 =======
-                                           vmax=s_vmax
+                                           vmax=s_vmax#CaFP
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/right.py
 ,
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/left.py

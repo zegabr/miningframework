@@ -533,7 +533,7 @@ class _ImageBase(martist.Artist, cm.ScalarMappable):
                 resampled_masked = np.ma.masked_array(A_resampled, out_mask)
                 # we have re-set the vmin/vmax to account for small errors
                 # that may have moved input values in/out of range
-                s_vmin, s_vmax = vrange
+                s_vmin, s_vmax = vrange # CReduzido
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/image.py/left.py
                 if isinstance(self.norm, mcolors.LogNorm) and s_vmin <= 0:
                     # Don't give 0 or negative values to LogNorm

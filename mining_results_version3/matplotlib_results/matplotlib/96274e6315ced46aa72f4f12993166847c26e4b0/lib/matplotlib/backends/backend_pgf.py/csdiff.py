@@ -319,7 +319,7 @@ class LatexManager:
         self._expect("*pgf_backend_query_start")
         self._expect_prompt()
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/left.py
-
+# CaFP
     @_api.deprecated
 =======
 

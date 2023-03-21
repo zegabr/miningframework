@@ -302,6 +302,7 @@ class Line3DCollection(LineCollection):
         """
         Project the points according to renderer matrix.
         """
+        # CReduzido
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/mplot3d/art3d.py/left.py
         # see _update_scalarmappable docstring for why this must be here
         _update_scalarmappable(self)
@@ -490,7 +491,7 @@ class Patch3DCollection(PatchCollection):
     @_api.delete_parameter('3.4', 'renderer')
     def do_3d_projection(self, renderer=None):
         # see _update_scalarmappable docstring for why this must be here
-        _update_scalarmappable(self)
+        _update_scalarmappable(self) # CResolvido
 =======
     def do_3d_projection(self, renderer):
         # see _update_scalarmappable docstring for why this must be here
@@ -563,7 +564,7 @@ class Path3DCollection(PathCollection):
         self._sizes3d = self.get_sizes()
         self._linewidth3d = self.get_linewidth()
         self.stale = True
-
+# CResolvido
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/mplot3d/art3d.py/left.py
     def get_depthshade(self):
         return self._depthshade
@@ -583,7 +584,7 @@ class Path3DCollection(PathCollection):
 
     def set_facecolor(self, c):
         # docstring inherited
-        super().set_facecolor(c)
+        super().set_facecolor(c) # CResolvido
         self._facecolor3d = self.get_facecolor()
 
     def set_edgecolor(self, c):
@@ -916,7 +917,7 @@ class Poly3DCollection(PolyCollection):
         else:
             return np.nan
 
-    def set_facecolor(self, colors):
+    def set_facecolor(self, colors): # CResolvido
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/mplot3d/art3d.py/left.py
         # docstring inherited
         super().set_facecolor(colors)
@@ -926,7 +927,7 @@ class Poly3DCollection(PolyCollection):
         self._facecolor3d = PolyCollection.get_facecolor(self)
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 
-    def set_edgecolor(self, colors):
+    def set_edgecolor(self, colors): # CResolvido
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/mplot3d/art3d.py/left.py
         # docstring inherited
         super().set_edgecolor(colors)

@@ -543,19 +543,19 @@ class Axes(maxes.Axes):
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/axisartist/axislines.py/left.py
 self.axes.xaxis._minor_tick_kw["gridOn"]
                  or self.axes.xaxis._major_tick_kw["gridOn"]
-                 or self.axes.yaxis._minor_tick_kw["gridOn"]
+                 or self.axes.yaxis._minor_tick_kw["gridOn"] # CaFP
 =======
 self.axes.xaxis._minor_tick_kw["gridOn"]
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/axisartist/axislines.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/axisartist/axislines.py/left.py
-                 or self.axes.yaxis._major_tick_kw[
+                 or self.axes.yaxis._major_tick_kw[# CaFP
 =======
                  or self.axes.xaxis._major_tick_kw[
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/axisartist/axislines.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/axisartist/axislines.py/left.py
 "gridOn"]
 =======
-"gridOn"]
+"gridOn"]# CaFP
                  or self.axes.yaxis._minor_tick_kw["gridOn"]
                  or self.axes.yaxis._major_tick_kw["gridOn"]
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/axisartist/axislines.py/right.py

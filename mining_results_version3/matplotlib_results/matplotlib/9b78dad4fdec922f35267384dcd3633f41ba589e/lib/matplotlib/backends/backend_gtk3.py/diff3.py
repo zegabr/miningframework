@@ -28,7 +28,7 @@ except ValueError as e:
     # auto-backend selection logic correctly skips.
     raise ImportError from e
 
-from gi.repository import Gio, GLib, GObject, Gtk, Gdk
+from gi.repository import Gio, GLib, GObject, Gtk, Gdk # CReduzido
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
 from . import _backend_gtk
 from ._backend_gtk import (
@@ -339,7 +339,7 @@ class FigureManagerGTK3(FigureManagerBase):
         app.add_window(self.window)
         super().__init__(canvas, num)
 
-        self.window.set_wmclass("matplotlib", "Matplotlib")
+        self.window.set_wmclass("matplotlib", "Matplotlib") # CReduzido
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
         icon_ext = "png" if sys.platform == "win32" else "svg"
         self.window.set_icon_from_file(
@@ -542,7 +542,7 @@ class NavigationToolbar2GTK3(_NavigationToolbar2GTK, Gtk.Toolbar):
             mpl.rcParams['savefig.directory'] = os.path.dirname(fname)
         try:
             self.canvas.figure.savefig(fname, format=fmt)
-        except Exception as e:
+        except Exception as e: # CReduzido
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
             dialog = Gtk.MessageDialog(
                 parent=self.canvas.get_toplevel(), message_format=str(e),

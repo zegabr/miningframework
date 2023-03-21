@@ -42,7 +42,7 @@ from .signals import signals_available as signals_available
 from .signals import template_rendered as template_rendered
 from .templating import render_template as render_template
 from .templating import render_template_string as render_template_string
-
+# CReduzido
 <<<<<<< /home/ze/miningframework/mining_results/flask_results/flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/__init__.py/left.py
 __version__ = "2.0.1.dev0"
 =======

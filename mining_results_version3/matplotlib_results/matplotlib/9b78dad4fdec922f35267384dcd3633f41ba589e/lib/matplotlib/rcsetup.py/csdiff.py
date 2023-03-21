@@ -493,10 +493,12 @@ def validate_markevery(s):
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/rcsetup.py/left.py
  float, (float
 =======
+        # CaFP
  float
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/rcsetup.py/right.py
 ,
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/rcsetup.py/left.py
+        # CaFP
  float)
 =======
  (float, float)

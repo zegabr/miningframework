@@ -821,6 +821,14 @@ class HandlerPolyCollection(HandlerBase):
         # Directly set Patch color attributes 
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/right.py
 (
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/left.py
 orig_handle.get_facecolor()
 =======

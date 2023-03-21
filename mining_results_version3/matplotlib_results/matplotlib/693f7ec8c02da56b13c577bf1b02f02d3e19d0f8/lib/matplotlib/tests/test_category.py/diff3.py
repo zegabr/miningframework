@@ -134,6 +134,7 @@ class TestStrCategoryLocator:
         np.testing.assert_array_equal(ticks.tick_values(None, None), locs)
 
     @pytest.mark.parametrize("plotter", PLOT_LIST, ids=PLOT_IDS)
+    # CReduzido
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/tests/test_category.py/left.py
     def test_StrCategoryLocatorPlot(self, plotter):
         ax = plt.figure().subplots()

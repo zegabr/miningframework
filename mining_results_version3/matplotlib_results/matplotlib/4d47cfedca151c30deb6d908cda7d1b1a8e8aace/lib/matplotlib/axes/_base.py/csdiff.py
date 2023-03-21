@@ -4274,7 +4274,7 @@ class _AxesBase(martist.Artist):
                 direction = 'out'
                 scl = 1/scl
             # get the limits of the axes
-            (xmin, ymin), (xmax, ymax) = self.transData.transform(
+            (xmin, ymin), (xmax, ymax) = self.transData.transform( #CaFP
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_base.py/left.py
                 np.transpose([self.get_xlim(
 =======

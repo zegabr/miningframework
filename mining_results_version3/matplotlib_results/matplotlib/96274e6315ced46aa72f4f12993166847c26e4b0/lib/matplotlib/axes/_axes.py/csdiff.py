@@ -5889,13 +5889,13 @@ default: :rc:`scatter.edgecolors`
         shading = shading.lower()
         X, Y, C, shading = self._pcolorargs('pcolor', *args, shading=shading
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/left.py
-,
+, # CaFP
 =======
 ,
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/right.py
                                             kwargs=kwargs
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/left.py
-                                            kwargs=kwargs
+                                            kwargs=kwargs# CaFP
 =======
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/right.py
 )

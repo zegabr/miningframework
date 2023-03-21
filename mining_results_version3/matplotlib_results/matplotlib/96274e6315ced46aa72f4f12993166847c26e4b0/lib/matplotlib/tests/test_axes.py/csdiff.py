@@ -4678,6 +4678,15 @@ def test_rcparam_grid_minor
     assert all(tick.gridline.get_visible() == major_visible
                for tick in ax.xaxis.majorTicks)
     assert all(
+        # CaFP
+        # CaFP
+        # CaFP
+        # CaFP
+        # CaFP
+        # CaFP
+        # CaFP
+        # CaFP
+        # CaFP
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/left.py
 tick.gridline.get_visible() == minor_visible
 =======

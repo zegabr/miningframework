@@ -59,6 +59,7 @@ def has_flag(self, flagname):
         try:
             self.compile([f.name], extra_postargs=[flagname])
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setup.py/left.py
+        # CaFP
         except Exception as exc
 =======
         except Exception as exc:
@@ -67,6 +68,7 @@ def has_flag(self, flagname):
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setup.py/right.py
 :
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setup.py/left.py
+        # CaFP
             # https
 =======
                 raise

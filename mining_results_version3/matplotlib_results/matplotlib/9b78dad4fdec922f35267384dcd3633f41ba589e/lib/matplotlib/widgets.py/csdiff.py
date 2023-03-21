@@ -2904,10 +2904,12 @@ class RectangleSelector(_SelectorWidget):
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
         if self._interactive
 =======
+        # CaFP
         if self._interactive:
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
 :
+        # CaFP
             self._handle_props = {
                 'markeredgecolor'
 =======

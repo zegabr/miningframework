@@ -416,6 +416,8 @@ class Patch(artist.Artist):
         self.stale = True
 
     def set_linestyle(self, ls):
+        # CaFP
+        # CaFP
         """
         Set the patch linestyle.
 

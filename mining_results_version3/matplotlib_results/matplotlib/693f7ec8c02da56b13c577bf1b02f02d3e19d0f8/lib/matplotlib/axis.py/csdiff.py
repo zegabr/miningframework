@@ -1424,6 +1424,7 @@ class Axis(martist.Artist):
         UNSET = object()
         visible = kwargs.pop('visible', UNSET)
 
+        # CaFP
         if b is None
 =======
         TOGGLE = object()
@@ -1445,6 +1446,7 @@ class Axis(martist.Artist):
                     b = TOGGLE
             else:  # grid(visible=v)
                 b = visible
+        # CaFP
         else:
             if visible is not UNSET and bool
 =======

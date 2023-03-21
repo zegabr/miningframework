@@ -1238,6 +1238,15 @@ def test_norm_change(fig_test, fig_ref):
 
     ax = fig_test.subplots()
     im = ax.imshow(data, norm=colors.LogNorm(
+        # CaFP
+        # CaFP
+        # CaFP
+        # CaFP
+        # CaFP
+        # CaFP
+        # CaFP
+        # CaFP
+        # CaFP
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
 vmin=0.5, vmax=1),
                    extent=(0, 5, 0, 5), interpolation='nearest', cmap=cmap)

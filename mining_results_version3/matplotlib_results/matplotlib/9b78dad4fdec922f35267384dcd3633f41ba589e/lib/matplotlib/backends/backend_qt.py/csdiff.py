@@ -326,6 +326,8 @@ pixelDelta doc: pixelDelta is sometimes not
 ).
         if 
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_qt.py/right.py
+# CaFP
+# CaFP
 (event.pixelDelta().isNull()
                 or QtWidgets.QApplication.instance().platformName() == "xcb"):
             steps = event.angleDelta().y() / 120

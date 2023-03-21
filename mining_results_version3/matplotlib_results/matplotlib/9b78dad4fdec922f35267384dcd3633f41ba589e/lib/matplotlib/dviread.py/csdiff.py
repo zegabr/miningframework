@@ -134,7 +134,7 @@ def _dispatch(table, min, max=None, state=None, args=('raw',)):
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/dviread.py/left.py
     Parameters
     ----------
-    table : dict[int, callable]
+    table : dict[int, callable] # CaFP
 =======
     Parameters
     ----------
@@ -143,7 +143,7 @@ def _dispatch(table, min, max=None, state=None, args=('raw',)):
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/dviread.py/left.py
         The dispatch table to be filled in.
 =======
-: dict[int, callable]
+: dict[int, callable] # CaFP
         The dispatch table to be filled in.
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/dviread.py/right.py
 
@@ -155,14 +155,14 @@ def _dispatch(table, min, max=None, state=None, args=('raw',)):
         State of the Dvi object in which these opcodes are allowed.
 
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/dviread.py/left.py
-    args : list[str], default: ['raw']
+    args : list[str], default: ['raw']# CaFP
 =======
     args 
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/dviread.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/dviread.py/left.py
         Sequence of argument specifications
 =======
-: list[str], default: ['raw']
+: list[str], default: ['raw']# CaFP
         Sequence of argument specifications
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/dviread.py/right.py
 :

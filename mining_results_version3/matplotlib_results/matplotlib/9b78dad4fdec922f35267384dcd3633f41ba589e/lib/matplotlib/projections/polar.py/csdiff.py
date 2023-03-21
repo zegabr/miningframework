@@ -1404,9 +1404,11 @@ class PolarAxes(Axes):
  else
 =======
  else
+        # CaFP
                     cbook._g_sig_digits
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/projections/polar.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/projections/polar.py/left.py
+        # CaFP
                     cbook._g_sig_digits(value
 =======
 (value

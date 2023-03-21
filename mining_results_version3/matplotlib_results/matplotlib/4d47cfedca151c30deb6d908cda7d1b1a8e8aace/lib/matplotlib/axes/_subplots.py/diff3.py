@@ -157,7 +157,7 @@ class SubplotBase:
         self._twinned_axes.join(self, twin)
         return twin
 
-
+# CReduzido
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/left.py
 subplot_class_factory = cbook._make_class_factory(
     SubplotBase, "{}Subplot", "_axes_class")

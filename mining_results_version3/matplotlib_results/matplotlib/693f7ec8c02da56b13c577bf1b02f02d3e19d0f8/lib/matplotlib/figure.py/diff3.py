@@ -1648,7 +1648,7 @@ default: %(va)s
             # multi-line string
             layout = inspect.cleandoc(layout)
             return [list(ln) for ln in layout.strip('\n').split('\n')]
-
+# CResolvido
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
     def subplot_mosaic(self, mosaic, *, sharex=False, sharey=False,
                        subplot_kw=None, gridspec_kw=None, empty_sentinel='.'):
@@ -1733,6 +1733,7 @@ default: %(va)s
         subplot_kw = subplot_kw or {}
         gridspec_kw = gridspec_kw or {}
         # special-case string input
+        # CReduzido
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
         if isinstance(mosaic, str):
             mosaic = self._normalize_grid_string(mosaic)

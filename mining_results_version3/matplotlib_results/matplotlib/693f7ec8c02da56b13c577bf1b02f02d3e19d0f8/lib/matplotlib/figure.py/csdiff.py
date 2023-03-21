@@ -1855,6 +1855,7 @@ mosaic
             # do the same thing for the nested mosaics (
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
 simpler because these
+# CaFP
             # can not be spans yet!)
 =======
 simpler because these
@@ -1862,10 +1863,12 @@ simpler because these
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 )
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+# CaFP
             for 
 =======
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+# CaFP
 (j
 =======
             for (j
@@ -1873,6 +1876,7 @@ simpler because these
 , k), nested_mosaic in nested.items():
                 this_level[(j, k)
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+# CaFP
 ] = (None, nested_mosaic, 'nested')
 
             # now go through the things in this level and add them
@@ -1900,6 +1904,7 @@ simpler because these
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 ,
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+# CaFP
  **{'label': str
 =======
  arg, method = this_level[key]
@@ -1914,6 +1919,7 @@ simpler because these
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 (
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+# CaFP
 name), **subplot_kw}
 =======
 f"There are duplicate keys {name} "
@@ -1921,6 +1927,7 @@ f"There are duplicate keys {name} "
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
                     )
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+# CaFP
                     output[name] = ax
                 elif method == 'nested'
 =======
@@ -1934,6 +1941,7 @@ f"There are duplicate keys {name} "
                     nested_mosaic = arg
                     j, k = key
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+# CaFP
                     nested_mosaic = arg
                     j
 =======
@@ -1942,6 +1950,7 @@ f"There are duplicate keys {name} "
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 ,
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+# CaFP
  k = key
                     # recursively add the nested mosaic
                     rows
@@ -1949,6 +1958,7 @@ f"There are duplicate keys {name} "
  cols = nested_mosaic.shape
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+# CaFP
 , cols = nested_mosaic.shape
                     nested_output = _do_layout
 =======
@@ -1975,6 +1985,7 @@ f"There are duplicate keys {name} "
         rows, cols = mosaic.shape
         gs = self.add_gridspec(rows, cols, **gridspec_kw)
         ret = _do_layout(gs, mosaic, *_identify_keys_and_nested(
+            # CReduzido
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
 mosaic))
         ax0 = next(iter(ret.values()))
@@ -2107,6 +2118,7 @@ class SubFigure(FigureBase):
         dy = hr[self._subplotspec.rowspan].sum() / hr.sum()
         x0 = wr[:self._subplotspec.colspan.start].sum() / wr.sum()
         y0 = 1 - hr[:
+        # CReduzido
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
 self._subplotspec.rowspan.stop].sum
 =======

@@ -4618,7 +4618,7 @@ default: :rc:`scatter.edgecolors`
         if marginals:
             xorig = x.copy()
 =======
-
+# CaFP
         if marginals:
             xorig = x.copy()
             yorig = y.copy
@@ -4627,6 +4627,7 @@ default: :rc:`scatter.edgecolors`
             yorig = y.copy()
 
 =======
+# CaFP
 ()
 
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
@@ -5817,12 +5818,14 @@ default: :rc:`scatter.edgecolors`
 
         collection = mcoll.PolyCollection(
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
+# CaFP
             verts
 =======
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
 , array=C, cmap=cmap, norm=norm, alpha=alpha, **kwargs
 =======
+# CaFP
             verts, array=C, cmap=cmap, norm=norm, alpha=alpha, **kwargs
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
 )
@@ -7085,10 +7088,12 @@ such objects
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
  vmax = self.get_ybound(
 =======
+# CaFP
  vmax = self.get_ybound()
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
 )
+# CaFP
         step = max
 =======
         step = max
@@ -7199,10 +7204,12 @@ such objects
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
 vmax - vmin
 =======
+# CaFP
 vmax - vmin)
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
 ), 1)
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
+# CaFP
 , 1)
 =======
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py

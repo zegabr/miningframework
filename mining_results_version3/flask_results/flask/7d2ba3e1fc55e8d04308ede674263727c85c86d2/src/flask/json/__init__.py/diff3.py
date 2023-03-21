@@ -171,7 +171,7 @@ def loads(s, app=None, **kwargs):
 
     Takes the same arguments as the built-in :func:`json.loads`, with
     some defaults from application configuration.
-
+# CReduzido
     :param s: JSON string to deserialize.
 <<<<<<< /home/ze/miningframework/mining_results/flask_results/flask/7d2ba3e1fc55e8d04308ede674263727c85c86d2/src/flask/json/__init__.py/left.py
     :param app: Use this app's config instead of the active app context

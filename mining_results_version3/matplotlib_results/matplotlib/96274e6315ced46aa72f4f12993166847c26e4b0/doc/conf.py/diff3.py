@@ -347,6 +347,7 @@ latex_logo = None
 latex_engine = 'xelatex'  # or 'lualatex'
 
 latex_elements = {}
+# CReduzido
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
 
 # Keep babel usage also with xelatex (Sphinx default is polyglossia)
@@ -431,6 +432,8 @@ latex_elements['preamble'] = r"""
    % One line per author on title page
    \DeclareRobustCommand{\and}%
      {\end{tabular}\kern-\tabcolsep\\\begin{tabular}[t]{c}}%
+# CReduzido
+
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
    \usepackage{etoolbox}
    \AtBeginEnvironment{sphinxthebibliography}{\appendix\part{Appendices}}
@@ -439,6 +442,8 @@ latex_elements['preamble'] = r"""
    \usepackage{expdlist}
    \let\latexdescription=\description
    \def\description{\latexdescription{}{} \breaklabel}
+# CReduzido
+
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
    % But expdlist old LaTeX package requires fixes:
    % 1) remove extra space

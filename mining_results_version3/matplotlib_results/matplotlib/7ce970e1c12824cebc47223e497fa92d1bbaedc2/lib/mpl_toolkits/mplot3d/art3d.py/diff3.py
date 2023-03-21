@@ -587,7 +587,7 @@ class Path3DCollection(PathCollection):
         self._z_markers_idx = slice(-1)
         self._vzs = None
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
-        self.stale = True
+        self.stale = True # CReduzido
 
     def set_sizes(self, sizes, dpi=72.0):
         super().set_sizes(sizes, dpi)
@@ -658,7 +658,7 @@ class Path3DCollection(PathCollection):
 
     def get_facecolor(self):
         return self._maybe_depth_shade_and_sort_colors(super().get_facecolor())
-
+# CReduzido
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
     def get_edgecolor(self):
         # We need this check here to make sure we do not double-apply the depth
@@ -815,7 +815,7 @@ class Poly3DCollection(PolyCollection):
     def do_3d_projection(self, renderer=None):
         """
         Perform the 3D projection for this object.
-        """
+        """ # CReduzido
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
         if self._A is not None:
             # force update of color mapping because we re-order them

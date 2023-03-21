@@ -1585,9 +1585,11 @@ class _AxesBase(martist.Artist):
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_base.py/left.py
             - 'auto'
 =======
+        # CaFP
             - 'auto': fill the position rectangle with data.
 >>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_base.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_base.py/left.py
+        # CaFP
 : fill the position rectangle with data.
             - 'equal'
 =======

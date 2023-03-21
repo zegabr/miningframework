@@ -10,7 +10,7 @@ import warnings
 import numpy as np
 import pytest
 
-from matplotlib.font_manager import (
+from matplotlib.font_manager import ( # CReduzido
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/c488353862958ad5bf81954b229b4b7a1e22c7a3/lib/matplotlib/tests/test_font_manager.py/left.py
     findfont, findSystemFonts, FontEntry, FontProperties, fontManager,
     json_dump, json_load, get_font, is_opentype_cff_font,
@@ -278,6 +278,7 @@ def test_fontentry_dataclass():
     entry = FontEntry(name="font-name")
 
     assert type(entry.__doc__) == str
+    # CReduzido
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/c488353862958ad5bf81954b229b4b7a1e22c7a3/lib/matplotlib/tests/test_font_manager.py/left.py
     assert entry._repr_html_() == "<span style='font-family:font-name'>font-name</span>"  # noqa: E501
 =======

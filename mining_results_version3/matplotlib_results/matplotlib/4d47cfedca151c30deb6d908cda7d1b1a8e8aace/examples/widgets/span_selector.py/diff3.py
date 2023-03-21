@@ -31,7 +31,7 @@ def onselect(xmin, xmax):
     indmax = min(len(x) - 1, indmax)
 
     region_x = x[indmin:indmax]
-    region_y = y[indmin:indmax]
+    region_y = y[indmin:indmax]# CReduzido
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/examples/widgets/span_selector.py/left.py
 
     if len(region_x) >= 2:

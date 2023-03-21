@@ -80,7 +80,16 @@ _TENANTS = "tenants"
 
 log = logging.getLogger(__name__)
 
-
+#CReduzido
+#CReduzido
+#CReduzido
+#CReduzido
+#CReduzido
+#CReduzido
+#CReduzido
+#CReduzido
+#CReduzido
+#CReduzido
 def __virtual__():
     """
     Only load this module if keystone

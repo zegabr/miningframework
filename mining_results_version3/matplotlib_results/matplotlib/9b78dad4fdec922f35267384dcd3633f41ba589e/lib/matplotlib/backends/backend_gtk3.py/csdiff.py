@@ -796,7 +796,7 @@ def error_msg_gtk(msg, parent=None):
 
 
 Toolbar = ToolbarGTK3
-backend_tools._register_tool_class(
+backend_tools._register_tool_class( # CaFP
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
 =======
 _BackendGTK)
@@ -806,7 +806,7 @@ _BackendGTK)
 , _backend_gtk.ConfigureSubplotsGTK)
 backend_tools._register_tool_class(
     FigureCanvasGTK3, _backend_gtk.RubberbandGTK)
-
+# CaFP
 
 @_Backend.export
 class _BackendGTK3(_BackendGTK):

@@ -36,6 +36,13 @@ _log = logging.getLogger(__name__)
 class __getattr__:
     locals().update({
         name:
+        # CaFP
+        # CaFP
+        # CaFP
+        # CaFP
+        # CaFP
+        # CaFP
+        # CaFP
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
  _api.deprecated("3.4")(
 =======

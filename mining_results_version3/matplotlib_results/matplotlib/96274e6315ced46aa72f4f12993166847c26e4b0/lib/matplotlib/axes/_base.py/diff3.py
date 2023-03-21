@@ -3062,6 +3062,7 @@ class _AxesBase(martist.Artist):
         use `.set_axisbelow` or, for more control, call the
         `~.Artist.set_zorder` method of each axis.
         """
+        # CReduzido
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_base.py/left.py
         _api.check_in_list(['x', 'y', 'both'], axis=axis)
 =======

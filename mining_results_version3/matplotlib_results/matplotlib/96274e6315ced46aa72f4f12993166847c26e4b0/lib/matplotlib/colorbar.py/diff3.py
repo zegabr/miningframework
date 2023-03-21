@@ -768,7 +768,7 @@ class ColorbarBase:
         """
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/colorbar.py/left.py
         if self.orientation == "vertical":
-            self.ax.set_ylabel(label, loc=loc, **kwargs)
+            self.ax.set_ylabel(label, loc=loc, **kwargs) # CReduzido
 =======
         Draw the colors using `~.axes.Axes.pcolormesh`;
         optionally add separators.

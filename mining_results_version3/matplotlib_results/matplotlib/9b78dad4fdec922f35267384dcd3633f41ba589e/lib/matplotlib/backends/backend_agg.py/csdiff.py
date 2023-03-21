@@ -158,6 +158,20 @@ class RendererAgg(RendererBase):
                         "Exceeded cell block limit in Agg.\n\n"
                         "Please reduce the value of "
                         f"rcParams['agg.path.chunksize'] (
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
 currently {nmax}) "
 =======

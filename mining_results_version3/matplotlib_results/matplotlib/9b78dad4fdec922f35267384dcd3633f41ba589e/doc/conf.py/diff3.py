@@ -611,7 +611,7 @@ if link_github:
 
         if not fn.startswith(('matplotlib/', 'mpl_toolkits/')):
             return None
-
+# CReduzido
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/doc/conf.py/left.py
         version = parse(matplotlib.__version__)
         tag = 'main' if version.is_devrelease else f'v{version.public}'

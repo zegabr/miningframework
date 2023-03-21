@@ -3,7 +3,7 @@ from setuptools import setup
 # Metadata goes in setup.cfg. These are here for GitHub's dependency graph.
 setup(
     name="Flask",
-    install_requires=[
+    install_requires=[ # CReduzido
 <<<<<<< /home/ze/miningframework/mining_results/flask_results/flask/5bd959fbec98cb14c785868e8890d6850971038e/setup.py/left.py
         "Werkzeug>=2.0",
         "Jinja2>=3.0",

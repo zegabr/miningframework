@@ -354,7 +354,9 @@ class GraphicsContextCairo(GraphicsContextBase):
             self.ctx.set_source_rgba(rgb[0], rgb[1], rgb[2], _alpha)
         else:
             self.ctx.set_source_rgba(rgb[0], rgb[1], rgb[2], rgb[3])
-
+# CaFP
+# CaFP
+# CaFP
     def set_antialiased(self, b):
 <<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_cairo.py/left.py
         self.ctx.set_antialias(

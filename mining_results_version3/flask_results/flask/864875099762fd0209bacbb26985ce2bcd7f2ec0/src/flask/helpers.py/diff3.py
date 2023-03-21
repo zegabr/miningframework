@@ -780,7 +780,7 @@ class locked_cached_property(werkzeug.utils.cached_property):
                 obj.__dict__[self.__name__] = value
             return value
 
-
+# CReduzido
 class _PackageBoundObject(object):
     #: The name of the package or module that this app belongs to. Do not
     #: change this once it is set by the constructor.
