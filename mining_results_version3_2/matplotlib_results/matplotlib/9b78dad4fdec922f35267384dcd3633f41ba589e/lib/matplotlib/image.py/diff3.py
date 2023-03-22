@@ -534,7 +534,7 @@ class _ImageBase(martist.Artist, cm.ScalarMappable):
                                            vmin=s_vmin,
                                            vmax=s_vmax,
                                            ):
-                        output = self.norm(resampled_masked)
+                        output = self.norm(resampled_masked) # D3FP
 >>>>>>> /home/ze/miningframework/mining_results_version3_2/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/right.py
             else:
                 if A.ndim == 2:  # _interpolation_stage == 'rgba'

@@ -751,7 +751,6 @@ class BinaryOpsTest(xla_test.XLATestCase):
           np.array([int_min, -1, 1, int_max], dtype=dtype).reshape([1, 4]),
           np.array([int_min, -1, 1, int_max], dtype=dtype).reshape([4, 1]),
           expected=np.array([[0, -1, -1 * int_max, -1], [0, 0, 0, 0],
-          # CReduzido
 <<<<<<< /home/ze/miningframework/mining_results_version3_3/tensorflow_results/tensorflow/754269c236e06a8347ce599545ab418ab40653a2/tensorflow/compiler/tests/binary_ops_test.py/left.py
  
                              [0

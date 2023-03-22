@@ -524,7 +524,7 @@ class _ImageBase(martist.Artist, cm.ScalarMappable):
                 # Block the norm from sending an update signal during the
                 # temporary vmin/vmax change
                 with self.norm.callbacks.blocked(), \
-                     cbook._setattr_cm(self.norm, vmin=s_vmin, vmax=s_vmax):
+                     cbook._setattr_cm(self.norm, vmin=s_vmin, vmax=s_vmax): # D3FP
                     output = self.norm(resampled_masked)
 =======
                 # Block the norm from sending an update signal during the

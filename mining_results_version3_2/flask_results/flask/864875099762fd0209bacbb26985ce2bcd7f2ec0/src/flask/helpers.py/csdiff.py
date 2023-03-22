@@ -783,7 +783,7 @@ class locked_cached_property(werkzeug.utils.cached_property):
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_2/flask_results/flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/helpers.py/left.py
 =======
-    @static_folder.setter
+    @static_folder.setter # CReduzido
     def static_folder(self, value):
         if value is not None:
             value = fspath(value).rstrip(r"\/")
