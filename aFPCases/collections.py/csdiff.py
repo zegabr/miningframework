@@ -1457,28 +1457,10 @@ class LineCollection(Collection):
         """
         segments = []
 
-        for path in self._paths: # CaFP CaFP
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/collections.py/left.py
-            vertices = [
-                vertex
-                for vertex
-=======
+        for path in self._paths:
             vertices = [
                 vertex
                 for vertex, _
-                # Never simplify here
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/collections.py/right.py
-,
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/collections.py/left.py
- _
-=======
- we want to get the data-space values
-                # back and there in no way to know the "right" simplification
-                # threshold so never try.
-                in path.iter_segments(simplify=False)
-            ]
-            vertices = np.asarray(vertices)
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/collections.py/right.py
                 # Never simplify here, we want to get the data-space values
                 # back and there in no way to know the "right" simplification
                 # threshold so never try.

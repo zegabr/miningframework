@@ -546,7 +546,7 @@ class Path3DCollection(PathCollection):
             xs = []
             ys = []
         self._offsets3d = juggle_axes(xs, ys, np.atleast_1d(zs), zdir)
-<<<<<<< ./left.py
+<<<<<<< ./art3d.py/left.py
         # In the base draw methods we access the attributes directly which
         # means we can not resolve the shuffling in the getter methods like
         # we do for the edge and face colors.
@@ -559,7 +559,7 @@ class Path3DCollection(PathCollection):
         # grab the current sizes and linewidths to preserve them
         self._sizes3d = self._sizes
         self._linewidths3d = self._linewidths
-        xs,
+        xs
 =======
         # In the base draw methods we access the attributes directly which
         # means we can not resolve the shuffling in the getter methods like
@@ -573,9 +573,9 @@ class Path3DCollection(PathCollection):
         # Grab the current sizes and linewidths to preserve them.
         self._sizes3d = self._sizes
         self._linewidths3d = self._linewidths
-        xs,
->>>>>>> ./right.py
- ys, zs = self._offsets3d
+        xs
+>>>>>>> ./art3d.py/right.py
+, ys, zs = self._offsets3d
 
         # Sort the points based on z coordinates
         # Performance optimization: Create a sorted index array and reorder
@@ -590,18 +590,8 @@ class Path3DCollection(PathCollection):
             self._sizes3d = sizes
 
     def set_linewidth(self, lw):
-        super()
-<<<<<<< ./left.py
-.set_linewidth(lw)
-=======
-.set_linewidth(
->>>>>>> ./right.py
-lw)
-<<<<<<< ./left.py
+        super().set_linewidth(lw)
         if not self._in_draw:
-=======
-        if not self._in_draw:
->>>>>>> ./right.py
             self._linewidth3d = lw
 
     def get_depthshade(self):
@@ -640,7 +630,6 @@ lw)
             self._sizes = self._sizes3d[z_markers_idx]
 
         if len(self._linewidths3d) > 1:
-<<<<<<< ./left.py
             self._linewidths = self._linewidths3d[z_markers_idx]
 
         # Re-order items
@@ -648,117 +637,46 @@ lw)
         vxs = vxs[z_markers_idx]
         vys = vys[z_markers_idx]
 
-        PathCollection.set_offsets(self,
-=======
-            self._linewidths = self._linewidths3d[z_markers_idx]
-
-        # Re-order items
-        vzs = vzs[z_markers_idx]
-        vxs = vxs[z_markers_idx]
-        vys = vys[z_markers_idx]
-
-        PathCollection.set_offsets(
->>>>>>> ./right.py
-<<<<<<< ./left.py
- np.column_stack(
-=======
-self, np.column_stack(
->>>>>>> ./right.py
-(vxs, vys)))
+        PathCollection.set_offsets(self, np.column_stack((vxs, vys)))
 
         return np.min(vzs) if vzs.size else np.nan
 
-    def _maybe_depth_shade_and_sort_colors(self,
-<<<<<<< ./left.py
- color_array):
-=======
- color_array)
->>>>>>> ./right.py
-:
-<<<<<<< ./left.py
+    def _maybe_depth_shade_and_sort_colors(self, color_array):
         color_array = (
-=======
->>>>>>> ./right.py
-<<<<<<< ./left.py
-=======
-        color_array = (
->>>>>>> ./right.py
-<<<<<<< ./left.py
-            _zalpha(
-=======
->>>>>>> ./right.py
-<<<<<<< ./left.py
-color_array,
-=======
-            _zalpha(
->>>>>>> ./right.py
-<<<<<<< ./left.py
- self._vzs)
-=======
-color_array,
->>>>>>> ./right.py
-<<<<<<< ./left.py
-=======
- self._vzs)
->>>>>>> ./right.py
-<<<<<<< ./left.py
+            _zalpha(color_array, self._vzs)
             if self._vzs is not None and self._depthshade
             else color_array
         )
-=======
->>>>>>> ./right.py
-<<<<<<< ./left.py
-=======
-            if self._vzs is not None and self._depthshade
-            else color_array
-        )
->>>>>>> ./right.py
-<<<<<<< ./left.py
-        if len(
-=======
->>>>>>> ./right.py
-<<<<<<< ./left.py
-color_array)
-=======
-        if len(
->>>>>>> ./right.py
-<<<<<<< ./left.py
- > 1:
-=======
-color_array) > 1:
->>>>>>> ./right.py
+        if len(color_array) > 1:
             color_array = color_array[self._z_markers_idx]
         return mcolors.to_rgba_array(color_array, self._alpha)
 
     def get_facecolor(self):
-        return self._maybe_depth_shade_and_sort_colors(super().get_facecolor()
-<<<<<<< ./left.py
-)
-=======
-)
->>>>>>> ./right.py
-<<<<<<< ./left.py
+        return self._maybe_depth_shade_and_sort_colors(super().get_facecolor())
 
-    def get_edgecolor(
-=======
-
-    def get_edgecolor(
->>>>>>> ./right.py
-self):
-<<<<<<< ./left.py
+    def get_edgecolor(self):
+<<<<<<< ./art3d.py/left.py
         # We need this check here to make sure we do not double-apply the depth
         #  based alpha shading when the edge color is "face" which means the
         #  edge colour should be identical to the face colour.
-        if cbook._str_equal(
+        if cbook._str_equal
 =======
         # We need this check here to make sure we do not double-apply the depth
         # based alpha shading when the edge color is "face" which means the
         # edge colour should be identical to the face colour.
-        if cbook._str_equal(
->>>>>>> ./right.py
-self._edgecolors, 'face'):
+        if cbook._str_equal
+>>>>>>> ./art3d.py/right.py
+(self._edgecolors, 'face'):
             return self.get_facecolor()
-        return self._maybe_depth_shade_and_sort_colors(super().get_edgecolor())
+<<<<<<< ./art3d.py/left.py
+=======
+>>>>>>> ./art3d.py/right.py
+<<<<<<< ./art3d.py/left.py
+        return self._maybe_depth_shade_and_sort_colors
+=======
+        return self._maybe_depth_shade_and_sort_colors
+>>>>>>> ./art3d.py/right.py
+(super().get_edgecolor())
 
 
 def patch_collection_2d_to_3d(col, zs=0, zdir='z', depthshade=True):
@@ -899,45 +817,46 @@ class Poly3DCollection(PolyCollection):
         """
         Perform the 3D projection for this object.
         """
-<<<<<<< ./left.py
-        if self._A is not None:
-            # force update of color mapping because we re-order them
-            # below.  If we do not do this here,
-=======
+<<<<<<< ./art3d.py/left.py
         if self._A is not None:
             # force update of color mapping because we re-order them
             # below.  If we do not do this here, the 2D draw will call
-            # this,
->>>>>>> ./right.py
-<<<<<<< ./left.py
- the 2D draw will call
             # this, but we will never port the color mapped values back
             # to the 3D versions.
             #
             # We hold the 3D versions in a fixed order (the order the user
             # passed in) and sort the 2D version by view depth.
-            self.update_scalarmappable()
+            self.update_scalarmappable
+=======
+        if self._A is not None:
+            # force update of color mapping because we re-order them
+            # below.  If we do not do this here, the 2D draw will call
+            # this, but we will never port the color mapped values back
+            # to the 3D versions.
+            #
+            # We hold the 3D versions in a fixed order 
+>>>>>>> ./art3d.py/right.py
+(
+<<<<<<< ./art3d.py/left.py
+=======
+the order the user
+            # passed in) and sort the 2D version by view depth.
+            copy_state = self._update_dict['array']
+            self.update_scalarmappable(
+>>>>>>> ./art3d.py/right.py
+)
+<<<<<<< ./art3d.py/left.py
             if self._face_is_mapped:
                 self._facecolor3d = self._facecolors
             if self._edge_is_mapped:
+                self._edgecolor3d = self._edgecolors
 =======
- but we will never port the color mapped values back
-            # to the 3D versions.
-            #
-            # We hold the 3D versions in a fixed order (the order the user
-            # passed in) and sort the 2D version by view depth.
-            copy_state = self._update_dict['array']
-            self.update_scalarmappable()
             if copy_state:
                 if self._face_is_mapped:
                     self._facecolor3d = self._facecolors
                 if self._edge_is_mapped:
->>>>>>> ./right.py
-<<<<<<< ./left.py
-                self._edgecolor3d = self._edgecolors
-=======
                     self._edgecolor3d = self._edgecolors
->>>>>>> ./right.py
+>>>>>>> ./art3d.py/right.py
         txs, tys, tzs = proj3d._proj_transform_vec(self._vec, self.axes.M)
         xyzlist = [(txs[sl], tys[sl], tzs[sl]) for sl in self._segslices]
 

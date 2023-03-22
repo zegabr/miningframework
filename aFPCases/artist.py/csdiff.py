@@ -1274,53 +1274,55 @@ class Artist:
             # Artist.format_cursor_data would always have precedence over
             # ScalarMappable.format_cursor_data.
             n = self.cmap.N
-            if np.ma.getmask(
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
-data): # CaFP
-=======
-data):
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
-                return 
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
-                return # CaFP
-=======
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
-"[]"
-            normed = self.norm(data)
-            if np.isfinite(
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
-normed)# CaFP
-=======
-normed):
+            if np.ma.getmask(data):
+                return "[]"
+            normed = self.norm(
+<<<<<<< ./artist.py/left.py
+data)
+            if np.isfinite(normed):
                 # Midpoints of neighboring color intervals.
                 neighbors = self.norm.inverse
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
-:# CaFP
+=======
+data)
+>>>>>>> ./artist.py/right.py
+(
+<<<<<<< ./artist.py/left.py
+=======
+            if np.isfinite
+>>>>>>> ./artist.py/right.py
+                    (int(self.norm(normed):
                 # Midpoints of neighboring color intervals.
                 neighbors = self.norm.inverse(
-=======
-(
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
                     (int(self.norm(data)
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
- * n) + np.array([0, 1])) / n)
-                delta = abs# CaFP
-=======
+<<<<<<< ./artist.py/left.py
  * n) + np.array([0, 1])
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
-(neighbors - data)
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
-.max# CaFP
 =======
+ * n) + np.array([0, 1])) / n)
+>>>>>>> ./artist.py/right.py
+                delta = abs(neighbors - data)
+<<<<<<< ./artist.py/left.py
  / n)
                 delta = abs(neighbors - data).max
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
+=======
+.max
+>>>>>>> ./artist.py/right.py
 ()
+<<<<<<< ./artist.py/left.py
                 g_sig_digits = cbook._g_sig_digits(data, delta)
+=======
+                g_sig_digits = cbook._g_sig_digits
+>>>>>>> ./artist.py/right.py
+<<<<<<< ./artist.py/left.py
             else:
                 g_sig_digits = 3  # Consistent with default below.
-            return "[{:-#.{}g}]".format(data, g_sig_digits)
+            return "[{:-#.{}g}]".format(data, g_sig_digits
+=======
+(data, delta)
+            else:
+                g_sig_digits = 3  # Consistent with default below.
+            return "[{:-#.{}g}]".format(data, g_sig_digits
+>>>>>>> ./artist.py/right.py
+)
         else:
             try:
                 data[0]

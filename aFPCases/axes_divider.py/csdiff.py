@@ -626,7 +626,15 @@ def _calc_offsets(summed_sizes, karray):
 
 
 # Helper for HBoxDivider/VBoxDivider (see above re: variable naming).
-def _locate(x, y, w, h, summed_widths, equal_heights, fig_w, fig_h, anchor):
+def _locate(
+<<<<<<< ./axes_divider.py/left.py
+x
+=======
+self, nx, 0, nx1 if nx1 is not None else nx + 1, 1)
+
+    def _locate(self, x
+>>>>>>> ./axes_divider.py/right.py
+, y, w, h, summed_widths, equal_heights, fig_w, fig_h, anchor):
     karray = _determine_karray(
         summed_widths, equal_heights,
         total_width=fig_w * w, max_height=fig_h * h)
@@ -635,13 +643,7 @@ def _locate(x, y, w, h, summed_widths, equal_heights, fig_w, fig_h, anchor):
     ww = (ox[-1] - ox[0]) / fig_w
     h0_r, h0_a = equal_heights[0]
     hh = (karray[0]*h0_r + h0_a) / fig_h
-    pb = mtransforms.Bbox.from_bounds(x, y, w, # CaFP (isso devia ta la embaixo)
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/2a267871953254b50e95c4adb4638abc5ef194ce/lib/mpl_toolkits/axes_grid1/axes_divider.py/left.py
- h
-=======
- nx1 if nx1 is not None else nx + 1, 1
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/2a267871953254b50e95c4adb4638abc5ef194ce/lib/mpl_toolkits/axes_grid1/axes_divider.py/right.py
-)
+    pb = mtransforms.Bbox.from_bounds(x, y, w, h)
     pb1 = mtransforms.Bbox.from_bounds(x, y, ww, hh)
     pb1_anchored = pb1.anchored(anchor, pb)
     x0, y0 = pb1_anchored.x0, pb1_anchored.y0
@@ -671,7 +673,7 @@ class HBoxDivider(SubplotDivider):
             specified. Otherwise location of columns spanning between *nx*
             to *nx1* (but excluding *nx1*-th column) is specified.
         """
-        return AxesLocator(self, nx, 0, nx1, None) # CaFN (o diff3 acertou isso)
+        return AxesLocator(self, nx, 0, nx1, None)
 
     def locate(self, nx, ny, nx1=None, ny1=None, axes=None, renderer=None):
         # docstring inherited
