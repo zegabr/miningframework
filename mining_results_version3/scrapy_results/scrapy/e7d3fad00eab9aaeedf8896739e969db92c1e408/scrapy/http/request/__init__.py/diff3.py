@@ -129,7 +129,7 @@ class Request(object_ref):
         return f"<{self.method} {self.url}>"
 
 <<<<<<< /home/ze/miningframework/mining_results/scrapy_results/scrapy/e7d3fad00eab9aaeedf8896739e969db92c1e408/scrapy/http/request/__init__.py/left.py
-    def copy(self):
+    def copy(self): # CResolvido
         """Return a copy of this Request"""
 =======
     __repr__ = __str__

@@ -4,7 +4,7 @@ This module implements the FormRequest class which is a more convenient class
 
 See documentation in docs/topics/request-response.rst
 """
-
+# CResolvido
 <<<<<<< /home/ze/miningframework/mining_results/scrapy_results/scrapy/16be658a319937a3863145a71f6a45c30bac7090/scrapy/http/request/form.py/left.py
 from urllib.parse import urljoin, urlencode, urlsplit, urlunsplit
 =======

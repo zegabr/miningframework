@@ -140,7 +140,7 @@ class Request(object_ref):
 
     def copy(self) -> RequestTypeVar:
         return self.replace()
-
+# CResolvido
 <<<<<<< /home/ze/miningframework/mining_results/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/left.py
     def replace(self, *args, **kwargs) -> RequestTypeVar:
         """Create a new Request with the same attributes except for those given new values"""

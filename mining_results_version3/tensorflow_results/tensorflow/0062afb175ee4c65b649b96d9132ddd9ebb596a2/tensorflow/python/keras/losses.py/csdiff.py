@@ -2067,7 +2067,7 @@ def get(identifier):
   """
   if identifier is None:
     return None
-  if isinstance(identifier, str) or isinstance(identifier, dict):
+  if isinstance(identifier, str) or isinstance(identifier, dict): # CaFN
     return deserialize(identifier)
   if callable(identifier):
     return identifier

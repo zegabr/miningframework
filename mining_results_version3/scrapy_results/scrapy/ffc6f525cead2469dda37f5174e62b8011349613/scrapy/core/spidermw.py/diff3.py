@@ -19,7 +19,7 @@ from scrapy.utils.conf import build_component_list
 from scrapy.utils.defer import mustbe_deferred
 from scrapy.utils.python import MutableAsyncChain, MutableChain
 
-
+# CReduzido
 <<<<<<< /home/ze/miningframework/mining_results/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/core/spidermw.py/left.py
 def _isiterable(possible_iterator):
     return hasattr(possible_iterator, '__iter__') or hasattr(possible_iterator, '__aiter__')
