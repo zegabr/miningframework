@@ -309,7 +309,7 @@ class Line3DCollection(LineCollection):
                    for points in self._segments3d]
 =======
         # see _update_scalarmappable docstring for why this must be here
-        _update_scalarmappable(self)
+        _update_scalarmappable(self) # CReduzido
         xyslist = [
             proj3d.proj_trans_points(points, renderer.M) for points in
             self._segments3d]
@@ -490,7 +490,8 @@ class Patch3DCollection(PatchCollection):
     @_api.delete_parameter('3.4', 'renderer')
     def do_3d_projection(self, renderer=None):
         # see _update_scalarmappable docstring for why this must be here
-        _update_scalarmappable(self)
+        _update_scalarmappable(self) 
+        # CResolvido
 =======
     def do_3d_projection(self, renderer):
         # see _update_scalarmappable docstring for why this must be here
@@ -600,6 +601,7 @@ class Path3DCollection(PathCollection):
         # docstring inherited
         super().set_linewidth(lw)
         self._linewidth3d = self.get_linewidth()
+        # CResolvido
 
     @_api.delete_parameter('3.4', 'renderer')
     def do_3d_projection(self, renderer=None):
@@ -922,6 +924,7 @@ class Poly3DCollection(PolyCollection):
         super().set_facecolor(colors)
         self._facecolor3d = PolyCollection.get_facecolor(self)
 =======
+        # CResolvido
         PolyCollection.set_facecolor(self, colors)
         self._facecolor3d = PolyCollection.get_facecolor(self)
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/mplot3d/art3d.py/right.py
@@ -929,6 +932,7 @@ class Poly3DCollection(PolyCollection):
     def set_edgecolor(self, colors):
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/mplot3d/art3d.py/left.py
         # docstring inherited
+        # CResolvido
         super().set_edgecolor(colors)
         self._edgecolor3d = PolyCollection.get_edgecolor(self)
 =======

@@ -261,7 +261,7 @@ class LossFunctionWrapper(Loss):
   def get_config(self):
     config = {}
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/left.py
-    for k, v in self._fn_kwargs.items():
+    for k, v in self._fn_kwargs.items(): # CResolvido
       config[k] = K.eval(v) if tf_utils.is_tensor_or_variable(v) else v
     base_config = super().get_config()
 =======
@@ -2076,7 +2076,7 @@ def get(identifier):
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/left.py
   if isinstance(identifier, str) or isinstance(identifier, dict):
 =======
-  if isinstance(identifier, str):
+  if isinstance(identifier, str): # CReduzido
     identifier = str(identifier)
     return deserialize(identifier)
   if isinstance(identifier, dict):

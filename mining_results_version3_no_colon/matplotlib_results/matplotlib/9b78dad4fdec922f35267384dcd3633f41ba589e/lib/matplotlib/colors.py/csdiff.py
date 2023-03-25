@@ -398,7 +398,7 @@ def to_hex(c, keep_alpha=False):
     keep_alpha: bool, default: False
       If False
 =======
-
+# CaFP
     keep_alpha: bool
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/colors.py/right.py
 ,
@@ -406,6 +406,7 @@ def to_hex(c, keep_alpha=False):
  use the ``#rrggbb`` format, otherwise use ``#rrggbbaa``.
 
     Returns
+# CaFP
     -------
     str
 =======
@@ -415,6 +416,7 @@ def to_hex(c, keep_alpha=False):
       ``#rrggbb`` or ``#rrggbbaa`` hex color string
 =======
       If False, use the ``#rrggbb`` format, otherwise use ``#rrggbbaa``.
+# CaFP
 
     Returns
     -------

@@ -823,11 +823,13 @@ class Axis(martist.Artist):
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/left.py
 )
 =======
+            # CaFP
 )
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/left.py
         self._reset_minor_tick_kw
 =======
+            # CaFP
         self._reset_minor_tick_kw
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/right.py
 ()
@@ -1462,10 +1464,12 @@ class Axis(martist.Artist):
 (not self._minor_tick_kw['gridOn']
                                 if b is TOGGLE else b
 =======
+            # CaFP
 (not self._minor_tick_kw['gridOn']
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/left.py
 )
+            # CaFP
 =======
                                 if b is TOGGLE else b)
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/right.py
@@ -1473,15 +1477,18 @@ class Axis(martist.Artist):
         if which in ['major', 'both']:
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/left.py
             gridkw['gridOn'] = 
+            # CaFP
 =======
             gridkw['gridOn'] = (not self._major_tick_kw['gridOn']
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/left.py
 (not self._major_tick_kw['gridOn']
+            # CaFP
 =======
                                 if b is TOGGLE else b
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/left.py
+            # CaFP
                                 if b is TOGGLE else b)
 =======
 )

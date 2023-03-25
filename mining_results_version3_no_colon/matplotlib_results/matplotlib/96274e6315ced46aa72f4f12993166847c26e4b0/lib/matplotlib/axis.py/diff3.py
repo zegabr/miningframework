@@ -1394,7 +1394,7 @@ class Axis(martist.Artist):
                 _api.warn_external('First parameter to grid() is false, '
                                    'but line properties are supplied. The '
                                    'grid will be enabled.')
-                b = True
+                b = True # CResolvido
 =======
         if b is not None:
             if 'visible' in kwargs and bool(b) != bool(kwargs['visible']):

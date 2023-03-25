@@ -290,12 +290,14 @@ def tricontourf(ax, *args, **kwargs):
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/tri/tricontour.py/left.py
     hatches : list[str], optional
 =======
+# CaFP
     hatches : list[str]
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/tri/tricontour.py/right.py
         A list of cross hatch patterns to use on the filled areas.
         If None, no hatching will be added to the contour.
         Hatching is supported in the PostScript, PDF,
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/tri/tricontour.py/left.py
+# CaFP
  SVG and Agg
 =======
  optional

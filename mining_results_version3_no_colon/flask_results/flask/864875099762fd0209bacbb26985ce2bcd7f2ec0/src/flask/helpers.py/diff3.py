@@ -772,7 +772,7 @@ class locked_cached_property(werkzeug.utils.cached_property):
 
         with self.lock:
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/flask_results/flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/helpers.py/left.py
-            return super().__get__(obj, type=type)
+            return super().__get__(obj, type=type) # CReduzido
 =======
             value = obj.__dict__.get(self.__name__, _missing)
             if value is _missing:

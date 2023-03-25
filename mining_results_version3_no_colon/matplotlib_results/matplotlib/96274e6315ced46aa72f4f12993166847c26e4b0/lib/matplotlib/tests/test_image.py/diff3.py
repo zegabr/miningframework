@@ -715,7 +715,7 @@ def test_load_from_url():
            + ('///' if sys.platform == 'win32' else '')
            + path.resolve().as_posix())
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_image.py/left.py
-    with _api.suppress_matplotlib_deprecation_warning():
+    with _api.suppress_matplotlib_deprecation_warning(): # CResolvido
         plt.imread(url)
     with urllib.request.urlopen(url) as file:
         plt.imread(file)

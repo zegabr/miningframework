@@ -1275,7 +1275,7 @@ class Artist:
             # ScalarMappable.format_cursor_data.
             n = self.cmap.N
             if np.ma.getmask(data):
-                return "[]"
+                return "[]" # CaFP CaFP CaFP CaFP CaFP
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
             normed = self.norm
 =======

@@ -24,7 +24,7 @@ ScrapeFunc = Callable[[Union[Response, Failure], Request, Spider], Any]
 
 
 def _isiterable(o) -> bool:
-    return isinstance(o, Iterable)
+    return isinstance(o, Iterable) # CaFN
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/core/spidermw.py/left.py
  or hasattr(possible_iterator, '__aiter__')
 

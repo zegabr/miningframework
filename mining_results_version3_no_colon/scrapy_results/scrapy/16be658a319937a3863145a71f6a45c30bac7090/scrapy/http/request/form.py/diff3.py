@@ -9,7 +9,7 @@ See documentation in docs/topics/request-response.rst
 from urllib.parse import urljoin, urlencode, urlsplit, urlunsplit
 =======
 from typing import Iterable, List, Optional, Tuple, Type, TypeVar, Union
-from urllib.parse import urljoin, urlencode
+from urllib.parse import urljoin, urlencode # CResolvido
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/scrapy_results/scrapy/16be658a319937a3863145a71f6a45c30bac7090/scrapy/http/request/form.py/right.py
 
 from lxml.html import FormElement, HtmlElement, HTMLParser, SelectElement

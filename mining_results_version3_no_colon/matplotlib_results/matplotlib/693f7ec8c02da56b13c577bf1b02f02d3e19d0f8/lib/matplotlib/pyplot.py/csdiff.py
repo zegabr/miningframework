@@ -357,6 +357,7 @@ def show(*args, **kwargs):
     limitation of command order does not apply if the show is non-blocking or
     if you keep a reference to the figure and use `.Figure.savefig`.
 
+# CaFP
     **Auto-show in jupyter notebooks**
 =======
     ion : Enable interactive mode, which shows / updates the figure after
@@ -380,6 +381,7 @@ def show(*args, **kwargs):
     The jupyter backends (activated via ``%matplotlib inline``,
     ``%matplotlib notebook``, or ``%matplotlib widget``), call ``show()`` at
     the end of every cell by default. Thus, you usually don't have to call it
+# CaFP
     explicitly there.
 =======
     **Auto-show in jupyter notebooks**

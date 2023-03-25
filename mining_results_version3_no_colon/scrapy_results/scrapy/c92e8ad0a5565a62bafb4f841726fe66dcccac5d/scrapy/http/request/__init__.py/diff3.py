@@ -147,7 +147,7 @@ class Request(object_ref):
         for x in ['url', 'method', 'headers', 'body', 'cookies', 'meta', 'flags',
                   'encoding', 'priority', 'dont_filter', 'callback', 'errback', 'cb_kwargs']:
 =======
-    def replace(self, *args, **kwargs):
+    def replace(self, *args, **kwargs): # CResolvido
         """Create a new Request with the same attributes except for those given new values"""
         for x in self.attributes:
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/right.py

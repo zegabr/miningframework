@@ -180,7 +180,7 @@ def loads(s, app=None, **kwargs):
 
     .. versionchanged:: 2.0
         ``encoding`` is deprecated and will be removed in 2.1. The data
-        must be a string or UTF-8 bytes.
+        must be a string or UTF-8 bytes. # CReduzido
 =======
     :param app: App instance to use to configure the JSON decoder.
         Uses ``current_app`` if not given, and falls back to the default

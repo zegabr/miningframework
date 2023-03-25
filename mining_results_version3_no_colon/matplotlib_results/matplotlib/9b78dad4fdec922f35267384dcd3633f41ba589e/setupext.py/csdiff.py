@@ -524,7 +524,13 @@ def add_libagg_flags_and_sources(ext):
     ext.sources.extend(
         os.path.join("extern", "agg24-svn", "src", x) for x in agg_sources)
 
-
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
 def get_ccompiler():
     """

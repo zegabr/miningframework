@@ -5892,9 +5892,11 @@ default: :rc:`scatter.edgecolors`
 ,
 =======
 ,
+# CaFP
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/right.py
                                             kwargs=kwargs
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/left.py
+# CaFP
                                             kwargs=kwargs
 =======
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/right.py

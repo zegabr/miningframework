@@ -20,7 +20,7 @@ from typing import (
     Union
 )
 =======
-from typing import (
+from typing import ( # CReduzido
     Any,
     Callable,
     Coroutine,

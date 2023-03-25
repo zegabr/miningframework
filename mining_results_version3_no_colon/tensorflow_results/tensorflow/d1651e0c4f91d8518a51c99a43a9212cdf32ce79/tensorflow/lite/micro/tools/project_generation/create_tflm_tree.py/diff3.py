@@ -159,7 +159,7 @@ if __name__ == "__main__":
                       help="Examples to add to the output tree. For example: "
                       "-e hello_world -e micro_speech")
 =======
-  parser.add_argument(
+  parser.add_argument( # CResolvido
       "output_dir", help="Output directory for generated TFLM tree")
   parser.add_argument(
       "--makefile_options",

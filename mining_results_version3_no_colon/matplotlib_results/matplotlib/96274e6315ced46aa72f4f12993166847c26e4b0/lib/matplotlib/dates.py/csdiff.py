@@ -423,6 +423,7 @@ def date2num(d):
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/dates.py/left.py
         if tzi is not None:
 =======
+# CaFP
         if tzi is not None:
             # make datetime naive:
             d = [dt.astimezone
@@ -431,6 +432,7 @@ def date2num(d):
             d = [dt.astimezone(UTC).replace(
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/dates.py/left.py
 tzinfo=None
+# CaFP
 =======
 UTC).replace(tzinfo=None
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/dates.py/right.py

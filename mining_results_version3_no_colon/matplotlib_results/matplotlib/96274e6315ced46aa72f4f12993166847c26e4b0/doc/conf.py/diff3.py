@@ -348,7 +348,7 @@ latex_engine = 'xelatex'  # or 'lualatex'
 
 latex_elements = {}
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
-
+# CReduzido
 # Keep babel usage also with xelatex (Sphinx default is polyglossia)
 # If this key is removed or changed, latex build directory must be cleaned
 latex_elements['babel'] = r'\usepackage{babel}'
@@ -455,6 +455,7 @@ latex_elements['preamble'] = r"""
       }%
    }
    \makeatother
+   # CReduzido
 =======
    % But expdlist old LaTeX package requires fixes:
    % 1) remove extra space

@@ -543,7 +543,7 @@ class _ImageBase(martist.Artist, cm.ScalarMappable):
                 with self.norm.callbacks.blocked():
                     with cbook._setattr_cm
 =======
-                with cbook._setattr_cm
+                with cbook._setattr_cm # CReduzido
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/image.py/right.py
 (self.norm,
                                            vmin=s_vmin,

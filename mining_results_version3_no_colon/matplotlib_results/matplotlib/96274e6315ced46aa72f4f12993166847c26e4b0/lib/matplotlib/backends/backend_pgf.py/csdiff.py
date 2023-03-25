@@ -322,7 +322,7 @@ class LatexManager:
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/left.py
     @_api.deprecated
 =======
-    @cbook.deprecated
+    @cbook.deprecated # CaFP
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/right.py
 ("3.3")
     def latex_stdin_utf8(self):

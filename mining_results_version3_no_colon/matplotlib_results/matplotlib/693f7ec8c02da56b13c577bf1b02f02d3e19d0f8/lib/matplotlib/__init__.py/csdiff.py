@@ -432,12 +432,14 @@ def _get_config_or_cache_dir(xdg_base_getter):
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/__init__.py/left.py
 :
         # Only call _xdg_base_getter here so that MPLCONFIGDIR is tried first
+            # CaFP
 =======
 :
         # Only call _xdg_base_getter here so that MPLCONFIGDIR is tried first,
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/__init__.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/__init__.py/left.py
 ,
+            # CaFP
         # as _xdg_base_getter can throw.
 =======
         # as _xdg_base_getter can throw.

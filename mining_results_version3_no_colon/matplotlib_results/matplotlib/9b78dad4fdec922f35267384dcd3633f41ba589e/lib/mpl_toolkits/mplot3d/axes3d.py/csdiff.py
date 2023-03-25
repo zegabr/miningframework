@@ -659,12 +659,14 @@ class Axes3D(Axes):
             self.xy_dataLim.update_from_data_x(X, not had_data)
             self.xy_dataLim.update_from_data_y(
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/left.py
+# CaFP
 Y, not had_data)
 =======
 Y, not had_data)
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/right.py
         if Z is not None:
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/left.py
+# CaFP
         if Z is not None:
             self.zz_dataLim.update_from_data_x
 =======
@@ -2125,11 +2127,13 @@ Y, not had_data)
         ----------
         X, Y, Z : array-like
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/left.py
+# CaFP
 ,
 =======
 ,
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/left.py
+# CaFP
             Input data. See `~matplotlib.axes.Axes.contour` for acceptable
             data shapes.
 =======
@@ -3392,6 +3396,7 @@ pivot='tail', normalize=False, **kwargs)
     @_preprocess_data()
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/left.py
 =======
+# CaFP
 
     @_preprocess_data()
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/right.py

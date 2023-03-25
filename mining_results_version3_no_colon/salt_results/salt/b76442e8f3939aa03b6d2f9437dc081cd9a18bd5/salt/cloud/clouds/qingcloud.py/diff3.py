@@ -27,7 +27,7 @@ Set up the cloud configuration at ``/etc/salt/cloud.providers`` or
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/left.py
 =======
-
+# D3FP
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/right.py
 import base64
 import hmac

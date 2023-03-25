@@ -1240,11 +1240,11 @@ def test_norm_change(fig_test, fig_ref):
     im = ax.imshow(data, norm=colors.LogNorm(
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
 vmin=0.5, vmax=1),
-                   extent=(0, 5, 0, 5), interpolation='nearest', cmap=cmap)
+                   extent=(0, 5, 0, 5), interpolation='nearest', cmap=cmap) # CaFP
     im.set_norm(colors.Normalize(vmin=-2, vmax=2))
     im = ax.imshow(masked_data, norm=colors.LogNorm(vmin=0.5
 =======
-vmin=0.5, vmax=1),
+vmin=0.5, vmax=1), 
                    extent=(0, 5, 0, 5), interpolation='nearest', cmap=cmap)
     im.set_norm(colors.Normalize(vmin=-2, vmax=2))
     im = ax.imshow(masked_data, norm=colors.LogNorm(vmin=0.5, vmax=1),
@@ -1258,7 +1258,7 @@ vmin=0.5, vmax=1),
                    extent=(5, 10, 5, 10), interpolation='nearest', cmap=cmap)
     im.set_norm(colors.Normalize(vmin=-2, vmax=2))
     ax.set(xlim=(0, 10), ylim=(0, 10))
-
+# CaFP
     ax = fig_ref.subplots
 =======
  10), ylim=(0, 10))
@@ -1269,14 +1269,14 @@ vmin=0.5, vmax=1),
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
 (0, 5, 0, 5), interpolation='nearest', cmap=cmap)
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
-    ax.imshow(data, norm=colors.Normalize(vmin=-2, vmax=2
+    ax.imshow(data, norm=colors.Normalize(vmin=-2, vmax=2# CaFP
 =======
     ax.imshow(masked_data, norm=colors.Normalize(vmin=-2, vmax=2
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
 ),
               extent=
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
-(0, 5
+(0, 5# CaFP
 =======
 (5, 10
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
@@ -1285,7 +1285,7 @@ vmin=0.5, vmax=1),
  0, 5), interpolation='nearest', cmap=cmap)
     ax.imshow(masked_data, norm=colors.Normalize(vmin=-2, vmax=2),
               extent=(5, 10, 5, 10), interpolation='nearest', cmap=cmap)
-    ax.set(xlim=(0, 10), ylim=(0, 10)
+    ax.set(xlim=(0, 10), ylim=(0, 10)# CaFP
 =======
  5, 10), interpolation='nearest', cmap=cmap)
     ax.set(xlim=(0, 10), ylim=(0, 10)

@@ -28,6 +28,13 @@ from matplotlib import (
     _api, colors as mcolors, rcParams, _mathtext, _mathtext_data)
 from matplotlib.ft2font import FT2Image, LOAD_NO_HINTING
 from matplotlib.font_manager import FontProperties
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
 
 _log = logging.getLogger(__name__)

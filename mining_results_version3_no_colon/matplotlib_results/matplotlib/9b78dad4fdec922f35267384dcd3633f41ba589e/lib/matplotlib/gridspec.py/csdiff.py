@@ -492,6 +492,7 @@ class GridSpecFromSubplotSpec(GridSpecBase):
                  height_ratios=None, width_ratios=None):
         """
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/gridspec.py/left.py
+# CaFP
         Parameters
         ----------
         nrows, ncols : int
@@ -508,6 +509,7 @@ class GridSpecFromSubplotSpec(GridSpecBase):
         wspace, hspace : float, optional
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/gridspec.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/gridspec.py/left.py
+# CaFP
         wspace, hspace : float, optional
             See `GridSpec` for more details. If not specified default values
             

@@ -2074,7 +2074,7 @@ def get(identifier):
  str):
     identifier = str(identifier
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/right.py
-) or isinstance(identifier, dict):
+) or isinstance(identifier, dict): # CaFN
     return deserialize(identifier)
   if callable(identifier):
     return identifier

@@ -798,6 +798,7 @@ class ColorbarBase:
         self.solids = self.ax.pcolormesh(
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/colorbar.py/left.py
 =======
+# CaFP
         if C.shape[0] == Y.shape[0]:
             # trim the last one to be compatible with old behavior.
             C = C[:-1]

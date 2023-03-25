@@ -675,10 +675,12 @@ class Line2D(Artist):
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/lines.py/left.py
  and
 =======
+# CaFP
  and
                 self.get_transform
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/lines.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/lines.py/left.py
+# CaFP
                 self.get_transform() == self.axes.transData
 =======
 () == self.axes.transData

@@ -1698,7 +1698,7 @@ class MultiCursor(Widget):
     vertOn: bool, default: True
         Whether to draw the vertical line.
 =======
-    Parameters
+    Parameters # CReduzido
     ----------
     canvas : `matplotlib.backend_bases.FigureCanvasBase`
         The FigureCanvas that contains all the axes.

@@ -1650,7 +1650,7 @@ default: %(va)s
             return [list(ln) for ln in layout.strip('\n').split('\n')]
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
-    def subplot_mosaic(self, mosaic, *, sharex=False, sharey=False,
+    def subplot_mosaic(self, mosaic, *, sharex=False, sharey=False, # CResolvido
                        subplot_kw=None, gridspec_kw=None, empty_sentinel='.'):
 =======
     def subplot_mosaic(self, mosaic, *, subplot_kw=None, gridspec_kw=None,
@@ -1909,7 +1909,7 @@ default: %(va)s
                 ax.sharey(ax0)
                 ax._label_outer_yaxis()
 =======
-        ret = _do_layout(gs, mosaic, *_identify_keys_and_nested(mosaic))
+        ret = _do_layout(gs, mosaic, *_identify_keys_and_nested(mosaic)) # CReduzido
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
         for k, ax in ret.items():
             if isinstance(k, str):
@@ -2034,7 +2034,7 @@ class SubFigure(FigureBase):
         # need to figure out *where* this subplotspec is.
         wr = gs.get_width_ratios()
         hr = gs.get_height_ratios()
-        nrows, ncols = gs.get_geometry()
+        nrows, ncols = gs.get_geometry() # CReduzido
         if wr is None:
             wr = np.ones(ncols)
         else:

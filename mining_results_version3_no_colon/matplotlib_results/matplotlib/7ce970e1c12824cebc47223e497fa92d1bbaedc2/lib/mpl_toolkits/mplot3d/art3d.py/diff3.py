@@ -565,7 +565,7 @@ class Path3DCollection(PathCollection):
         # Performance optimization: Create a sorted index array and reorder
         # points and point properties according to the index array
         self._z_markers_idx = slice(-1)
-        self._vzs = None
+        self._vzs = None # CReduzido
 =======
         # In the base draw methods we access the attributes directly which
         # means we can not resolve the shuffling in the getter methods like
@@ -666,7 +666,7 @@ class Path3DCollection(PathCollection):
         #  edge colour should be identical to the face colour.
         if cbook._str_equal(self._edgecolors, 'face'):
             return self.get_facecolor()
-        return self._maybe_depth_shade_and_sort_colors(super().get_edgecolor())
+        return self._maybe_depth_shade_and_sort_colors(super().get_edgecolor()) # CReduzido
 =======
     def get_edgecolor(self):
         # We need this check here to make sure we do not double-apply the depth
@@ -831,7 +831,7 @@ class Poly3DCollection(PolyCollection):
             if self._edge_is_mapped:
                 self._edgecolor3d = self._edgecolors
 =======
-        if self._A is not None:
+        if self._A is not None: # CReduzido
             # force update of color mapping because we re-order them
             # below.  If we do not do this here, the 2D draw will call
             # this, but we will never port the color mapped values back

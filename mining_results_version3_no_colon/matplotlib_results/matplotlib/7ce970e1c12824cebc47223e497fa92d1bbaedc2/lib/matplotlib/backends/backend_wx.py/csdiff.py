@@ -972,13 +972,13 @@ class FigureFrameWx(wx.Frame):
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_wx.py/left.py
         # Carry on with close event propagation, frame & children destruction
 =======
-        # Carry on with close event propagation
+        # Carry on with close event propagation # CaFP (facil)
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_wx.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_wx.py/left.py
         event.Skip
 =======
 , frame & children destruction
-        event.Skip
+        event.Skip # CaFP (facil olhando o de cima)
 >>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_wx.py/right.py
 ()
 
