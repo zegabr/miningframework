@@ -29,9 +29,9 @@ done < <(rg --files --iglob "**/diff3.py")
 for dir in $(find . -name "csdiff.py" -type f | xargs dirname | sort | uniq); do
   cmp --silent <(grep -v '^\s*$' $dir/csdiff.py) <(grep -v '^\s*$' $dir/diff3.py)
   if [ $? -ne 0 ]; then
-    cmp --silent <(grep -v '^\s*$' $dir/csdiff.py) <(grep -v '^\s*$' $dir/merge.py)
+    cmp --silent <(sed 's/\s//g' <(tr -d '\n' < $dir/csdiff.py)) <(sed 's/\s//g' <(tr -d '\n' < $dir/merge.py))
     if [ $? -eq 0 ]; then
-        # echo "$dir"
+      # echo "$dir"
       files_with_csdiff_different_than_diff3_and_equal_to_merge=$((files_with_csdiff_different_than_diff3_and_equal_to_merge + 1))
     fi
   fi
