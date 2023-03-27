@@ -35,7 +35,7 @@ class FigureCanvasWxCairo(_FigureCanvasWxBase, FigureCanvasCairo):
         self._renderer.set_ctx_from_surface(surface)
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_wxcairo.py/left.py
         self._renderer.set_width_height(*size)
-        self._renderer.dpi = self.figure.dpi
+        self._renderer.dpi = self.figure.dpi # CResolvido
 =======
         self._renderer.set_width_height(width, height)
         self._renderer.dpi = self.figure.dpi

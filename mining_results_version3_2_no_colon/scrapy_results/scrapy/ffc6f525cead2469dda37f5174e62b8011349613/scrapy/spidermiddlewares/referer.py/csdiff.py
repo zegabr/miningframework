@@ -11,8 +11,8 @@ from w3lib.url import safe_url_string
 from scrapy import signals
 from scrapy.exceptions import NotConfigured
 from scrapy.http import Request, Response
-from scrapy.utils.misc import load_object
 from scrapy.utils.asyncgen import _process_iterable_universal
+from scrapy.utils.misc import load_object
 from scrapy.utils.python import to_unicode
 from scrapy.utils.url import strip_url
 

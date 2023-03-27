@@ -653,13 +653,15 @@ class Axes3D(Axes):
         # This updates the bounding boxes as to keep a record as to what the
         # minimum sized rectangular volume holds the data.
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/left.py
-        if np.shape
+        if np.shape 
+        # CaFP
 =======
         if np.shape(X) == np.shape
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/right.py
 (
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/left.py
 X) == np.shape(Y):
+        # CaFP
 =======
 Y):
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/right.py

@@ -148,7 +148,7 @@ class Request(object_ref):
                   'encoding', 'priority', 'dont_filter', 'callback', 'errback', 'cb_kwargs']:
 =======
     def replace(self, *args, **kwargs):
-        """Create a new Request with the same attributes except for those given new values"""
+        """Create a new Request with the same attributes except for those given new values""" # CResolvido
         for x in self.attributes:
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/right.py
             kwargs.setdefault(x, getattr(self, x))

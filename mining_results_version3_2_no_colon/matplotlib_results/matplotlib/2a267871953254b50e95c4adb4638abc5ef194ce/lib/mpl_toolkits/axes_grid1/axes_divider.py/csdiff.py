@@ -649,7 +649,7 @@ class HBoxDivider(SubplotDivider):
     A `SubplotDivider` for laying out axes horizontally, while ensuring that
     they have equal heights.
 =======
-        return AxesLocator(self, nx, 0, nx1 if nx1 is not None else nx + 1, 1)
+        return AxesLocator(self, nx, 0, nx1 if nx1 is not None else nx + 1, 1) # CaFP
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/2a267871953254b50e95c4adb4638abc5ef194ce/lib/mpl_toolkits/axes_grid1/axes_divider.py/right.py
 
     Examples
@@ -669,7 +669,7 @@ class HBoxDivider(SubplotDivider):
             specified. Otherwise location of columns spanning between *nx*
             to *nx1* (but excluding *nx1*-th column) is specified.
         """
-        return AxesLocator(self, nx, 0, nx1, None)
+        return AxesLocator(self, nx, 0, nx1, None) # CaFN
 
     def locate(self, nx, ny, nx1=None, ny1=None, axes=None, renderer=None):
         # docstring inherited

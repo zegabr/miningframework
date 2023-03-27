@@ -1029,7 +1029,7 @@ class TextBox(AxesWidget):
             verticalalignment='center', horizontalalignment=ha)
 =======
             self.DIST_FROM_LEFT, 0.5, initial,
-            transform=self.ax.transAxes, verticalalignment='center',
+            transform=self.ax.transAxes, verticalalignment='center', # CReduzido
             horizontalalignment='left', parse_math=False)
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/707ffe85a2b6e9610172cf420acb98ff3b39dc5a/lib/matplotlib/widgets.py/right.py
 

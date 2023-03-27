@@ -44,7 +44,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
     def scrape_response(self, scrape_func, response, request, spider):
-
+# CReduzido
         def process_spider_input(response):
             for method in self.methods['process_spider_input']:
                 try:
@@ -161,7 +161,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
                 return _evaluate_async_iterable(iterable)
             else:
                 return _evaluate_normal_iterable(iterable)
-
+# CReduzido
         def process_spider_exception(_failure, start_index=0):
             exception = _failure.value
             # don't handle _InvalidOutput exception
@@ -227,6 +227,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
                 iter_class = MutableChain
             recovered = iter_class()
             result = _evaluate_iterable(result, 0, recovered)
+# CReduzido
             return iter_class(process_spider_output(result), recovered)
 =======
         def process_spider_exception(_failure):

@@ -87,7 +87,7 @@ class BaseFFTOpsTest(test.TestCase):
                                       'yet supported in ROCm.')
   def _check_grad_complex(self, func, x, y, result_is_complex=True,
                           rtol=1e-2, atol=1e-2):
-    with self.cached_session():
+    with self.cached_session(): # CaFN
 
       def f(inx, iny):
         inx.set_shape(x.shape)

@@ -122,14 +122,14 @@ class Request(object_ref):
         return self._encoding
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/scrapy_results/scrapy/e7d3fad00eab9aaeedf8896739e969db92c1e408/scrapy/http/request/__init__.py/left.py
-    def __repr__(self):
+    def __repr__(self): # CResolvido
 =======
     def __str__(self) -> str:
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/scrapy_results/scrapy/e7d3fad00eab9aaeedf8896739e969db92c1e408/scrapy/http/request/__init__.py/right.py
         return f"<{self.method} {self.url}>"
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/scrapy_results/scrapy/e7d3fad00eab9aaeedf8896739e969db92c1e408/scrapy/http/request/__init__.py/left.py
-    def copy(self):
+    def copy(self): # CResolvido
         """Return a copy of this Request"""
 =======
     __repr__ = __str__

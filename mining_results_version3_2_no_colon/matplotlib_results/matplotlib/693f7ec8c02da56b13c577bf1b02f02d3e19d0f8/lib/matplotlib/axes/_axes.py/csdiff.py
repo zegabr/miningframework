@@ -2627,12 +2627,14 @@ class Axes(_AxesBase):
             elif label_type == "edge":
                 if orientation == "vertical"
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/left.py
+# CaFP
 :
 =======
 :
                     ha = 'center'
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/left.py
+# CaFP
                     ha = 'center'
                     va = 'top' if dat < 0 else 'bottom'  # also handles NaN
 =======
@@ -2640,6 +2642,7 @@ class Axes(_AxesBase):
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/right.py
                 elif orientation == "horizontal"
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/left.py
+# CaFP
 :
                     ha = 'right' if dat < 0 else 'left'  # also handles NaN
                     va = 'center'
@@ -2651,6 +2654,7 @@ class Axes(_AxesBase):
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/left.py
                 lbl = ''
+# CaFP
 =======
                     va = 'center'
 
@@ -3385,21 +3389,25 @@ class Axes(_AxesBase):
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/left.py
         for key in ['marker', 'markersize', 'markerfacecolor',
 =======
+# CaFP
         for key in ['marker', 'markersize', 'markerfacecolor',
                     'markeredgewidth', 'markeredgecolor', 'markevery',
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/left.py
+# CaFP
                     'markeredgewidth', 'markeredgecolor', 'markevery',
 =======
                     'linestyle', 'fillstyle', 'drawstyle', 'dash_capstyle',
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/left.py
                     'linestyle', 'fillstyle', 'drawstyle', 'dash_capstyle',
+# CaFP
 =======
                     'dash_joinstyle', 'solid_capstyle', 'solid_joinstyle']:
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_axes.py/left.py
                     'dash_joinstyle', 'solid_capstyle', 'solid_joinstyle']:
+# CaFP
             base_style.pop(key, None)
 =======
             base_style.pop(key, None)

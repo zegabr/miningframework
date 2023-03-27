@@ -141,7 +141,7 @@ plt.show()
 #    in this example:
 #
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/examples/subplots_axes_and_figures/demo_tight_layout.py/left.py
-#    - `matplotlib.figure.Figure.tight_layout` /
+#    - `matplotlib.figure.Figure.tight_layout` / # CReduzido
 #      `matplotlib.pyplot.tight_layout`
 #    - `matplotlib.figure.Figure.add_gridspec`
 #    - `matplotlib.figure.Figure.add_subplot`

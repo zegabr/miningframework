@@ -1421,6 +1421,7 @@ class Axis(martist.Artist):
         """
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/left.py
         TOGGLE = object()
+# CaFP
 =======
         TOGGLE = object()
         UNSET = object()
@@ -1447,6 +1448,7 @@ class Axis(martist.Artist):
                     b = TOGGLE
             else:  # grid(visible=v)
                 b = visible
+# CaFP
         else:
             if visible is not UNSET and bool
 =======

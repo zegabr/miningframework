@@ -121,6 +121,7 @@ class BuildExtraLibraries(BuildExtCommand):
             if name in os.environ:
                 if '-fno-lto' in os.environ[name]:
 =======
+# CaFP
             If set, return them, and also check whether LTO is disabled in each
             one, raising an error if Matplotlib config explicitly enabled LTO.
             """
@@ -128,12 +129,14 @@ class BuildExtraLibraries(BuildExtCommand):
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/left.py
                     if enable_lto is True:
+# CaFP
 =======
                 if '-fno-lto' in os.environ[name]:
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/left.py
                         raise ValueError('Configuration enable_lto=True, but '
                                          '{0} contains -fno-lto'.format
+# CaFP
 =======
                     if enable_lto is True:
                         raise ValueError('Configuration enable_lto=True, but '
@@ -141,23 +144,27 @@ class BuildExtraLibraries(BuildExtCommand):
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/right.py
 (
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/left.py
+# CaFP
 name))
 =======
 name))
                     enable_lto = False
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/left.py
+# CaFP
                     enable_lto = False
 =======
                 return [os.environ[name]], enable_lto
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/left.py
+# CaFP
                 return [os.environ[name]], enable_lto
 =======
             return [], enable_lto
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/left.py
             return [], enable_lto
+# CaFP
 
         _, enable_lto = prepare_flags
 =======

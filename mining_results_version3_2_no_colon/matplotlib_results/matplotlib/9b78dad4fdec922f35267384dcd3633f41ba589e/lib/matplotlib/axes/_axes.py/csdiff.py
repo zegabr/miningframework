@@ -4953,12 +4953,14 @@ default: :rc:`scatter.edgecolors`
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
 self, *args, **kwargs):
         """%(quiver_doc)s""
+# CaFP
 =======
 self, *args, **kwargs):
         """%(quiver_doc)s"
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
 "
+# CaFP
 =======
 ""
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py

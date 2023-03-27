@@ -613,7 +613,7 @@ if link_github:
             return None
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/doc/conf.py/left.py
-        version = parse(matplotlib.__version__)
+        version = parse(matplotlib.__version__) # CReduzido
         tag = 'main' if version.is_devrelease else f'v{version.public}'
         return ("https://github.com/matplotlib/matplotlib/blob"
                 f"/{tag}/lib/{fn}{linespec}")

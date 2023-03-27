@@ -226,7 +226,7 @@ def test_interruptible_core_debugger():
     def raising_input(msg="", called=[0]):
         called[0] += 1
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/left.py
-        assert called[0] == 1, "input() should only be called once!"
+        assert called[0] == 1, "input() should only be called once!" # CReduzido
         raise KeyboardInterrupt()
 
     tracer_orig = sys.gettrace()

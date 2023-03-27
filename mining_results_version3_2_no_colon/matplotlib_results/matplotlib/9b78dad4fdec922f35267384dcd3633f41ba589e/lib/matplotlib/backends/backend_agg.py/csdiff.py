@@ -163,6 +163,7 @@ class RendererAgg(RendererBase):
                         f"{mpl.rcParams['path.simplify_threshold']:.2f} by "
                         "
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
+# CaFP
 default and path.simplify_threshold = "
                         f
 =======
@@ -172,6 +173,7 @@ default and path.simplify_threshold = "
 "
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
 {path.simplify_threshold:.2f} on the input)."
+# CaFP
                     )
                     raise OverflowError(msg) from None
 =======
@@ -220,6 +222,7 @@ default and path.simplify_threshold = "
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
                             f
 =======
+# CaFP
                             f"(currently {nmax}) to be greater than 100 
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
 "
@@ -229,6 +232,7 @@ default and path.simplify_threshold = "
                         )
 
                 raise OverflowError(msg) from None
+# CaFP
 =======
                             + inc_threshold
                         )

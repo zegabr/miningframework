@@ -493,6 +493,7 @@ class GridSpecFromSubplotSpec(GridSpecBase):
         """
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/gridspec.py/left.py
         Parameters
+# CaFP
 =======
         Parameters
         ----------
@@ -501,16 +502,19 @@ class GridSpecFromSubplotSpec(GridSpecBase):
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/gridspec.py/left.py
         ----------
         nrows, ncols : int
+# CaFP
 =======
             Number of rows and number of columns of the grid.
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/gridspec.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/gridspec.py/left.py
             Number of rows and number of columns of the grid.
+# CaFP
 =======
         subplot_spec : SubplotSpec
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/gridspec.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/gridspec.py/left.py
         subplot_spec : SubplotSpec
+# CaFP
 =======
             Spec from which the layout parameters are inherited.
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/gridspec.py/right.py
@@ -519,6 +523,7 @@ class GridSpecFromSubplotSpec(GridSpecBase):
         wspace, hspace : float, optional
             See `GridSpec` for more details. If not specified default values
             
+# CaFP
 =======
         wspace, hspace : float, optional
             See `GridSpec` for more details. If not specified default values

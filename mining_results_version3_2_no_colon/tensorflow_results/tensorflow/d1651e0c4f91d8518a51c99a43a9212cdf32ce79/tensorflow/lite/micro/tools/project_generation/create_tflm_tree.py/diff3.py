@@ -145,7 +145,7 @@ if __name__ == "__main__":
   parser = argparse.ArgumentParser(
       description="Starting script for TFLM project generation")
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/tensorflow_results/tensorflow/d1651e0c4f91d8518a51c99a43a9212cdf32ce79/tensorflow/lite/micro/tools/project_generation/create_tflm_tree.py/left.py
-  parser.add_argument("output_dir",
+  parser.add_argument("output_dir", # CResolvido
                       help="Output directory for generated TFLM tree")
   parser.add_argument("--makefile_options",
                       default="",

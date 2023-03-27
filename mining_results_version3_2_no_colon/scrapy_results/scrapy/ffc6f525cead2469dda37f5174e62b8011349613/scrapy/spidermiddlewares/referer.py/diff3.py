@@ -16,7 +16,7 @@ from scrapy.exceptions import NotConfigured
 from scrapy import signals
 from scrapy.utils.asyncgen import _process_iterable_universal
 =======
-from scrapy.utils.misc import load_object
+from scrapy.utils.misc import load_object # CResolvido
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/spidermiddlewares/referer.py/right.py
 from scrapy.utils.python import to_unicode
 from scrapy.utils.url import strip_url

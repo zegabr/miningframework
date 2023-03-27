@@ -343,6 +343,7 @@ def show(*args, **kwargs):
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
     ion : Enable interactive mode, which shows / updates the figure after
           every plotting command, so that calling ``show()`` is not necessary.
+# CaFP
     ioff : Disable interactive mode.
 =======
     ion : Enable interactive mode, which shows / updates the figure after

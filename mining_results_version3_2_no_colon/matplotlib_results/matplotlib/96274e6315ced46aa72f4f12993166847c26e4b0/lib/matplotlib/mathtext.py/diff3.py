@@ -390,7 +390,7 @@ with _api.suppress_matplotlib_deprecation_warning():
 
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/mathtext.py/left.py
-@_api.deprecated("3.4")
+@_api.deprecated("3.4") # CReduzido
 def ship(ox, oy, box):
     _mathtext.ship(ox, oy, box)
 =======

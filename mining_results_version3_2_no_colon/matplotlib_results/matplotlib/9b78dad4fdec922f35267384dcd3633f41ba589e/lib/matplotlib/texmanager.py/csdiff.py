@@ -259,11 +259,13 @@ class TexManager:
         if not os.path.exists(dvifile):
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/texmanager.py/left.py
             texfile = Path(self.make_tex
+# CaFP
 =======
             texfile = Path
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/texmanager.py/right.py
 (
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/texmanager.py/left.py
+# CaFP
 tex, fontsize))
 =======
 self.make_tex(tex, fontsize))

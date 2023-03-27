@@ -787,7 +787,7 @@ class ColorbarBase:
             self._add_solids_patches(X, Y, C, mappable)
         else:
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/colorbar.py/left.py
-            self._add_solids_pcolormesh
+            self._add_solids_pcolormesh # CaFP
 =======
 "
         Draw the colors using `~.axes.Axes.pcolormesh`;

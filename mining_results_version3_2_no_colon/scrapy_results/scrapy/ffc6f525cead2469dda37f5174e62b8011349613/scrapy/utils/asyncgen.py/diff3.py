@@ -6,7 +6,7 @@ import inspect
 
 async def collect_asyncgen(result):
 =======
-from collections.abc import AsyncIterable
+from collections.abc import AsyncIterable # CReduzido
 
 
 async def collect_asyncgen(result: AsyncIterable):

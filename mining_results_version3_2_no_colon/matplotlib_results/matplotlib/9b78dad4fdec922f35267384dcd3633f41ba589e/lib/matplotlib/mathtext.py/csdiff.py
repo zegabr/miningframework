@@ -38,12 +38,14 @@ class __getattr__:
         name: _api.deprecated(
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
 "3.4")
+# CaFP
 =======
 "3.4")(
             property(lambda self, _mod=mod, _name=name: getattr
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
 (
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
+# CaFP
             property(lambda self, _mod=mod, _name=name: getattr(_mod, _name)))
 =======
 _mod, _name)))

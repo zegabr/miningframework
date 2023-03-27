@@ -571,7 +571,7 @@ class BinaryCrossentropy(LossFunctionWrapper):
   def __init__(self,
                from_logits=False,
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
-               label_smoothing=.0,
+               label_smoothing=.0, # CResolvido
 =======
                label_smoothing=0,
                axis=-1,
@@ -661,6 +661,7 @@ class CategoricalCrossentropy(LossFunctionWrapper):
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
                label_smoothing=.0,
 =======
+# CResolvido
                label_smoothing=0,
                axis=-1,
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/right.py

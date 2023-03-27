@@ -611,7 +611,7 @@ class ResizeBilinearTest(parameterized.TestCase, xla_test.XLATestCase):
   @test.disable_with_predicate(pred=test.is_built_with_rocm,
                                skip_message="Disabled on ROCm, because "
                                       "it runs out of memory")
-  def test(self, src_y, src_x, dst_y, dst_x, dtype=np.float32):
+  def test(self, src_y, src_x, dst_y, dst_x, dtype=np.float32): # CaFP (conflito maior q no diff3???)
 =======
   def test(self, src_y, src_x, dst_y, dst_x, dtype=np.float32):
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/tensorflow_results/tensorflow/b6fb7f2d9eab20919f2263fc61228667109d7458/tensorflow/compiler/tests/image_ops_test.py/right.py

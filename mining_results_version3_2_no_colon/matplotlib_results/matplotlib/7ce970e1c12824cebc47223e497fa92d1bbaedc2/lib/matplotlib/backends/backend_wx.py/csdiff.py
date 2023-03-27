@@ -1041,10 +1041,10 @@ class FigureManagerWx(FigureManagerBase):
             # As this can be called from non-GUI thread from plt.close use
             # wx.CallAfter to ensure thread safety.
 =======
-            # As this can be called from non-GUI thread from plt.close use
+            # As this can be called from non-GUI thread from plt.close use # CaFP
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_wx.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_wx.py/left.py
-            wx.CallAfter
+            wx.CallAfter # CaFP
 =======
             # wx.CallAfter to ensure thread safety.
             wx.CallAfter

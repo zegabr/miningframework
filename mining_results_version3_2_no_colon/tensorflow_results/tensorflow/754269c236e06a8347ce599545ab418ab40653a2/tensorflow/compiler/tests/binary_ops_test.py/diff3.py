@@ -754,7 +754,7 @@ class BinaryOpsTest(xla_test.XLATestCase):
           expected=np.array([[0, -1, -1 * int_max, -1], [0, 0, 0, 0], 
                              [0, 0, 0, 0], [int_max - 1, int_max - 1, 1, 0]],
 =======
-          expected=np.array([[0, -1, -1 * int_max, -1], [0, 0, 0, 0],
+          expected=np.array([[0, -1, -1 * int_max, -1], [0, 0, 0, 0], # D3FP
                              [0, 0, 0, 0], [int_max - 1, int_max - 1, 1, 0]],
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/tensorflow_results/tensorflow/754269c236e06a8347ce599545ab418ab40653a2/tensorflow/compiler/tests/binary_ops_test.py/right.py
                             dtype=dtype))

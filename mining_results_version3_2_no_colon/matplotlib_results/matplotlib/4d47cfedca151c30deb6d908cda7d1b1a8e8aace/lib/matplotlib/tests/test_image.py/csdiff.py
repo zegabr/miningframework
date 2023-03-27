@@ -1234,6 +1234,7 @@ def test_norm_change(fig_test, fig_ref):
     data[0:2, :] = -1
 
     masked_data = np.ma.array(data, mask=False)
+    # CaFP
     masked_data.mask[0:2, 0:2] = True
 =======
 5, 5), 1, dtype=np.float64)
@@ -1244,6 +1245,7 @@ def test_norm_change(fig_test, fig_ref):
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
 
     cmap = plt.get_cmap('viridis').with_extremes(under='w')
+    # CaFP
 =======
     masked_data.mask[0:2, 0:2] = True
 
@@ -1266,6 +1268,7 @@ vmin=0.5, vmax=1),
               extent=(0, 5, 0, 5), interpolation='nearest', cmap=cmap)
     ax.imshow(masked_data, norm=colors.Normalize(vmin=-2, vmax=2),
               extent=
+    # CaFP
 =======
 vmin=0.5, vmax=1),
                    extent=(0, 5, 0, 5), interpolation='nearest', cmap=cmap)
@@ -1283,11 +1286,13 @@ vmin=0.5, vmax=1),
 (
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
 5, 10, 5, 10), interpolation='nearest', cmap=cmap)
+    # CaFP
 =======
 vmin=-2, vmax=2),
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
     ax.set(xlim=(0, 10), ylim=(0, 10))
+    # CaFP
 =======
               extent=(5, 10, 5, 10), interpolation='nearest', cmap=cmap)
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
@@ -1300,6 +1305,7 @@ vmin=-2, vmax=2),
 @check_figures_equal(extensions=['png'])
 def test_huge_range_log(fig_test, fig_ref, x):
     # parametrize over bad lognorm -1 values and large range 1 -> 1e20
+    # CaFP
 =======
 @pytest.mark.parametrize('x', [-1, 1])
 @check_figures_equal(extensions=['png'])
@@ -1312,6 +1318,7 @@ def test_huge_range_log(fig_test, fig_ref, x):
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
     ax = fig_test.subplots()
     ax.imshow(data, norm=colors.LogNorm(vmin=1, vmax=data.max
+    # CaFP
 =======
     ax = fig_test.subplots()
     ax.imshow
@@ -1322,16 +1329,19 @@ def test_huge_range_log(fig_test, fig_ref, x):
               interpolation='nearest', cmap='viridis')
 
     data = np.full
+    # CaFP
 =======
 data, norm=colors.LogNorm
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
 (
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
 =======
+    # CaFP
 vmin=1, vmax=data.max()),
               interpolation='nearest', cmap='viridis')
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
+    # CaFP
 =======
 
     data = np.full
@@ -1339,11 +1349,13 @@ vmin=1, vmax=data.max()),
 (
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
 5, 5), x, dtype=np.float64)
+    # CaFP
 =======
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
     data[0:2, :] = 1000
 
+    # CaFP
 =======
 (5, 5), x, dtype=np.float64)
     data[0:2, :] = 1000

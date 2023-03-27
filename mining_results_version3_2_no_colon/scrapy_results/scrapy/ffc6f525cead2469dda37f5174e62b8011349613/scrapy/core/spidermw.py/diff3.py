@@ -67,7 +67,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
         return scrape_func(response, request, spider)
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/core/spidermw.py/left.py
-    def _evaluate_iterable(self, response, spider, iterable, exception_processor_index, recover_to):
+    def _evaluate_iterable(self, response, spider, iterable, exception_processor_index, recover_to): # CResolvido
         @_process_iterable_universal
         async def _evaluate_async_iterable(iterable):
             try:
@@ -155,7 +155,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
             return MutableChain(result, recovered)
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/core/spidermw.py/left.py
-    def _process_callback_output(self, response, spider, result):
+    def _process_callback_output(self, response, spider, result): # CResolvido
         if isinstance(result, collections.abc.AsyncIterator):
             recovered = MutableAsyncChain()
         else:

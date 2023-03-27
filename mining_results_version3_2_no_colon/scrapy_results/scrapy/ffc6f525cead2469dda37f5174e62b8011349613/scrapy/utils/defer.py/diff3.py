@@ -81,7 +81,7 @@ def parallel(iterable: Iterable, count: int, callable: Callable, *args, **named)
 
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/defer.py/left.py
-class _AsyncCooperatorAdapter:
+class _AsyncCooperatorAdapter: # CResolvido
     """ A class that wraps an async iterator into a normal iterator suitable
     for using in Cooperator.coiterate(). As it's only needed for parallel_async(),
     it calls the callable directly in the callback, instead of providing a more
@@ -237,7 +237,7 @@ def iter_errback(iterable: Iterable, errback: Callable, *a, **kw) -> Generator:
 
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/defer.py/left.py
-async def aiter_errback(aiterable, errback, *a, **kw):
+async def aiter_errback(aiterable, errback, *a, **kw): # CResolvido
     """Wraps an async iterable calling an errback if an error is caught while
     iterating it. Similar to scrapy.utils.defer.iter_errback()
     """

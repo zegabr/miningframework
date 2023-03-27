@@ -1461,6 +1461,7 @@ class LineCollection(Collection):
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/collections.py/left.py
             vertices = [
 =======
+# CaFP
             vertices = [
                 vertex
                 for vertex, _

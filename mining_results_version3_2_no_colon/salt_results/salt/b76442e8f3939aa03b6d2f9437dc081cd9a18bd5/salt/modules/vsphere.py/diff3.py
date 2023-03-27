@@ -10411,7 +10411,7 @@ def list_tags(server=None, username=None, password=None, service_instance=None):
 def list_tags(
     server=None,
     username=None,
-    password=None,
+    password=None, # CResolvido
     service_instance=None,
     verify_ssl=None,
     ca_bundle=None,

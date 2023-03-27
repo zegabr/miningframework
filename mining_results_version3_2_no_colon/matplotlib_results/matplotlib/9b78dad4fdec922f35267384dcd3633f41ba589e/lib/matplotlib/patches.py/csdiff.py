@@ -422,11 +422,13 @@ class Patch(artist.Artist):
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/patches.py/left.py
         ==========================================  =================
         linestyle                                   description
+# CaFP
 =======
         ==========================================  =================
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/patches.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/patches.py/left.py
         ==========================================  =================
+# CaFP
 =======
         linestyle                                   description
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/patches.py/right.py
@@ -434,18 +436,22 @@ class Patch(artist.Artist):
         ``'-'`` or ``'solid'``                      solid line
 =======
         ==========================================  =================
+# CaFP
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/patches.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/patches.py/left.py
         ``'--'`` or  ``'dashed'``                   dashed line
+# CaFP
 =======
         ``'-'`` or ``'solid'``                      solid line
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/patches.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/patches.py/left.py
         ``'-.'`` or  ``'dashdot'``                  dash-dotted line
 =======
+# CaFP
         ``'--'`` or  ``'dashed'``                   dashed line
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/patches.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/patches.py/left.py
+# CaFP
         ``':'`` or ``'dotted'``                     dotted line
 =======
         ``'-.'`` or  ``'dashdot'``                  dash-dotted line
@@ -453,10 +459,12 @@ class Patch(artist.Artist):
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/patches.py/left.py
         ``'none'``, ``'None'``, ``' '``, or ``''``  draw nothing
 =======
+# CaFP
         ``':'`` or ``'dotted'``                     dotted line
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/patches.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/patches.py/left.py
         ==========================================  =================
+# CaFP
 =======
         ``'none'``, ``'None'``, ``' '``, or ``''``  draw nothing
         ==========================================  =================

@@ -1617,12 +1617,14 @@ class LogNorm(Normalize):
         # docstring inherited.
         super().autoscale_None(
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/colors.py/left.py
+# CaFP
 np.ma.array
 =======
 np.ma.array(A, mask=
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/colors.py/right.py
 (
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/colors.py/left.py
+# CaFP
 A, mask=(A <= 0)))
 =======
 A <= 0)))

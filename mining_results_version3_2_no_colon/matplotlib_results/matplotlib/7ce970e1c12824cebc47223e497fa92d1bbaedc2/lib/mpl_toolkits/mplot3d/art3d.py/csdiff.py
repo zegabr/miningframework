@@ -478,6 +478,7 @@ class Patch3DCollection(PatchCollection):
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
 vzs)
 =======
+# CaFP
 vzs)
         else:
             return np.nan
@@ -487,6 +488,7 @@ vzs)
             return np.nan
 
     def _maybe_depth_shade_and_sort_colors(self, color_array):
+# CaFP
 =======
 
     def _maybe_depth_shade_and_sort_colors(self, color_array):
@@ -495,12 +497,14 @@ vzs)
             _zalpha(
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
 color_array, self._vzs)
+# CaFP
 =======
 color_array, self._vzs)
             if self._vzs is not None and self._depthshade
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
             if self._vzs is not None and self._depthshade
+# CaFP
 =======
             else color_array
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
@@ -508,6 +512,7 @@ color_array, self._vzs)
             else color_array
         )
         if len
+# CaFP
 =======
         )
         if len
@@ -515,6 +520,7 @@ color_array, self._vzs)
 (
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
 color_array) > 1:
+# CaFP
 =======
 color_array) > 1:
             color_array = color_array[self._z_markers_idx]
@@ -522,6 +528,7 @@ color_array) > 1:
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
             color_array = color_array[self._z_markers_idx]
         return mcolors.to_rgba_array
+# CaFP
 =======
         return mcolors.to_rgba_array
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
@@ -631,6 +638,7 @@ postfixed with 3d) and in `do_3d_projection` set the
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
         super().set_sizes
 =======
+# CaFP
         super
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 (
@@ -639,6 +647,7 @@ sizes, dpi)
         if not self._in_draw:
             self._sizes3d = sizes
 =======
+# CaFP
 ).set_sizes(sizes, dpi)
         if not self._in_draw:
             self._sizes3d = sizes
@@ -648,11 +657,13 @@ sizes, dpi)
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
         super
 =======
+# CaFP
         super().set_linewidth
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 (
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
 ).set_linewidth(lw)
+# CaFP
         if not self._in_draw:
 =======
 lw)
@@ -712,33 +723,39 @@ lw)
         color_array = (
             _zalpha(color_array, self._vzs)
 =======
+# CaFP
         color_array = (
             _zalpha(color_array, self._vzs)
             if self._vzs is not None and self._depthshade
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
             if self._vzs is not None and self._depthshade
+# CaFP
 =======
             else color_array
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
             else color_array
+# CaFP
 =======
         )
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
         )
+# CaFP
 =======
         if len(color_array) > 1:
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
         if len(color_array) > 1:
+# CaFP
 =======
             color_array = color_array[self._z_markers_idx]
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
             color_array = color_array[self._z_markers_idx]
         return mcolors.to_rgba_array(color_array, self._alpha)
+# CaFP
 =======
         return mcolors.to_rgba_array(color_array, self._alpha)
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py

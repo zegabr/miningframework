@@ -1650,7 +1650,7 @@ default: %(va)s
             return [list(ln) for ln in layout.strip('\n').split('\n')]
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
-    def subplot_mosaic(self, mosaic, *, sharex=False, sharey=False,
+    def subplot_mosaic(self, mosaic, *, sharex=False, sharey=False, # CReduzido
                        subplot_kw=None, gridspec_kw=None, empty_sentinel='.'):
 =======
     def subplot_mosaic(self, mosaic, *, subplot_kw=None, gridspec_kw=None,
@@ -1735,7 +1735,7 @@ default: %(va)s
         # special-case string input
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
         if isinstance(mosaic, str):
-            mosaic = self._normalize_grid_string(mosaic)
+            mosaic = self._normalize_grid_string(mosaic) # CReduzido
         # Only accept strict bools to allow a possible future API expansion.
         _api.check_isinstance(bool, sharex=sharex, sharey=sharey)
 =======
@@ -1909,7 +1909,7 @@ default: %(va)s
                 ax.sharey(ax0)
                 ax._label_outer_yaxis()
 =======
-        ret = _do_layout(gs, mosaic, *_identify_keys_and_nested(mosaic))
+        ret = _do_layout(gs, mosaic, *_identify_keys_and_nested(mosaic)) # CReduzido
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
         for k, ax in ret.items():
             if isinstance(k, str):
@@ -2029,7 +2029,7 @@ class SubFigure(FigureBase):
         dx = wr[self._subplotspec.colspan].sum() / wr.sum()
         dy = hr[self._subplotspec.rowspan].sum() / hr.sum()
         x0 = wr[:self._subplotspec.colspan.start].sum() / wr.sum()
-        y0 = 1 - hr[:self._subplotspec.rowspan.stop].sum() / hr.sum()
+        y0 = 1 - hr[:self._subplotspec.rowspan.stop].sum() / hr.sum() # CReduzido
 =======
         # need to figure out *where* this subplotspec is.
         wr = gs.get_width_ratios()

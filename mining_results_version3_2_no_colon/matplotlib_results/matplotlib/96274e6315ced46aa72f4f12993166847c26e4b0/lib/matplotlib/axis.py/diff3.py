@@ -1391,7 +1391,7 @@ class Axis(martist.Artist):
                 raise ValueError(
                     "'b' and 'visible' specify inconsistent grid visibilities")
             if kwargs and not b:  # something false-like but not None
-                _api.warn_external('First parameter to grid() is false, '
+                _api.warn_external('First parameter to grid() is false, ' # CResolvido
                                    'but line properties are supplied. The '
                                    'grid will be enabled.')
                 b = True

@@ -841,7 +841,7 @@ class Poly3DCollection(PolyCollection):
             # passed in) and sort the 2D version by view depth.
             copy_state = self._update_dict['array']
             self.update_scalarmappable()
-            if copy_state:
+            if copy_state: # CReduzido
                 if self._face_is_mapped:
                     self._facecolor3d = self._facecolors
                 if self._edge_is_mapped:

@@ -1872,6 +1872,7 @@ j, k)] = (None, nested_mosaic, 'nested')
             # in order left-to-right top-to-bottom
             for key in sorted
 =======
+# CaFP
 j, k)] = 
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 (
@@ -1885,6 +1886,7 @@ this_level):
                     slc = arg
 =======
 None, nested_mosaic, 'nested')
+# CaFP
 
             # now go through the things in this level and add them
             # in order left-to-right top-to-bottom

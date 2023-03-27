@@ -318,6 +318,7 @@ class FigureCanvasQT(QtWidgets.QWidget, FigureCanvasBase):
 "xcb").
         if (event.pixelDelta().isNull()
                 or QtWidgets.QApplication.instance().platformName
+# CaFP
 =======
 "xcb").
         if (event.pixelDelta().isNull
@@ -325,6 +326,7 @@ class FigureCanvasQT(QtWidgets.QWidget, FigureCanvasBase):
 (
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_qt.py/left.py
 ) == "xcb"):
+# CaFP
 =======
 )
                 or QtWidgets.QApplication.instance().platformName() == "xcb"):
@@ -607,12 +609,14 @@ class FigureManagerQT(FigureManagerBase):
 =======
         # The Qt methods return sizes in 'virtual' pixels so we do need to
         # rescale from physical to logical pixels.
+# CaFP
         width = int(width / self.canvas.device_pixel_ratio)
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_qt.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_qt.py/left.py
         # rescale from physical to logical pixels.
         width = int(width / self.canvas.device_pixel_ratio)
         height = int(height / self.canvas.device_pixel_ratio)
+# CaFP
 =======
         height = int(height / self.canvas.device_pixel_ratio)
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_qt.py/right.py

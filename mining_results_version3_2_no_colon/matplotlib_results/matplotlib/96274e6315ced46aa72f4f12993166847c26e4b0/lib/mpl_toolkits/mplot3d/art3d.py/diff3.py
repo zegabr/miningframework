@@ -304,7 +304,7 @@ class Line3DCollection(LineCollection):
         """
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/mplot3d/art3d.py/left.py
         # see _update_scalarmappable docstring for why this must be here
-        _update_scalarmappable(self)
+        _update_scalarmappable(self) # CReduzido
         xyslist = [proj3d.proj_trans_points(points, self.axes.M)
                    for points in self._segments3d]
 =======
@@ -488,7 +488,7 @@ class Patch3DCollection(PatchCollection):
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/mplot3d/art3d.py/left.py
     @_api.delete_parameter('3.4', 'renderer')
-    def do_3d_projection(self, renderer=None):
+    def do_3d_projection(self, renderer=None): # CResolvido
         # see _update_scalarmappable docstring for why this must be here
         _update_scalarmappable(self)
 =======
@@ -567,7 +567,7 @@ class Path3DCollection(PathCollection):
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/mplot3d/art3d.py/left.py
     def get_depthshade(self):
         return self._depthshade
-
+ # CResolvido
     def set_depthshade(self, depthshade):
         """
         Set whether depth shading is performed on collection members.
@@ -932,7 +932,7 @@ class Poly3DCollection(PolyCollection):
         super().set_edgecolor(colors)
         self._edgecolor3d = PolyCollection.get_edgecolor(self)
 =======
-        PolyCollection.set_edgecolor(self, colors)
+        PolyCollection.set_edgecolor(self, colors) # CResolvido
         self._edgecolor3d = PolyCollection.get_edgecolor(self)
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 

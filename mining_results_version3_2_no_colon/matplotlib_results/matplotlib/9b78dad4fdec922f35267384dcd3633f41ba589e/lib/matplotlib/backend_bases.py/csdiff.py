@@ -1298,11 +1298,13 @@ class LocationEvent(Event):
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backend_bases.py/left.py
     xdata, ydata : float or None
         Data coordinates of the mouse within *inaxes*, or *None* if the mouse
+# CaFP
 =======
     xdata, ydata : float or None
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backend_bases.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backend_bases.py/left.py
         is not over an Axes.
+# CaFP
 =======
         Data coordinates of the mouse within *inaxes*, or *None* if the mouse
         is not over an Axes.

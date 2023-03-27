@@ -362,6 +362,7 @@ class FigureCanvasTk(FigureCanvasBase):
         if timeout > 0:
             milliseconds = int(
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/backends/_backend_tk.py/left.py
+# CaFP
 1000 * timeout)
             if milliseconds > 0:
                 self._event_loop_id = self._tkcanvas.after
@@ -379,6 +380,7 @@ class FigureCanvasTk(FigureCanvasBase):
             else:
                 self._event_loop_id = self._tkcanvas.after_idle(
                     self.stop_event_loop)
+# CaFP
 =======
                     self.stop_event_loop)
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/backends/_backend_tk.py/right.py

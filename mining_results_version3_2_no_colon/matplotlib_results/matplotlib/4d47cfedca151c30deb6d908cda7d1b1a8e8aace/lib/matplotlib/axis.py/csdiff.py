@@ -2263,13 +2263,14 @@ class XAxis(Axis):
         ends = ends.transformed(
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/left.py
 self.axes.transAxes -
-                                self.figure.dpi_scale_trans)
+                                self.figure.dpi_scale_trans) # CaFP
 =======
 self.axes.transAxes -
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/left.py
         length = ends.width * 72
 =======
+# CaFP
                                 self.figure.dpi_scale_trans)
         length = ends.width * 72
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/right.py
@@ -2535,12 +2536,14 @@ class YAxis(Axis):
         ends = ends.transformed(
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/left.py
 self.axes.transAxes -
+# CaFP
                                 self.figure.dpi_scale_trans)
 =======
 self.axes.transAxes -
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/left.py
         length = ends.height * 72
+# CaFP
 =======
                                 self.figure.dpi_scale_trans)
         length = ends.height * 72

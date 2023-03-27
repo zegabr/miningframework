@@ -27,7 +27,7 @@ Set up the cloud configuration at ``/etc/salt/cloud.providers`` or
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/left.py
 =======
-
+# D3FP
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/right.py
 import base64
 import hmac
@@ -127,7 +127,7 @@ def _compute_signature(parameters, access_key_secret, method, path):
         val = str(parameters[key]).encode("utf-8")
         pairs.append(
             urllib.parse.quote(key, safe="") + "=" + urllib.parse.quote(val, safe="-_~")
-        )
+        ) # CResolvido
 =======
         val = str(parameters[key]).encode("utf-8")
         pairs.append(_quote(key, safe="") + "=" + _quote(val, safe="-_~"))

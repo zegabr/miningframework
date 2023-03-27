@@ -184,7 +184,7 @@ def loads(s, app=None, **kwargs):
 =======
     :param app: App instance to use to configure the JSON decoder.
         Uses ``current_app`` if not given, and falls back to the default
-        encoder when not in an app context.
+        encoder when not in an app context. # CReduzido
     :param kwargs: Extra arguments passed to :func:`json.loads`.
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/flask_results/flask/7d2ba3e1fc55e8d04308ede674263727c85c86d2/src/flask/json/__init__.py/right.py
 

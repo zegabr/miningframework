@@ -16,7 +16,7 @@ from matplotlib.font_manager import (
     json_dump, json_load, get_font, is_opentype_cff_font,
     MSUserFontDirectories, _get_fontconfig_fonts)
 =======
-    findfont, findSystemFonts, FontEntry, FontProperties, fontManager, json_dump,
+    findfont, findSystemFonts, FontEntry, FontProperties, fontManager, json_dump, # CReduzido
     json_load, get_font, is_opentype_cff_font, MSUserFontDirectories,
     _get_fontconfig_fonts, ft2font, ttfFontProperty, cbook)
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/c488353862958ad5bf81954b229b4b7a1e22c7a3/lib/matplotlib/tests/test_font_manager.py/right.py

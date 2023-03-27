@@ -424,12 +424,14 @@ def date2num(d):
             # make datetime naive:
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/dates.py/left.py
             d = [dt.astimezone
+            # CaFP
 =======
             d = [dt.astimezone(UTC).replace
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/dates.py/right.py
 (
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/dates.py/left.py
 UTC).replace(tzinfo=None) for dt in d]
+            # CaFP
 =======
 tzinfo=None) for dt in d]
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/dates.py/right.py

@@ -160,7 +160,7 @@ class SubplotBase:
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/left.py
 subplot_class_factory = cbook._make_class_factory(
-    SubplotBase, "{}Subplot", "_axes_class")
+    SubplotBase, "{}Subplot", "_axes_class") # CReduzido
 =======
 # this here to support cartopy which was using a private part of the
 # API to register their Axes subclasses.

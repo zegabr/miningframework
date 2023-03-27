@@ -19,7 +19,7 @@ ax = fig.add_subplot(projection='3d')
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/6ba5cb88e33500084e1a99624a5c1d794b44b2b8/examples/mplot3d/rotate_axes3d_sgskip.py/left.py
 # Grab some example data and plot a basic wireframe.
-X, Y, Z = axes3d.get_test_data(0.05)
+X, Y, Z = axes3d.get_test_data(0.05) # CReduzido
 ax.plot_wireframe(X, Y, Z, rstride=10, cstride=10)
 
 # Set the axis labels

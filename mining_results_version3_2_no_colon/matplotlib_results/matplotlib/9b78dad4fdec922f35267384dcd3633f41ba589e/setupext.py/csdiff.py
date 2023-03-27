@@ -171,11 +171,13 @@ _freetype_hashes = {
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
 # This is the version of FreeType to use when building a local version.  It
 # must match the value in lib/matplotlib.__init__.py and also needs to be
+# CaFP
 =======
 # This is the version of FreeType to use when building a local version.  It
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
 # changed below in the embedded windows build script 
+# CaFP
 =======
 # must match the value in lib/matplotlib.__init__.py and also needs to be
 # changed below in the embedded windows build script 
@@ -554,10 +556,12 @@ def get_ccompiler():
     class L(list):
         def __bool__(self):
             return True
+# CaFP
 
     build_ext = Distribution({"ext_modules": L()}).get_command_obj(
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+# CaFP
     
 =======
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
@@ -569,6 +573,7 @@ def get_ccompiler():
     CCompiler used to be constructible via `distutils.ccompiler.new_compiler`,
     but this API was removed as part of the distutils deprecation.  Instead,
     we trick setuptools into instantiating it by creating a dummy Distribution
+# CaFP
     with a list of extension modules that claims to be truthy, but is actually
     empty, and then running the Distribution's build_ext command.  (If using
     a plain empty ext_modules, build_ext would early-return without doing

@@ -722,7 +722,7 @@ def test_load_from_url():
 =======
     plt.imread(url)
     with urllib.request.urlopen(url) as file:
-        plt.imread(file)
+        plt.imread(file) # CResolvido
 >>>>>>> /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_image.py/right.py
 
 

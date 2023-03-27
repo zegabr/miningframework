@@ -342,7 +342,7 @@ class FigureManagerGTK3(FigureManagerBase):
         self.window.set_wmclass("matplotlib", "Matplotlib")
 <<<<<<< /home/ze/miningframework/mining_results_version3_2_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
         icon_ext = "png" if sys.platform == "win32" else "svg"
-        self.window.set_icon_from_file(
+        self.window.set_icon_from_file( # CReduzido
             str(cbook._get_data_path(f"images/matplotlib.{icon_ext}")))
 =======
         self.window.set_icon_from_file(window_icon)
@@ -547,7 +547,7 @@ class NavigationToolbar2GTK3(_NavigationToolbar2GTK, Gtk.Toolbar):
             dialog = Gtk.MessageDialog(
                 parent=self.canvas.get_toplevel(), message_format=str(e),
                 type=Gtk.MessageType.ERROR, buttons=Gtk.ButtonsType.OK)
-            dialog.run()
+            dialog.run() # CReduzido
             dialog.destroy()
 
 =======
