@@ -525,7 +525,7 @@ class _ImageBase(martist.Artist, cm.ScalarMappable):
                 # temporary vmin/vmax change
                 with self.norm.callbacks.blocked(), \
                      cbook._setattr_cm(self.norm, vmin=s_vmin, vmax=s_vmax):
-                    output = self.norm(resampled_masked) # CReduzido
+                    output = self.norm(resampled_masked) # D3FP
 =======
                 # Block the norm from sending an update signal during the
                 # temporary vmin/vmax change
