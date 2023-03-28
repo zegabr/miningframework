@@ -1276,53 +1276,16 @@ class Artist:
             n = self.cmap.N
             if np.ma.getmask(data):
                 return "[]"
-            normed = self.norm(
-<<<<<<< ./artist.py/left.py
-data)
+            normed = self.norm(data)
             if np.isfinite(normed):
                 # Midpoints of neighboring color intervals.
-                neighbors = self.norm.inverse
-=======
-data)
->>>>>>> ./artist.py/right.py
-(
-<<<<<<< ./artist.py/left.py
-=======
-            if np.isfinite
->>>>>>> ./artist.py/right.py
-                    (int(self.norm(normed):
-                # Midpoints of neighboring color intervals.
                 neighbors = self.norm.inverse(
-                    (int(self.norm(data)
-<<<<<<< ./artist.py/left.py
- * n) + np.array([0, 1])
-=======
- * n) + np.array([0, 1])) / n)
->>>>>>> ./artist.py/right.py
-                delta = abs(neighbors - data)
-<<<<<<< ./artist.py/left.py
- / n)
-                delta = abs(neighbors - data).max
-=======
-.max
->>>>>>> ./artist.py/right.py
-()
-<<<<<<< ./artist.py/left.py
+                    (int(self.norm(data) * n) + np.array([0, 1])) / n)
+                delta = abs(neighbors - data).max()
                 g_sig_digits = cbook._g_sig_digits(data, delta)
-=======
-                g_sig_digits = cbook._g_sig_digits
->>>>>>> ./artist.py/right.py
-<<<<<<< ./artist.py/left.py
             else:
                 g_sig_digits = 3  # Consistent with default below.
-            return "[{:-#.{}g}]".format(data, g_sig_digits
-=======
-(data, delta)
-            else:
-                g_sig_digits = 3  # Consistent with default below.
-            return "[{:-#.{}g}]".format(data, g_sig_digits
->>>>>>> ./artist.py/right.py
-)
+            return "[{:-#.{}g}]".format(data, g_sig_digits)
         else:
             try:
                 data[0]

@@ -626,15 +626,7 @@ def _calc_offsets(summed_sizes, karray):
 
 
 # Helper for HBoxDivider/VBoxDivider (see above re: variable naming).
-def _locate(
-<<<<<<< ./left.py
-x
-=======
-self, nx, 0, nx1 if nx1 is not None else nx + 1, 1)
-
-    def _locate(self, x
->>>>>>> ./right.py
-, y, w, h, summed_widths, equal_heights, fig_w, fig_h, anchor):
+def _locate(x, y, w, h, summed_widths, equal_heights, fig_w, fig_h, anchor):
     karray = _determine_karray(
         summed_widths, equal_heights,
         total_width=fig_w * w, max_height=fig_h * h)

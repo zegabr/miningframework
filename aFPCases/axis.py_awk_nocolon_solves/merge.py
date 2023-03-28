@@ -1419,11 +1419,6 @@ class Axis(martist.Artist):
 
                 grid(color='r', linestyle='-', linewidth=2)
         """
-<<<<<<< ./axis.py/left.py
-        TOGGLE = object()
-        UNSET = object()
-        visible = kwargs.pop
-=======
         TOGGLE = object()
         UNSET = object()
         visible = kwargs.pop('visible', UNSET)
@@ -1435,26 +1430,9 @@ class Axis(martist.Artist):
                 else:  # grid()
                     b = TOGGLE
             else:  # grid(visible=v)
->>>>>>> ./axis.py/right.py
-<<<<<<< ./axis.py/left.py
-('visible', UNSET)
-
-        if b is None:
-            if visible is UNSET:
-                if kwargs:  # grid(color='r')
-                    b = True
-                else:  # grid()
-                    b = TOGGLE
-            else:  # grid(visible=v)
                 b = visible
         else:
-            if visible is not UNSET and bool
-=======
-                b = visible
-        else:
-            if visible is not UNSET and bool
->>>>>>> ./axis.py/right.py
-(b) != bool(visible):
+            if visible is not UNSET and bool(b) != bool(visible):
                 # grid(True, visible=False), grid(False, visible=True)
                 raise ValueError(
                     "'b' and 'visible' specify inconsistent grid visibilities")

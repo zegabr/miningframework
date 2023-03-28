@@ -121,28 +121,21 @@ class Request(object_ref):
     def encoding(self) -> str:
         return self._encoding
 
-<<<<<<< ./__init__.py/left.py
+<<<<<<< ./left.py
     def __repr__(self):
-||||||| ./__init__.py/base.py
-    def __str__(self):
 =======
     def __str__(self) -> str:
->>>>>>> ./__init__.py/right.py
+>>>>>>> ./right.py
         return f"<{self.method} {self.url}>"
 
-<<<<<<< ./__init__.py/left.py
-    def copy(self):
-        """Return a copy of this Request"""
-||||||| ./__init__.py/base.py
-    __repr__ = __str__
-
+<<<<<<< ./left.py
     def copy(self):
         """Return a copy of this Request"""
 =======
     __repr__ = __str__
 
     def copy(self) -> "Request":
->>>>>>> ./__init__.py/right.py
+>>>>>>> ./right.py
         return self.replace()
 
     def replace(self, *args, **kwargs) -> "Request":
