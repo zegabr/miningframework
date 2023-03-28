@@ -173,9 +173,9 @@ def loads(s, app=None, **kwargs):
     some defaults from application configuration.
 
     :param s: JSON string to deserialize.
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/flask_results/flask/7d2ba3e1fc55e8d04308ede674263727c85c86d2/src/flask/json/__init__.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_overlap_no_colon/flask_results/flask/7d2ba3e1fc55e8d04308ede674263727c85c86d2/src/flask/json/__init__.py/left.py
     :param app: Use this app's config instead of the active app context
-        or defaults. # CReduzido
+        or defaults.
     :param kwargs: Extra arguments passed to func:`json.dump`.
 
     .. versionchanged:: 2.0
@@ -186,7 +186,7 @@ def loads(s, app=None, **kwargs):
         Uses ``current_app`` if not given, and falls back to the default
         encoder when not in an app context.
     :param kwargs: Extra arguments passed to :func:`json.loads`.
->>>>>>> /home/ze/miningframework/mining_results_version3_3/flask_results/flask/7d2ba3e1fc55e8d04308ede674263727c85c86d2/src/flask/json/__init__.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_overlap_no_colon/flask_results/flask/7d2ba3e1fc55e8d04308ede674263727c85c86d2/src/flask/json/__init__.py/right.py
 
     .. versionchanged:: 1.0.3
         ``app`` can be passed directly, rather than requiring an app
