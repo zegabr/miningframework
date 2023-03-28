@@ -27,14 +27,13 @@ done < <(rg --files --iglob "**/diff3.py")
 
 # search for folders containing csdiff.py
 for dir in $(find . -name "csdiff.py" -type f | xargs dirname | sort | uniq); do
-  cmp --silent <(grep -v '^\s*$' $dir/csdiff.py) <(grep -v '^\s*$' $dir/diff3.py)
-  if [ $? -ne 0 ]; then
     cmp --silent <(sed 's/\s//g' <(tr -d '\n' < $dir/csdiff.py)) <(sed 's/\s//g' <(tr -d '\n' < $dir/merge.py))
     if [ $? -eq 0 ]; then
-      # echo "$dir"
       files_with_csdiff_different_than_diff3_and_equal_to_merge=$((files_with_csdiff_different_than_diff3_and_equal_to_merge + 1))
+    else
+        # echo files with aFN
+        echo "$dir"
     fi
-  fi
 done
 
 echo "csdiff files with conflicts = " $csdiff_files_with_conflicts
