@@ -38,7 +38,7 @@ class FigureCanvasWxCairo(_FigureCanvasWxBase, FigureCanvasCairo):
         self._renderer.dpi = self.figure.dpi
 =======
         self._renderer.set_width_height(width, height)
-        self._renderer.dpi = self.figure.dpi
+        self._renderer.dpi = self.figure.dpi # CResolvido
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_wxcairo.py/right.py
         self.figure.draw(self._renderer)
         self.bitmap = wxcairo.BitmapFromImageSurface(surface)

@@ -1395,6 +1395,7 @@ class Axis(martist.Artist):
                                    'but line properties are supplied. The '
                                    'grid will be enabled.')
                 b = True
+                # CReduzido
 =======
         if b is not None:
             if 'visible' in kwargs and bool(b) != bool(kwargs['visible']):

@@ -161,12 +161,14 @@ class RendererAgg(RendererBase):
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
 currently {nmax}) 
 =======
+# CaFP
 currently {nmax}) "
                         "or increase the path simplification threshold
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
 "
                         "
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
+# CaFP
 or increase the path simplification threshold"
                         "(rcParams['path.simplify_threshold'] = "
                         f"{mpl.rcParams['path.simplify_threshold']:.2f} by "
@@ -207,6 +209,7 @@ or increase the path simplification threshold"
                         "(
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
 rcParams['path.simplify_threshold'] = "
+# CaFP
                         f"{mpl.rcParams['path.simplify_threshold']} "
                         "by default and path.simplify_threshold "
                         f"= {path.simplify_threshold} "
@@ -216,12 +219,14 @@ rcParams['path.simplify_threshold'] = "
                         "by default and path.simplify_threshold "
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
+# CaFP
                         
 =======
                         f
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
 "
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
+# CaFP
 on the input)."
                         )
                     if nmax > 100:
@@ -236,6 +241,7 @@ on the input)."
 (
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
                             "Exceeded cell block limit in Agg.  Please reduce "
+# CaFP
                             "the value of rcParams['agg.path.chunksize'] 
 =======
                             "Exceeded cell block limit in Agg.  Please reduce "
@@ -244,12 +250,14 @@ on the input)."
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
 "
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
+# CaFP
                             f
 =======
 (currently {nmax}) {inc_threshold}
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
 "
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
+# CaFP
 (currently {nmax}
 =======
                         
@@ -261,6 +269,7 @@ on the input)."
                         msg = (
                             "Exceeded cell block limit in Agg.  Please set "
                             "the value of rcParams['agg.path.chunksize'], "
+# CaFP
                             f
 =======
                     else:
@@ -273,6 +282,7 @@ on the input)."
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
 (currently {nmax}) to be greater than 100 "
                             + inc_threshold
+# CaFP
                         
 =======
                             + inc_threshold
@@ -283,6 +293,7 @@ on the input)."
 )
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
 
+# CaFP
                 raise OverflowError(msg) from None
 =======
  from None

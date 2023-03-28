@@ -7,7 +7,7 @@ from matplotlib.testing.decorators import check_figures_equal, image_comparison
 from matplotlib.testing.widgets import do_event, get_ax, mock_event
 =======
 from matplotlib.testing.decorators import image_comparison
-from matplotlib.testing.widgets import do_event, get_ax, mock_event
+from matplotlib.testing.widgets import do_event, get_ax, mock_event # CResolvido
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_widgets.py/right.py
 
 from numpy.testing import assert_allclose

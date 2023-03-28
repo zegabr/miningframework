@@ -125,7 +125,7 @@ def _compute_signature(parameters, access_key_secret, method, path):
     for key in keys:
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/left.py
         val = str(parameters[key]).encode("utf-8")
-        pairs.append(
+        pairs.append( # CResolvido
             urllib.parse.quote(key, safe="") + "=" + urllib.parse.quote(val, safe="-_~")
         )
 =======

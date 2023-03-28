@@ -4858,11 +4858,13 @@ default: :rc:`scatter.edgecolors`
         if yscale == 'log':
             bin_edges = np.geomspace(ymin, ymax, 2 * ny + 1)
         else:
+# CaFP
             bin_edges = np.linspace
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
 (ymin, ymax,
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
  2 * ny + 1)
+# CaFP
         else:
             bin_edges = np.linspace(ymin, ymax, 2 * ny + 1
 =======
@@ -4874,11 +4876,13 @@ default: :rc:`scatter.edgecolors`
         verts, values = [], []
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
         for bin_bottom, bin_top
+# CaFP
 =======
         for bin_bottom
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
 ,
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
+# CaFP
  val in zip
 =======
  bin_top, val in zip
@@ -7192,10 +7196,12 @@ such objects
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
 vmax - vmin)
 =======
+# CaFP
 vmax - vmin
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
 ), 1)
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
+# CaFP
 =======
 , 1)
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py

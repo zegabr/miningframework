@@ -4661,6 +4661,7 @@ def test_twin_spines_on_top():
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/left.py
 ,
 ]
+# CaFP
 =======
 ,
 ])
@@ -4670,6 +4671,7 @@ def test_rcparam_grid_minor(grid_which, major_visible, minor_visible):
 )
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/left.py
 def test_rcparam_grid_minor(grid_which
+# CaFP
 =======
     fig
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/right.py
@@ -4677,6 +4679,7 @@ def test_rcparam_grid_minor(grid_which
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/left.py
  major_visible, minor_visible):
     mpl.rcParams.update({"axes.grid": True, "axes.grid.which": grid_which})
+# CaFP
 =======
  ax = plt.subplots()
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/right.py
@@ -4684,6 +4687,7 @@ def test_rcparam_grid_minor(grid_which
     fig, ax = plt.subplots()
     fig.canvas.draw()
     assert all(tick.gridline.get_visible
+# CaFP
 =======
     fig.canvas.draw
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/right.py
@@ -4691,6 +4695,7 @@ def test_rcparam_grid_minor(grid_which
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/left.py
 ) == major_visible
                for tick in ax.xaxis.majorTicks)
+# CaFP
     assert all
 =======
 )
@@ -4698,6 +4703,7 @@ def test_rcparam_grid_minor(grid_which
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/right.py
 (
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/left.py
+# CaFP
 tick.gridline.get_visible(
 =======
 tick.gridline.get_visible() == major_visible
@@ -4710,6 +4716,7 @@ tick.gridline.get_visible() == major_visible
 def test_grid(
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_axes.py/left.py
 ):
+# CaFP
     fig
 =======
     assert all(tick.gridline.get_visible() == minor_visible

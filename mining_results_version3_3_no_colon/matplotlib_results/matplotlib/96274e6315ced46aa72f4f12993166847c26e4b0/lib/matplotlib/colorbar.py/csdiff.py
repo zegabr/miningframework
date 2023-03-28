@@ -800,6 +800,7 @@ class ColorbarBase:
             X
 =======
 "
+# CaFP
         if C.shape[0] == Y.shape[0]:
             # trim the last one to be compatible with old behavior.
             C = C[:-1]

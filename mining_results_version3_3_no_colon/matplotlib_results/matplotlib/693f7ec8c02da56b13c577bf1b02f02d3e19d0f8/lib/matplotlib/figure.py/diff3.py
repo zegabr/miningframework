@@ -1650,7 +1650,7 @@ default: %(va)s
             return [list(ln) for ln in layout.strip('\n').split('\n')]
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
-    def subplot_mosaic(self, mosaic, *, sharex=False, sharey=False,
+    def subplot_mosaic(self, mosaic, *, sharex=False, sharey=False, # CResolvido
                        subplot_kw=None, gridspec_kw=None, empty_sentinel='.'):
 =======
     def subplot_mosaic(self, mosaic, *, subplot_kw=None, gridspec_kw=None,
@@ -1739,7 +1739,7 @@ default: %(va)s
         # Only accept strict bools to allow a possible future API expansion.
         _api.check_isinstance(bool, sharex=sharex, sharey=sharey)
 =======
-        if isinstance(mosaic, str):
+        if isinstance(mosaic, str): # CReduzido
             mosaic = self._normalize_grid_string(mosaic)
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 
@@ -1907,7 +1907,7 @@ default: %(va)s
                 ax._label_outer_xaxis()
             if sharey:
                 ax.sharey(ax0)
-                ax._label_outer_yaxis()
+                ax._label_outer_yaxis()# CReduzido
 =======
         ret = _do_layout(gs, mosaic, *_identify_keys_and_nested(mosaic))
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
@@ -2028,7 +2028,7 @@ class SubFigure(FigureBase):
         hr = np.asarray(gs.get_height_ratios())
         dx = wr[self._subplotspec.colspan].sum() / wr.sum()
         dy = hr[self._subplotspec.rowspan].sum() / hr.sum()
-        x0 = wr[:self._subplotspec.colspan.start].sum() / wr.sum()
+        x0 = wr[:self._subplotspec.colspan.start].sum() / wr.sum() # CReduzido
         y0 = 1 - hr[:self._subplotspec.rowspan.stop].sum() / hr.sum()
 =======
         # need to figure out *where* this subplotspec is.

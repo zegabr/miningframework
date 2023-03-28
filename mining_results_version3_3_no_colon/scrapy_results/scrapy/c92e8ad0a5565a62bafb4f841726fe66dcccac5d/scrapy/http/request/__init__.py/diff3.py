@@ -145,7 +145,7 @@ class Request(object_ref):
     def replace(self, *args, **kwargs) -> RequestTypeVar:
         """Create a new Request with the same attributes except for those given new values"""
         for x in ['url', 'method', 'headers', 'body', 'cookies', 'meta', 'flags',
-                  'encoding', 'priority', 'dont_filter', 'callback', 'errback', 'cb_kwargs']:
+                  'encoding', 'priority', 'dont_filter', 'callback', 'errback', 'cb_kwargs']: # CResolvido
 =======
     def replace(self, *args, **kwargs):
         """Create a new Request with the same attributes except for those given new values"""

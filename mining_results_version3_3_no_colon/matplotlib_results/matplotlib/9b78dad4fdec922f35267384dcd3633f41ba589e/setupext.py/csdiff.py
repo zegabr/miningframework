@@ -543,6 +543,7 @@ def get_ccompiler():
  and then running the Distribution's build_ext command.  (If using
     a plain empty ext_modules, build_ext would early-return without doing
     anything.)
+    # CaFP
     
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
 "
@@ -554,6 +555,7 @@ def get_ccompiler():
 
     build_ext = Distribution({"ext_modules": L()}).get_command_obj("build_ext
 =======
+    # CaFP
 ""
 
     class L(list):

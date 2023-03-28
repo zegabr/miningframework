@@ -33,7 +33,7 @@ def onselect(xmin, xmax):
     region_x = x[indmin:indmax]
     region_y = y[indmin:indmax]
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/examples/widgets/span_selector.py/left.py
-
+# CReduzido
     if len(region_x) >= 2:
         line2.set_data(region_x, region_y)
         ax2.set_xlim(region_x[0], region_x[-1])

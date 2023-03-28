@@ -344,7 +344,7 @@ def show(*args, **kwargs):
     ion : Enable interactive mode, which shows / updates the figure after
           every plotting command, so that calling ``show()`` is not necessary.
     ioff : Disable interactive mode.
-    savefig : Save the figure to an image file instead of showing it on screen.
+    savefig : Save the figure to an image file instead of showing it on screen. # CaFP
 
     Notes
     -----

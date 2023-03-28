@@ -571,7 +571,7 @@ class BinaryCrossentropy(LossFunctionWrapper):
   def __init__(self,
                from_logits=False,
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
-               label_smoothing=.0,
+               label_smoothing=.0, # CResolvido
 =======
                label_smoothing=0,
                axis=-1,
@@ -659,7 +659,7 @@ class CategoricalCrossentropy(LossFunctionWrapper):
   def __init__(self,
                from_logits=False,
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
-               label_smoothing=.0,
+               label_smoothing=.0, # CResolvido
 =======
                label_smoothing=0,
                axis=-1,
@@ -1796,7 +1796,7 @@ def _ragged_tensor_sparse_categorical_crossentropy(y_true,
               'keras.losses.binary_crossentropy')
 @dispatch.add_dispatch_support
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
-def binary_crossentropy(y_true, y_pred, from_logits=False, label_smoothing=.0):
+def binary_crossentropy(y_true, y_pred, from_logits=False, label_smoothing=.0): # CReduzido
 =======
 def binary_crossentropy(y_true,
                         y_pred,

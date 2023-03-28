@@ -1698,6 +1698,7 @@ class MultiCursor(Widget):
     vertOn: bool, default: True
         Whether to draw the vertical line.
 =======
+# CReduzido
     Parameters
     ----------
     canvas : `matplotlib.backend_bases.FigureCanvasBase`

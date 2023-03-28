@@ -1250,6 +1250,7 @@ vmin=0.5, vmax=1),
     ax = fig_ref.subplots()
     ax.imshow(data, norm=colors.Normalize(vmin=-2, vmax=2),
               extent=(0, 5
+              # CaFP
 =======
 vmin=0.5, vmax=1),
                    extent=(0, 5, 0, 5), interpolation='nearest', cmap=cmap)
@@ -1266,6 +1267,7 @@ vmin=0.5, vmax=1),
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
 ,
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
+              # CaFP
  0, 5), interpolation='nearest', cmap=cmap)
     ax.imshow(masked_data, norm=colors.Normalize
 =======
@@ -1287,11 +1289,13 @@ def test_huge_range_log(fig_test, fig_ref, x):
     ax = fig_test.subplots()
     ax.imshow(data, norm=colors.LogNorm
 =======
+              # CaFP
     ax = fig_test.subplots()
     ax.imshow
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
 (
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
+              # CaFP
 vmin=1, vmax=data.max
 =======
 data, norm=colors.LogNorm
@@ -1299,6 +1303,7 @@ data, norm=colors.LogNorm
 (
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
 )
+              # CaFP
 =======
 vmin=1, vmax=data.max(
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
@@ -1307,6 +1312,7 @@ vmin=1, vmax=data.max(
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
 
     data = np.full(
+              # CaFP
 =======
 ,
               interpolation='nearest', cmap='viridis')
@@ -1316,6 +1322,7 @@ vmin=1, vmax=data.max(
 (
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
 5, 5), x, dtype=np.float64
+              # CaFP
 =======
 (5, 5), x, dtype=np.float64
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py

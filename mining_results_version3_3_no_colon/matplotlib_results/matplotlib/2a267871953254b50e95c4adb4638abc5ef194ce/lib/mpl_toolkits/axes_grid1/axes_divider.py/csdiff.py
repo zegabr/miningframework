@@ -632,7 +632,7 @@ x
 =======
 self, nx, 0, nx1 if nx1 is not None else nx + 1, 1)
 
-    def _locate(self, x
+    def _locate(self, x # CaFP
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/2a267871953254b50e95c4adb4638abc5ef194ce/lib/mpl_toolkits/axes_grid1/axes_divider.py/right.py
 , y, w, h, summed_widths, equal_heights, fig_w, fig_h, anchor):
     karray = _determine_karray(

@@ -124,7 +124,7 @@ class Request(object_ref):
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/scrapy_results/scrapy/e7d3fad00eab9aaeedf8896739e969db92c1e408/scrapy/http/request/__init__.py/left.py
     def __repr__(self):
 =======
-    def __str__(self) -> str:
+    def __str__(self) -> str: # CResolvido
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/scrapy_results/scrapy/e7d3fad00eab9aaeedf8896739e969db92c1e408/scrapy/http/request/__init__.py/right.py
         return f"<{self.method} {self.url}>"
 
@@ -134,7 +134,7 @@ class Request(object_ref):
 =======
     __repr__ = __str__
 
-    def copy(self) -> "Request":
+    def copy(self) -> "Request": # CResolvido
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/scrapy_results/scrapy/e7d3fad00eab9aaeedf8896739e969db92c1e408/scrapy/http/request/__init__.py/right.py
         return self.replace()
 

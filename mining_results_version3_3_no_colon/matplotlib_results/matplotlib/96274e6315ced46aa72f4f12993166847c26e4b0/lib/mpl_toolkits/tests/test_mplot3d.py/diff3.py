@@ -241,7 +241,7 @@ def test_scatter3d():
 def test_scatter3d_color():
     fig = plt.figure()
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/tests/test_mplot3d.py/left.py
-    ax = fig.add_subplot(projection='3d')
+    ax = fig.add_subplot(projection='3d') # CResolvido
 
     # Check that 'none' color works; these two should overlay to produce the
     # same as setting just `color`.

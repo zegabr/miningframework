@@ -53,7 +53,7 @@ Module for handling openstack keystone calls.
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
 =======
-
+# D3FP
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
 import logging
 
@@ -403,6 +403,7 @@ def endpoint_list(profile=None, **connection_args):
             if not value.startswith("_")
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
             and isinstance(getattr(endpoint, value), ((str,), dict, bool))
+            # CReduzido
         }
 =======
             and isinstance(getattr(endpoint, value), (str, dict, bool))
@@ -574,6 +575,7 @@ def role_list(profile=None, **connection_args):
             for value in dir(role)
             if not value.startswith("_")
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+            # CReduzido
             and isinstance(getattr(role, value), ((str,), dict, bool))
         }
 =======
@@ -648,6 +650,7 @@ def service_get(service_id=None, name=None, profile=None, **connection_args):
         for value in dir(service)
         if not value.startswith("_")
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+            # CReduzido
         and isinstance(getattr(service, value), ((str,), dict, bool))
     }
 =======
@@ -675,6 +678,7 @@ def service_list(profile=None, **connection_args):
             for value in dir(service)
             if not value.startswith("_")
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+            # CReduzido
             and isinstance(getattr(service, value), ((str,), dict, bool))
         }
 =======
@@ -830,6 +834,7 @@ def tenant_get(tenant_id=None, name=None, profile=None, **connection_args):
         for value in dir(tenant)
         if not value.startswith("_")
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+            # CReduzido
         and isinstance(getattr(tenant, value), ((str,), dict, bool))
     }
 =======
@@ -893,6 +898,7 @@ def tenant_list(profile=None, **connection_args):
             for value in dir(tenant)
             if not value.startswith("_")
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+            # CReduzido
             and isinstance(getattr(tenant, value), ((str,), dict, bool))
         }
 =======
@@ -973,6 +979,7 @@ def tenant_update(
         for value in dir(updated)
         if not value.startswith("_")
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+            # CReduzido
         and isinstance(getattr(updated, value), ((str,), dict, bool))
     }
 =======
@@ -1074,6 +1081,7 @@ def user_list(profile=None, **connection_args):
             for value in dir(user)
             if not value.startswith("_")
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+            # CReduzido
             and isinstance(getattr(user, value, None), ((str,), dict, bool))
         }
 =======
@@ -1119,6 +1127,7 @@ def user_get(user_id=None, name=None, profile=None, **connection_args):
         for value in dir(user)
         if not value.startswith("_")
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+            # CReduzido
         and isinstance(getattr(user, value, None), ((str,), dict, bool))
     }
 =======
@@ -1554,6 +1563,7 @@ tenant_id=7167a092ece84bae8cead4bf9d15bb3b
                 for value in dir(role)
                 if not value.startswith("_")
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+            # CReduzido
                 and isinstance(getattr(role, value), ((str,), dict, bool))
             }
 =======

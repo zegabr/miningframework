@@ -10413,7 +10413,7 @@ def list_tags(
     username=None,
     password=None,
     service_instance=None,
-    verify_ssl=None,
+    verify_ssl=None, # CResolvido
     ca_bundle=None,
 ):
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/vsphere.py/right.py

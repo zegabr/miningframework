@@ -311,7 +311,7 @@ class Line3DCollection(LineCollection):
         # see _update_scalarmappable docstring for why this must be here
         _update_scalarmappable(self)
         xyslist = [
-            proj3d.proj_trans_points(points, renderer.M) for points in
+            proj3d.proj_trans_points(points, renderer.M) for points in # CReduzido
             self._segments3d]
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/mplot3d/art3d.py/right.py
         segments_2d = [np.column_stack([xs, ys]) for xs, ys, zs in xyslist]
@@ -487,7 +487,7 @@ class Patch3DCollection(PatchCollection):
         self.stale = True
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/mplot3d/art3d.py/left.py
-    @_api.delete_parameter('3.4', 'renderer')
+    @_api.delete_parameter('3.4', 'renderer') # CResolvido
     def do_3d_projection(self, renderer=None):
         # see _update_scalarmappable docstring for why this must be here
         _update_scalarmappable(self)
@@ -582,7 +582,8 @@ class Path3DCollection(PathCollection):
         self.stale = True
 
     def set_facecolor(self, c):
-        # docstring inherited
+        # docstring inherited 
+        # CResolvido
         super().set_facecolor(c)
         self._facecolor3d = self.get_facecolor()
 
@@ -921,6 +922,7 @@ class Poly3DCollection(PolyCollection):
         # docstring inherited
         super().set_facecolor(colors)
         self._facecolor3d = PolyCollection.get_facecolor(self)
+        # CResolvido
 =======
         PolyCollection.set_facecolor(self, colors)
         self._facecolor3d = PolyCollection.get_facecolor(self)
@@ -928,6 +930,7 @@ class Poly3DCollection(PolyCollection):
 
     def set_edgecolor(self, colors):
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+        # CResolvido
         # docstring inherited
         super().set_edgecolor(colors)
         self._edgecolor3d = PolyCollection.get_edgecolor(self)

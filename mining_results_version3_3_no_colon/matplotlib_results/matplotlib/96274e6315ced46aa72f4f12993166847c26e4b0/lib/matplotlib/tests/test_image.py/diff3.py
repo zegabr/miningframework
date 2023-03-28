@@ -718,7 +718,7 @@ def test_load_from_url():
     with _api.suppress_matplotlib_deprecation_warning():
         plt.imread(url)
     with urllib.request.urlopen(url) as file:
-        plt.imread(file)
+        plt.imread(file) # CResolvido
 =======
     plt.imread(url)
     with urllib.request.urlopen(url) as file:

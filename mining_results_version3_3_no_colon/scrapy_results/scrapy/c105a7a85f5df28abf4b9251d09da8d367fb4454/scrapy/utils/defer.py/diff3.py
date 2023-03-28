@@ -17,7 +17,7 @@ from typing import (
     Iterator,
     List,
     Optional,
-    Union
+    Union # CReduzido
 )
 =======
 from typing import (

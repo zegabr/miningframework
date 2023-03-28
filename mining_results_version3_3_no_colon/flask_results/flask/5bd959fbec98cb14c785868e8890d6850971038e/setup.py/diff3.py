@@ -6,7 +6,7 @@ setup(
     install_requires=[
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/flask_results/flask/5bd959fbec98cb14c785868e8890d6850971038e/setup.py/left.py
         "Werkzeug>=2.0",
-        "Jinja2>=3.0",
+        "Jinja2>=3.0", # CReduzido
         "itsdangerous>=2.0",
         "click>=7.1.2",
 =======

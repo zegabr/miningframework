@@ -43,7 +43,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
         self.methods['process_spider_exception'].appendleft(process_spider_exception)
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
-    def scrape_response(self, scrape_func, response, request, spider):
+    def scrape_response(self, scrape_func, response, request, spider): # CReduzido
 
         def process_spider_input(response):
             for method in self.methods['process_spider_input']:
@@ -143,7 +143,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
         return MutableChain(self._process_spider_output(response, spider, result), recovered)
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
-            def _evaluate_normal_iterable(iterable):
+            def _evaluate_normal_iterable(iterable): # CReduzido
                 try:
                     for r in iterable:
                         yield r
@@ -190,7 +190,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
 
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
-        def process_spider_output(result, start_index=0):
+        def process_spider_output(result, start_index=0): # CReduzido
             # items in this iterable do not need to go through the process_spider_output
             # chain, they went through it already from the process_spider_exception method
             if inspect.isasyncgen(result):

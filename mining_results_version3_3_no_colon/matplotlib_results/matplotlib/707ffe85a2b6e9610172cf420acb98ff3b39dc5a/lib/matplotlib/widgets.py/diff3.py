@@ -1026,7 +1026,7 @@ class TextBox(AxesWidget):
         self.text_disp = self.ax.text(
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/707ffe85a2b6e9610172cf420acb98ff3b39dc5a/lib/matplotlib/widgets.py/left.py
             self.DIST, 0.5, initial, transform=self.ax.transAxes,
-            verticalalignment='center', horizontalalignment=ha)
+            verticalalignment='center', horizontalalignment=ha) # CReduzido
 =======
             self.DIST_FROM_LEFT, 0.5, initial,
             transform=self.ax.transAxes, verticalalignment='center',

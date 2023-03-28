@@ -229,7 +229,7 @@ def test_interruptible_core_debugger():
         assert called[0] == 1, "input() should only be called once!"
         raise KeyboardInterrupt()
 
-    tracer_orig = sys.gettrace()
+    tracer_orig = sys.gettrace() # CResolvido
     try:
         with patch.object(builtins, "input", raising_input):
             debugger.InterruptiblePdb().set_trace()

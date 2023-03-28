@@ -1644,7 +1644,7 @@ def categorical_crossentropy(y_true,
   y_true = smart_cond.smart_cond(label_smoothing, _smooth_labels,
                                  lambda: y_true)
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/tensorflow_results/tensorflow/70f4d96dafe868522d1a9d09a9ae1706580bcb43/tensorflow/python/keras/losses.py/left.py
-  return K.categorical_crossentropy(y_true, y_pred, from_logits=from_logits, axis=axis)
+  return K.categorical_crossentropy(y_true, y_pred, from_logits=from_logits, axis=axis) # CResolvido
 =======
   return backend.categorical_crossentropy(
       y_true, y_pred, from_logits=from_logits)
@@ -1764,7 +1764,7 @@ def binary_crossentropy(y_true, y_pred, from_logits=False, label_smoothing=0, ax
       K.binary_crossentropy(y_true, y_pred, from_logits=from_logits), axis=axis)
 =======
   return backend.mean(
-      backend.binary_crossentropy(
+      backend.binary_crossentropy( # CResolvido
           y_true, y_pred, from_logits=from_logits), axis=-1)
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/tensorflow_results/tensorflow/70f4d96dafe868522d1a9d09a9ae1706580bcb43/tensorflow/python/keras/losses.py/right.py
 

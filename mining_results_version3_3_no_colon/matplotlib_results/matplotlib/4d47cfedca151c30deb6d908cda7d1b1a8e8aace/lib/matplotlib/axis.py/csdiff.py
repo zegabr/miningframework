@@ -813,7 +813,7 @@ class Axis(martist.Artist):
                 mpl.rcParams['axes.grid'] and
                 mpl.rcParams['axes.grid.which'] in ('both', 'major'))
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/left.py
-        self._minor_tick_kw['gridOn'] = 
+        self._minor_tick_kw['gridOn'] =  # CaFP
 =======
         self._minor_tick_kw['gridOn'] = (
                 mpl.rcParams['axes.grid'] and

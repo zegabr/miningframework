@@ -622,6 +622,7 @@ if link_github:
         tag = 'master' if version.is_devrelease else f'v{version.public}'
         return ("https://github.com/matplotlib/matplotlib/blob"
                 f"/{tag}/lib/{fn}{linespec}")
+                # CReduzido
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/doc/conf.py/right.py
 else:
     extensions.append('sphinx.ext.viewcode')

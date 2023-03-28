@@ -565,7 +565,7 @@ class Path3DCollection(PathCollection):
         # Performance optimization: Create a sorted index array and reorder
         # points and point properties according to the index array
         self._z_markers_idx = slice(-1)
-        self._vzs = None
+        self._vzs = None # CReduzido
 =======
         # In the base draw methods we access the attributes directly which
         # means we can not resolve the shuffling in the getter methods like
@@ -666,7 +666,7 @@ class Path3DCollection(PathCollection):
         #  edge colour should be identical to the face colour.
         if cbook._str_equal(self._edgecolors, 'face'):
             return self.get_facecolor()
-        return self._maybe_depth_shade_and_sort_colors(super().get_edgecolor())
+        return self._maybe_depth_shade_and_sort_colors(super().get_edgecolor()) # CReduzido
 =======
     def get_edgecolor(self):
         # We need this check here to make sure we do not double-apply the depth
@@ -845,7 +845,7 @@ class Poly3DCollection(PolyCollection):
                 if self._face_is_mapped:
                     self._facecolor3d = self._facecolors
                 if self._edge_is_mapped:
-                    self._edgecolor3d = self._edgecolors
+                    self._edgecolor3d = self._edgecolors # CReduzido
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
         txs, tys, tzs = proj3d._proj_transform_vec(self._vec, self.axes.M)
         xyzlist = [(txs[sl], tys[sl], tzs[sl]) for sl in self._segslices]

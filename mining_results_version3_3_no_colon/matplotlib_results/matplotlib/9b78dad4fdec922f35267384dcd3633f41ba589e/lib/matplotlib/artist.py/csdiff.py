@@ -1284,12 +1284,14 @@ class Artist:
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
  * n) + np.array([0, 1])
 =======
+# CaFP
  * n) + np.array([0, 1])) / n)
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
                 delta = abs(neighbors - data)
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
  / n)
                 delta = abs
+# CaFP
 =======
 .max
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
@@ -1299,6 +1301,7 @@ class Artist:
             else:
                 g_sig_digits = 3  # Consistent with default below.
             return 
+# CaFP
 =======
                 g_sig_digits = cbook._g_sig_digits(data, delta)
             else:

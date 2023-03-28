@@ -1874,6 +1874,7 @@ mosaic
                                          f"in the layout\n{mosaic!r}")
                     ax = self.add_subplot
 =======
+# CaFP
  k)] = 
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 (None, nested_mosaic, 'nested')
@@ -1894,6 +1895,7 @@ mosaic
                     ax = self.add_subplot(
                         gs[slc], **{'label': str(name)
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+# CaFP
                         gs[slc], **{'label': str(name), **subplot_kw}
                     )
                     output[name] = ax
@@ -1944,7 +1946,7 @@ mosaic))
                 ax.sharex(ax0)
                 ax._label_outer_xaxis()
             if sharey:
-                ax.sharey(ax0
+                ax.sharey(ax0 
 =======
 mosaic
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py

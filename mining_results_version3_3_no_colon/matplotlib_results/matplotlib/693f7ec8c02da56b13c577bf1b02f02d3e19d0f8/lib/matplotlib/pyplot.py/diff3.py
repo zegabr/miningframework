@@ -1437,7 +1437,7 @@ def subplot_mosaic(mosaic, *, sharex=False, sharey=False,
                    subplot_kw=None, gridspec_kw=None, empty_sentinel='.',
                    **fig_kw):
 =======
-def subplot_mosaic(mosaic, *, subplot_kw=None, gridspec_kw=None,
+def subplot_mosaic(mosaic, *, subplot_kw=None, gridspec_kw=None, # CResolvido
                    empty_sentinel='.', **fig_kw):
 >>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
     """
@@ -1520,7 +1520,7 @@ def subplot_mosaic(mosaic, *, subplot_kw=None, gridspec_kw=None,
     ax_dict = fig.subplot_mosaic(
 <<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
         mosaic, sharex=sharex, sharey=sharey,
-        subplot_kw=subplot_kw, gridspec_kw=gridspec_kw,
+        subplot_kw=subplot_kw, gridspec_kw=gridspec_kw, # CReduzido
 =======
         mosaic,
         subplot_kw=subplot_kw,
