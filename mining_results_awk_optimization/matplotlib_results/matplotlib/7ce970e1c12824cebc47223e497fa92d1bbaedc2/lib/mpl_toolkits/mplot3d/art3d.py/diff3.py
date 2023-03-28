@@ -585,7 +585,7 @@ class Path3DCollection(PathCollection):
         # Performance optimization: Create a sorted index array and reorder
         # points and point properties according to the index array
         self._z_markers_idx = slice(-1)
-        self._vzs = None
+        self._vzs = None # CReduzido
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
         self.stale = True
 
@@ -673,7 +673,7 @@ class Path3DCollection(PathCollection):
         # based alpha shading when the edge color is "face" which means the
         # edge colour should be identical to the face colour.
         if cbook._str_equal(self._edgecolors, 'face'):
-            return self.get_facecolor()
+            return self.get_facecolor() # CReduzido
         return self._maybe_depth_shade_and_sort_colors(super().get_edgecolor())
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 
@@ -841,7 +841,7 @@ class Poly3DCollection(PolyCollection):
             # passed in) and sort the 2D version by view depth.
             copy_state = self._update_dict['array']
             self.update_scalarmappable()
-            if copy_state:
+            if copy_state: # CReduzido
                 if self._face_is_mapped:
                     self._facecolor3d = self._facecolors
                 if self._edge_is_mapped:
