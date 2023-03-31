@@ -30,7 +30,7 @@ count_aFP_on_csdiff() {
     # number of 'CaFP' ocurrences in csdiff.py when diff3.py is equal to merge.py
     total_aFP=0
     total_csdiff_files_with_aFP=0
-    for dir in $(find . -name "csdiff.py" -type f | xargs dirname | sort | uniq); do
+    for dir in $(find . -name "csdiff.py" -type f | xargs dirname); do
         if files_are_equal "$dir/diff3.py" "$dir/merge.py";  then
           aFP=$(count_CaFP "$dir/csdiff.py") || aFP=0
           total_aFP=$((total_aFP + aFP))
@@ -47,7 +47,7 @@ count_aFP_on_diff3() {
     # number of '^=======$' ocurrences in diff3.py when csdiff.py is equal to merge.py
     total_aFP=0
     total_diff3_files_with_aFP=0
-    for dir in $(find . -name "diff3.py" -type f | xargs dirname | sort | uniq); do
+    for dir in $(find . -name "diff3.py" -type f | xargs dirname); do
         if files_are_equal "$dir/csdiff.py" "$dir/merge.py";  then
           aFP=$(count_file_conflicts "$dir/diff3.py") || aFP=0
           total_aFP=$((total_aFP + aFP))
@@ -65,7 +65,7 @@ scenario_has_csdiff_aFP() {
     # run this inside merge scenario
     aFP=0
     total_aFP=0
-    for dir in $(find . -name "csdiff.py" -type f | xargs dirname | sort | uniq); do
+    for dir in $(find . -name "csdiff.py" -type f | xargs dirname); do
         if ! files_are_equal "$dir/diff3.py" "$dir/merge.py"; then
             echo "not a csdiff aFP merge scenario"
             return 1
@@ -86,7 +86,7 @@ scenario_has_diff3_aFP() {
     # run this inside merge scenario
     aFP=0
     total_aFP=0
-    for dir in $(find . -name "diff3.py" -type f | xargs dirname | sort | uniq); do
+    for dir in $(find . -name "diff3.py" -type f | xargs dirname); do
         if ! files_are_equal "$dir/csdiff.py" "$dir/merge.py"; then
             echo "not a diff3 aFP merge scenario"
             return 1
@@ -105,7 +105,7 @@ scenario_has_diff3_aFP() {
 count_csdiff_possible_aFN() {
  # counts files where diff3 has at least 1 conflict, csdiff has 0 and is different than merge
     possible_aFN_files=0
-    for dir in $(find . -name "csdiff.py" -type f | xargs dirname | sort | uniq); do
+    for dir in $(find . -name "csdiff.py" -type f | xargs dirname); do
         if ! has_conflict "$dir/csdiff.py"; then
             if has_conflict "$dir/diff3.py"; then
                 if ! files_are_equal "$dir/csdiff.py" "$dir/merge.py"; then
@@ -120,7 +120,7 @@ count_csdiff_possible_aFN() {
 count_diff3_possible_aFN() {
  # counts files where csdiff has at least 1 conflict, diff3 has 0 and is different than merge
     possible_aFN_files=0
-    for dir in $(find . -name "diff3.py" -type f | xargs dirname | sort | uniq); do
+    for dir in $(find . -name "diff3.py" -type f | xargs dirname); do
         if ! has_conflict "$dir/diff3.py"; then
             if has_conflict "$dir/csdiff.py"; then
                 if ! files_are_equal "$dir/diff3.py" "$dir/merge.py"; then

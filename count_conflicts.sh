@@ -26,7 +26,7 @@ while IFS= read -r file; do
 done < <(rg --files --iglob "**/diff3.py")
 
 # search for folders containing csdiff.py
-for dir in $(find . -name "csdiff.py" -type f | xargs dirname | sort | uniq); do
+for dir in $(find . -name "csdiff.py" -type f | xargs dirname); do
     cmp --silent <(sed 's/\s//g' <(tr -d '\n' < $dir/csdiff.py)) <(sed 's/\s//g' <(tr -d '\n' < $dir/merge.py))
     if [ $? -eq 0 ]; then
       files_with_csdiff_different_than_diff3_and_equal_to_merge=$((files_with_csdiff_different_than_diff3_and_equal_to_merge + 1))
