@@ -30,9 +30,6 @@ for dir in $(find . -name "csdiff.py" -type f | xargs dirname | sort | uniq); do
     cmp --silent <(sed 's/\s//g' <(tr -d '\n' < $dir/csdiff.py)) <(sed 's/\s//g' <(tr -d '\n' < $dir/merge.py))
     if [ $? -eq 0 ]; then
       files_with_csdiff_different_than_diff3_and_equal_to_merge=$((files_with_csdiff_different_than_diff3_and_equal_to_merge + 1))
-    else
-        # echo files with aFN
-        echo "$dir"
     fi
 done
 
@@ -54,8 +51,9 @@ COUNTCResolvido=$(rg -c "CResolvido" "$DIR" | awk -F ':' '{sum += $2} END {print
 COUNTdiff3FP=$(rg -c "D3FP" "$DIR" | awk -F ':' '{sum += $2} END {print sum}')
 
 # Print the results
-echo "aFP: $COUNTaFP"
-echo "aFN: $COUNTaFN"
+echo "below was manually counted"
+echo "csdiff aFP: $COUNTaFP"
+echo "csdiff aFN: $COUNTaFN"
 echo "diff3 FPs: $COUNTdiff3FP"
 echo "conflitos reduzidos: $COUNTCReduzido"
 echo "conflitos resolvidos: $COUNTCResolvido"
