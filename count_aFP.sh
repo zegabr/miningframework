@@ -36,6 +36,7 @@ count_aFP_on_csdiff() {
           total_aFP=$((total_aFP + aFP))
           if [ "$aFP" -gt 0 ]; then
             total_csdiff_files_with_aFP=$((total_csdiff_files_with_aFP + 1))
+            echo "$dir"
           fi
         fi
     done
