@@ -35,8 +35,8 @@ count_aFP_on_csdiff() {
           aFP=$(count_CaFP "$dir/csdiff.py") || aFP=0
           total_aFP=$((total_aFP + aFP))
           if [ "$aFP" -gt 0 ]; then
-            total_csdiff_files_with_aFP=$((total_csdiff_files_with_aFP + 1))
             echo "$dir"
+            total_csdiff_files_with_aFP=$((total_csdiff_files_with_aFP + 1))
           fi
         fi
     done

@@ -3,7 +3,6 @@ import itertools
 import logging
 import math
 from numbers import Integral, Number
-from datetime import timedelta
 
 import numpy as np
 from numpy import ma
@@ -3187,7 +3186,7 @@ class Axes(_AxesBase):
               errors.
             - *None*: No errorbar.
 
-            All values must be >= 0.
+            Note that all error arrays should have *positive* values.
 
             See :doc:`/gallery/statistics/errorbar_features`
             for an example on the usage of ``xerr`` and ``yerr``.
@@ -3290,19 +3289,6 @@ class Axes(_AxesBase):
         x, y = np.atleast_1d(x, y)  # Make sure all the args are iterable.
         if len(x) != len(y):
             raise ValueError("'x' and 'y' must have the same size")
-
-        def has_negative_values(array):
-            if array is None:
-                return False
-            try:
-                return np.any(array < 0)
-            except TypeError:  # if array contains 'datetime.timedelta' types
-                return np.any(array < timedelta(0))
-
-        if has_negative_values(xerr):
-            raise ValueError("'xerr' must not contain negative values")
-        if has_negative_values(yerr):
-            raise ValueError("'yerr' must not contain negative values")
 
         if isinstance(errorevery, Integral):
             errorevery = (0, errorevery)
@@ -4829,34 +4815,8 @@ default: :rc:`scatter.edgecolors`
         xcoarse = coarse_bin(xorig, C, bin_edges)
 
         verts, values = [], []
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
-        for bin_left
-=======
-        for bin_left, bin_right
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
-,
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
- bin_right, val in zip
-=======
- val in zip
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
-(
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
-                bin_edges[:-1], bin_edges[1
-=======
-                bin_edges[
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
-:
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
-], xcoarse
-=======
--1], bin_edges[1:], xcoarse
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
-):
-# CaFP
-# CaFP
-# CaFP
-# CaFP
+        for bin_left, bin_right, val in zip(
+                bin_edges[:-1], bin_edges[1:], xcoarse):
             if np.isnan(val):
                 continue
             verts.append([(bin_left, 0),
@@ -4885,21 +4845,7 @@ default: :rc:`scatter.edgecolors`
 
         verts, values = [], []
         for bin_bottom, bin_top, val in zip(
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
-                bin_edges[:-1], bin_edges[1
-=======
-                bin_edges[
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
-:
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
-], ycoarse
-=======
--1], bin_edges[1:], ycoarse
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
-):
-# CaFP
-# CaFP
-
+                bin_edges[:-1], bin_edges[1:], ycoarse):
             if np.isnan(val):
                 continue
             verts.append([(0, bin_bottom),

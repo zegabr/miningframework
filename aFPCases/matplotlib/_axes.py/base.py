@@ -3,7 +3,6 @@ import itertools
 import logging
 import math
 from numbers import Integral, Number
-from datetime import timedelta
 
 import numpy as np
 from numpy import ma
@@ -1254,11 +1253,10 @@ class Axes(_AxesBase):
         --------
         .. plot:: gallery/lines_bars_and_markers/eventplot_demo.py
         """
+        # We do the conversion first since not all unitized data is uniform
+        positions, lineoffsets, linelengths = self._process_unit_info(
+            [("x", positions), ("y", lineoffsets), ("y", linelengths)], kwargs)
 
-        lineoffsets, linelengths = self._process_unit_info(
-                [("y", lineoffsets), ("y", linelengths)], kwargs)
-
-        # fix positions, noting that it can be a list of lists:
         if not np.iterable(positions):
             positions = [positions]
         elif any(np.iterable(position) for position in positions):
@@ -1268,11 +1266,6 @@ class Axes(_AxesBase):
 
         if len(positions) == 0:
             return []
-
-        poss = []
-        for position in positions:
-            poss += self._process_unit_info([("x", position)], kwargs)
-        positions = poss
 
         # prevent 'singular' keys from **kwargs dict from overriding the effect
         # of 'plural' keyword arguments (e.g. 'color' overriding 'colors')
@@ -1752,13 +1745,18 @@ class Axes(_AxesBase):
             Non-positive values can be masked as invalid, or clipped to a very
             small positive number.
 
-        **kwargs
-            All parameters supported by `.plot`.
-
         Returns
         -------
         list of `.Line2D`
             Objects representing the plotted data.
+
+        Other Parameters
+        ----------------
+        data : indexable object, optional
+            DATA_PARAMETER_PLACEHOLDER
+
+        **kwargs
+            All parameters supported by `.plot`.
         """
         dx = {k: v for k, v in kwargs.items()
               if k in ['base', 'subs', 'nonpositive',
@@ -1803,13 +1801,18 @@ class Axes(_AxesBase):
             Non-positive values in x can be masked as invalid, or clipped to a
             very small positive number.
 
-        **kwargs
-            All parameters supported by `.plot`.
-
         Returns
         -------
         list of `.Line2D`
             Objects representing the plotted data.
+
+        Other Parameters
+        ----------------
+        data : indexable object, optional
+            DATA_PARAMETER_PLACEHOLDER
+
+        **kwargs
+            All parameters supported by `.plot`.
         """
         d = {k: v for k, v in kwargs.items()
              if k in ['base', 'subs', 'nonpositive',
@@ -1850,13 +1853,18 @@ class Axes(_AxesBase):
             Non-positive values in y can be masked as invalid, or clipped to a
             very small positive number.
 
-        **kwargs
-            All parameters supported by `.plot`.
-
         Returns
         -------
         list of `.Line2D`
             Objects representing the plotted data.
+
+        Other Parameters
+        ----------------
+        data : indexable object, optional
+            DATA_PARAMETER_PLACEHOLDER
+
+        **kwargs
+            All parameters supported by `.plot`.
         """
         d = {k: v for k, v in kwargs.items()
              if k in ['base', 'subs', 'nonpositive',
@@ -2090,6 +2098,10 @@ class Axes(_AxesBase):
             and plotted on the given positions, however, this is a rarely
             needed feature for step plots.
 
+        data : indexable object, optional
+            An object with labelled data. If given, provide the label names to
+            plot in *x* and *y*.
+
         where : {'pre', 'post', 'mid'}, default: 'pre'
             Define where the steps should be placed:
 
@@ -2101,17 +2113,22 @@ class Axes(_AxesBase):
               value ``y[i]``.
             - 'mid': Steps occur half-way between the *x* positions.
 
-        data : indexable object, optional
-            An object with labelled data. If given, provide the label names to
-            plot in *x* and *y*.
-
-        **kwargs
-            Additional parameters are the same as those for `.plot`.
-
         Returns
         -------
         list of `.Line2D`
             Objects representing the plotted data.
+
+        Other Parameters
+        ----------------
+        data : indexable object, optional
+            DATA_PARAMETER_PLACEHOLDER
+
+        **kwargs
+            Additional parameters are the same as those for `.plot`.
+
+        Notes
+        -----
+        .. [notes section required to get data note injection right]
         """
         _api.check_in_list(('pre', 'post', 'mid'), where=where)
         kwargs['drawstyle'] = 'steps-' + where
@@ -2856,12 +2873,6 @@ class Axes(_AxesBase):
             args = ()
         else:
             locs, heads, *args = args
-        if args:
-            _api.warn_deprecated(
-                "3.5",
-                message="Passing the linefmt parameter positionally is "
-                        "deprecated since Matplotlib %(since)s; the "
-                        "parameter will become keyword-only %(removal)s.")
 
         if orientation == 'vertical':
             locs, heads = self._process_unit_info([("x", locs), ("y", heads)])
@@ -2870,18 +2881,50 @@ class Axes(_AxesBase):
 
         # defaults for formats
         if linefmt is None:
-            linefmt = args[0] if len(args) > 0 else "C0-"
-        linestyle, linemarker, linecolor = _process_plot_format(linefmt)
+            try:
+                # fallback to positional argument
+                linefmt = args[0]
+            except IndexError:
+                linecolor = 'C0'
+                linemarker = 'None'
+                linestyle = '-'
+            else:
+                linestyle, linemarker, linecolor = \
+                    _process_plot_format(linefmt)
+        else:
+            linestyle, linemarker, linecolor = _process_plot_format(linefmt)
 
         if markerfmt is None:
-            markerfmt = args[1] if len(args) > 1 else "C0o"
-        markerstyle, markermarker, markercolor = \
-            _process_plot_format(markerfmt)
+            try:
+                # fallback to positional argument
+                markerfmt = args[1]
+            except IndexError:
+                markercolor = 'C0'
+                markermarker = 'o'
+                markerstyle = 'None'
+            else:
+                markerstyle, markermarker, markercolor = \
+                    _process_plot_format(markerfmt)
+        else:
+            markerstyle, markermarker, markercolor = \
+                _process_plot_format(markerfmt)
 
         if basefmt is None:
-            basefmt = (args[2] if len(args) > 2 else
-                       "C2-" if rcParams["_internal.classic_mode"] else "C3-")
-        basestyle, basemarker, basecolor = _process_plot_format(basefmt)
+            try:
+                # fallback to positional argument
+                basefmt = args[2]
+            except IndexError:
+                if rcParams['_internal.classic_mode']:
+                    basecolor = 'C2'
+                else:
+                    basecolor = 'C3'
+                basemarker = 'None'
+                basestyle = '-'
+            else:
+                basestyle, basemarker, basecolor = \
+                    _process_plot_format(basefmt)
+        else:
+            basestyle, basemarker, basecolor = _process_plot_format(basefmt)
 
         # New behaviour in 3.1 is to use a LineCollection for the stemlines
         if use_line_collection:
@@ -3187,7 +3230,7 @@ class Axes(_AxesBase):
               errors.
             - *None*: No errorbar.
 
-            All values must be >= 0.
+            Note that all error arrays should have *positive* values.
 
             See :doc:`/gallery/statistics/errorbar_features`
             for an example on the usage of ``xerr`` and ``yerr``.
@@ -3274,7 +3317,8 @@ class Axes(_AxesBase):
             %(Line2D:kwdoc)s
         """
         kwargs = cbook.normalize_kwargs(kwargs, mlines.Line2D)
-        # Drop anything that comes in as None to use the default instead.
+        # anything that comes in as 'None', drop so the default thing
+        # happens down stream
         kwargs = {k: v for k, v in kwargs.items() if v is not None}
         kwargs.setdefault('zorder', 2)
 
@@ -3290,19 +3334,6 @@ class Axes(_AxesBase):
         x, y = np.atleast_1d(x, y)  # Make sure all the args are iterable.
         if len(x) != len(y):
             raise ValueError("'x' and 'y' must have the same size")
-
-        def has_negative_values(array):
-            if array is None:
-                return False
-            try:
-                return np.any(array < 0)
-            except TypeError:  # if array contains 'datetime.timedelta' types
-                return np.any(array < timedelta(0))
-
-        if has_negative_values(xerr):
-            raise ValueError("'xerr' must not contain negative values")
-        if has_negative_values(yerr):
-            raise ValueError("'yerr' must not contain negative values")
 
         if isinstance(errorevery, Integral):
             errorevery = (0, errorevery)
@@ -3593,7 +3624,7 @@ class Axes(_AxesBase):
 
         patch_artist : bool, default: False
             If `False` produces boxes with the Line2D artist. Otherwise,
-            boxes are drawn with Patch artists.
+            boxes and drawn with Patch artists.
 
         labels : sequence, optional
             Labels for each dataset (one per dataset).
@@ -4328,7 +4359,9 @@ default: :rc:`scatter.edgecolors`
 
         """
         # Process **kwargs to handle aliases, conflicts with explicit kwargs:
+
         x, y = self._process_unit_info([("x", x), ("y", y)], kwargs)
+
         # np.ma.ravel yields an ndarray, not a masked array,
         # unless its argument is a masked array.
         x = np.ma.ravel(x)
@@ -4613,11 +4646,6 @@ default: :rc:`scatter.edgecolors`
         # Count the number of data in each hexagon
         x = np.array(x, float)
         y = np.array(y, float)
-
-        if marginals:
-            xorig = x.copy()
-            yorig = y.copy()
-
         if xscale == 'log':
             if np.any(x <= 0.0):
                 raise ValueError("x contains non-positive values, so can not"
@@ -4645,6 +4673,10 @@ default: :rc:`scatter.edgecolors`
         xmax += padding
         sx = (xmax - xmin) / nx
         sy = (ymax - ymin) / ny
+
+        if marginals:
+            xorig = x.copy()
+            yorig = y.copy()
 
         x = (x - xmin) / sx
         y = (y - ymin) / sy
@@ -4771,6 +4803,11 @@ default: :rc:`scatter.edgecolors`
                 vmin = vmax = None
             bins = None
 
+        if isinstance(norm, mcolors.LogNorm):
+            if (accum == 0).any():
+                # make sure we have no zeros
+                accum += 1
+
         # autoscale the norm with current accum values if it hasn't
         # been set
         if norm is not None:
@@ -4801,68 +4838,40 @@ default: :rc:`scatter.edgecolors`
         if not marginals:
             return collection
 
-        # Process marginals
         if C is None:
             C = np.ones(len(x))
 
-        def coarse_bin(x, y, bin_edges):
-            """
-            Sort x-values into bins defined by *bin_edges*, then for all the
-            corresponding y-values in each bin use *reduce_c_function* to
-            compute the bin value.
-            """
-            nbins = len(bin_edges) - 1
-            # Sort x-values into bins
-            bin_idxs = np.searchsorted(bin_edges, x) - 1
-            mus = np.zeros(nbins) * np.nan
-            for i in range(nbins):
-                # Get y-values for each bin
-                yi = y[bin_idxs == i]
+        def coarse_bin(x, y, coarse):
+            ind = coarse.searchsorted(x).clip(0, len(coarse) - 1)
+            mus = np.zeros(len(coarse))
+            for i in range(len(coarse)):
+                yi = y[ind == i]
                 if len(yi) > 0:
-                    mus[i] = reduce_C_function(yi)
+                    mu = reduce_C_function(yi)
+                else:
+                    mu = np.nan
+                mus[i] = mu
             return mus
 
-        if xscale == 'log':
-            bin_edges = np.geomspace(xmin, xmax, nx + 1)
-        else:
-            bin_edges = np.linspace(xmin, xmax, nx + 1)
-        xcoarse = coarse_bin(xorig, C, bin_edges)
+        coarse = np.linspace(xmin, xmax, gridsize)
 
+        xcoarse = coarse_bin(xorig, C, coarse)
+        valid = ~np.isnan(xcoarse)
         verts, values = [], []
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
-        for bin_left
-=======
-        for bin_left, bin_right
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
-,
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
- bin_right, val in zip
-=======
- val in zip
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
-(
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
-                bin_edges[:-1], bin_edges[1
-=======
-                bin_edges[
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
-:
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
-], xcoarse
-=======
--1], bin_edges[1:], xcoarse
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
-):
-# CaFP
-# CaFP
-# CaFP
-# CaFP
-            if np.isnan(val):
+        for i, val in enumerate(xcoarse):
+            thismin = coarse[i]
+            if i < len(coarse) - 1:
+                thismax = coarse[i + 1]
+            else:
+                thismax = thismin + np.diff(coarse)[-1]
+
+            if not valid[i]:
                 continue
-            verts.append([(bin_left, 0),
-                          (bin_left, 0.05),
-                          (bin_right, 0.05),
-                          (bin_right, 0)])
+
+            verts.append([(thismin, 0),
+                          (thismin, 0.05),
+                          (thismax, 0.05),
+                          (thismax, 0)])
             values.append(val)
 
         values = np.array(values)
@@ -4877,35 +4886,20 @@ default: :rc:`scatter.edgecolors`
         hbar.update(kwargs)
         self.add_collection(hbar, autolim=False)
 
-        if yscale == 'log':
-            bin_edges = np.geomspace(ymin, ymax, 2 * ny + 1)
-        else:
-            bin_edges = np.linspace(ymin, ymax, 2 * ny + 1)
-        ycoarse = coarse_bin(yorig, C, bin_edges)
-
+        coarse = np.linspace(ymin, ymax, gridsize)
+        ycoarse = coarse_bin(yorig, C, coarse)
+        valid = ~np.isnan(ycoarse)
         verts, values = [], []
-        for bin_bottom, bin_top, val in zip(
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
-                bin_edges[:-1], bin_edges[1
-=======
-                bin_edges[
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
-:
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/left.py
-], ycoarse
-=======
--1], bin_edges[1:], ycoarse
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
-):
-# CaFP
-# CaFP
-
-            if np.isnan(val):
+        for i, val in enumerate(ycoarse):
+            thismin = coarse[i]
+            if i < len(coarse) - 1:
+                thismax = coarse[i + 1]
+            else:
+                thismax = thismin + np.diff(coarse)[-1]
+            if not valid[i]:
                 continue
-            verts.append([(0, bin_bottom),
-                          (0, bin_top),
-                          (0.05, bin_top),
-                          (0.05, bin_bottom)])
+            verts.append([(0, thismin), (0.0, thismax),
+                          (0.05, thismax), (0.05, thismin)])
             values.append(val)
 
         values = np.array(values)
@@ -4973,39 +4967,43 @@ default: :rc:`scatter.edgecolors`
         return a
 
     @docstring.copy(mquiver.QuiverKey.__init__)
-    def quiverkey(self, Q, X, Y, U, label, **kwargs):
-        qk = mquiver.QuiverKey(Q, X, Y, U, label, **kwargs)
+    def quiverkey(self, Q, X, Y, U, label, **kw):
+        qk = mquiver.QuiverKey(Q, X, Y, U, label, **kw)
         self.add_artist(qk)
         return qk
 
     # Handle units for x and y, if they've been passed
-    def _quiver_units(self, args, kwargs):
+    def _quiver_units(self, args, kw):
         if len(args) > 3:
             x, y = args[0:2]
-            x, y = self._process_unit_info([("x", x), ("y", y)], kwargs)
+            x, y = self._process_unit_info([("x", x), ("y", y)], kw)
             return (x, y) + args[2:]
         return args
 
     # args can by a combination if X, Y, U, V, C and all should be replaced
     @_preprocess_data()
-    @docstring.dedent_interpd
-    def quiver(self, *args, **kwargs):
-        """%(quiver_doc)s"""
+    def quiver(self, *args, **kw):
         # Make sure units are handled for x and y values
-        args = self._quiver_units(args, kwargs)
-        q = mquiver.Quiver(self, *args, **kwargs)
+        args = self._quiver_units(args, kw)
+
+        q = mquiver.Quiver(self, *args, **kw)
+
         self.add_collection(q, autolim=True)
         self._request_autoscale_view()
         return q
+    quiver.__doc__ = mquiver.Quiver.quiver_doc
 
     # args can be some combination of X, Y, U, V, C and all should be replaced
     @_preprocess_data()
     @docstring.dedent_interpd
-    def barbs(self, *args, **kwargs):
-        """%(barbs_doc)s"""
+    def barbs(self, *args, **kw):
+        """
+        %(barbs_doc)s
+        """
         # Make sure units are handled for x and y values
-        args = self._quiver_units(args, kwargs)
-        b = mquiver.Barbs(self, *args, **kwargs)
+        args = self._quiver_units(args, kw)
+
+        b = mquiver.Barbs(self, *args, **kw)
         self.add_collection(b, autolim=True)
         self._request_autoscale_view()
         return b
@@ -5151,6 +5149,10 @@ default: :rc:`scatter.edgecolors`
         --------
         fill_between : Fill between two sets of y-values.
         fill_betweenx : Fill between two sets of x-values.
+
+        Notes
+        -----
+        .. [notes section required to get data note injection right]
         """
 
         dep_dir = {"x": "y", "y": "x"}[ind_dir]
@@ -5687,8 +5689,9 @@ default: :rc:`scatter.edgecolors`
             expanded as needed into the appropriate 2D arrays, making a
             rectangular grid.
 
-        shading : {'flat', 'nearest', 'auto'}, default: :rc:`pcolor.shading`
-            The fill style for the quadrilateral. Possible values:
+        shading : {'flat', 'nearest', 'auto'}, optional
+            The fill style for the quadrilateral; defaults to 'flat' or
+            :rc:`pcolor.shading`. Possible values:
 
             - 'flat': A solid color is used for each quad. The color of the
               quad (i, j), (i+1, j), (i, j+1), (i+1, j+1) is given by
@@ -5843,8 +5846,12 @@ default: :rc:`scatter.edgecolors`
 
         kwargs.setdefault('snap', False)
 
-        collection = mcoll.PolyCollection(
-            verts, array=C, cmap=cmap, norm=norm, alpha=alpha, **kwargs)
+        collection = mcoll.PolyCollection(verts, **kwargs)
+
+        collection.set_alpha(alpha)
+        collection.set_array(C)
+        collection.set_cmap(cmap)
+        collection.set_norm(norm)
         collection._scale_norm(norm, vmin, vmax)
         self._pcolor_grid_deprecation_helper()
 
@@ -6073,11 +6080,14 @@ default: :rc:`scatter.edgecolors`
         # convert to one dimensional array
         C = C.ravel()
 
-        kwargs.setdefault('snap', rcParams['pcolormesh.snap'])
-
         collection = mcoll.QuadMesh(
-            coords, antialiased=antialiased, shading=shading,
-            array=C, cmap=cmap, norm=norm, alpha=alpha, **kwargs)
+            coords, antialiased=antialiased, shading=shading, **kwargs)
+        snap = kwargs.get('snap', rcParams['pcolormesh.snap'])
+        collection.set_snap(snap)
+        collection.set_alpha(alpha)
+        collection.set_array(C)
+        collection.set_cmap(cmap)
+        collection.set_norm(norm)
         collection._scale_norm(norm, vmin, vmax)
         self._pcolor_grid_deprecation_helper()
 
@@ -6218,6 +6228,10 @@ default: :rc:`scatter.edgecolors`
         **kwargs
             Supported additional parameters depend on the type of grid.
             See return types of *image* for further description.
+
+        Notes
+        -----
+        .. [notes section required to get data note injection right]
         """
 
         C = args[-1]
@@ -6295,36 +6309,32 @@ default: :rc:`scatter.edgecolors`
         return ret
 
     @_preprocess_data()
-    @docstring.dedent_interpd
     def contour(self, *args, **kwargs):
-        """
+        kwargs['filled'] = False
+        contours = mcontour.QuadContourSet(self, *args, **kwargs)
+        self._request_autoscale_view()
+        return contours
+    contour.__doc__ = """
         Plot contour lines.
 
         Call signature::
 
             contour([X, Y,] Z, [levels], **kwargs)
-        %(contour_doc)s
-        """
-        kwargs['filled'] = False
+        """ + mcontour.QuadContourSet._contour_doc
+
+    @_preprocess_data()
+    def contourf(self, *args, **kwargs):
+        kwargs['filled'] = True
         contours = mcontour.QuadContourSet(self, *args, **kwargs)
         self._request_autoscale_view()
         return contours
-
-    @_preprocess_data()
-    @docstring.dedent_interpd
-    def contourf(self, *args, **kwargs):
-        """
+    contourf.__doc__ = """
         Plot filled contours.
 
         Call signature::
 
             contourf([X, Y,] Z, [levels], **kwargs)
-        %(contour_doc)s
-        """
-        kwargs['filled'] = True
-        contours = mcontour.QuadContourSet(self, *args, **kwargs)
-        self._request_autoscale_view()
-        return contours
+        """ + mcontour.QuadContourSet._contour_doc
 
     def clabel(self, CS, levels=None, **kwargs):
         """
@@ -7099,9 +7109,12 @@ such objects
         self.set_xlabel('Frequency')
         self.set_ylabel('Power Spectral Density (%s)' % psd_units)
         self.grid(True)
-
-        vmin, vmax = self.get_ybound()
-        step = max(10 * int(np.log10(vmax - vmin)), 1)
+        vmin, vmax = self.viewLim.intervaly
+        intv = vmax - vmin
+        logi = int(np.log10(intv))
+        if logi == 0:
+            logi = .1
+        step = 10 * logi
         ticks = np.arange(math.floor(vmin), math.ceil(vmax) + 1, step)
         self.set_yticks(ticks)
 
@@ -7201,9 +7214,11 @@ such objects
         self.set_xlabel('Frequency')
         self.set_ylabel('Cross Spectrum Magnitude (dB)')
         self.grid(True)
+        vmin, vmax = self.viewLim.intervaly
 
-        vmin, vmax = self.get_ybound()
-        step = max(10 * int(np.log10(vmax - vmin)), 1)
+        intv = vmax - vmin
+        step = 10 * int(np.log10(intv))
+
         ticks = np.arange(math.floor(vmin), math.ceil(vmax) + 1, step)
         self.set_yticks(ticks)
 
@@ -7635,7 +7650,7 @@ such objects
             else:
                 Z = 20. * np.log10(spec)
         else:
-            raise ValueError(f'Unknown scale {scale!r}')
+            raise ValueError('Unknown scale %s', scale)
 
         Z = np.flipud(Z)
 

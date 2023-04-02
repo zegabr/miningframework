@@ -4853,10 +4853,6 @@ default: :rc:`scatter.edgecolors`
 -1], bin_edges[1:], xcoarse
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/axes/_axes.py/right.py
 ):
-# CaFP
-# CaFP
-# CaFP
-# CaFP
             if np.isnan(val):
                 continue
             verts.append([(bin_left, 0),
