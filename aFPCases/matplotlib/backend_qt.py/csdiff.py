@@ -312,39 +312,10 @@ class FigureCanvasQT(QtWidgets.QWidget, FigureCanvasBase):
 
     def wheelEvent(self, event):
         x, y = self.mouseEventCoords(self._get_position(event))
-        # from QWheelEvent::
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_qt.py/left.py
-pixelDelta doc: pixelDelta is sometimes not
+        # from QWheelEvent::pixelDelta doc: pixelDelta is sometimes not
         # provided (`isNull()`) and is unreliable on X11 ("xcb").
-        if (event.pixelDelta
-=======
-pixelDelta doc: pixelDelta is sometimes not
-        # provided (`isNull
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_qt.py/right.py
-()
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_qt.py/left.py
-.isNull
-=======
-`) and is unreliable on X11 ("xcb").
-        if (event.pixelDelta
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_qt.py/right.py
-()
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_qt.py/left.py
-                or QtWidgets.QApplication.instance
-=======
-.isNull
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_qt.py/right.py
-()
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_qt.py/left.py
-.platformName
-=======
-                or QtWidgets.QApplication.instance().platformName
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_qt.py/right.py
-() == "xcb"):
-# CaFP
-# CaFP
-# CaFP
-# CaFP
+        if (event.pixelDelta().isNull()
+                or QtWidgets.QApplication.instance().platformName() == "xcb"):
             steps = event.angleDelta().y() / 120
         else:
             steps = event.pixelDelta().y()
@@ -927,7 +898,7 @@ class ToolbarQt(ToolContainerBase, QtWidgets.QToolBar):
         message_label = QtWidgets.QLabel("")
         message_label.setAlignment(QtCore.Qt.AlignmentFlag(
             _to_int(_enum("QtCore.Qt.AlignmentFlag").AlignRight) |
-            _to_int(_enum("QtCore.Qt.AlignmentFlag").AlignVCenter)))
+            _to_int(_enum("QtCore.Qt.AlignmentFlag").AlignVCenter)))))
         message_label.setSizePolicy(QtWidgets.QSizePolicy(
             _enum("QtWidgets.QSizePolicy.Policy").Expanding,
             _enum("QtWidgets.QSizePolicy.Policy").Ignored,

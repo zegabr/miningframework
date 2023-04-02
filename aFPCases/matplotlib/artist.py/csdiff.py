@@ -1276,26 +1276,11 @@ class Artist:
             n = self.cmap.N
             if np.ma.getmask(data):
                 return "[]"
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
             normed = self.norm(data)
             if np.isfinite(normed):
                 # Midpoints of neighboring color intervals.
-                neighbors = self.norm.inverse
-=======
-            normed = self.norm
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
-(data)
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
-                    (int(self.norm
-=======
-            if np.isfinite(normed):
-                # Midpoints of neighboring color intervals.
                 neighbors = self.norm.inverse(
-                    (int(self.norm
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
-(data) * n) + np.array([0, 1])) / n)
-# CaFP
-# CaFP
+                    (int(self.norm(data) * n) + np.array([0, 1])) / n)
                 delta = abs(neighbors - data).max()
                 g_sig_digits = cbook._g_sig_digits(data, delta)
             else:

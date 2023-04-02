@@ -61,8 +61,6 @@ def has_flag(self, flagname):
         except Exception as exc:
             # https://github.com/pypa/setuptools/issues/2698
             if type(exc).__name__ != "CompileError":
-                raise://github.com/pypa/setuptools/issues/2698
-            if type(exc).__name__ != "CompileError":
                 raise
             return False
     return True
@@ -294,7 +292,6 @@ setup(  # Finally, pass this all along to setuptools to do the heavy lifting.
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
-        'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.10',
         'Topic :: Scientific/Engineering :: Visualization',
     ],

@@ -26,6 +26,37 @@ files_are_equal() {
     fi
 }
 
+# function to get absolute value of integer
+__abs() {
+    if [ "$1" -lt 0 ]; then
+        echo "$((-$1))"
+    else
+        echo "$1"
+    fi
+}
+
+
+# function that given a directory, count the sum of the __abs (base - left) and (base - right) and (left - right) where each variable is the number of lines of a file
+sum_of_line_diffs() {
+    echo "sum of line diff between base left and right:"
+    for dir in $(find . -name "csdiff.py" -type f | xargs dirname); do
+        total=0
+        base=$(wc -l < "$dir/base.py")
+        left=$(wc -l < "$dir/left.py")
+        right=$(wc -l < "$dir/right.py")
+        # tota = |base - left| + |base - right| + |left - right|
+        # if total is more than 0, echo the dir and the local total
+        total=$((total + $(__abs $((base - left))) + $(__abs $((base - right)))))
+        if files_are_equal "$dir/diff3.py" "$dir/merge.py";  then
+            if [ "$total" -gt 0 ]; then
+                echo "(aFPyes)$dir $total "
+            fi
+        else
+            echo "(aFPno)$dir $total "
+        fi
+    done
+}
+
 count_aFP_on_csdiff() {
     # number of 'CaFP' ocurrences in csdiff.py when diff3.py is equal to merge.py
     total_aFP=0

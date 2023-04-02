@@ -819,18 +819,8 @@ class Axis(martist.Artist):
         # Clear the callback registry for this axis, or it may "leak"
         self.callbacks = cbook.CallbackRegistry()
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/left.py
-        self._reset_major_tick_kw(
-=======
         self._reset_major_tick_kw()
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/left.py
-)
         self._reset_minor_tick_kw(
-=======
-        self._reset_minor_tick_kw(
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/right.py
-)
         self.reset_ticks()
 
         self.converter = None
@@ -1429,24 +1419,12 @@ class Axis(martist.Artist):
 
                 grid(color='r', linestyle='-', linewidth=2)
         """
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/left.py
-        TOGGLE = object()
-        UNSET = object()
-        visible = kwargs.pop('visible', UNSET)
-
-        if b is None:
-            if visible is UNSET
-=======
         TOGGLE = object()
         UNSET = object()
         visible = kwargs.pop('visible', UNSET)
 
         if b is None:
             if visible is UNSET:
-                if kwargs
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/right.py
-:  # grid(color='r')
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/left.py
                 if kwargs:  # grid(color='r')
                     b = True
                 else:  # grid()
@@ -1454,21 +1432,7 @@ class Axis(martist.Artist):
             else:  # grid(visible=v)
                 b = visible
         else:
-            if visible is not UNSET and bool
-=======
-                    b = True
-                else:  # grid()
-                    b = TOGGLE
-            else:  # grid(visible=v)
-                b = visible
-        else:
-            if visible is not UNSET and bool
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/right.py
-(b) != bool(visible):
-# CaFP
-# CaFP
-# CaFP
-# CaFP
+            if visible is not UNSET and bool(b) != bool(visible):
                 # grid(True, visible=False), grid(False, visible=True)
                 raise ValueError(
                     "'b' and 'visible' specify inconsistent grid visibilities")

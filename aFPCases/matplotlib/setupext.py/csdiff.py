@@ -525,7 +525,6 @@ def add_libagg_flags_and_sources(ext):
         os.path.join("extern", "agg24-svn", "src", x) for x in agg_sources)
 
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
 def get_ccompiler():
     """
     Return a new CCompiler instance.
@@ -534,47 +533,16 @@ def get_ccompiler():
     but this API was removed as part of the distutils deprecation.  Instead,
     we trick setuptools into instantiating it by creating a dummy Distribution
     with a list of extension modules that claims to be truthy, but is actually
-    empty
-=======
-def get_ccompiler():
-    """
-    Return a new CCompiler instance.
-
-    CCompiler used to be constructible via `distutils.ccompiler.new_compiler`
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
-,
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
- and then running the Distribution's build_ext command.  (If using
-    a plain empty ext_modules, build_ext would early-return without doing
-    anything.)
-    
-=======
-    but this API was removed as part of the distutils deprecation.  Instead,
-    we trick setuptools into instantiating it by creating a dummy Distribution
-    with a list of extension modules that claims to be truthy, but is actually
     empty, and then running the Distribution's build_ext command.  (If using
     a plain empty ext_modules, build_ext would early-return without doing
     anything.)
-    ""
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
-"
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
-""
+    """
 
     class L(list):
         def __bool__(self):
             return True
 
-    build_ext = Distribution({"ext_modules"
-=======
-
-    class L(list):
-        def __bool__(self):
-            return True
-
-    build_ext = Distribution({"ext_modules"
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
-: L()}).get_command_obj("build_ext")
+    build_ext = Distribution({"ext_modules": L()}).get_command_obj("build_ext")
     build_ext.finalize_options()
     build_ext.run()
     return build_ext.compiler
@@ -645,33 +613,11 @@ class FreeType(SetupPackage):
                 **{
                     var: value
                     for var, value in sysconfig.get_config_vars().items()
-                    if var in {"CC", "CFLAGS", "CXX", "CXXFLAGS", "
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
-LD",
-                               "LDFLAGS
-=======
-LD",
-                               
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
-"
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
-}
+                    if var in {"CC", "CFLAGS", "CXX", "CXXFLAGS", "LD",
+                               "LDFLAGS"}
                 },
             }
-            env["CFLAGS"] = env.get
-=======
-LDFLAGS"}
-                },
-            }
-            env["CFLAGS"] = env.get
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
-("CFLAGS", "") + " -fPIC"
-# CaFP
-# CaFP
-# CaFP
-# CaFP
-# CaFP
-
+            env["CFLAGS"] = env.get("CFLAGS", "") + " -fPIC"
             configure = [
                 "./configure", "--with-zlib=no", "--with-bzip2=no",
                 "--with-png=no", "--with-harfbuzz=no", "--enable-static",

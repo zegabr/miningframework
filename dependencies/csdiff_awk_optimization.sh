@@ -102,12 +102,13 @@ wait
 # Runs diff3 against the tokenized inputs, generating a tokenized merged file
 midMergedFile="${parentFolder}/mid_merged${fileExt}"
 diff3 -m -E "$myTempFile" "$oldTempFile" "$yourTempFile" > $midMergedFile
+# kdiff3 --auto "$oldTempFile" "$myTempFile" "$yourTempFile" -o $midMergedFile --cs "ShowInfoDialogs=0"
 
 # Removes the tokenized input files
 # rm "$myTempFile"
 # rm "$oldTempFile"
 # rm "$yourTempFile"
-# wait
+wait
 
 # Removes the tokens from the merged file, generating the final merged file
 mergedFile="${parentFolder}/merged${fileExt}"

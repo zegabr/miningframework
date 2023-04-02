@@ -29,10 +29,14 @@ from pathlib import Path
 import shutil
 import subprocess
 
-from setuptools import setup, find_packages, Distribution, Extension
+from setuptools import setup, find_packages, Extension
 import setuptools.command.build_ext
 import setuptools.command.build_py
+import setuptools.command.test
 import setuptools.command.sdist
+
+from distutils.errors import CompileError
+from distutils.dist import Distribution
 
 import setupext
 from setupext import print_raw, print_status
@@ -58,14 +62,15 @@ def has_flag(self, flagname):
         f.write('int main (int argc, char **argv) { return 0; }')
         try:
             self.compile([f.name], extra_postargs=[flagname])
-        except Exception as exc:
-            # https://github.com/pypa/setuptools/issues/2698
-            if type(exc).__name__ != "CompileError":
-                raise://github.com/pypa/setuptools/issues/2698
-            if type(exc).__name__ != "CompileError":
-                raise
+        except CompileError:
             return False
     return True
+
+
+class NoopTestCommand(setuptools.command.test.test):
+    def __init__(self, dist):
+        print("Matplotlib does not support running tests with "
+              "'python setup.py test'. Please run 'pytest'.")
 
 
 class BuildExtraLibraries(setuptools.command.build_ext.build_ext):
@@ -265,7 +270,7 @@ if not (any('--' + opt in sys.argv
             package_data.setdefault(key, [])
             package_data[key] = list(set(val + package_data[key]))
 
-setup(  # Finally, pass this all along to setuptools to do the heavy lifting.
+setup(  # Finally, pass this all along to distutils to do the heavy lifting.
     name="matplotlib",
     description="Python plotting package",
     author="John D. Hunter, Michael Droettboom",
@@ -294,8 +299,6 @@ setup(  # Finally, pass this all along to setuptools to do the heavy lifting.
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
-        'Programming Language :: Python :: 3.10',
-        'Programming Language :: Python :: 3.10',
         'Topic :: Scientific/Engineering :: Visualization',
     ],
 
@@ -322,7 +325,7 @@ setup(  # Finally, pass this all along to setuptools to do the heavy lifting.
         "numpy>=1.17",
         "packaging>=20.0",
         "pillow>=6.2.0",
-        "pyparsing>=2.2.1,<3.0.0",
+        "pyparsing>=2.2.1",
         "python-dateutil>=2.7",
     ] + (
         # Installing from a git checkout.
@@ -337,6 +340,7 @@ setup(  # Finally, pass this all along to setuptools to do the heavy lifting.
         "fallback_version": "0.0+UNKNOWN",
     },
     cmdclass={
+        "test": NoopTestCommand,
         "build_ext": BuildExtraLibraries,
         "build_py": BuildPy,
         "sdist": Sdist,

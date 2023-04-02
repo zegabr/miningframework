@@ -489,21 +489,7 @@ def validate_markevery(s):
 
     Returns
     -------
-    None, int, (int, int), slice,
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/rcsetup.py/left.py
- float
-=======
- float, (float
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/rcsetup.py/right.py
-,
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/rcsetup.py/left.py
- (float, float)
-=======
- float)
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/rcsetup.py/right.py
-# CaFP
-# CaFP
-, or list[int]
+    None, int, (int, int), slice, float, (float, float), or list[int]
     """
     # Validate s against type slice float int and None
     if isinstance(s, (slice, float, int, type(None))):

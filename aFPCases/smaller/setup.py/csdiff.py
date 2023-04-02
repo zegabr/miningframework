@@ -59,9 +59,19 @@ def has_flag(self, flagname):
         try:
             self.compile([f.name], extra_postargs=[flagname])
         except Exception as exc:
+<<<<<<< ./left.py
+            # https
+=======
             # https://github.com/pypa/setuptools/issues/2698
             if type(exc).__name__ != "CompileError":
-                raise://github.com/pypa/setuptools/issues/2698
+                raise
+            return False
+    return True
+
+
+class NoopTestCommand(setuptools.command.test.test)
+>>>>>>> ./right.py
+://github.com/pypa/setuptools/issues/2698
             if type(exc).__name__ != "CompileError":
                 raise
             return False
@@ -294,7 +304,6 @@ setup(  # Finally, pass this all along to setuptools to do the heavy lifting.
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
-        'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.10',
         'Topic :: Scientific/Engineering :: Visualization',
     ],

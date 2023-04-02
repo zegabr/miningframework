@@ -32,6 +32,7 @@ import subprocess
 from setuptools import setup, find_packages, Distribution, Extension
 import setuptools.command.build_ext
 import setuptools.command.build_py
+import setuptools.command.test
 import setuptools.command.sdist
 
 import setupext
@@ -61,11 +62,15 @@ def has_flag(self, flagname):
         except Exception as exc:
             # https://github.com/pypa/setuptools/issues/2698
             if type(exc).__name__ != "CompileError":
-                raise://github.com/pypa/setuptools/issues/2698
-            if type(exc).__name__ != "CompileError":
                 raise
             return False
     return True
+
+
+class NoopTestCommand(setuptools.command.test.test):
+    def __init__(self, dist):
+        print("Matplotlib does not support running tests with "
+              "'python setup.py test'. Please run 'pytest'.")
 
 
 class BuildExtraLibraries(setuptools.command.build_ext.build_ext):
@@ -295,7 +300,6 @@ setup(  # Finally, pass this all along to setuptools to do the heavy lifting.
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
-        'Programming Language :: Python :: 3.10',
         'Topic :: Scientific/Engineering :: Visualization',
     ],
 
@@ -322,7 +326,7 @@ setup(  # Finally, pass this all along to setuptools to do the heavy lifting.
         "numpy>=1.17",
         "packaging>=20.0",
         "pillow>=6.2.0",
-        "pyparsing>=2.2.1,<3.0.0",
+        "pyparsing>=2.2.1",
         "python-dateutil>=2.7",
     ] + (
         # Installing from a git checkout.
@@ -337,6 +341,7 @@ setup(  # Finally, pass this all along to setuptools to do the heavy lifting.
         "fallback_version": "0.0+UNKNOWN",
     },
     cmdclass={
+        "test": NoopTestCommand,
         "build_ext": BuildExtraLibraries,
         "build_py": BuildPy,
         "sdist": Sdist,
