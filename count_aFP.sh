@@ -39,6 +39,7 @@ __abs() {
 # function that given a directory, count the sum of the __abs (base - left) and (base - right) and (left - right) where each variable is the number of lines of a file
 sum_of_line_diffs() {
     echo "sum of line diff between base left and right:"
+    total_total=0
     for dir in $(find . -name "csdiff.py" -type f | xargs dirname); do
         total=0
         base=$(wc -l < "$dir/base.py")
@@ -47,6 +48,7 @@ sum_of_line_diffs() {
         # tota = |base - left| + |base - right| + |left - right|
         # if total is more than 0, echo the dir and the local total
         total=$((total + $(__abs $((base - left))) + $(__abs $((base - right)))))
+        total_total=$((total_total + total))
         if files_are_equal "$dir/diff3.py" "$dir/merge.py";  then
             if [ "$total" -gt 0 ]; then
                 echo "(aFPyes)$dir $total "
@@ -55,6 +57,7 @@ sum_of_line_diffs() {
             echo "(aFPno)$dir $total "
         fi
     done
+    echo "total: $total_total"
 }
 
 count_aFP_on_csdiff() {
