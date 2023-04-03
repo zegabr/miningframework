@@ -48,17 +48,40 @@ sum_of_line_diffs() {
         # tota = |base - left| + |base - right| + |left - right|
         # if total is more than 0, echo the dir and the local total
         if files_are_equal "$dir/diff3.py" "$dir/merge.py";  then
+            aFP=$(count_file_conflicts "$dir/csdiff.py") || aFP=0
             total=$((total + $(__abs $((base - left))) + $(__abs $((base - right)))))
             total_total=$((total_total + total))
-            if [ "$total" -gt 0 ]; then
+            if [ "$aFP" -gt 0 ]; then
                 echo "(aFPyes)$dir $total "
+            else
+                echo "(aFPno)$dir $total "
             fi
-        # else
-            # echo "(aFPno)$dir $total "
         fi
     done
     echo "total: $total_total"
 }
+
+# function that do the same as sum_of_line_diffs but counting the numer of conflicting blocks between base/left and base/right
+sum_of_diff_blocks() {
+    echo "sum of conflict diff between base left and right:"
+    total_total=0
+    for dir in $(find . -name "csdiff.py" -type f | xargs dirname); do
+        left=$(diff "$dir/base.py" "$dir/left.py" | grep -c '^[0-9]')
+        right=$(diff "$dir/base.py" "$dir/right.py" | grep -c '^[0-9]')
+        if files_are_equal "$dir/diff3.py" "$dir/merge.py";  then
+            aFP=$(count_file_conflicts "$dir/csdiff.py") || aFP=0
+            if [ "$aFP" -gt 0 ]; then
+                total=$((base + left))
+                total_total=$((total_total + total))
+                echo "(aFPyes)$dir $total "
+            else
+                echo "(aFPno)$dir $total "
+            fi
+        fi
+    done
+    echo "total: $total_total"
+}
+
 
 count_aFP_on_csdiff() {
     # number of 'CaFP' ocurrences in csdiff.py when diff3.py is equal to merge.py
@@ -66,7 +89,7 @@ count_aFP_on_csdiff() {
     total_csdiff_files_with_aFP=0
     for dir in $(find . -name "csdiff.py" -type f | xargs dirname); do
         if files_are_equal "$dir/diff3.py" "$dir/merge.py";  then
-          aFP=$(count_CaFP "$dir/csdiff.py") || aFP=0
+          aFP=$(count_file_conflicts "$dir/csdiff.py") || aFP=0
           total_aFP=$((total_aFP + aFP))
           if [ "$aFP" -gt 0 ]; then
             echo "$dir"
