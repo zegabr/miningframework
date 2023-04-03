@@ -47,15 +47,17 @@ sum_of_line_diffs() {
         right=$(wc -l < "$dir/right.py")
         # tota = |base - left| + |base - right| + |left - right|
         # if total is more than 0, echo the dir and the local total
+        total=$((total + $(__abs $((base - left))) + $(__abs $((base - right)))))
         if files_are_equal "$dir/diff3.py" "$dir/merge.py";  then
             aFP=$(count_file_conflicts "$dir/csdiff.py") || aFP=0
-            total=$((total + $(__abs $((base - left))) + $(__abs $((base - right)))))
             total_total=$((total_total + total))
             if [ "$aFP" -gt 0 ]; then
                 echo "(aFPyes)$dir $total "
             else
                 echo "(aFPno)$dir $total "
             fi
+        else
+            echo "(aFPno)$dir $total "
         fi
     done
     echo "total: $total_total"
@@ -77,6 +79,8 @@ sum_of_diff_blocks() {
             else
                 echo "(aFPno)$dir $total "
             fi
+        else
+            echo "(aFPno)$dir $total "
         fi
     done
     echo "total: $total_total"
@@ -84,7 +88,7 @@ sum_of_diff_blocks() {
 
 
 count_aFP_on_csdiff() {
-    # number of 'CaFP' ocurrences in csdiff.py when diff3.py is equal to merge.py
+    # number of '^=======$' ocurrences in csdiff.py when diff3.py is equal to merge.py
     total_aFP=0
     total_csdiff_files_with_aFP=0
     for dir in $(find . -name "csdiff.py" -type f | xargs dirname); do
@@ -126,7 +130,7 @@ scenario_has_csdiff_aFP() {
     for dir in $(find . -name "csdiff.py" -type f | xargs dirname); do
         if ! files_are_equal "$dir/diff3.py" "$dir/merge.py"; then
             echo "not a csdiff aFP merge scenario"
-            return 1
+            return 0
         fi
         aFP=$(count_CaFP "$dir/csdiff.py") || aFP=0
         total_aFP=$((total_aFP + aFP))
@@ -136,7 +140,7 @@ scenario_has_csdiff_aFP() {
         return 0
     fi
     echo "not a csdiff aFP merge scenario"
-    return 1
+    return 0
 }
 
 scenario_has_diff3_aFP() {
@@ -147,7 +151,7 @@ scenario_has_diff3_aFP() {
     for dir in $(find . -name "diff3.py" -type f | xargs dirname); do
         if ! files_are_equal "$dir/csdiff.py" "$dir/merge.py"; then
             echo "not a diff3 aFP merge scenario"
-            return 1
+            return 0
         fi
         aFP=$(count_file_conflicts "$dir/diff3.py") || aFP=0
         total_aFP=$((total_aFP + aFP))
@@ -157,7 +161,7 @@ scenario_has_diff3_aFP() {
         return 0
     fi
     echo "not a diff3 aFP merge scenario"
-    return 1
+    return 0
 }
 
 count_csdiff_possible_aFN() {
