@@ -771,8 +771,8 @@ class locked_cached_property(werkzeug.utils.cached_property):
             return self
 
         with self.lock:
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/flask_results/flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/helpers.py/left.py
-            return super().__get__(obj, type=type) # CReduzido
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/flask_results/flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/helpers.py/left.py
+            return super().__get__(obj, type=type)
 =======
             value = obj.__dict__.get(self.__name__, _missing)
             if value is _missing:
@@ -905,7 +905,7 @@ class _PackageBoundObject(object):
         return send_from_directory(
             self.static_folder, filename, cache_timeout=cache_timeout
         )
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/flask_results/flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/helpers.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/flask_results/flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/helpers.py/right.py
 
     def __set__(self, obj: object, value: t.Any) -> None:
         with self.lock:

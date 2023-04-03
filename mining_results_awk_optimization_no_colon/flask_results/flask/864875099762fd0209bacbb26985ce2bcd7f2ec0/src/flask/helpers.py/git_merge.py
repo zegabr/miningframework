@@ -769,8 +769,8 @@ class locked_cached_property(werkzeug.utils.cached_property):
     def __get__(self, obj: object, type: type = None) -> t.Any:  # type: ignore
         if obj is None:
             return self
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/flask_results/flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/helpers.py/left.py
-||||||| /home/ze/miningframework/mining_results_version3_3_no_colon/flask_results/flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/helpers.py/base.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/flask_results/flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/helpers.py/left.py
+||||||| /home/ze/miningframework/mining_results_awk_optimization_no_colon/flask_results/flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/helpers.py/base.py
         with self.lock:
             value = obj.__dict__.get(self.__name__, _missing)
             if value is _missing:
@@ -1044,7 +1044,7 @@ class _PackageBoundObject(object):
     def open_resource(self, resource, mode="rb"):
         """Opens a resource from the application's resource folder.  To see
         how this works, consider the following folder structure::
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/flask_results/flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/helpers.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/flask_results/flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/helpers.py/right.py
 
         with self.lock:
             return super().__get__(obj, type=type)

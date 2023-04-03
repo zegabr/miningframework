@@ -1027,11 +1027,11 @@ class TextBox(AxesWidget):
             self.DIST, 0.5, initial,
             transform=self.ax.transAxes, verticalalignment='center',
             horizontalalignment='left',
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/707ffe85a2b6e9610172cf420acb98ff3b39dc5a/lib/matplotlib/widgets.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/707ffe85a2b6e9610172cf420acb98ff3b39dc5a/lib/matplotlib/widgets.py/left.py
  horizontalalignment=ha
 =======
  parse_math=False
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/707ffe85a2b6e9610172cf420acb98ff3b39dc5a/lib/matplotlib/widgets.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/707ffe85a2b6e9610172cf420acb98ff3b39dc5a/lib/matplotlib/widgets.py/right.py
 )
 
         self._observers = cbook.CallbackRegistry()

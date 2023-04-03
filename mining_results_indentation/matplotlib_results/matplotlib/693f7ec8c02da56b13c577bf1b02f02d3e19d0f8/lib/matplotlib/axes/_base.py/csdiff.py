@@ -1582,19 +1582,17 @@ class _AxesBase(martist.Artist):
         aspect : {'auto', 'equal'} or float
             Possible values:
 
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_base.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_base.py/left.py
             - 'auto'
 =======
-        # CaFP
             - 'auto': fill the position rectangle with data.
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_base.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_base.py/left.py
-        # CaFP
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_base.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_base.py/left.py
 : fill the position rectangle with data.
             - 'equal'
 =======
             - 'equal'
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_base.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axes/_base.py/right.py
 : same as ``aspect=1``, i.e. same scaling for x and y.
             - *float*: A circle will be stretched such that the height
               is *float* times the width.

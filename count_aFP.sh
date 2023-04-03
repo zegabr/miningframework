@@ -47,14 +47,14 @@ sum_of_line_diffs() {
         right=$(wc -l < "$dir/right.py")
         # tota = |base - left| + |base - right| + |left - right|
         # if total is more than 0, echo the dir and the local total
-        total=$((total + $(__abs $((base - left))) + $(__abs $((base - right)))))
-        total_total=$((total_total + total))
         if files_are_equal "$dir/diff3.py" "$dir/merge.py";  then
+            total=$((total + $(__abs $((base - left))) + $(__abs $((base - right)))))
+            total_total=$((total_total + total))
             if [ "$total" -gt 0 ]; then
                 echo "(aFPyes)$dir $total "
             fi
-        else
-            echo "(aFPno)$dir $total "
+        # else
+            # echo "(aFPno)$dir $total "
         fi
     done
     echo "total: $total_total"

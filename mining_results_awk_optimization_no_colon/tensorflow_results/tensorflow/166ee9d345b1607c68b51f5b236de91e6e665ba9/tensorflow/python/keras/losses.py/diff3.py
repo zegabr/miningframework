@@ -570,12 +570,12 @@ class BinaryCrossentropy(LossFunctionWrapper):
 
   def __init__(self,
                from_logits=False,
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
-               label_smoothing=.0, # CResolvido
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
+               label_smoothing=.0,
 =======
                label_smoothing=0,
                axis=-1,
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/right.py
                reduction=losses_utils.ReductionV2.AUTO,
                name='binary_crossentropy'):
     """Initializes `BinaryCrossentropy` instance.
@@ -658,12 +658,12 @@ class CategoricalCrossentropy(LossFunctionWrapper):
 
   def __init__(self,
                from_logits=False,
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
-               label_smoothing=.0, # CResolvido
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
+               label_smoothing=.0,
 =======
                label_smoothing=0,
                axis=-1,
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/right.py
                reduction=losses_utils.ReductionV2.AUTO,
                name='categorical_crossentropy'):
     """Initializes `CategoricalCrossentropy` instance.
@@ -1645,12 +1645,12 @@ def log_cosh(y_true, y_pred):
 def categorical_crossentropy(y_true,
                              y_pred,
                              from_logits=False,
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
                              label_smoothing=.0):
 =======
                              label_smoothing=0,
                              axis=-1):
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/right.py
   """Computes the categorical crossentropy loss.
 
   Standalone usage:
@@ -1697,12 +1697,12 @@ def categorical_crossentropy(y_true,
 def _ragged_tensor_categorical_crossentropy(y_true,
                                             y_pred,
                                             from_logits=False,
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
                                             label_smoothing=.0):
 =======
                                             label_smoothing=0,
                                             axis=-1):
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/right.py
   """Implements support for handling RaggedTensors.
 
   Args:
@@ -1795,15 +1795,15 @@ def _ragged_tensor_sparse_categorical_crossentropy(y_true,
 @keras_export('keras.metrics.binary_crossentropy',
               'keras.losses.binary_crossentropy')
 @dispatch.add_dispatch_support
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
-def binary_crossentropy(y_true, y_pred, from_logits=False, label_smoothing=.0): # CReduzido
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
+def binary_crossentropy(y_true, y_pred, from_logits=False, label_smoothing=.0):
 =======
 def binary_crossentropy(y_true,
                         y_pred,
                         from_logits=False,
                         label_smoothing=0,
                         axis=-1):
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/right.py
   """Computes the binary crossentropy loss.
 
   Standalone usage:
@@ -1848,12 +1848,12 @@ def binary_crossentropy(y_true,
 def _ragged_tensor_binary_crossentropy(y_true,
                                        y_pred,
                                        from_logits=False,
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
                                        label_smoothing=.0):
 =======
                                        label_smoothing=0,
                                        axis=-1):
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/right.py
   """Implements support for handling RaggedTensors.
 
   Args:

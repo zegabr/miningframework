@@ -260,11 +260,11 @@ class LossFunctionWrapper(Loss):
 
   def get_config(self):
     config = {}
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/left.py
     for k, v in self._fn_kwargs.items():
       config[k] = K.eval(v) if tf_utils.is_tensor_or_variable(v) else v
     base_config = super().get_config()
-||||||| /home/ze/miningframework/mining_results_version3_3_no_colon/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/base.py
+||||||| /home/ze/miningframework/mining_results_awk_optimization_no_colon/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/base.py
     for k, v in six.iteritems(self._fn_kwargs):
       config[k] = K.eval(v) if tf_utils.is_tensor_or_variable(v) else v
     base_config = super(LossFunctionWrapper, self).get_config()
@@ -272,7 +272,7 @@ class LossFunctionWrapper(Loss):
     for k, v in self._fn_kwargs.items():
       config[k] = backend.eval(v) if tf_utils.is_tensor_or_variable(v) else v
     base_config = super(LossFunctionWrapper, self).get_config()
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/right.py
     return dict(list(base_config.items()) + list(config.items()))
 
 
@@ -2077,9 +2077,9 @@ def get(identifier):
   """
   if identifier is None:
     return None
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/left.py
   if isinstance(identifier, str) or isinstance(identifier, dict):
-||||||| /home/ze/miningframework/mining_results_version3_3_no_colon/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/base.py
+||||||| /home/ze/miningframework/mining_results_awk_optimization_no_colon/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/base.py
   if isinstance(identifier, six.string_types):
     identifier = str(identifier)
     return deserialize(identifier)
@@ -2089,7 +2089,7 @@ def get(identifier):
     identifier = str(identifier)
     return deserialize(identifier)
   if isinstance(identifier, dict):
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/right.py
     return deserialize(identifier)
   if callable(identifier):
     return identifier

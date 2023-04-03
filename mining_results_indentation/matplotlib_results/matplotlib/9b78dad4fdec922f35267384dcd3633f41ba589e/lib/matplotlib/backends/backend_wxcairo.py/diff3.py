@@ -32,14 +32,14 @@ class FigureCanvasWxCairo(_FigureCanvasWxBase, FigureCanvasCairo):
     def draw(self, drawDC=None):
         size = self.figure.bbox.size.astype(int)
         surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, *size)
-        self._renderer.set_ctx_from_surface(surface) # CResolvido
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_wxcairo.py/left.py
+        self._renderer.set_ctx_from_surface(surface)
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_wxcairo.py/left.py
         self._renderer.set_width_height(*size)
         self._renderer.dpi = self.figure.dpi
 =======
         self._renderer.set_width_height(width, height)
         self._renderer.dpi = self.figure.dpi
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_wxcairo.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_wxcairo.py/right.py
         self.figure.draw(self._renderer)
         self.bitmap = wxcairo.BitmapFromImageSurface(surface)
         self._isDrawn = True

@@ -1385,8 +1385,7 @@ class Axis(martist.Artist):
 
                 grid(color='r', linestyle='-', linewidth=2)
         """
-        # CResolvido
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axis.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axis.py/left.py
         if b is not None:
             if 'visible' in kwargs and bool(b) != bool(kwargs['visible']):
                 raise ValueError(
@@ -1406,7 +1405,7 @@ class Axis(martist.Artist):
                                      'but line properties are supplied. The '
                                      'grid will be enabled.')
                 b = True
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axis.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axis.py/right.py
         which = which.lower()
         _api.check_in_list(['major', 'minor', 'both'], which=which)
         gridkw = {'grid_' + item[0]: item[1] for item in kwargs.items()}

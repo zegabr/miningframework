@@ -534,7 +534,7 @@ def get_ccompiler():
     we trick setuptools into instantiating it by creating a dummy Distribution
     with a list of extension modules that claims to be truthy, but is actually
     empty,
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
  and then running the Distribution's build_ext command.  (If using
     a plain empty ext_modules, build_ext would early-return without doing
     anything.)
@@ -543,11 +543,10 @@ def get_ccompiler():
  and then running the Distribution's build_ext command.  (If using
     a plain empty ext_modules, build_ext would early-return without doing
     anything.)
-    # CaFP
     
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
 "
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
 
     class L(list):
         def __bool__(self):
@@ -555,7 +554,6 @@ def get_ccompiler():
 
     build_ext = Distribution({"ext_modules": L()}).get_command_obj("build_ext
 =======
-    # CaFP
 ""
 
     class L(list):
@@ -563,7 +561,7 @@ def get_ccompiler():
             return True
 
     build_ext = Distribution({"ext_modules": L()}).get_command_obj("build_ext
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
 ")
     build_ext.finalize_options()
     build_ext.run()

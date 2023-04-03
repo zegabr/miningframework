@@ -421,7 +421,7 @@ class MathTextParser:
     }
 
     def __init__(self,
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/mathtext.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/mathtext.py/left.py
  output
 =======
  c, width, state, always=False, char_class=Char):
@@ -746,10 +746,10 @@ class Parser:
         # Set names on everything -- very useful for debugging
         for key, val in vars(p).items():
             if not key.startswith('_'
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/mathtext.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/mathtext.py/right.py
 ):
         """Create a MathTextParser for the given backend *output*."""
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/mathtext.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/mathtext.py/left.py
         self._output = output.lower
 =======
 ))
@@ -871,7 +871,7 @@ class Parser:
 
         # Set actions
         for key, val in vars(p).items
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/mathtext.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/mathtext.py/right.py
 ()
 
     def parse(self, s, dpi=72, prop=None, *, _force_standard_ps_fonts=False):

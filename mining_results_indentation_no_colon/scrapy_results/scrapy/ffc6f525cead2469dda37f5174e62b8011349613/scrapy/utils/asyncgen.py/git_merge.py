@@ -1,18 +1,18 @@
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/asyncgen.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/asyncgen.py/left.py
 import collections
 import functools
 import inspect
 
 
 async def collect_asyncgen(result):
-||||||| /home/ze/miningframework/mining_results_version3_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/asyncgen.py/base.py
+||||||| /home/ze/miningframework/mining_results_indentation_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/asyncgen.py/base.py
 async def collect_asyncgen(result):
 =======
 from collections.abc import AsyncIterable
 
 
 async def collect_asyncgen(result: AsyncIterable):
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/asyncgen.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/asyncgen.py/right.py
     results = []
     async for x in result:
         results.append(x)

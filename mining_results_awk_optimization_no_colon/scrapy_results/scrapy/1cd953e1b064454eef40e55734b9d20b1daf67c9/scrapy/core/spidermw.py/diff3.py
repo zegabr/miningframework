@@ -42,8 +42,8 @@ class SpiderMiddlewareManager(MiddlewareManager):
         process_spider_exception = getattr(mw, 'process_spider_exception', None)
         self.methods['process_spider_exception'].appendleft(process_spider_exception)
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
-    def scrape_response(self, scrape_func, response, request, spider): # CReduzido
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
+    def scrape_response(self, scrape_func, response, request, spider):
 
         def process_spider_input(response):
             for method in self.methods['process_spider_input']:
@@ -124,7 +124,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
                 result = method(response=response, result=result, spider=spider)
             except Exception as ex:
                 exception_result = self._process_spider_exception(response, spider, Failure(ex), method_index + 1)
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
                 if isinstance(exception_result, Failure):
                     raise
                 return exception_result
@@ -142,8 +142,8 @@ class SpiderMiddlewareManager(MiddlewareManager):
         result = self._evaluate_iterable(response, spider, result, 0, recovered)
         return MutableChain(self._process_spider_output(response, spider, result), recovered)
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
-            def _evaluate_normal_iterable(iterable): # CReduzido
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
+            def _evaluate_normal_iterable(iterable):
                 try:
                     for r in iterable:
                         yield r
@@ -187,10 +187,10 @@ class SpiderMiddlewareManager(MiddlewareManager):
     def scrape_response(self, scrape_func, response, request, spider):
         def process_callback_output(result):
             return self._process_callback_output(response, spider, result)
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
-        def process_spider_output(result, start_index=0): # CReduzido
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
+        def process_spider_output(result, start_index=0):
             # items in this iterable do not need to go through the process_spider_output
             # chain, they went through it already from the process_spider_exception method
             if inspect.isasyncgen(result):
@@ -231,7 +231,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
 =======
         def process_spider_exception(_failure):
             return self._process_spider_exception(response, spider, _failure)
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
 
         dfd = mustbe_deferred(self._process_spider_input, scrape_func, response, request, spider)
         dfd.addCallbacks(callback=process_callback_output, errback=process_spider_exception)

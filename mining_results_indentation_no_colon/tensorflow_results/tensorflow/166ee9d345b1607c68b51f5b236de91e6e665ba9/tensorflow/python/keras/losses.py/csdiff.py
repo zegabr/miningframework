@@ -1783,11 +1783,11 @@ def binary_crossentropy(y_true,
                         y_pred,
                         from_logits=False,
                         label_smoothing=0,
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/left.py
  label_smoothing=.0
 =======
                         axis=-1
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/tensorflow_results/tensorflow/166ee9d345b1607c68b51f5b236de91e6e665ba9/tensorflow/python/keras/losses.py/right.py
 ):
   """Computes the binary crossentropy loss.
 

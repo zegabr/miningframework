@@ -5629,7 +5629,7 @@ default: :rc:`scatter.edgecolors`
             # Check x and y for bad data...
             C = np.asanyarray(args[2])
             X, Y = [cbook.safe_masked_invalid(a) for a in args[:2]]
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/left.py
             # unit conversion allows e.g. datetime objects as axis values
             X, Y = self._process_unit_info([("x", X), ("y", Y)], kwargs)
 
@@ -5638,7 +5638,7 @@ default: :rc:`scatter.edgecolors`
             self._process_unit_info(xdata=X, ydata=Y, kwargs=kwargs)
             X = self.convert_xunits(X)
             Y = self.convert_yunits(Y)
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/right.py
             if funcname == 'pcolormesh':
                 if np.ma.is_masked(X) or np.ma.is_masked(Y):
                     raise ValueError(
@@ -5888,18 +5888,16 @@ default: :rc:`scatter.edgecolors`
             shading = rcParams['pcolor.shading']
         shading = shading.lower()
         X, Y, C, shading = self._pcolorargs('pcolor', *args, shading=shading
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/left.py
 ,
 =======
 ,
-# CaFP
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/right.py
                                             kwargs=kwargs
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/left.py
-# CaFP
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/left.py
                                             kwargs=kwargs
 =======
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/axes/_axes.py/right.py
 )
         Ny, Nx = X.shape
 

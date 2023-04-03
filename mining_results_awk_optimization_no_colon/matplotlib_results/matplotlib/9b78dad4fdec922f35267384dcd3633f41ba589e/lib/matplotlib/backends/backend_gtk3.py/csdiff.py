@@ -29,31 +29,31 @@ except ValueError as e:
     raise ImportError from e
 
 from gi.repository import Gio, GLib, GObject, Gtk, Gdk
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
 from . import _backend_gtk
 from ._backend_gtk import 
 =======
 from ._backend_gtk import 
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
 (
     _create_application, _shutdown_application,
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
     backend_version, _BackendGTK, _NavigationToolbar2GTK,
 =======
     backend_version, _BackendGTK, _NavigationToolbar2GTK,
     TimerGTK as TimerGTK3,
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
     TimerGTK as TimerGTK3
 =======
     ConfigureSubplotsGTK as ConfigureSubplotsGTK3
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
 ,
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
 )
 =======
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
 
 
 _log = logging.getLogger(__name__
@@ -63,7 +63,7 @@ _log = logging.getLogger(__name__
 
 
 _log = logging.getLogger(__name__
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
 )
 
 
@@ -85,7 +85,7 @@ class __getattr__:
         except TypeError as exc:
             return {}
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
     icon_filename = _api.deprecated("3.6", obj_type="")(property(
         lambda self:
         "matplotlib.png" if sys.platform == "win32" else "matplotlib.svg"))
@@ -96,7 +96,7 @@ class __getattr__:
 
 =======
 
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
 @functools.lru_cache()
 def _mpl_to_gtk_cursor(mpl_cursor):
     name = _api.check_getitem({
@@ -357,17 +357,17 @@ class FigureManagerGTK3(FigureManagerBase):
         super().__init__(canvas, num)
 
         self.window.set_wmclass("matplotlib", "Matplotlib")
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
         icon_ext = "png" if sys.platform == "win32" else "svg"
         self.window.set_icon_from_file
 =======
         self.window.set_icon_from_file
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
 (
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
             str(cbook._get_data_path(f"images/matplotlib.{icon_ext}")))
 =======
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
 
         self.vbox = Gtk.Box()
         self.vbox.set_property("orientation", Gtk.Orientation.VERTICAL)
@@ -567,13 +567,13 @@ class NavigationToolbar2GTK3(_NavigationToolbar2GTK, Gtk.Toolbar):
             dialog = Gtk.MessageDialog(
                 parent=self.canvas.get_toplevel(), message_format=str(e),
                 type=Gtk.MessageType.ERROR, buttons=Gtk.ButtonsType.OK)
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
             dialog.run()
             dialog.destroy()
 
 =======
 
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
 
 class ToolbarGTK3(ToolContainerBase, Gtk.Box):
     _icon_extension = '-symbolic.svg'
@@ -655,10 +655,10 @@ class ToolbarGTK3(ToolContainerBase, Gtk.Box):
         self._message.set_label(s)
 
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
 @backend_tools._register_tool_class(FigureCanvasGTK3)
 =======
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
 class SaveFigureGTK3(backend_tools.SaveFigureBase):
     def trigger(self, *args, **kwargs):
 
@@ -675,10 +675,10 @@ class SetCursorGTK3(backend_tools.SetCursorBase):
             self._make_classic_style_pseudo_toolbar(), cursor)
 
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/left.py
 @backend_tools._register_tool_class(FigureCanvasGTK3)
 =======
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_gtk3.py/right.py
 class HelpGTK3(backend_tools.ToolHelpBase):
     def _normalize_shortcut(self, key):
         """

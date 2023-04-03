@@ -340,7 +340,7 @@ def show(*args, **kwargs):
 
     See Also
     --------
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
     ion : Enable interactive mode, which shows / updates the figure after
           every plotting command, so that calling ``show()`` is not necessary.
     ioff : Disable interactive mode.
@@ -357,7 +357,6 @@ def show(*args, **kwargs):
     limitation of command order does not apply if the show is non-blocking or
     if you keep a reference to the figure and use `.Figure.savefig`.
 
-# CaFP
     **Auto-show in jupyter notebooks**
 =======
     ion : Enable interactive mode, which shows / updates the figure after
@@ -375,13 +374,12 @@ def show(*args, **kwargs):
     `.pyplot.savefig` afterwards would save a new and thus empty figure. This
     limitation of command order does not apply if the show is non-blocking or
     if you keep a reference to the figure and use `.Figure.savefig`.
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
     The jupyter backends (activated via ``%matplotlib inline``,
     ``%matplotlib notebook``, or ``%matplotlib widget``), call ``show()`` at
     the end of every cell by default. Thus, you usually don't have to call it
-# CaFP
     explicitly there.
 =======
     **Auto-show in jupyter notebooks**
@@ -390,7 +388,7 @@ def show(*args, **kwargs):
     ``%matplotlib notebook``, or ``%matplotlib widget``), call ``show()`` at
     the end of every cell by default. Thus, you usually don't have to call it
     explicitly there.
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
     """
     _warn_if_gui_out_of_main_thread()
     return _backend_mod.show(*args, **kwargs)

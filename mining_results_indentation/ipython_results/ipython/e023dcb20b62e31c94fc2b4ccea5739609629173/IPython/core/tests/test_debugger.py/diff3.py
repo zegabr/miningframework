@@ -224,8 +224,8 @@ def test_interruptible_core_debugger():
     KeyboardInterrupt cause debugging to cease.
     """
     def raising_input(msg="", called=[0]):
-        called[0] += 1 #CReduzido
-<<<<<<< /home/ze/miningframework/mining_results/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/left.py
+        called[0] += 1
+<<<<<<< /home/ze/miningframework/mining_results_indentation/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/left.py
         assert called[0] == 1, "input() should only be called once!"
         raise KeyboardInterrupt()
 
@@ -261,7 +261,7 @@ def test_interruptible_core_debugger():
         # restore the original trace function
         sys.settrace(tracer_orig)
 
->>>>>>> /home/ze/miningframework/mining_results/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/right.py
 
 @skip_win32
 def test_xmode_skip():

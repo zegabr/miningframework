@@ -138,15 +138,15 @@ class SubplotBase:
             if self.yaxis.offsetText.get_position()[0] == 0:
                 self.yaxis.offsetText.set_visible(False)
         if not ss.is_last_col(
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/left.py
 ):  # Remove right label/ticklabels/offsettext.
 =======
 
     try:
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/right.py
             if label_position == "right":
                 self.set_ylabel("")
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/left.py
             self.yaxis.set_tick_params
 =======
     except StopIteration:
@@ -155,7 +155,7 @@ class SubplotBase:
             return axes_class
 
         return type
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/right.py
 (which="both", labelright=False)
             if self.yaxis.offsetText.get_position()[0] == 1:
                 self.yaxis.offsetText.set_visible(False)

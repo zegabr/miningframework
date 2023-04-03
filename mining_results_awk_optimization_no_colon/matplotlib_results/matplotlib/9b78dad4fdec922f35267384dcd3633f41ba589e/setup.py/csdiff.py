@@ -58,7 +58,7 @@ def has_flag(self, flagname):
         f.write('int main (int argc, char **argv) { return 0; }')
         try:
             self.compile([f.name], extra_postargs=[flagname])
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setup.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setup.py/left.py
         except Exception as exc:
             # https://github.com/pypa/setuptools/issues/2698
             if type
@@ -69,11 +69,11 @@ def has_flag(self, flagname):
                 raise
             return False
     return True
-# CaFP
+
 
 class NoopTestCommand(setuptools.command.test.test):
     def __init__
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setup.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setup.py/right.py
 (exc).__name__ != "CompileError":
                 raise
             return False

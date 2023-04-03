@@ -613,7 +613,7 @@ if link_github:
             return None
 
         version = parse(
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/doc/conf.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/doc/conf.py/left.py
 matplotlib.__version__)
         tag = 'main' if version.is_devrelease else f'v{version.public}'
         return 
@@ -621,7 +621,7 @@ matplotlib.__version__)
 matplotlib.__version__)
         tag = 'master' if version.is_devrelease else f'v{version.public}'
         return 
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/doc/conf.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/doc/conf.py/right.py
 ("https://github.com/matplotlib/matplotlib/blob"
                 f"/{tag}/lib/{fn}{linespec}")
 else:

@@ -43,8 +43,8 @@ from .signals import template_rendered as template_rendered
 from .templating import render_template as render_template
 from .templating import render_template_string as render_template_string
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/flask_results/flask/7161776824734fc2797fe2b4fc974d183487ebf8/src/flask/__init__.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/flask_results/flask/7161776824734fc2797fe2b4fc974d183487ebf8/src/flask/__init__.py/left.py
 __version__ = "2.1.0.dev0"
 =======
 __version__ = "2.0.2.dev0"
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/flask_results/flask/7161776824734fc2797fe2b4fc974d183487ebf8/src/flask/__init__.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/flask_results/flask/7161776824734fc2797fe2b4fc974d183487ebf8/src/flask/__init__.py/right.py

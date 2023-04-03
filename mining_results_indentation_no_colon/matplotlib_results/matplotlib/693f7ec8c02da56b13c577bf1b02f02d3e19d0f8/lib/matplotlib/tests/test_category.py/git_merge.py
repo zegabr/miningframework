@@ -134,17 +134,17 @@ class TestStrCategoryLocator:
         np.testing.assert_array_equal(ticks.tick_values(None, None), locs)
 
     @pytest.mark.parametrize("plotter", PLOT_LIST, ids=PLOT_IDS)
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/tests/test_category.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/tests/test_category.py/left.py
     def test_StrCategoryLocatorPlot(self, plotter):
         ax = plt.figure().subplots()
         plotter(ax, [1, 2, 3], ["a", "b", "c"])
-||||||| /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/tests/test_category.py/base.py
+||||||| /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/tests/test_category.py/base.py
     def test_StrCategoryLocatorPlot(self, ax, plotter):
         ax.plot(["a", "b", "c"])
 =======
     def test_StrCategoryLocatorPlot(self, ax, plotter):
         plotter(ax, [1, 2, 3], ["a", "b", "c"])
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/tests/test_category.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/tests/test_category.py/right.py
         np.testing.assert_array_equal(ax.yaxis.major.locator(), range(3))
 
 

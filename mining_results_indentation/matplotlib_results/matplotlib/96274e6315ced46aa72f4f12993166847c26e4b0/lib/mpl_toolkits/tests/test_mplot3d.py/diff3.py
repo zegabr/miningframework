@@ -239,8 +239,8 @@ def test_scatter3d():
 
 @mpl3d_image_comparison(['scatter3d_color.png'])
 def test_scatter3d_color():
-    fig = plt.figure() # CResolvido
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/tests/test_mplot3d.py/left.py
+    fig = plt.figure()
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/tests/test_mplot3d.py/left.py
     ax = fig.add_subplot(projection='3d')
 
     # Check that 'none' color works; these two should overlay to produce the
@@ -254,7 +254,7 @@ def test_scatter3d_color():
     # same as setting just `color`.
     ax.scatter(np.arange(10), np.arange(10), np.arange(10),
                facecolor='r', edgecolor='none', marker='o')
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/tests/test_mplot3d.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/tests/test_mplot3d.py/right.py
     ax.scatter(np.arange(10), np.arange(10), np.arange(10),
                facecolor='none', edgecolor='r', marker='o')
 
@@ -1335,7 +1335,7 @@ def test_colorbar_pos():
     fig.canvas.draw()
     # check that actually on the bottom
     assert cbar.ax.get_position().extents[1] < 0.2
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/tests/test_mplot3d.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/tests/test_mplot3d.py/left.py
 
 
 def test_shared_axes_retick():
@@ -1439,4 +1439,4 @@ def test_scalarmap_update(fig_test, fig_ref):
     # ref
     ax_ref = fig_ref.add_subplot(111, projection='3d')
     sc_ref = ax_ref.scatter(x, y, z, c=c, s=40, cmap='viridis')
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/tests/test_mplot3d.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/tests/test_mplot3d.py/right.py

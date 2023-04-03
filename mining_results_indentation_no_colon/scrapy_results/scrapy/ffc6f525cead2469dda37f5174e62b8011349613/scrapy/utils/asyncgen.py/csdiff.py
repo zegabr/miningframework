@@ -1,4 +1,4 @@
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/asyncgen.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/asyncgen.py/left.py
 import collections
 import functools
 import inspect
@@ -8,7 +8,7 @@ import inspect
 from collections.abc import AsyncIterable
 
 
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/asyncgen.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/asyncgen.py/right.py
 async def collect_asyncgen(result: AsyncIterable):
     results = []
     async for x in result:

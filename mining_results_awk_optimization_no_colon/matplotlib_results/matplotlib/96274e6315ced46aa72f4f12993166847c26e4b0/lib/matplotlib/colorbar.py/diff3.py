@@ -766,9 +766,9 @@ class ColorbarBase:
             `~.Axes.set_ylabel`.
             Supported keywords are *labelpad* and `.Text` properties.
         """
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/colorbar.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/colorbar.py/left.py
         if self.orientation == "vertical":
-            self.ax.set_ylabel(label, loc=loc, **kwargs) # CResolvido
+            self.ax.set_ylabel(label, loc=loc, **kwargs)
 =======
         Draw the colors using `~.axes.Axes.pcolormesh`;
         optionally add separators.
@@ -778,7 +778,7 @@ class ColorbarBase:
             C = C[:-1]
         if self.orientation == 'vertical':
             args = (X, Y, C)
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/colorbar.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/colorbar.py/right.py
         else:
             self.ax.set_xlabel(label, loc=loc, **kwargs)
         self.stale = True

@@ -87,15 +87,15 @@ class BaseFFTOpsTest(test.TestCase):
                                       'yet supported in ROCm.')
   def _check_grad_complex(self, func, x, y, result_is_complex=True,
                           rtol=1e-2, atol=1e-2):
-<<<<<<< /home/ze/miningframework/mining_results/tensorflow_results/tensorflow/31f8ace638e9c308f96f757f0a1c4d6ba676b381/tensorflow/python/kernel_tests/signal/fft_ops_test.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation/tensorflow_results/tensorflow/31f8ace638e9c308f96f757f0a1c4d6ba676b381/tensorflow/python/kernel_tests/signal/fft_ops_test.py/left.py
     with self.cached_session(use_gpu=True):
 =======
-    if test.is_built_with_rocm(): # Resolveu errado, aFN marcdao no csdiff
+    if test.is_built_with_rocm():
       self.skipTest("Complex datatype not yet supported in ROCm.")
       return
     with self.cached_session():
 
->>>>>>> /home/ze/miningframework/mining_results/tensorflow_results/tensorflow/31f8ace638e9c308f96f757f0a1c4d6ba676b381/tensorflow/python/kernel_tests/signal/fft_ops_test.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/tensorflow_results/tensorflow/31f8ace638e9c308f96f757f0a1c4d6ba676b381/tensorflow/python/kernel_tests/signal/fft_ops_test.py/right.py
       def f(inx, iny):
         inx.set_shape(x.shape)
         iny.set_shape(y.shape)

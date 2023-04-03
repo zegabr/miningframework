@@ -80,7 +80,7 @@ def parallel(iterable: Iterable, count: int, callable: Callable, *args, **named)
     return DeferredList([coop.coiterate(work) for _ in range(count)])
 
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/defer.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/defer.py/left.py
 class _AsyncCooperatorAdapter:
     """ A class that wraps an async iterator into a normal iterator suitable
     for using in Cooperator.coiterate(). As it's only needed for parallel_async(),
@@ -185,11 +185,11 @@ def parallel_async(async_iterable, count, callable, *args, **named):
 
 
 def process_chain(callbacks, input, *a, **kw):
-||||||| /home/ze/miningframework/mining_results_version3_3_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/defer.py/base.py
+||||||| /home/ze/miningframework/mining_results_awk_optimization_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/defer.py/base.py
 def process_chain(callbacks, input, *a, **kw):
 =======
 def process_chain(callbacks: Iterable[Callable], input, *a, **kw) -> Deferred:
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/defer.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/defer.py/right.py
     """Return a Deferred built by chaining the given callbacks"""
     d = Deferred()
     for x in callbacks:
@@ -238,7 +238,7 @@ def iter_errback(iterable: Iterable, errback: Callable, *a, **kw) -> Generator:
             errback(failure.Failure(), *a, **kw)
 
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/defer.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/defer.py/left.py
 async def aiter_errback(aiterable, errback, *a, **kw):
     """Wraps an async iterable calling an errback if an error is caught while
     iterating it. Similar to scrapy.utils.defer.iter_errback()
@@ -254,11 +254,11 @@ async def aiter_errback(aiterable, errback, *a, **kw):
 
 
 def deferred_from_coro(o):
-||||||| /home/ze/miningframework/mining_results_version3_3_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/defer.py/base.py
+||||||| /home/ze/miningframework/mining_results_awk_optimization_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/defer.py/base.py
 def deferred_from_coro(o):
 =======
 def deferred_from_coro(o) -> Any:
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/defer.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/utils/defer.py/right.py
     """Converts a coroutine into a Deferred, or returns the object as is if it isn't a coroutine"""
     if isinstance(o, Deferred):
         return o

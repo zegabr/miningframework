@@ -1645,15 +1645,15 @@ def categorical_crossentropy(y_true,
     num_classes = math_ops.cast(array_ops.shape(y_true)[-1], y_pred.dtype)
     return y_true * (1.0 - label_smoothing) + (label_smoothing / num_classes)
 
-<<<<<<< /home/ze/miningframework/mining_results/tensorflow_results/tensorflow/5b0c10122749367384f0f325bea3b627d442579b/tensorflow/python/keras/losses.py/left.py
-  y_true = smart_cond.smart_cond( # CResolvido
+<<<<<<< /home/ze/miningframework/mining_results_indentation/tensorflow_results/tensorflow/5b0c10122749367384f0f325bea3b627d442579b/tensorflow/python/keras/losses.py/left.py
+  y_true = smart_cond.smart_cond(
       label_smoothing, _smooth_labels, lambda: y_true)
   return K.categorical_crossentropy(y_true, y_pred, from_logits=from_logits, axis=axis)
 =======
   y_true = smart_cond.smart_cond(label_smoothing, _smooth_labels,
                                  lambda: y_true)
   return K.categorical_crossentropy(y_true, y_pred, from_logits=from_logits)
->>>>>>> /home/ze/miningframework/mining_results/tensorflow_results/tensorflow/5b0c10122749367384f0f325bea3b627d442579b/tensorflow/python/keras/losses.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/tensorflow_results/tensorflow/5b0c10122749367384f0f325bea3b627d442579b/tensorflow/python/keras/losses.py/right.py
 
 
 @dispatch.dispatch_for_types(categorical_crossentropy,

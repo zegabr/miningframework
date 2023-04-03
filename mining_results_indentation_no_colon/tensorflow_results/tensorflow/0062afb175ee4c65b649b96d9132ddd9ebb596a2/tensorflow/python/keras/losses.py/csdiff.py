@@ -2068,13 +2068,13 @@ def get(identifier):
   if identifier is None:
     return None
   if isinstance(identifier,
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/left.py
  str
 =======
  str):
     identifier = str(identifier
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/right.py
-) or isinstance(identifier, dict): # CaFN
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/right.py
+) or isinstance(identifier, dict):
     return deserialize(identifier)
   if callable(identifier):
     return identifier

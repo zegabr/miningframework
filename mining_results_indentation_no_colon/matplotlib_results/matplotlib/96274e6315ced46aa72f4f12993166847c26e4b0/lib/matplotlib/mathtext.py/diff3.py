@@ -389,7 +389,7 @@ with _api.suppress_matplotlib_deprecation_warning():
                        for k, v in _mathtext._GlueSpec._named.items()}
 
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/mathtext.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/mathtext.py/left.py
 @_api.deprecated("3.4")
 def ship(ox, oy, box):
     _mathtext.ship(ox, oy, box)
@@ -1744,8 +1744,8 @@ class Parser:
         front, middle, back = toks
 
         return self._auto_sized_delimiter(front, middle.asList(), back)
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/mathtext.py/right.py
-# CReduzido
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/mathtext.py/right.py
+
 
 ##############################################################################
 # MAIN

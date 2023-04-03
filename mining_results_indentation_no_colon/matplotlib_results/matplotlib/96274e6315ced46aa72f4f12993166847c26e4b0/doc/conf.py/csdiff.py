@@ -347,7 +347,7 @@ latex_logo = None
 latex_engine = 'xelatex'  # or 'lualatex'
 
 latex_elements = {}
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
 
 # Keep babel usage also with xelatex (Sphinx default is polyglossia)
 # If this key is removed or changed, latex build directory must be cleaned
@@ -377,7 +377,7 @@ latex_elements['fontpkg'] = r'\setmainfont{DejaVu Serif}'
 
 # Additional stuff for the LaTeX preamble.
 latex_elements['preamble'] = r
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
 """
 \IfFontExistsTF{XITS}{
  \setmainfont{XITS}
@@ -406,7 +406,7 @@ latex_elements['preamble'] = r
   Extension      = .otf,
   UprightFont    = *,
   ItalicFont     = *Oblique,
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
   BoldFont       = *Bold
 =======
    \usepackage{expdlist}
@@ -414,8 +414,8 @@ latex_elements['preamble'] = r
    \def\description{\latexdescription{}{} \breaklabel}
    % But expdlist old LaTeX package requires fixes:
    % 1
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
 ,
   BoldItalicFont = *BoldOblique,
 ]}
@@ -428,8 +428,8 @@ latex_elements['preamble'] = r
   Extension      = .otf,
 =======
 ) remove extra space
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
 ]}
 """
 =======
@@ -438,12 +438,12 @@ latex_elements['preamble'] = r
    \patchcmd\@item{{\@breaklabel} }{{\@breaklabel}}{}{}
    \makeatother
    % 2
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
 latex_elements['fontpkg'] = fontpkg
 
 # Sphinx <1.8.0 or >=2.0.0 does this by default, but the 1.8.x series
 # did not for latex_engine = 'xelatex' (as it used Latin Modern font)
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
 .
 # We need this for code-blocks as FreeMono has wide glyphs.
 latex_elements['fvset'] = r'\fvset{fontsize=\small}'
@@ -451,8 +451,8 @@ latex_elements['fvset'] = r'\fvset{fontsize=\small}'
 latex_elements['passoptionstopackages'] = r""
 =======
  fix bug in expdlist's way of breaking the line after long item label
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
 "
     \PassOptionsToPackage{headheight=14pt}{geometry}
 """
@@ -472,8 +472,8 @@ latex_elements['preamble'] = r"""
 =======
    \makeatletter
    \def\breaklabel{%
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
 ) remove extra space
    \makeatletter
    \patchcmd\@item{{\@breaklabel} }{{\@breaklabel}}{}{}
@@ -484,7 +484,7 @@ latex_elements['preamble'] = r"""
        \def\@breaklabel{%
 =======
        \def\@breaklabel{%
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
            \leavevmode\par
            % now a hack because Sphinx inserts \leavevmode after term node
            \def\leavevmode{\def\leavevmode{\unhbox\voidb@x}}%

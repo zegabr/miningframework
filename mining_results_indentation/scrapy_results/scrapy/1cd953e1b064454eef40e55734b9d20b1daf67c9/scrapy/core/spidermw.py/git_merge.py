@@ -42,7 +42,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
         process_spider_exception = getattr(mw, 'process_spider_exception', None)
         self.methods['process_spider_exception'].appendleft(process_spider_exception)
 
-<<<<<<< /home/ze/miningframework/mining_results/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
     def scrape_response(self, scrape_func, response, request, spider):
 
         def process_spider_input(response):
@@ -102,7 +102,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
                 elif result is None:
                     continue
                 else:
-||||||| /home/ze/miningframework/mining_results/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/base.py
+||||||| /home/ze/miningframework/mining_results_indentation/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/base.py
     def scrape_response(self, scrape_func, response, request, spider):
 
         def process_spider_input(response):
@@ -152,7 +152,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
             try:
                 result = method(response=response, spider=spider)
                 if result is not None:
->>>>>>> /home/ze/miningframework/mining_results/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
                     msg = (f"Middleware {_fname(method)} must return None "
                            f"or raise an exception, got {type(result)}")
                     raise _InvalidOutput(msg)
@@ -219,7 +219,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
                        f"iterable, got {type(result)}")
                 raise _InvalidOutput(msg)
 
-<<<<<<< /home/ze/miningframework/mining_results/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
         def process_spider_output(result, start_index=0):
             # items in this iterable do not need to go through the process_spider_output
             # chain, they went through it already from the process_spider_exception method
@@ -247,7 +247,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
                     msg = (f"Middleware {_fname(method)} must return an "
                            f"iterable, got {type(result)}")
                     raise _InvalidOutput(msg)
-||||||| /home/ze/miningframework/mining_results/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/base.py
+||||||| /home/ze/miningframework/mining_results_indentation/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/base.py
         def process_spider_output(result, start_index=0):
             # items in this iterable do not need to go through the process_spider_output
             # chain, they went through it already from the process_spider_exception method
@@ -273,22 +273,22 @@ class SpiderMiddlewareManager(MiddlewareManager):
                     raise _InvalidOutput(msg)
 =======
         return MutableChain(result, recovered)
->>>>>>> /home/ze/miningframework/mining_results/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
 
-<<<<<<< /home/ze/miningframework/mining_results/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
             return iter_class(result, recovered)
-||||||| /home/ze/miningframework/mining_results/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/base.py
+||||||| /home/ze/miningframework/mining_results_indentation/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/base.py
             return MutableChain(result, recovered)
 =======
     def _process_callback_output(self, response, spider, result):
         recovered = MutableChain()
         result = self._evaluate_iterable(response, spider, result, 0, recovered)
         return MutableChain(self._process_spider_output(response, spider, result), recovered)
->>>>>>> /home/ze/miningframework/mining_results/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
 
     def scrape_response(self, scrape_func, response, request, spider):
         def process_callback_output(result):
-<<<<<<< /home/ze/miningframework/mining_results/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/left.py
             if inspect.isasyncgen(result):
                 iter_class = MutableAsyncChain
             else:
@@ -296,7 +296,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
             recovered = iter_class()
             result = _evaluate_iterable(result, 0, recovered)
             return iter_class(process_spider_output(result), recovered)
-||||||| /home/ze/miningframework/mining_results/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/base.py
+||||||| /home/ze/miningframework/mining_results_indentation/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/base.py
             recovered = MutableChain()
             result = _evaluate_iterable(result, 0, recovered)
             return MutableChain(process_spider_output(result), recovered)
@@ -305,7 +305,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
 
         def process_spider_exception(_failure):
             return self._process_spider_exception(response, spider, _failure)
->>>>>>> /home/ze/miningframework/mining_results/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/scrapy_results/scrapy/1cd953e1b064454eef40e55734b9d20b1daf67c9/scrapy/core/spidermw.py/right.py
 
         dfd = mustbe_deferred(self._process_spider_input, scrape_func, response, request, spider)
         dfd.addCallbacks(callback=process_callback_output, errback=process_spider_exception)

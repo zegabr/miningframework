@@ -158,8 +158,8 @@ class SubplotBase:
         return twin
 
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/left.py
-subplot_class_factory = cbook._make_class_factory( # CReduzido
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/left.py
+subplot_class_factory = cbook._make_class_factory(
     SubplotBase, "{}Subplot", "_axes_class")
 =======
 # this here to support cartopy which was using a private part of the
@@ -206,5 +206,5 @@ def subplot_class_factory(axes_class=None):
                     {'_axes_class': axes_class})
 
 
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/right.py
 Subplot = subplot_class_factory(Axes)  # Provided for backward compatibility.

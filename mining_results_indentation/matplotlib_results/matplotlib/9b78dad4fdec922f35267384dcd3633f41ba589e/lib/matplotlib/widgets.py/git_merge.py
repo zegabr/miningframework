@@ -1686,12 +1686,12 @@ class MultiCursor(Widget):
     axes : list of `matplotlib.axes.Axes`
         The `~.axes.Axes` to attach the cursor to.
 
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
     useblit : bool, default: True
         Use blitting for faster drawing if supported by the backend.
         See the tutorial :doc:`/tutorials/advanced/blitting`
         for details.
-||||||| /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/base.py
+||||||| /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/base.py
         fig, (ax1, ax2) = plt.subplots(nrows=2, sharex=True)
         t = np.arange(0.0, 2.0, 0.01)
         ax1.plot(t, np.sin(2*np.pi*t))
@@ -1699,7 +1699,7 @@ class MultiCursor(Widget):
 =======
     useblit : bool, default: True
         Use blitting for faster drawing if supported by the backend.
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
 
     horizOn : bool, default: False
         Whether to draw the horizontal line.

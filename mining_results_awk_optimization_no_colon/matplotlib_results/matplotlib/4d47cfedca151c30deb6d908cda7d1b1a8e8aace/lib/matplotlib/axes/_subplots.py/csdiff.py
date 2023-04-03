@@ -160,7 +160,7 @@ class SubplotBase:
 
 subplot_class_factory = cbook._make_class_factory(
     SubplotBase, "{}Subplot",
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/left.py
  
 =======
  message="Support for passing None to subplot_class_factory "
@@ -180,6 +180,6 @@ subplot_class_factory = cbook._make_class_factory(
             return axes_class
 
         return type(
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/right.py
 "_axes_class")
 Subplot = subplot_class_factory(Axes)  # Provided for backward compatibility.

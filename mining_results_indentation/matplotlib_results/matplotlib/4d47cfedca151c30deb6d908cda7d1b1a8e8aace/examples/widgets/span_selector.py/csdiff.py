@@ -32,27 +32,27 @@ def onselect(xmin, xmax):
 
     region_x = x[indmin:indmax]
     region_y = y[indmin:indmax]
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/examples/widgets/span_selector.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/examples/widgets/span_selector.py/left.py
 
     if len
 =======
 
     if len(region_x) >= 2:
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/examples/widgets/span_selector.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/examples/widgets/span_selector.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/examples/widgets/span_selector.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/examples/widgets/span_selector.py/left.py
 (region_x) >= 2:
         line2.set_data
 =======
         line2.set_data
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/examples/widgets/span_selector.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/examples/widgets/span_selector.py/right.py
 (region_x, region_y)
         ax2.set_xlim(region_x[0], region_x[-1])
         ax2.set_ylim(region_y.min(), region_y.max())
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/examples/widgets/span_selector.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/examples/widgets/span_selector.py/left.py
         fig.canvas.draw_idle
 =======
         fig.canvas.draw
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/examples/widgets/span_selector.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/examples/widgets/span_selector.py/right.py
 ()
 
 

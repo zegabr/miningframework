@@ -354,25 +354,23 @@ class GraphicsContextCairo(GraphicsContextBase):
             self.ctx.set_source_rgba(rgb[0], rgb[1], rgb[2], _alpha)
         else:
             self.ctx.set_source_rgba(rgb[0], rgb[1], rgb[2], rgb[3])
-# CaFP
-# CaFP
-# CaFP
+
     def set_antialiased(self, b):
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_cairo.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_cairo.py/left.py
         self.ctx.set_antialias(
 =======
         self.ctx.set_antialias
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_cairo.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_cairo.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_cairo.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_cairo.py/left.py
 =======
 (
             cairo.ANTIALIAS_DEFAULT if b else cairo.ANTIALIAS_NONE
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_cairo.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_cairo.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_cairo.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_cairo.py/left.py
             cairo.ANTIALIAS_DEFAULT if b else cairo.ANTIALIAS_NONE)
 =======
 )
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_cairo.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_cairo.py/right.py
 
     def set_capstyle(self, cs):
         self.ctx.set_line_cap(_api.check_getitem(self._capd, capstyle=cs))

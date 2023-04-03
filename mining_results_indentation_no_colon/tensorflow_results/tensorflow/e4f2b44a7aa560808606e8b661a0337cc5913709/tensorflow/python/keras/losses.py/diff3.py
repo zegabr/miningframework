@@ -1403,7 +1403,7 @@ def categorical_hinge(y_true, y_pred):
   `loss = maximum(neg - pos + 1, 0)`
   where `neg=maximum((1-y_true)*y_pred) and pos=sum(y_true*y_pred)`
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/tensorflow_results/tensorflow/e4f2b44a7aa560808606e8b661a0337cc5913709/tensorflow/python/keras/losses.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/tensorflow_results/tensorflow/e4f2b44a7aa560808606e8b661a0337cc5913709/tensorflow/python/keras/losses.py/left.py
   Usage:
   ```python
   y_true = np.random.randint(0, 3, size=(2,))
@@ -1416,7 +1416,7 @@ def categorical_hinge(y_true, y_pred):
   assert np.array_equal(loss.numpy(), np.maximum(0., neg - pos + 1.))
   ```
 =======
-  Standalone usage: # CReduzido
+  Standalone usage:
 
   >>> y_true = np.random.randint(0, 3, size=(2,))
   >>> y_true = tf.keras.utils.to_categorical(y_true, num_classes=3)
@@ -1427,7 +1427,7 @@ def categorical_hinge(y_true, y_pred):
   >>> neg = np.amax((1. - y_true) * y_pred, axis=-1)
   >>> assert np.array_equal(loss.numpy(), np.maximum(0., neg - pos + 1.))
 
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/tensorflow_results/tensorflow/e4f2b44a7aa560808606e8b661a0337cc5913709/tensorflow/python/keras/losses.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/tensorflow_results/tensorflow/e4f2b44a7aa560808606e8b661a0337cc5913709/tensorflow/python/keras/losses.py/right.py
   Args:
     y_true: The ground truth values. `y_true` values are expected to be
     either {-1, +1} or {0, 1}(i.e. a one-hot-encoded tensor).

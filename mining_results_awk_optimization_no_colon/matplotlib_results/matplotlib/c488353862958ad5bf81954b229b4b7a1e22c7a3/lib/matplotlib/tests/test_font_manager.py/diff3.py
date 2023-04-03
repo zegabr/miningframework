@@ -11,15 +11,15 @@ import numpy as np
 import pytest
 
 from matplotlib.font_manager import (
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/c488353862958ad5bf81954b229b4b7a1e22c7a3/lib/matplotlib/tests/test_font_manager.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/c488353862958ad5bf81954b229b4b7a1e22c7a3/lib/matplotlib/tests/test_font_manager.py/left.py
     findfont, findSystemFonts, FontEntry, FontProperties, fontManager,
     json_dump, json_load, get_font, is_opentype_cff_font,
-    MSUserFontDirectories, _get_fontconfig_fonts) # CReduzido
+    MSUserFontDirectories, _get_fontconfig_fonts)
 =======
     findfont, findSystemFonts, FontEntry, FontProperties, fontManager, json_dump,
     json_load, get_font, is_opentype_cff_font, MSUserFontDirectories,
     _get_fontconfig_fonts, ft2font, ttfFontProperty, cbook)
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/c488353862958ad5bf81954b229b4b7a1e22c7a3/lib/matplotlib/tests/test_font_manager.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/c488353862958ad5bf81954b229b4b7a1e22c7a3/lib/matplotlib/tests/test_font_manager.py/right.py
 from matplotlib import pyplot as plt, rc_context
 
 has_fclist = shutil.which('fc-list') is not None
@@ -278,12 +278,12 @@ def test_fontentry_dataclass():
     entry = FontEntry(name="font-name")
 
     assert type(entry.__doc__) == str
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/c488353862958ad5bf81954b229b4b7a1e22c7a3/lib/matplotlib/tests/test_font_manager.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/c488353862958ad5bf81954b229b4b7a1e22c7a3/lib/matplotlib/tests/test_font_manager.py/left.py
     assert entry._repr_html_() == "<span style='font-family:font-name'>font-name</span>"  # noqa: E501
 =======
     assert entry._repr_html_() == "<span style='font-family:font-name'>font-name</span>"
 
-# CReduzido
+
 @pytest.mark.skipif(sys.platform == 'win32', reason='Linux or OS only')
 def test_get_font_names():
     paths_mpl = [cbook._get_data_path('fonts', subdir) for subdir in ['ttf']]
@@ -301,4 +301,4 @@ def test_get_font_names():
     mpl_font_names = sorted(fontManager.get_font_names())
     assert len(available_fonts) == len(mpl_font_names)
     assert available_fonts == mpl_font_names
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/c488353862958ad5bf81954b229b4b7a1e22c7a3/lib/matplotlib/tests/test_font_manager.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/c488353862958ad5bf81954b229b4b7a1e22c7a3/lib/matplotlib/tests/test_font_manager.py/right.py

@@ -1687,7 +1687,7 @@ class MultiCursor(Widget):
         The `~.axes.Axes` to attach the cursor to.
 
     useblit : bool,
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
  default: True
         Use blitting for faster drawing if supported by the backend.
         See the tutorial :doc:`/tutorials/advanced/blitting`
@@ -1699,7 +1699,7 @@ class MultiCursor(Widget):
         Use blitting for faster drawing if supported by the backend.
 
     horizOn : bool
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
 , default: False
         Whether to draw the horizontal line.
 

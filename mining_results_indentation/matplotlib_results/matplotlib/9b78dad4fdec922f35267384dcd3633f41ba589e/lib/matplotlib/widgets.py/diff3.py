@@ -1677,8 +1677,8 @@ class MultiCursor(Widget):
     multiple axes.
 
     For the cursor to remain responsive you must keep a reference to it.
-# CReduzido
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
+
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
     Parameters
     ----------
     canvas : `matplotlib.backend_bases.FigureCanvasBase`
@@ -1714,7 +1714,7 @@ class MultiCursor(Widget):
 
     vertOn: bool, default: True
         Whether to draw the vertical line.
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
 
     Other Parameters
     ----------------

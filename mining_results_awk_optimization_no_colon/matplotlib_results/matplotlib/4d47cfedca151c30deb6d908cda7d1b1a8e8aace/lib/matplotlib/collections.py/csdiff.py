@@ -1458,7 +1458,7 @@ class LineCollection(Collection):
         segments = []
 
         for path in self._paths:
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/collections.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/collections.py/left.py
             vertices = [
                 vertex
                 for vertex, _
@@ -1466,12 +1466,10 @@ class LineCollection(Collection):
 =======
             vertices = [
                 vertex
-                for vertex 
-                # CaFP
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/collections.py/right.py
+                for vertex
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/collections.py/right.py
 ,
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/collections.py/left.py
-                # CaFP
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/collections.py/left.py
  we want to get the data-space values
                 # back and there in no way to know the "right" simplification
                 # threshold so never try.
@@ -1482,7 +1480,7 @@ class LineCollection(Collection):
                 # back and there in no way to know the "right" simplification
                 # threshold so never try.
                 in path.iter_segments
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/collections.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/collections.py/right.py
 (simplify=False)
             ]
             vertices = np.asarray(vertices)

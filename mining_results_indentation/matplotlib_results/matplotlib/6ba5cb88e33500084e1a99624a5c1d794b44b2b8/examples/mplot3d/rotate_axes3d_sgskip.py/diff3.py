@@ -16,8 +16,8 @@ import matplotlib.pyplot as plt
 
 fig = plt.figure()
 ax = fig.add_subplot(projection='3d')
-# CReduzido
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/6ba5cb88e33500084e1a99624a5c1d794b44b2b8/examples/mplot3d/rotate_axes3d_sgskip.py/left.py
+
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/6ba5cb88e33500084e1a99624a5c1d794b44b2b8/examples/mplot3d/rotate_axes3d_sgskip.py/left.py
 # Grab some example data and plot a basic wireframe.
 X, Y, Z = axes3d.get_test_data(0.05)
 ax.plot_wireframe(X, Y, Z, rstride=10, cstride=10)
@@ -55,6 +55,6 @@ ax.plot_wireframe(X, Y, Z, rstride=5, cstride=5)
 # rotate the axes and update
 for angle in range(0, 360):
     ax.view_init(30, angle, 0)
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/6ba5cb88e33500084e1a99624a5c1d794b44b2b8/examples/mplot3d/rotate_axes3d_sgskip.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/6ba5cb88e33500084e1a99624a5c1d794b44b2b8/examples/mplot3d/rotate_axes3d_sgskip.py/right.py
     plt.draw()
     plt.pause(.001)

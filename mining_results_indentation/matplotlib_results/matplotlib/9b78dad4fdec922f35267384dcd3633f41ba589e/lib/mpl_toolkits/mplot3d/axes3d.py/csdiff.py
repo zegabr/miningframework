@@ -2113,20 +2113,18 @@ class Axes3D(Axes):
         Parameters
         ----------
         X, Y, Z : array-like
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/left.py
 ,
 =======
-        # CaFP
 ,
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/left.py
-        # CaFP
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/left.py
             Input data. See `~matplotlib.axes.Axes.contour` for acceptable
             data shapes.
 =======
             Input data. See `~matplotlib.axes.Axes.contour` for acceptable
             data shapes.
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/right.py
         extend3d : bool, default: False
             Whether to extend contour in 3D.
         stride : int
@@ -3381,12 +3379,11 @@ pivot='tail', normalize=False, **kwargs)
         return mtransforms.Bbox.union(batch)
 
     @_preprocess_data()
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/left.py
 =======
 
-        # CaFP
     @_preprocess_data()
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/right.py
     def stem(self, x, y, z, *, linefmt='C0-', markerfmt='C0o', basefmt='C3-',
              bottom=0, label=None, orientation='z'):
         """

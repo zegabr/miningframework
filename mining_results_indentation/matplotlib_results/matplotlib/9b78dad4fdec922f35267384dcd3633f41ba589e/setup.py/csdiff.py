@@ -58,17 +58,15 @@ def has_flag(self, flagname):
         f.write('int main (int argc, char **argv) { return 0; }')
         try:
             self.compile([f.name], extra_postargs=[flagname])
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setup.py/left.py
-        # CaFP
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setup.py/left.py
         except Exception as exc
 =======
         except Exception as exc:
             # https://github.com/pypa/setuptools/issues/2698
             if type(exc).__name__ != "CompileError"
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setup.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setup.py/right.py
 :
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setup.py/left.py
-        # CaFP
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setup.py/left.py
             # https
 =======
                 raise
@@ -77,7 +75,7 @@ def has_flag(self, flagname):
 
 
 class NoopTestCommand(setuptools.command.test.test)
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setup.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setup.py/right.py
 ://github.com/pypa/setuptools/issues/2698
             if type(exc).__name__ != "CompileError":
                 raise

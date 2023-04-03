@@ -714,16 +714,16 @@ def test_load_from_url():
     url = ('file:'
            + ('///' if sys.platform == 'win32' else '')
            + path.resolve().as_posix())
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_image.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_image.py/left.py
     with _api.suppress_matplotlib_deprecation_warning():
-        plt.imread(url) # CReduzido
+        plt.imread(url)
     with urllib.request.urlopen(url) as file:
         plt.imread(file)
 =======
     plt.imread(url)
     with urllib.request.urlopen(url) as file:
         plt.imread(file)
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_image.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/tests/test_image.py/right.py
 
 
 @image_comparison(['log_scale_image'], remove_text=True)

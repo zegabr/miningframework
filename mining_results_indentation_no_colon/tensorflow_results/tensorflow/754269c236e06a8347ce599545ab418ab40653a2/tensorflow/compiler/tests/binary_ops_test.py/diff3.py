@@ -750,13 +750,13 @@ class BinaryOpsTest(xla_test.XLATestCase):
           gen_math_ops.floor_mod,
           np.array([int_min, -1, 1, int_max], dtype=dtype).reshape([1, 4]),
           np.array([int_min, -1, 1, int_max], dtype=dtype).reshape([4, 1]),
-<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/tensorflow_results/tensorflow/754269c236e06a8347ce599545ab418ab40653a2/tensorflow/compiler/tests/binary_ops_test.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/tensorflow_results/tensorflow/754269c236e06a8347ce599545ab418ab40653a2/tensorflow/compiler/tests/binary_ops_test.py/left.py
           expected=np.array([[0, -1, -1 * int_max, -1], [0, 0, 0, 0], 
                              [0, 0, 0, 0], [int_max - 1, int_max - 1, 1, 0]],
 =======
-          expected=np.array([[0, -1, -1 * int_max, -1], [0, 0, 0, 0], # D3FP
+          expected=np.array([[0, -1, -1 * int_max, -1], [0, 0, 0, 0],
                              [0, 0, 0, 0], [int_max - 1, int_max - 1, 1, 0]],
->>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/tensorflow_results/tensorflow/754269c236e06a8347ce599545ab418ab40653a2/tensorflow/compiler/tests/binary_ops_test.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/tensorflow_results/tensorflow/754269c236e06a8347ce599545ab418ab40653a2/tensorflow/compiler/tests/binary_ops_test.py/right.py
                             dtype=dtype))
       self._testBinary(
           gen_math_ops.truncate_mod,

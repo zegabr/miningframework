@@ -1648,14 +1648,14 @@ default: %(va)s
             # multi-line string
             layout = inspect.cleandoc(layout)
             return [list(ln) for ln in layout.strip('\n').split('\n')]
-# CResolvido
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
     def subplot_mosaic(self, mosaic, *, sharex=False, sharey=False,
                        subplot_kw=None, gridspec_kw=None, empty_sentinel='.'):
 =======
     def subplot_mosaic(self, mosaic, *, subplot_kw=None, gridspec_kw=None,
                        empty_sentinel='.'):
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
         """
         Build a layout of Axes based on ASCII art or nested lists.
 
@@ -1733,8 +1733,7 @@ default: %(va)s
         subplot_kw = subplot_kw or {}
         gridspec_kw = gridspec_kw or {}
         # special-case string input
-        # CReduzido
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
         if isinstance(mosaic, str):
             mosaic = self._normalize_grid_string(mosaic)
         # Only accept strict bools to allow a possible future API expansion.
@@ -1742,7 +1741,7 @@ default: %(va)s
 =======
         if isinstance(mosaic, str):
             mosaic = self._normalize_grid_string(mosaic)
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 
         def _make_array(inp):
             """
@@ -1899,7 +1898,7 @@ default: %(va)s
         mosaic = _make_array(mosaic)
         rows, cols = mosaic.shape
         gs = self.add_gridspec(rows, cols, **gridspec_kw)
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
         ret = _do_layout(gs, mosaic, *_identify_keys_and_nested(mosaic))
         ax0 = next(iter(ret.values()))
         for ax in ret.values():
@@ -1911,7 +1910,7 @@ default: %(va)s
                 ax._label_outer_yaxis()
 =======
         ret = _do_layout(gs, mosaic, *_identify_keys_and_nested(mosaic))
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
         for k, ax in ret.items():
             if isinstance(k, str):
                 ax.set_label(k)
@@ -2024,7 +2023,7 @@ class SubFigure(FigureBase):
             return
         # need to figure out *where* this subplotspec is.
         gs = self._subplotspec.get_gridspec()
-<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
         wr = np.asarray(gs.get_width_ratios())
         hr = np.asarray(gs.get_height_ratios())
         dx = wr[self._subplotspec.colspan].sum() / wr.sum()
@@ -2056,7 +2055,7 @@ class SubFigure(FigureBase):
             y0 += 1 - (np.sum(hr[:self._subplotspec.rowspan.stop]) /
                        np.sum(hr))
 
->>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
         if self.bbox_relative is None:
             self.bbox_relative = Bbox.from_bounds(x0, y0, dx, dy)
         else:

@@ -43,9 +43,9 @@ from .signals import template_rendered as template_rendered
 from .templating import render_template as render_template
 from .templating import render_template_string as render_template_string
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3_no_colon/flask_results/flask/5bd959fbec98cb14c785868e8890d6850971038e/src/flask/__init__.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization_no_colon/flask_results/flask/5bd959fbec98cb14c785868e8890d6850971038e/src/flask/__init__.py/left.py
 __version__ = "2.0.1.dev0"
-||||||| /home/ze/miningframework/mining_results_version3_3_no_colon/flask_results/flask/5bd959fbec98cb14c785868e8890d6850971038e/src/flask/__init__.py/base.py
+||||||| /home/ze/miningframework/mining_results_awk_optimization_no_colon/flask_results/flask/5bd959fbec98cb14c785868e8890d6850971038e/src/flask/__init__.py/base.py
     :copyright: 2010 Pallets
     :license: BSD-3-Clause
 """
@@ -151,4 +151,4 @@ from .templating import render_template
 from .templating import render_template_string
 
 __version__ = "1.1.3"
->>>>>>> /home/ze/miningframework/mining_results_version3_3_no_colon/flask_results/flask/5bd959fbec98cb14c785868e8890d6850971038e/src/flask/__init__.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization_no_colon/flask_results/flask/5bd959fbec98cb14c785868e8890d6850971038e/src/flask/__init__.py/right.py
