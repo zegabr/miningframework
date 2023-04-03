@@ -793,7 +793,7 @@ class ColorbarBase:
     def _add_solids_pcolormesh(self, X, Y, C):
         _log.debug('Setting pcolormesh')
         if C.shape[0] == Y.shape[0]:
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/colorbar.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/colorbar.py/left.py
             # trim the last one to be compatible with old behavior.
             C = C[
 =======
@@ -802,8 +802,8 @@ class ColorbarBase:
             # trim the last one to be compatible with old behavior.
             C = C[:-1]
         if self.orientation == 'vertical'
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/colorbar.py/right.py
-:-1] # CaFP
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/colorbar.py/right.py
+:-1]
         self.solids = self.ax.pcolormesh(
             X, Y, C, cmap=self.cmap, norm=self.norm, alpha=self.alpha,
             edgecolors='none', shading='flat')

@@ -613,15 +613,14 @@ if link_github:
             return None
 
         version = parse(matplotlib.__version__)
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/doc/conf.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/doc/conf.py/left.py
         tag = 'main' if version.is_devrelease else f'v{version.public}'
         return (
 =======
         tag = 'master' if version.is_devrelease else f'v{version.public}'
         return (
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/doc/conf.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/doc/conf.py/right.py
 "https://github.com/matplotlib/matplotlib/blob"
                 f"/{tag}/lib/{fn}{linespec}")
 else:
     extensions.append('sphinx.ext.viewcode')
-# CReduzido

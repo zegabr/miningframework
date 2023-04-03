@@ -1,4 +1,10 @@
-"""
+
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
 `matplotlib.figure` implements the following classes
 $$$$$$$:
 $$$$$$$
@@ -26,7 +32,13 @@ $$$$$$$.
 
 `SubplotParams`
     Control the default spacing between subplots.
-"""
+
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
 
 import inspect
 import logging
@@ -121,7 +133,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-    """
+    
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
     Specialization of Stack
 $$$$$$$,
 $$$$$$$ to handle all tracking of Axes in a Figure.
@@ -134,7 +152,13 @@ $$$$$$$ where ``ind`` is a serial index
     tracking the order in which axes were added.
 
     AxesStack is a callable; calling it returns the current axes.
-    """
+    
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
 
     def __init__
 $$$$$$$(
@@ -161,9 +185,21 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Return a list of the Axes instances that have been added to the figure.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         return [a for i
 $$$$$$$,
 $$$$$$$ a in sorted
@@ -210,7 +246,19 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """Remove the axes from the stack."""
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$Remove the axes from the stack.
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         super
 $$$$$$$(
 $$$$$$$
@@ -234,13 +282,25 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Move the given axes
 $$$$$$$,
 $$$$$$$ which must already exist in the stack
 $$$$$$$,
 $$$$$$$ to the top.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         return super
 $$$$$$$(
 $$$$$$$
@@ -264,13 +324,25 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Add Axes *a* to the stack.
 
         If *a* is already on the stack
 $$$$$$$,
 $$$$$$$ don't add it again.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         # All the error checking may be unnecessary; but this method
         # is called so seldom that the overhead is negligible.
         _api.check_isinstance
@@ -310,13 +382,25 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Return the active axes.
 
         If no axes exists on the stack
 $$$$$$$,
 $$$$$$$ then returns None.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         if not len
 $$$$$$$(
 $$$$$$$self._elements
@@ -352,9 +436,21 @@ $$$$$$$
 class SubplotParams
 $$$$$$$:
 $$$$$$$
-    """
+    
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
     A class to hold the parameters for a subplot.
-    """
+    
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
     def __init__
 $$$$$$$(
 $$$$$$$self
@@ -375,7 +471,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Defaults are given by 
 $$$$$$$:
 $$$$$$$rc
@@ -426,19 +528,49 @@ $$$$$$$ float
 $$$$$$$,
 $$$$$$$
             as a fraction of the average Axes height.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         self.validate $= True
-        for key in ["left"
+        for key in [
+$$$$$$$"
+$$$$$$$left
+$$$$$$$"
+$$$$$$$
 $$$$$$$,
-$$$$$$$ "bottom"
+$$$$$$$ 
+$$$$$$$"
+$$$$$$$bottom
+$$$$$$$"
+$$$$$$$
 $$$$$$$,
-$$$$$$$ "right"
+$$$$$$$ 
+$$$$$$$"
+$$$$$$$right
+$$$$$$$"
+$$$$$$$
 $$$$$$$,
-$$$$$$$ "top"
+$$$$$$$ 
+$$$$$$$"
+$$$$$$$top
+$$$$$$$"
+$$$$$$$
 $$$$$$$,
-$$$$$$$ "wspace"
+$$$$$$$ 
+$$$$$$$"
+$$$$$$$wspace
+$$$$$$$"
+$$$$$$$
 $$$$$$$,
-$$$$$$$ "hspace"]
+$$$$$$$ 
+$$$$$$$"
+$$$$$$$hspace
+$$$$$$$"
+$$$$$$$]
 $$$$$$$:
 $$$$$$$
             setattr
@@ -447,7 +579,11 @@ $$$$$$$self
 $$$$$$$,
 $$$$$$$ key
 $$$$$$$,
-$$$$$$$ mpl.rcParams[f"figure.subplot.{key}"]
+$$$$$$$ mpl.rcParams[f
+$$$$$$$"
+$$$$$$$figure.subplot.{key}
+$$$$$$$"
+$$$$$$$]
 $$$$$$$)
 $$$$$$$
         self.update
@@ -486,9 +622,21 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Update the dimensions of the passed parameters. *None* means unchanged.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         if self.validate
 $$$$$$$:
 $$$$$$$
@@ -567,14 +715,26 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-    """
+    
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
     Base class for `.figure.Figure` and `.figure.SubFigure` containing the
     methods that add artists to the figure or subfigure
 $$$$$$$,
 $$$$$$$ create Axes
 $$$$$$$,
 $$$$$$$ etc.
-    """
+    
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
     def __init__
 $$$$$$$(
 $$$$$$$self
@@ -609,7 +769,11 @@ $$$$$$$
         # groupers to keep track of x and y labels we want to align.
         # see self.align_xlabels and self.align_ylabels and
         # axis._get_tick_boxes_siblings
-        self._align_label_groups $= {"x"
+        self._align_label_groups $= {
+$$$$$$$"
+$$$$$$$x
+$$$$$$$"
+$$$$$$$
 $$$$$$$:
 $$$$$$$ cbook.Grouper
 $$$$$$$(
@@ -617,7 +781,11 @@ $$$$$$$
 $$$$$$$)
 $$$$$$$
 $$$$$$$,
-$$$$$$$ "y"
+$$$$$$$ 
+$$$$$$$"
+$$$$$$$y
+$$$$$$$"
+$$$$$$$
 $$$$$$$:
 $$$$$$$ cbook.Grouper
 $$$$$$$(
@@ -652,7 +820,19 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """Also runs apply_aspect"""
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$Also runs apply_aspect
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         artists $= self.get_children
 $$$$$$$(
 $$$$$$$
@@ -809,7 +989,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Date ticklabels often overlap
 $$$$$$$,
 $$$$$$$ so it is useful to rotate them
@@ -867,26 +1053,48 @@ $$$$$$$ default
 $$$$$$$:
 $$$$$$$ 'major'
             Selects which ticklabels to rotate.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         if which is None
 $$$$$$$:
 $$$$$$$
             _api.warn_deprecated
 $$$$$$$(
 $$$$$$$
-                "3.3"
+                
+$$$$$$$"
+$$$$$$$3.3
+$$$$$$$"
+$$$$$$$
 $$$$$$$,
-$$$$$$$ message$="Support for passing which$=None to mean "
-                "which$='major' is deprecated since %
+$$$$$$$ message$=
+$$$$$$$"
+$$$$$$$Support for passing which$=None to mean 
+$$$$$$$"
+$$$$$$$
+                
+$$$$$$$"
+$$$$$$$which$='major' is deprecated since %
 $$$$$$$(
 $$$$$$$since
 $$$$$$$)
-$$$$$$$s and will be "
-                "removed %
+$$$$$$$s and will be 
+$$$$$$$"
+$$$$$$$
+                
+$$$$$$$"
+$$$$$$$removed %
 $$$$$$$(
 $$$$$$$removal
 $$$$$$$)
-$$$$$$$s."
+$$$$$$$s.
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
         allsubplots $= all
@@ -1003,7 +1211,19 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """Get a list of artists contained in the figure."""
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$Get a list of artists contained in the figure.
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         return [self.patch
 $$$$$$$,
 $$$$$$$
@@ -1043,7 +1263,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Test whether the mouse event occurred on the figure.
 
         Returns
@@ -1051,7 +1277,13 @@ $$$$$$$
             bool
 $$$$$$$,
 $$$$$$$ {}
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         inside
 $$$$$$$,
 $$$$$$$ info $= self._default_contains
@@ -1089,9 +1321,21 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Return the figure bounding box in display space. Arguments are ignored.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         return self.bbox
 
     def _suplabels
@@ -1107,7 +1351,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Add a centered %
 $$$$$$$(
 $$$$$$$name
@@ -1257,7 +1507,13 @@ $$$$$$$`figure.titleweight` are ignored in this case.
 
         **kwargs
             Additional kwargs are `matplotlib.text.Text` properties.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
 
         suplab $= getattr
 $$$$$$$(
@@ -1580,7 +1836,19 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """Get the edge color of the Figure rectangle."""
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$Get the edge color of the Figure rectangle.
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         return self.patch.get_edgecolor
 $$$$$$$(
 $$$$$$$
@@ -1594,7 +1862,19 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """Get the face color of the Figure rectangle."""
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$Get the face color of the Figure rectangle.
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         return self.patch.get_facecolor
 $$$$$$$(
 $$$$$$$
@@ -1608,7 +1888,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Return the figure's background patch visibility
 $$$$$$$,
 $$$$$$$ i.e.
@@ -1618,7 +1904,13 @@ $$$$$$$(
 $$$$$$$
 $$$$$$$)
 $$$$$$$``.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         return self.patch.get_visible
 $$$$$$$(
 $$$$$$$
@@ -1634,7 +1926,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Set the line width of the Figure rectangle.
 
         Parameters
@@ -1642,7 +1940,13 @@ $$$$$$$
         linewidth 
 $$$$$$$:
 $$$$$$$ number
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         self.patch.set_linewidth
 $$$$$$$(
 $$$$$$$linewidth
@@ -1656,9 +1960,21 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Get the line width of the Figure rectangle.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         return self.patch.get_linewidth
 $$$$$$$(
 $$$$$$$
@@ -1674,7 +1990,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Set the edge color of the Figure rectangle.
 
         Parameters
@@ -1682,7 +2004,13 @@ $$$$$$$
         color 
 $$$$$$$:
 $$$$$$$ color
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         self.patch.set_edgecolor
 $$$$$$$(
 $$$$$$$color
@@ -1698,7 +2026,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Set the face color of the Figure rectangle.
 
         Parameters
@@ -1706,7 +2040,13 @@ $$$$$$$
         color 
 $$$$$$$:
 $$$$$$$ color
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         self.patch.set_facecolor
 $$$$$$$(
 $$$$$$$color
@@ -1722,7 +2062,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Set the figure's background patch visibility
 $$$$$$$,
 $$$$$$$ i.e.
@@ -1738,7 +2084,13 @@ $$$$$$$``.
         b 
 $$$$$$$:
 $$$$$$$ bool
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         self.patch.set_visible
 $$$$$$$(
 $$$$$$$b
@@ -1765,7 +2117,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Add an `.Artist` to the figure.
 
         Usually artists are added to Axes objects using `.Axes.add_artist`;
@@ -1795,7 +2153,13 @@ $$$$$$$ False
         -------
         `~matplotlib.artist.Artist`
             The added artist.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         artist.set_figure
 $$$$$$$(
 $$$$$$$self
@@ -1845,7 +2209,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Add an Axes to the figure.
 
         Call signatures
@@ -2058,7 +2428,13 @@ $$$$$$$(
 $$$$$$$ax
 $$$$$$$)
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
 
         if not len
 $$$$$$$(
@@ -2070,15 +2446,25 @@ $$$$$$$
             _api.warn_deprecated
 $$$$$$$(
 $$$$$$$
-                "3.3"
+                
+$$$$$$$"
+$$$$$$$3.3
+$$$$$$$"
+$$$$$$$
 $$$$$$$,
 $$$$$$$
-                message$="Calling add_axes
+                message$=
+$$$$$$$"
+$$$$$$$Calling add_axes
 $$$$$$$(
 $$$$$$$
 $$$$$$$)
-$$$$$$$ without argument is "
-                "deprecated since %
+$$$$$$$ without argument is 
+$$$$$$$"
+$$$$$$$
+                
+$$$$$$$"
+$$$$$$$deprecated since %
 $$$$$$$(
 $$$$$$$since
 $$$$$$$)
@@ -2086,12 +2472,18 @@ $$$$$$$s and will be removed %
 $$$$$$$(
 $$$$$$$removal
 $$$$$$$)
-$$$$$$$s. "
-                "You may want to use add_subplot
+$$$$$$$s. 
+$$$$$$$"
+$$$$$$$
+                
+$$$$$$$"
+$$$$$$$You may want to use add_subplot
 $$$$$$$(
 $$$$$$$
 $$$$$$$)
-$$$$$$$ instead."
+$$$$$$$ instead.
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
             return
@@ -2108,11 +2500,15 @@ $$$$$$$
                 raise TypeError
 $$$$$$$(
 $$$$$$$
-                    "add_axes
+                    
+$$$$$$$"
+$$$$$$$add_axes
 $$$$$$$(
 $$$$$$$
 $$$$$$$)
-$$$$$$$ got multiple values for argument 'rect'"
+$$$$$$$ got multiple values for argument 'rect'
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
             args $= 
@@ -2148,7 +2544,11 @@ $$$$$$$
                 raise ValueError
 $$$$$$$(
 $$$$$$$
-                    "The Axes must have been created in the present figure"
+                    
+$$$$$$$"
+$$$$$$$The Axes must have been created in the present figure
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
         else
@@ -2224,7 +2624,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Add an `~.axes.Axes` to the figure as part of a subplot arrangement.
 
         Call signatures
@@ -2530,7 +2936,11 @@ $$$$$$$  # subplot sharing x-axis with ax1
 $$$$$$$(
 $$$$$$$235
 $$$$$$$,
-$$$$$$$ facecolor$="red"
+$$$$$$$ facecolor$=
+$$$$$$$"
+$$$$$$$red
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$  # red subplot
 
@@ -2544,7 +2954,13 @@ $$$$$$$(
 $$$$$$$ax1
 $$$$$$$)
 $$$$$$$  # add ax1 back to the figure
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         if 'figure' in kwargs
 $$$$$$$:
 $$$$$$$
@@ -2557,11 +2973,15 @@ $$$$$$$ it is not allowed here.
             raise TypeError
 $$$$$$$(
 $$$$$$$
-                "add_subplot
+                
+$$$$$$$"
+$$$$$$$add_subplot
 $$$$$$$(
 $$$$$$$
 $$$$$$$)
-$$$$$$$ got an unexpected keyword argument 'figure'"
+$$$$$$$ got an unexpected keyword argument 'figure'
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
 
@@ -2589,8 +3009,16 @@ $$$$$$$:
 $$$$$$$
                 raise ValueError
 $$$$$$$(
-$$$$$$$"The Subplot must have been created in "
-                                 "the present figure"
+$$$$$$$
+$$$$$$$"
+$$$$$$$The Subplot must have been created in 
+$$$$$$$"
+$$$$$$$
+                                 
+$$$$$$$"
+$$$$$$$the present figure
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
         else
@@ -2717,7 +3145,19 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """Private helper for `add_axes` and `add_subplot`."""
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$Private helper for `add_axes` and `add_subplot`.
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         self._axstack.add
 $$$$$$$(
 $$$$$$$ax
@@ -2742,9 +3182,17 @@ $$$$$$$
 
     @_api.make_keyword_only
 $$$$$$$(
-$$$$$$$"3.3"
+$$$$$$$
+$$$$$$$"
+$$$$$$$3.3
+$$$$$$$"
+$$$$$$$
 $$$$$$$,
-$$$$$$$ "sharex"
+$$$$$$$ 
+$$$$$$$"
+$$$$$$$sharex
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
     def subplots
@@ -2769,7 +3217,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Add a set of subplots to this figure.
 
         This utility wrapper makes it convenient to create common layouts of
@@ -3085,7 +3539,13 @@ $$$$$$$,
 $$$$$$$ sharey$=True
 $$$$$$$)
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         if gridspec_kw is None
 $$$$$$$:
 $$$$$$$
@@ -3124,9 +3584,21 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Remove the `~.axes.Axes` *ax* from the figure; update the current Axes.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
 
         def _reset_locators_and_formatters
 $$$$$$$(
@@ -3258,7 +3730,11 @@ $$$$$$$)
 $$$$$$$
         self._axobservers.process
 $$$$$$$(
-$$$$$$$"_axes_change_event"
+$$$$$$$
+$$$$$$$"
+$$$$$$$_axes_change_event
+$$$$$$$"
+$$$$$$$
 $$$$$$$,
 $$$$$$$ self
 $$$$$$$)
@@ -3330,7 +3806,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Place a legend on the figure.
 
         Call signatures
@@ -3593,7 +4075,13 @@ $$$$$$$:
 $$$$$$$doc
 $$$$$$$:
 $$$$$$$`/tutorials/intermediate/legend_guide` for details.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
 
         handles
 $$$$$$$,
@@ -3624,12 +4112,26 @@ $$$$$$$
             # _api.warn_deprecated
 $$$$$$$(
 $$$$$$$
-            #     "2.1"
+            #     
+$$$$$$$"
+$$$$$$$2.1
+$$$$$$$"
+$$$$$$$
 $$$$$$$,
 $$$$$$$
-            #     message$="Figure.legend will accept no more than two "
-            #     "positional arguments in the future.  Use "
-            #     "'fig.legend
+            #     message$=
+$$$$$$$"
+$$$$$$$Figure.legend will accept no more than two 
+$$$$$$$"
+$$$$$$$
+            #     
+$$$$$$$"
+$$$$$$$positional arguments in the future.  Use 
+$$$$$$$"
+$$$$$$$
+            #     
+$$$$$$$"
+$$$$$$$'fig.legend
 $$$$$$$(
 $$$$$$$handles
 $$$$$$$,
@@ -3637,8 +4139,14 @@ $$$$$$$ labels
 $$$$$$$,
 $$$$$$$ loc$=location
 $$$$$$$)
-$$$$$$$' "
-            #     "instead."
+$$$$$$$' 
+$$$$$$$"
+$$$$$$$
+            #     
+$$$$$$$"
+$$$$$$$instead.
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
             # kwargs['loc'] $= extra_args[0]
@@ -3697,7 +4205,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Add text to figure.
 
         Parameters
@@ -3758,7 +4272,13 @@ $$$$$$$s
         --------
         .Axes.text
         .pyplot.text
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         effective_kwargs $= {
             'transform'
 $$$$$$$:
@@ -3821,11 +4341,23 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """%
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$%
 $$$$$$$(
 $$$$$$$colorbar_doc
 $$$$$$$)
-$$$$$$$s"""
+$$$$$$$s
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         if ax is None
 $$$$$$$:
 $$$$$$$
@@ -3840,7 +4372,11 @@ $$$$$$$hasattr
 $$$$$$$(
 $$$$$$$mappable
 $$$$$$$,
-$$$$$$$ "axes"
+$$$$$$$ 
+$$$$$$$"
+$$$$$$$axes
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$ and ax is not mappable.axes
                     and cax is None
@@ -3851,29 +4387,53 @@ $$$$$$$
                 _api.warn_deprecated
 $$$$$$$(
 $$$$$$$
-                    "3.4"
+                    
+$$$$$$$"
+$$$$$$$3.4
+$$$$$$$"
+$$$$$$$
 $$$$$$$,
-$$$$$$$ message$="Starting from Matplotlib 3.6
+$$$$$$$ message$=
+$$$$$$$"
+$$$$$$$Starting from Matplotlib 3.6
 $$$$$$$,
 $$$$$$$ colorbar
 $$$$$$$(
 $$$$$$$
 $$$$$$$)
-$$$$$$$ "
-                    "will steal space from the mappable's axes
+$$$$$$$ 
+$$$$$$$"
+$$$$$$$
+                    
+$$$$$$$"
+$$$$$$$will steal space from the mappable's axes
 $$$$$$$,
-$$$$$$$ rather than "
-                    "from the current axes
+$$$$$$$ rather than 
+$$$$$$$"
+$$$$$$$
+                    
+$$$$$$$"
+$$$$$$$from the current axes
 $$$$$$$,
-$$$$$$$ to place the colorbar.  To "
-                    "silence this warning
+$$$$$$$ to place the colorbar.  To 
+$$$$$$$"
+$$$$$$$
+                    
+$$$$$$$"
+$$$$$$$silence this warning
 $$$$$$$,
-$$$$$$$ explicitly pass the 'ax' argument "
-                    "to colorbar
+$$$$$$$ explicitly pass the 'ax' argument 
+$$$$$$$"
+$$$$$$$
+                    
+$$$$$$$"
+$$$$$$$to colorbar
 $$$$$$$(
 $$$$$$$
 $$$$$$$)
-$$$$$$$."
+$$$$$$$.
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
 
@@ -3986,7 +4546,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Adjust the subplot layout parameters.
 
         Unset parameters are left unmodified; initial values are given by
@@ -4052,7 +4618,13 @@ $$$$$$$ optional
 $$$$$$$,
 $$$$$$$
             as a fraction of the average Axes height.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         if self.get_constrained_layout
 $$$$$$$(
 $$$$$$$
@@ -4068,11 +4640,23 @@ $$$$$$$
             _api.warn_external
 $$$$$$$(
 $$$$$$$
-                "This figure was using constrained_layout
+                
+$$$$$$$"
+$$$$$$$This figure was using constrained_layout
 $$$$$$$,
-$$$$$$$ but that is "
-                "incompatible with subplots_adjust and/or tight_layout; "
-                "disabling constrained_layout."
+$$$$$$$ but that is 
+$$$$$$$"
+$$$$$$$
+                
+$$$$$$$"
+$$$$$$$incompatible with subplots_adjust and/or tight_layout; 
+$$$$$$$"
+$$$$$$$
+                
+$$$$$$$"
+$$$$$$$disabling constrained_layout.
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
         self.subplotpars.update
@@ -4126,7 +4710,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Align the xlabels of subplots in the same subplot column if label
         alignment is being done automatically 
 $$$$$$$(
@@ -4215,7 +4805,13 @@ $$$$$$$(
 $$$$$$$
 $$$$$$$)
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         if axs is None
 $$$$$$$:
 $$$$$$$
@@ -4297,7 +4893,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Align the ylabels of subplots in the same subplot column if label
         alignment is being done automatically 
 $$$$$$$(
@@ -4387,7 +4989,13 @@ $$$$$$$(
 $$$$$$$
 $$$$$$$)
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         if axs is None
 $$$$$$$:
 $$$$$$$
@@ -4469,7 +5077,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Align the xlabels and ylabels of subplots with the same subplots
         row or column 
 $$$$$$$(
@@ -4502,7 +5116,13 @@ $$$$$$$ of `~matplotlib.axes.Axes`
         matplotlib.figure.Figure.align_xlabels
 
         matplotlib.figure.Figure.align_ylabels
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         self.align_xlabels
 $$$$$$$(
 $$$$$$$axs$=axs
@@ -4527,7 +5147,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Return a `.GridSpec` that has this figure as a parent.  This allows
         complex layout of Axes in the figure.
 
@@ -4611,7 +5237,13 @@ $$$$$$$ 1]
 $$$$$$$)
 $$$$$$$
 
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
 
         _ $= kwargs.pop
 $$$$$$$(
@@ -4664,7 +5296,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Add a subfigure to this figure or subfigure.
 
         A subfigure has the same artist methods as a figure
@@ -4751,7 +5389,13 @@ $$$$$$$``.
             If not given
 $$$$$$$,
 $$$$$$$ all rows will have the same height.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         gs $= GridSpec
 $$$$$$$(
 $$$$$$$nrows$=nrows
@@ -4849,7 +5493,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Add a `~.figure.SubFigure` to the figure as part of a subplot
         arrangement.
 
@@ -4873,7 +5523,13 @@ $$$$$$$ `.gridspec.SubplotSpec`
         See Also
         --------
         .Figure.subfigures
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         sf $= SubFigure
 $$$$$$$(
 $$$$$$$self
@@ -4895,7 +5551,19 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """Set the current Axes to be *a* and return *a*."""
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$Set the current Axes to be *a* and return *a*.
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         self._axstack.bubble
 $$$$$$$(
 $$$$$$$a
@@ -4903,7 +5571,11 @@ $$$$$$$)
 $$$$$$$
         self._axobservers.process
 $$$$$$$(
-$$$$$$$"_axes_change_event"
+$$$$$$$
+$$$$$$$"
+$$$$$$$_axes_change_event
+$$$$$$$"
+$$$$$$$
 $$$$$$$,
 $$$$$$$ self
 $$$$$$$)
@@ -4920,7 +5592,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Get the current Axes
 $$$$$$$,
 $$$$$$$ creating one if necessary.
@@ -4939,22 +5617,38 @@ $$$$$$$Axes_kwdoc
 $$$$$$$)
 $$$$$$$s
 
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         if kwargs
 $$$$$$$:
 $$$$$$$
             _api.warn_deprecated
 $$$$$$$(
 $$$$$$$
-                "3.4"
+                
+$$$$$$$"
+$$$$$$$3.4
+$$$$$$$"
+$$$$$$$
 $$$$$$$,
 $$$$$$$
-                message$="Calling gca
+                message$=
+$$$$$$$"
+$$$$$$$Calling gca
 $$$$$$$(
 $$$$$$$
 $$$$$$$)
-$$$$$$$ with keyword arguments was deprecated "
-                "in Matplotlib %
+$$$$$$$ with keyword arguments was deprecated 
+$$$$$$$"
+$$$$$$$
+                
+$$$$$$$"
+$$$$$$$in Matplotlib %
 $$$$$$$(
 $$$$$$$since
 $$$$$$$)
@@ -4968,30 +5662,52 @@ $$$$$$$ gca
 $$$$$$$(
 $$$$$$$
 $$$$$$$)
-$$$$$$$ will "
-                "take no keyword arguments. The gca
+$$$$$$$ will 
+$$$$$$$"
+$$$$$$$
+                
+$$$$$$$"
+$$$$$$$take no keyword arguments. The gca
 $$$$$$$(
 $$$$$$$
 $$$$$$$)
-$$$$$$$ function should only be "
-                "used to get the current axes
+$$$$$$$ function should only be 
+$$$$$$$"
+$$$$$$$
+                
+$$$$$$$"
+$$$$$$$used to get the current axes
 $$$$$$$,
 $$$$$$$ or if no axes exist
 $$$$$$$,
-$$$$$$$ create "
-                "new axes with default keyword arguments. To create a new "
-                "axes with non-default arguments
+$$$$$$$ create 
+$$$$$$$"
+$$$$$$$
+                
+$$$$$$$"
+$$$$$$$new axes with default keyword arguments. To create a new 
+$$$$$$$"
+$$$$$$$
+                
+$$$$$$$"
+$$$$$$$axes with non-default arguments
 $$$$$$$,
 $$$$$$$ use plt.axes
 $$$$$$$(
 $$$$$$$
 $$$$$$$)
-$$$$$$$ or "
-                "plt.subplot
+$$$$$$$ or 
+$$$$$$$"
+$$$$$$$
+                
+$$$$$$$"
+$$$$$$$plt.subplot
 $$$$$$$(
 $$$$$$$
 $$$$$$$)
-$$$$$$$."
+$$$$$$$.
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
         if self._axstack.empty
@@ -5029,7 +5745,13 @@ $$$$$$$
 $$$$$$$:
 $$$$$$$
         # Helper for `~matplotlib.pyplot.gci`.  Do not use elsewhere.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Get the current colorable artist.
 
         Specifically
@@ -5063,7 +5785,13 @@ $$$$$$$(
 $$$$$$$get current image
 $$$$$$$)
 $$$$$$$.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         # Look first for an image in the current Axes
 $$$$$$$:
 $$$$$$$
@@ -5133,7 +5861,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Handle the args/kwargs to add_axes/add_subplot/gca
 $$$$$$$,
 $$$$$$$ returning
@@ -5151,7 +5885,13 @@ $$$$$$$)
 $$$$$$$
 
         which can be used for new Axes initialization/identification.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         if axes_class is not None
 $$$$$$$:
 $$$$$$$
@@ -5161,7 +5901,11 @@ $$$$$$$
                 raise ValueError
 $$$$$$$(
 $$$$$$$
-                    "Cannot combine 'axes_class' and 'projection' or 'polar'"
+                    
+$$$$$$$"
+$$$$$$$Cannot combine 'axes_class' and 'projection' or 'polar'
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
             projection_class $= axes_class
@@ -5178,10 +5922,18 @@ $$$$$$$
                     raise ValueError
 $$$$$$$(
 $$$$$$$
-                        f"polar$={polar}
+                        f
+$$$$$$$"
+$$$$$$$polar$={polar}
 $$$$$$$,
-$$$$$$$ yet projection$={projection!r}. "
-                        "Only one of these arguments should be supplied."
+$$$$$$$ yet projection$={projection!r}. 
+$$$$$$$"
+$$$$$$$
+                        
+$$$$$$$"
+$$$$$$$Only one of these arguments should be supplied.
+$$$$$$$"
+$$$$$$$
                     
 $$$$$$$)
 $$$$$$$
@@ -5228,12 +5980,20 @@ $$$$$$$
                 raise TypeError
 $$$$$$$(
 $$$$$$$
-                    f"projection must be a string
+                    f
+$$$$$$$"
+$$$$$$$projection must be a string
 $$$$$$$,
-$$$$$$$ None or implement a "
-                    f"_as_mpl_axes method
+$$$$$$$ None or implement a 
+$$$$$$$"
+$$$$$$$
+                    f
+$$$$$$$"
+$$$$$$$_as_mpl_axes method
 $$$$$$$,
-$$$$$$$ not {projection!r}"
+$$$$$$$ not {projection!r}
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
         if projection_class.__name__ $=$= 'Axes3D'
@@ -5307,7 +6067,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Return a 
 $$$$$$$(
 $$$$$$$tight
@@ -5358,7 +6124,13 @@ $$$$$$$(
 $$$$$$$in figure inches
 $$$$$$$)
 $$$$$$$.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
 
         bb $= []
         if bbox_extra_artists is None
@@ -5546,7 +6318,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Build a layout of Axes based on ASCII art or nested lists.
 
         This is a helper function to build complex GridSpec layouts visually.
@@ -5646,7 +6424,11 @@ $$$$$$$:
 $$$$$$$ object
 $$$$$$$,
 $$$$$$$ optional
-            Entry in the layout to mean "leave this space empty".  Defaults
+            Entry in the layout to mean 
+$$$$$$$"
+$$$$$$$leave this space empty
+$$$$$$$"
+$$$$$$$.  Defaults
             to ``'.'``. Note
 $$$$$$$,
 $$$$$$$ if *layout* is a string
@@ -5664,7 +6446,13 @@ $$$$$$$,
 $$$$$$$ Axes]
            A dictionary mapping the labels to the Axes objects.
 
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         subplot_kw $= subplot_kw or {}
         gridspec_kw $= gridspec_kw or {}
         # special-case string input
@@ -5690,7 +6478,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-            """
+            
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
             Convert input into 2D array
 
             We need to have this internal function rather than
@@ -5708,7 +6502,13 @@ $$$$$$$`` so that a list of lists
             -------
             2D object array
 
-            """
+            
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
             r0
 $$$$$$$,
 $$$$$$$ *rest $= inp
@@ -5765,10 +6565,16 @@ $$$$$$$
                     raise ValueError
 $$$$$$$(
 $$$$$$$
-                        "All of the rows must be the same length
+                        
+$$$$$$$"
+$$$$$$$All of the rows must be the same length
 $$$$$$$,
-$$$$$$$ however "
-                        f"the first row 
+$$$$$$$ however 
+$$$$$$$"
+$$$$$$$
+                        f
+$$$$$$$"
+$$$$$$$the first row 
 $$$$$$$(
 $$$$$$${r0!r}
 $$$$$$$)
@@ -5776,8 +6582,12 @@ $$$$$$$ has length {len
 $$$$$$$(
 $$$$$$$r0
 $$$$$$$)
-$$$$$$$} "
-                        f"and row {j} 
+$$$$$$$} 
+$$$$$$$"
+$$$$$$$
+                        f
+$$$$$$$"
+$$$$$$$and row {j} 
 $$$$$$$(
 $$$$$$${r!r}
 $$$$$$$)
@@ -5785,7 +6595,9 @@ $$$$$$$ has length {len
 $$$$$$$(
 $$$$$$$r
 $$$$$$$)
-$$$$$$$}."
+$$$$$$$}.
+$$$$$$$"
+$$$$$$$
                     
 $$$$$$$)
 $$$$$$$
@@ -5840,7 +6652,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-            """
+            
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
             Given a 2D object array
 $$$$$$$,
 $$$$$$$ identify unique IDs and nested layouts
@@ -5864,7 +6682,13 @@ $$$$$$$,
 $$$$$$$ int]]
 $$$$$$$,
 $$$$$$$ 2D object array
-            """
+            
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
             unique_ids $= set
 $$$$$$$(
 $$$$$$$
@@ -5937,7 +6761,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-            """
+            
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
             Recursively do the layout.
 
             Parameters
@@ -5970,7 +6800,13 @@ $$$$$$$ if any.
 $$$$$$$,
 $$$$$$$ Axes]
                 A flat dict of all of the Axes created.
-            """
+            
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
             rows
 $$$$$$$,
 $$$$$$$ cols $= layout.shape
@@ -6041,9 +6877,21 @@ $$$$$$$
                     raise ValueError
 $$$$$$$(
 $$$$$$$
-                        f"While trying to layout\n{layout!r}\n"
-                        f"we found that the label {name!r} specifies a "
-                        "non-rectangular or non-contiguous area."
+                        f
+$$$$$$$"
+$$$$$$$While trying to layout\n{layout!r}\n
+$$$$$$$"
+$$$$$$$
+                        f
+$$$$$$$"
+$$$$$$$we found that the label {name!r} specifies a 
+$$$$$$$"
+$$$$$$$
+                        
+$$$$$$$"
+$$$$$$$non-rectangular or non-contiguous area.
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
 
@@ -6126,9 +6974,21 @@ $$$$$$$:
 $$$$$$$
                     raise ValueError
 $$$$$$$(
-$$$$$$$f"There are duplicate keys {overlap} "
-                                     f"between the outer layout\n{layout!r}\n"
-                                     f"and the nested layout\n{nested_layout}"
+$$$$$$$f
+$$$$$$$"
+$$$$$$$There are duplicate keys {overlap} 
+$$$$$$$"
+$$$$$$$
+                                     f
+$$$$$$$"
+$$$$$$$between the outer layout\n{layout!r}\n
+$$$$$$$"
+$$$$$$$
+                                     f
+$$$$$$$"
+$$$$$$$and the nested layout\n{nested_layout}
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
                 output.update
@@ -6225,7 +7085,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-    """
+    
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
     Logical figure that can be placed inside a figure.
 
     Typically instantiated using `.Figure.add_subfigure` or
@@ -6274,7 +7140,13 @@ $$$$$$$:
 $$$$$$$doc
 $$$$$$$:
 $$$$$$$`/gallery/subplots_axes_and_figures/subfigures`
-    """
+    
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
 
     def __init__
 $$$$$$$(
@@ -6301,7 +7173,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Parameters
         ----------
         parent 
@@ -6362,7 +7240,13 @@ $$$$$$$`figure.frameon`
             If ``False``
 $$$$$$$,
 $$$$$$$ suppress drawing the figure background patch.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         super
 $$$$$$$(
 $$$$$$$
@@ -6477,7 +7361,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Make the transSubfigure bbox relative to Figure transform.
 
         Parameters
@@ -6489,7 +7379,13 @@ $$$$$$$ bbox or None
 $$$$$$$,
 $$$$$$$ then the bbox is used for relative bounding box.
             Otherwise it is calculated from the subplotspec.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
 
         if bbox is not None
 $$$$$$$:
@@ -6652,7 +7548,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Return whether constrained layout is being used.
 
         See 
@@ -6660,7 +7562,13 @@ $$$$$$$:
 $$$$$$$doc
 $$$$$$$:
 $$$$$$$`/tutorials/intermediate/constrainedlayout_guide`.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         return self._parent.get_constrained_layout
 $$$$$$$(
 $$$$$$$
@@ -6676,7 +7584,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Get padding for ``constrained_layout``.
 
         Returns a list of ``w_pad
@@ -6698,7 +7612,13 @@ $$$$$$$ bool
             If `True`
 $$$$$$$,
 $$$$$$$ then convert from inches to figure relative.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         return self._parent.get_constrained_layout_pads
 $$$$$$$(
 $$$$$$$relative$=relative
@@ -6712,7 +7632,19 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """Initialize the layoutgrid for use in constrained_layout."""
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$Initialize the layoutgrid for use in constrained_layout.
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         if self._layoutgrid is None
 $$$$$$$:
 $$$$$$$
@@ -6769,7 +7701,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Return a list of Axes in the SubFigure. You can access and modify the
         Axes in the Figure through this list.
 
@@ -6784,7 +7722,13 @@ $$$$$$$
         Note
 $$$$$$$:
 $$$$$$$ This is equivalent to the property `~.SubFigure.axes`.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         return self._localaxes.as_list
 $$$$$$$(
 $$$$$$$
@@ -6795,7 +7739,13 @@ $$$$$$$
 $$$$$$$(
 $$$$$$$get_axes
 $$$$$$$,
-$$$$$$$ doc$="""
+$$$$$$$ doc$=
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         List of Axes in the SubFigure.  You can access and modify the Axes
         in the SubFigure through this list.
 
@@ -6806,7 +7756,13 @@ $$$$$$$,
 $$$$$$$
         `~.SubFigure.add_subplot` or `~.SubFigure.delaxes` to add or remove an
         Axes.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
 
@@ -6895,7 +7851,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-    """
+    
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
     The top level container for all the plot elements.
 
     The Figure instance supports callbacks through a *callbacks* attribute
@@ -6922,7 +7884,13 @@ $$$$$$$ the figure will make composite images
         *suppressComposite* is a boolean
 $$$$$$$,
 $$$$$$$ this will override the renderer.
-    """
+    
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
 
     def __str__
 $$$$$$$(
@@ -6931,11 +7899,15 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        return "Figure
+        return 
+$$$$$$$"
+$$$$$$$Figure
 $$$$$$$(
 $$$$$$$%gx%g
 $$$$$$$)
-$$$$$$$" % tuple
+$$$$$$$
+$$$$$$$"
+$$$$$$$ % tuple
 $$$$$$$(
 $$$$$$$self.bbox.size
 $$$$$$$)
@@ -6948,11 +7920,15 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        return "<{clsname} size {h
+        return 
+$$$$$$$"
+$$$$$$$<{clsname} size {h
 $$$$$$$:
 $$$$$$$g}x{w
 $$$$$$$:
-$$$$$$$g} with {naxes} Axes>".format
+$$$$$$$g} with {naxes} Axes>
+$$$$$$$"
+$$$$$$$.format
 $$$$$$$(
 $$$$$$$
             clsname$=self.__class__.__name__
@@ -7011,7 +7987,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Parameters
         ----------
         figsize 
@@ -7159,7 +8141,13 @@ $$$$$$$ does not work with `add_subplot` or
             `~.pyplot.subplot2grid`.
 $$$$$$$)
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         super
 $$$$$$$(
 $$$$$$$
@@ -7411,7 +8399,11 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        # We can't use "isinstance" here
+        # We can't use 
+$$$$$$$"
+$$$$$$$isinstance
+$$$$$$$"
+$$$$$$$ here
 $$$$$$$,
 $$$$$$$ because then we'd end up importing
         # webagg unconditionally.
@@ -7438,7 +8430,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         If using a GUI backend with pyplot
 $$$$$$$,
 $$$$$$$ display the figure window.
@@ -7491,21 +8489,35 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$,
 $$$$$$$ issue warning when called on a non-GUI backend.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         if self.canvas.manager is None
 $$$$$$$:
 $$$$$$$
             raise AttributeError
 $$$$$$$(
 $$$$$$$
-                "Figure.show works only for figures managed by pyplot
+                
+$$$$$$$"
+$$$$$$$Figure.show works only for figures managed by pyplot
 $$$$$$$,
-$$$$$$$ "
-                "normally created by pyplot.figure
+$$$$$$$ 
+$$$$$$$"
+$$$$$$$
+                
+$$$$$$$"
+$$$$$$$normally created by pyplot.figure
 $$$$$$$(
 $$$$$$$
 $$$$$$$)
+$$$$$$$
 $$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
         try
@@ -7539,7 +8551,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Return a list of Axes in the Figure. You can access and modify the
         Axes in the Figure through this list.
 
@@ -7553,7 +8571,13 @@ $$$$$$$
         Note
 $$$$$$$:
 $$$$$$$ This is equivalent to the property `~.Figure.axes`.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         return self._axstack.as_list
 $$$$$$$(
 $$$$$$$
@@ -7564,17 +8588,31 @@ $$$$$$$
 $$$$$$$(
 $$$$$$$get_axes
 $$$$$$$,
-$$$$$$$ doc$="""
+$$$$$$$ doc$=
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         List of Axes in the Figure.  You can access and modify the Axes in the
         Figure through this list.
 
         Do not modify the list itself. Instead
 $$$$$$$,
-$$$$$$$ use "`~Figure.add_axes`
+$$$$$$$ use 
+$$$$$$$"
+$$$$$$$`~Figure.add_axes`
 $$$$$$$,
 $$$$$$$
         `~.Figure.add_subplot` or `~.Figure.delaxes` to add or remove an Axes.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
 
@@ -7598,7 +8636,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Parameters
         ----------
         dpi 
@@ -7609,7 +8653,13 @@ $$$$$$$ float
 $$$$$$$:
 $$$$$$$ bool
             Passed on to `~.Figure.set_size_inches`
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         if dpi $=$= self._dpi
 $$$$$$$:
 $$$$$$$
@@ -7655,7 +8705,11 @@ $$$$$$$_get_dpi
 $$$$$$$,
 $$$$$$$ _set_dpi
 $$$$$$$,
-$$$$$$$ doc$="The resolution in dots per inch."
+$$$$$$$ doc$=
+$$$$$$$"
+$$$$$$$The resolution in dots per inch.
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
 
@@ -7666,7 +8720,19 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """Return whether `.tight_layout` is called when drawing."""
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$Return whether `.tight_layout` is called when drawing.
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         return self._tight
 
     def set_tight_layout
@@ -7678,20 +8744,42 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Set whether and how `.tight_layout` is called when drawing.
 
         Parameters
         ----------
         tight 
 $$$$$$$:
-$$$$$$$ bool or dict with keys "pad"
+$$$$$$$ bool or dict with keys 
+$$$$$$$"
+$$$$$$$pad
+$$$$$$$"
+$$$$$$$
 $$$$$$$,
-$$$$$$$ "w_pad"
+$$$$$$$ 
+$$$$$$$"
+$$$$$$$w_pad
+$$$$$$$"
+$$$$$$$
 $$$$$$$,
-$$$$$$$ "h_pad"
+$$$$$$$ 
+$$$$$$$"
+$$$$$$$h_pad
+$$$$$$$"
+$$$$$$$
 $$$$$$$,
-$$$$$$$ "rect" or None
+$$$$$$$ 
+$$$$$$$"
+$$$$$$$rect
+$$$$$$$"
+$$$$$$$ or None
             If a bool
 $$$$$$$,
 $$$$$$$ sets whether to call `.tight_layout` upon drawing.
@@ -7704,7 +8792,13 @@ $$$$$$$ pass it as kwargs to `.tight_layout`
 $$$$$$$,
 $$$$$$$ overriding the
             default paddings.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         if tight is None
 $$$$$$$:
 $$$$$$$
@@ -7730,7 +8824,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Return whether constrained layout is being used.
 
         See 
@@ -7738,7 +8838,13 @@ $$$$$$$:
 $$$$$$$doc
 $$$$$$$:
 $$$$$$$`/tutorials/intermediate/constrainedlayout_guide`.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         return self._constrained
 
     def set_constrained_layout
@@ -7750,7 +8856,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Set whether ``constrained_layout`` is used upon drawing. If None
 $$$$$$$,
 $$$$$$$
@@ -7778,7 +8890,13 @@ $$$$$$$`/tutorials/intermediate/constrainedlayout_guide`.
         constrained 
 $$$$$$$:
 $$$$$$$ bool or dict or None
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         self._constrained_layout_pads $= dict
 $$$$$$$(
 $$$$$$$
@@ -7837,7 +8955,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Set padding for ``constrained_layout``.  Note the kwargs can be passed
         as a dictionary ``fig.set_constrained_layout
 $$$$$$$(
@@ -7881,7 +9005,13 @@ $$$$$$$,
 $$$$$$$ expressed as a fraction of the
             subplot width. The total padding ends up being h_pad + hspace.
 
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
 
         todo $= ['w_pad'
 $$$$$$$,
@@ -7916,7 +9046,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Get padding for ``constrained_layout``.
 
         Returns a list of ``w_pad
@@ -7938,7 +9074,13 @@ $$$$$$$ bool
             If `True`
 $$$$$$$,
 $$$$$$$ then convert from inches to figure relative.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         w_pad $= self._constrained_layout_pads['w_pad']
         h_pad $= self._constrained_layout_pads['h_pad']
         wspace $= self._constrained_layout_pads['wspace']
@@ -7977,7 +9119,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Set the canvas that contains the figure
 
         Parameters
@@ -7985,7 +9133,13 @@ $$$$$$$
         canvas 
 $$$$$$$:
 $$$$$$$ FigureCanvas
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         self.canvas $= canvas
 
     def figimage
@@ -8018,7 +9172,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Add a non-resampled image to the figure.
 
         The image is attached to the lower or upper left corner depending on
@@ -8193,7 +9353,13 @@ $$$$$$$(
 $$$$$$$
 $$$$$$$)
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         if resize
 $$$$$$$:
 $$$$$$$
@@ -8278,7 +9444,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Set the figure size in inches.
 
         Call signatures
@@ -8352,7 +9524,13 @@ $$$$$$$
         Notes
         -----
         To transform from pixels to inches divide by `Figure.dpi`.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         if h is None
 $$$$$$$:
 $$$$$$$  # Got called with a single pair as argument.
@@ -8447,7 +9625,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Return the current size of the figure in inches.
 
         Returns
@@ -8470,7 +9654,13 @@ $$$$$$$ of the figure in inches.
         Notes
         -----
         The size in pixels can be obtained by multiplying with `Figure.dpi`.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         return np.array
 $$$$$$$(
 $$$$$$$self.bbox_inches.p1
@@ -8484,7 +9674,19 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """Return the figure width in inches."""
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$Return the figure width in inches.
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         return self.bbox_inches.width
 
     def get_figheight
@@ -8494,7 +9696,19 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """Return the figure height in inches."""
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$Return the figure height in inches.
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         return self.bbox_inches.height
 
     def get_dpi
@@ -8504,7 +9718,19 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """Return the resolution in dots per inch as a float."""
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$Return the resolution in dots per inch as a float.
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         return self.dpi
 
     def set_dpi
@@ -8516,7 +9742,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Set the resolution of the figure in dots-per-inch.
 
         Parameters
@@ -8524,7 +9756,13 @@ $$$$$$$
         val 
 $$$$$$$:
 $$$$$$$ float
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         self.dpi $= val
         self.stale $= True
 
@@ -8539,7 +9777,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Set the width of the figure in inches.
 
         Parameters
@@ -8556,7 +9800,13 @@ $$$$$$$ bool
         --------
         matplotlib.figure.Figure.set_figheight
         matplotlib.figure.Figure.set_size_inches
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         self.set_size_inches
 $$$$$$$(
 $$$$$$$val
@@ -8582,7 +9832,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Set the height of the figure in inches.
 
         Parameters
@@ -8599,7 +9855,13 @@ $$$$$$$ bool
         --------
         matplotlib.figure.Figure.set_figwidth
         matplotlib.figure.Figure.set_size_inches
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         self.set_size_inches
 $$$$$$$(
 $$$$$$$self.get_figwidth
@@ -8623,7 +9885,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Clear the figure.
 
         Set *keep_observers* to True if
@@ -8632,7 +9900,13 @@ $$$$$$$ for example
 $$$$$$$,
 $$$$$$$
         a gui widget is tracking the Axes in the figure.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         self.suppressComposite $= None
         self.callbacks $= cbook.CallbackRegistry
 $$$$$$$(
@@ -8721,7 +9995,19 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """Clear the figure -- synonym for `clf`."""
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$Clear the figure -- synonym for `clf`.
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         self.clf
 $$$$$$$(
 $$$$$$$keep_observers$=keep_observers
@@ -8859,21 +10145,41 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Draw `.Artist` *a* only.
 
         This method can only be used after an initial draw of the figure
 $$$$$$$,
 $$$$$$$
         because that creates and caches the renderer needed here.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         if self._cachedRenderer is None
 $$$$$$$:
 $$$$$$$
             raise AttributeError
 $$$$$$$(
-$$$$$$$"draw_artist can only be used after an "
-                                 "initial draw which caches the renderer"
+$$$$$$$
+$$$$$$$"
+$$$$$$$draw_artist can only be used after an 
+$$$$$$$"
+$$$$$$$
+                                 
+$$$$$$$"
+$$$$$$$initial draw which caches the renderer
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
         a.draw
@@ -8908,12 +10214,20 @@ $$$$$$$ and
         # re-attached to another.
         state.pop
 $$$$$$$(
-$$$$$$$"canvas"
+$$$$$$$
+$$$$$$$"
+$$$$$$$canvas
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
 
         # Set cached renderer to None -- it can't be pickled.
-        state["_cachedRenderer"] $= None
+        state[
+$$$$$$$"
+$$$$$$$_cachedRenderer
+$$$$$$$"
+$$$$$$$] $= None
 
         # add version information to the state
         state['__mpl_version__'] $= _mpl_version
@@ -8984,8 +10298,16 @@ $$$$$$$
             _api.warn_external
 $$$$$$$(
 $$$$$$$
-                f"This figure was saved with matplotlib version {version} and "
-                f"is unlikely to function correctly."
+                f
+$$$$$$$"
+$$$$$$$This figure was saved with matplotlib version {version} and 
+$$$$$$$"
+$$$$$$$
+                f
+$$$$$$$"
+$$$$$$$is unlikely to function correctly.
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
 
@@ -9044,20 +10366,36 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """Whenever the Axes state change
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$Whenever the Axes state change
 $$$$$$$,
 $$$$$$$ ``func
 $$$$$$$(
 $$$$$$$self
 $$$$$$$)
-$$$$$$$`` will be called."""
+$$$$$$$`` will be called.
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         # Connect a wrapper lambda and not func itself
 $$$$$$$,
 $$$$$$$ to avoid it being
         # weakref-collected.
         self._axobservers.connect
 $$$$$$$(
-$$$$$$$"_axes_change_event"
+$$$$$$$
+$$$$$$$"
+$$$$$$$_axes_change_event
+$$$$$$$"
+$$$$$$$
 $$$$$$$,
 $$$$$$$ lambda arg
 $$$$$$$:
@@ -9084,7 +10422,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Save the current figure.
 
         Call signature
@@ -9389,19 +10733,39 @@ $$$$$$$ optional
             Use a non-default backend to render the file
 $$$$$$$,
 $$$$$$$ e.g. to render a
-            png file with the "cairo" backend rather than the default "agg"
+            png file with the 
+$$$$$$$"
+$$$$$$$cairo
+$$$$$$$"
+$$$$$$$ backend rather than the default 
+$$$$$$$"
+$$$$$$$agg
+$$$$$$$"
+$$$$$$$
 $$$$$$$,
 $$$$$$$
-            or a pdf file with the "pgf" backend rather than the default
-            "pdf".  Note that the default backend is normally sufficient.  See
+            or a pdf file with the 
+$$$$$$$"
+$$$$$$$pgf
+$$$$$$$"
+$$$$$$$ backend rather than the default
+            
+$$$$$$$"
+$$$$$$$pdf
+$$$$$$$"
+$$$$$$$.  Note that the default backend is normally sufficient.  See
             
 $$$$$$$:
 $$$$$$$ref
 $$$$$$$:
 $$$$$$$`the-builtin-backends` for a list of valid backends for each
-            file format.  Custom backends can be referenced as "module
+            file format.  Custom backends can be referenced as 
+$$$$$$$"
+$$$$$$$module
 $$$$$$$:
-$$$$$$$//...".
+$$$$$$$//...
+$$$$$$$"
+$$$$$$$.
 
         metadata 
 $$$$$$$:
@@ -9436,7 +10800,13 @@ $$$$$$$,
 $$$$$$$ optional
             Additional keyword arguments that are passed to
             `PIL.Image.Image.save` when saving the figure.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
 
         kwargs.setdefault
 $$$$$$$(
@@ -9558,7 +10928,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Blocking call to interact with a figure.
 
         Wait until the user clicks *n* times on the figure
@@ -9666,7 +11042,13 @@ $$$$$$$not already used by the window
         manager
 $$$$$$$)
 $$$$$$$ selects a point.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         blocking_mouse_input $= BlockingMouseInput
 $$$$$$$(
 $$$$$$$self
@@ -9701,7 +11083,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Blocking call to interact with the figure.
 
         Wait for user input and return True if a key was pressed
@@ -9709,7 +11097,13 @@ $$$$$$$,
 $$$$$$$ False if a
         mouse button was pressed and None if no input was given within
         *timeout* seconds.  Negative values deactivate *timeout*.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         blocking_input $= BlockingKeyMouseInput
 $$$$$$$(
 $$$$$$$self
@@ -9728,7 +11122,19 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """Initialize the layoutgrid for use in constrained_layout."""
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$Initialize the layoutgrid for use in constrained_layout.
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         del
 $$$$$$$(
 $$$$$$$self._layoutgrid
@@ -9752,11 +11158,23 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Use ``layoutgrid`` to determine pos positions within Axes.
 
         See also `.set_constrained_layout_pads`.
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
 
         from matplotlib._constrained_layout import do_constrained_layout
         from matplotlib.tight_layout import get_renderer
@@ -9771,18 +11189,42 @@ $$$$$$$:
 $$$$$$$
             _api.warn_external
 $$$$$$$(
-$$$$$$$"Calling figure.constrained_layout
+$$$$$$$
+$$$$$$$"
+$$$$$$$Calling figure.constrained_layout
 $$$$$$$,
-$$$$$$$ but "
-                               "figure not setup to do constrained layout. "
-                               "You either called GridSpec without the "
-                               "figure keyword
+$$$$$$$ but 
+$$$$$$$"
+$$$$$$$
+                               
+$$$$$$$"
+$$$$$$$figure not setup to do constrained layout. 
+$$$$$$$"
+$$$$$$$
+                               
+$$$$$$$"
+$$$$$$$You either called GridSpec without the 
+$$$$$$$"
+$$$$$$$
+                               
+$$$$$$$"
+$$$$$$$figure keyword
 $$$$$$$,
 $$$$$$$ you are using plt.subplot
 $$$$$$$,
-$$$$$$$ "
-                               "or you need to call figure or subplots "
-                               "with the constrained_layout$=True kwarg."
+$$$$$$$ 
+$$$$$$$"
+$$$$$$$
+                               
+$$$$$$$"
+$$$$$$$or you need to call figure or subplots 
+$$$$$$$"
+$$$$$$$
+                               
+$$$$$$$"
+$$$$$$$with the constrained_layout$=True kwarg.
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
             return
@@ -9849,7 +11291,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
         Adjust the padding between and around subplots.
 
         To exclude an artist on the Axes from the bounding box calculation
@@ -9936,7 +11384,13 @@ $$$$$$$ will fit.
         --------
         .Figure.set_tight_layout
         .pyplot.tight_layout
-        """
+        
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
 
         from .tight_layout import 
 $$$$$$$(
@@ -9959,11 +11413,23 @@ $$$$$$$:
 $$$$$$$
             _api.warn_external
 $$$$$$$(
-$$$$$$$"This figure includes Axes that are not "
-                               "compatible with tight_layout
+$$$$$$$
+$$$$$$$"
+$$$$$$$This figure includes Axes that are not 
+$$$$$$$"
+$$$$$$$
+                               
+$$$$$$$"
+$$$$$$$compatible with tight_layout
 $$$$$$$,
-$$$$$$$ so results "
-                               "might be incorrect."
+$$$$$$$ so results 
+$$$$$$$"
+$$$$$$$
+                               
+$$$$$$$"
+$$$$$$$might be incorrect.
+$$$$$$$"
+$$$$$$$
 $$$$$$$)
 $$$$$$$
 
@@ -10034,7 +11500,13 @@ $$$$$$$)
 $$$$$$$
 $$$$$$$:
 $$$$$$$
-    """
+    
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
     Calculate the width and height for a figure with a specified aspect ratio.
 
     While the height is taken from 
@@ -10189,7 +11661,13 @@ $$$$$$$,
 $$$$$$$ **kwargs
 $$$$$$$)
 $$$$$$$
-    """
+    
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
+$$$$$$$"
+$$$$$$$
 
     isarray $= hasattr
 $$$$$$$(

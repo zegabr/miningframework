@@ -44,10 +44,9 @@ from .templating import render_template as render_template
 from .templating import render_template_string as render_template_string
 
 __version__ = "
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/flask_results/flask/1cf43e08e3211e7ff21005dd778613e39b20a449/src/flask/__init__.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/flask_results/flask/1cf43e08e3211e7ff21005dd778613e39b20a449/src/flask/__init__.py/left.py
 2.1.0.dev0
 =======
 2.0.2
->>>>>>> /home/ze/miningframework/mining_results_version3_3/flask_results/flask/1cf43e08e3211e7ff21005dd778613e39b20a449/src/flask/__init__.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/flask_results/flask/1cf43e08e3211e7ff21005dd778613e39b20a449/src/flask/__init__.py/right.py
 "
-# CReduzido

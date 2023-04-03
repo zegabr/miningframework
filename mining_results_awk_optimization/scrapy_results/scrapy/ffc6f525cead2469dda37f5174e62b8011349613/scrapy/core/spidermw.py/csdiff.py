@@ -25,15 +25,14 @@ ScrapeFunc = Callable[[Union[Response, Failure], Request, Spider], Any]
 
 def _isiterable(o) -> bool:
     return isinstance(o, Iterable)
-    # CReduzido
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/core/spidermw.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/core/spidermw.py/left.py
  or hasattr(possible_iterator, '__aiter__')
 
 
 =======
 
 
->>>>>>> /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/core/spidermw.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/core/spidermw.py/right.py
 class SpiderMiddlewareManager(MiddlewareManager):
 
     component_name = 'spider middleware'

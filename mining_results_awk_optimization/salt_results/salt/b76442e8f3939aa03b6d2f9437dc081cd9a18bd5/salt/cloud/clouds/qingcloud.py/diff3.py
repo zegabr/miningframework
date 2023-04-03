@@ -25,10 +25,10 @@ Set up the cloud configuration at ``/etc/salt/cloud.providers`` or
 :depends: requests
 """
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/left.py
 =======
 
->>>>>>> /home/ze/miningframework/mining_results_version3_3/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/right.py
 import base64
 import hmac
 import logging
@@ -47,13 +47,13 @@ from salt.exceptions import (
     SaltCloudNotFound,
     SaltCloudSystemExit,
 )
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/left.py
 
 =======
 from salt.ext.six.moves import range
 from salt.ext.six.moves.urllib.parse import quote as _quote
 
->>>>>>> /home/ze/miningframework/mining_results_version3_3/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/right.py
 try:
     import requests
 
@@ -123,7 +123,7 @@ def _compute_signature(parameters, access_key_secret, method, path):
     keys = sorted(parameters.keys())
     pairs = []
     for key in keys:
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/left.py
         val = str(parameters[key]).encode("utf-8")
         pairs.append(
             urllib.parse.quote(key, safe="") + "=" + urllib.parse.quote(val, safe="-_~")
@@ -131,8 +131,8 @@ def _compute_signature(parameters, access_key_secret, method, path):
 =======
         val = str(parameters[key]).encode("utf-8")
         pairs.append(_quote(key, safe="") + "=" + _quote(val, safe="-_~"))
->>>>>>> /home/ze/miningframework/mining_results_version3_3/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/right.py
-    qs = "&".join(pairs) # CResolvido
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/right.py
+    qs = "&".join(pairs)
     string_to_sign += qs
 
     h = hmac.new(access_key_secret, digestmod=sha256)

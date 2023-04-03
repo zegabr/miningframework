@@ -4,8 +4,8 @@
 
 names=(matplotlib tensorflow certbot flask ipython requests salt scrapy sentry tornado)
 miningframework_path=$(pwd)
-results_path="$miningframework_path/mining_results_awk_optimization"
-# results_path="$miningframework_path/mining_results_awk_optimization_no_colon"
+# results_path="$miningframework_path/mining_results_awk_optimization"
+results_path="$miningframework_path/mining_results_awk_optimization_no_colon"
 # results_path="$miningframework_path/mining_results_indentation"
 # results_path="$miningframework_path/mining_results_indentation_no_colon"
 
@@ -39,7 +39,7 @@ do
     rm -rf "$results_path"/${i}_results/
 
     echo "running mining framework"
-    ./gradlew run --args="-e .py -i injectors.CSDiffModule -l '( ) , :' -t 1 -s 01/01/2021 -u 01/01/2022 ./projects/${i}.csv "$results_path"/${i}_results"
+    ./gradlew run --args="-e .py -i injectors.CSDiffModule -l '( ) ,' -t 1 -s 01/01/2021 -u 01/01/2022 ./projects/${i}.csv "$results_path"/${i}_results"
 
     if [[ -e "$results_path"/${i}_results/results.csv ]]; then
         if [[ ! -e "$results_path"/all_results.csv ]]; then

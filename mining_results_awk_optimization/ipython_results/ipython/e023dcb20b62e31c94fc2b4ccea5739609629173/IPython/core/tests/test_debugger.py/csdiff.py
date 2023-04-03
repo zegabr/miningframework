@@ -230,15 +230,14 @@ def test_interruptible_core_debugger():
 
     tracer_orig = sys.gettrace()
     try:
-        # CReduzido
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/left.py
         with patch.object
 =======
 
     tracer_orig = sys.gettrace()
     try:
         with patch.object
->>>>>>> /home/ze/miningframework/mining_results_version3_3/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/right.py
 (builtins, "input", raising_input):
             debugger.InterruptiblePdb().set_trace()
             # The way this test will fail is by set_trace() never exiting,

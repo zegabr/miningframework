@@ -105,9 +105,9 @@ diff3 -m -E "$myTempFile" "$oldTempFile" "$yourTempFile" > $midMergedFile
 # kdiff3 --auto "$oldTempFile" "$myTempFile" "$yourTempFile" -o $midMergedFile --cs "ShowInfoDialogs=0"
 
 # Removes the tokenized input files
-# rm "$myTempFile"
-# rm "$oldTempFile"
-# rm "$yourTempFile"
+rm "$myTempFile"
+rm "$oldTempFile"
+rm "$yourTempFile"
 wait
 
 # Removes the tokens from the merged file, generating the final merged file

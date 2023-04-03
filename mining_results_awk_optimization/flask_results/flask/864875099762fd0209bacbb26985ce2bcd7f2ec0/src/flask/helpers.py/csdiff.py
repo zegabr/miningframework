@@ -776,14 +776,14 @@ class locked_cached_property(werkzeug.utils.cached_property):
     def __set__(self, obj: object, value: t.Any) -> None:
         with self.lock:
             super().__set__(obj, value)
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/flask_results/flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/helpers.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/flask_results/flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/helpers.py/left.py
 =======
 :
         if value is not None:
             value = fspath(value).rstrip(r"\/")
         self._static_folder = value
->>>>>>> /home/ze/miningframework/mining_results_version3_3/flask_results/flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/helpers.py/right.py
-# CReduzido
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/flask_results/flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/helpers.py/right.py
+
     def __delete__(self, obj: object) -> None:
         with self.lock:
             super().__delete__(obj)

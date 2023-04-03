@@ -343,7 +343,7 @@ def show(*args, **kwargs):
     ion : Enable interactive mode, which shows / updates the figure after
           every plotting command, so that calling ``show()`` is not necessary.
     ioff :
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
  Disable interactive mode.
     savefig : Save the figure to an image file instead of showing it on screen.
 
@@ -366,9 +366,9 @@ def show(*args, **kwargs):
     Notes
     -----
     **Saving figures to file and showing a window at the same time**
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
     The jupyter backends (activated via ``%matplotlib inline``,
     ``%matplotlib notebook``, or ``%matplotlib widget``), call ``show()`` at
     the end of every cell by default. Thus, you usually don't have to call it
@@ -387,9 +387,8 @@ def show(*args, **kwargs):
     ``%matplotlib notebook``, or ``%matplotlib widget``), call ``show()`` at
     the end of every cell by default. Thus, you usually don't have to call it
     explicitly there.
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
     """
-    # CaFP
     _warn_if_gui_out_of_main_thread()
     return _backend_mod.show(*args, **kwargs)
 
@@ -1540,12 +1539,12 @@ def subplot_mosaic(mosaic, *, sharex=False, sharey=False,
     """
     fig = figure(**fig_kw)
     ax_dict = fig.subplot_mosaic(
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
         mosaic, sharex=sharex, sharey=sharey
 =======
         mosaic
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
-, # CReduzido
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
+,
         subplot_kw=subplot_kw, gridspec_kw=gridspec_kw,
         empty_sentinel=empty_sentinel
     )

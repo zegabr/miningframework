@@ -1107,7 +1107,7 @@ def save_and_return_nodes(obj,
           "to the io_device such as '/job:localhost'."
       )
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/tensorflow_results/tensorflow/cb9089a5dc968b2f8da76e3c8583a6448cab0d20/tensorflow/python/saved_model/save.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/tensorflow_results/tensorflow/cb9089a5dc968b2f8da76e3c8583a6448cab0d20/tensorflow/python/saved_model/save.py/left.py
   path = file_io.join(
 =======
   # We will slowly migrate code in this function to pywrap_libexport.Save
@@ -1115,7 +1115,7 @@ def save_and_return_nodes(obj,
   pywrap_libexport.Save(export_dir)
 
   path = os.path.join(
->>>>>>> /home/ze/miningframework/mining_results_version3_3/tensorflow_results/tensorflow/cb9089a5dc968b2f8da76e3c8583a6448cab0d20/tensorflow/python/saved_model/save.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/tensorflow_results/tensorflow/cb9089a5dc968b2f8da76e3c8583a6448cab0d20/tensorflow/python/saved_model/save.py/right.py
       compat.as_str(export_dir),
       compat.as_str(pywrap_libexport.SAVED_MODEL_FILENAME_PB))
   file_io.atomic_write_string_to_file(

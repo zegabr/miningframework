@@ -5,7 +5,7 @@ import asyncio
 import inspect
 from asyncio import Future
 from functools import wraps
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/c105a7a85f5df28abf4b9251d09da8d367fb4454/scrapy/utils/defer.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/c105a7a85f5df28abf4b9251d09da8d367fb4454/scrapy/utils/defer.py/left.py
 from typing import (
     Any,
     AsyncGenerator,
@@ -28,8 +28,8 @@ from typing import (
     Iterable,
     Union
 )
->>>>>>> /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/c105a7a85f5df28abf4b9251d09da8d367fb4454/scrapy/utils/defer.py/right.py
-# CReduzido
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/c105a7a85f5df28abf4b9251d09da8d367fb4454/scrapy/utils/defer.py/right.py
+
 from twisted.internet import defer
 from twisted.internet.defer import Deferred, DeferredList, ensureDeferred
 from twisted.internet.task import Cooperator
@@ -311,7 +311,7 @@ def maybeDeferred_coro(f: Callable, *args, **kw) -> Deferred:
         return defer.fail(result)
     else:
         return defer.succeed(result)
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/c105a7a85f5df28abf4b9251d09da8d367fb4454/scrapy/utils/defer.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/c105a7a85f5df28abf4b9251d09da8d367fb4454/scrapy/utils/defer.py/left.py
 
 
 def deferred_to_future(d: Deferred) -> Future:
@@ -384,4 +384,4 @@ def maybe_deferred_to_future(d: Deferred) -> Union[Deferred, Future]:
         return d
     else:
         return deferred_to_future(d)
->>>>>>> /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/c105a7a85f5df28abf4b9251d09da8d367fb4454/scrapy/utils/defer.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/c105a7a85f5df28abf4b9251d09da8d367fb4454/scrapy/utils/defer.py/right.py

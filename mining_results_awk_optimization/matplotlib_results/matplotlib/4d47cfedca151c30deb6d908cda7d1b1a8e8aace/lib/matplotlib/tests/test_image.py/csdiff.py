@@ -1238,7 +1238,7 @@ def test_norm_change(fig_test, fig_ref):
 
     ax = fig_test.subplots()
     im = ax.imshow(data, norm=colors.LogNorm(
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
 vmin=0.5
 =======
 vmin=0.5, vmax=1),
@@ -1252,9 +1252,9 @@ vmin=0.5, vmax=1),
     ax = fig_ref.subplots()
     ax.imshow(data, norm=colors.Normalize(vmin=-2, vmax=2),
               extent=(0, 5, 0
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
 ,
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
  vmax=1),
                    extent=(0, 5, 0, 5), interpolation='nearest', cmap=cmap)
     im.set_norm(colors.Normalize(vmin=-2, vmax=2))
@@ -1270,19 +1270,19 @@ vmin=0.5, vmax=1),
 =======
  5), interpolation='nearest', cmap=cmap)
     ax.imshow(masked_data, norm=colors.Normalize
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
 (
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
 vmin=-2, vmax=2)
 =======
 vmin=-2, vmax=2),
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
 ,
               extent=(5, 10, 5, 10
 =======
               extent=(5, 10, 5, 10
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
 ), interpolation='nearest', cmap=cmap)
     ax.set(xlim=(0, 10), ylim=(0, 10))
 
@@ -1294,28 +1294,28 @@ def test_huge_range_log(fig_test, fig_ref, x):
     data = np.full((5, 5), x, dtype=np.float64)
     data[0:2, :] = 1E20
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
     ax = fig_test.subplots()
     ax.imshow(data, norm=colors.LogNorm
 =======
     ax = fig_test.subplots()
     ax.imshow
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
 (
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
 vmin=1, vmax=data.max
 =======
 data, norm=colors.LogNorm
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
 (
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
 )
 =======
 vmin=1, vmax=data.max(
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
 ),
               interpolation='nearest', cmap='viridis')
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
 
     data = np.full(
 =======
@@ -1323,13 +1323,13 @@ vmin=1, vmax=data.max(
               interpolation='nearest', cmap='viridis')
 
     data = np.full
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
 (
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/left.py
 5, 5
 =======
 (5, 5
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_image.py/right.py
 ), x, dtype=np.float64)
     data[0:2, :] = 1000
 
@@ -1337,15 +1337,7 @@ vmin=1, vmax=data.max(
     cmap = plt.get_cmap('viridis').with_extremes(under='w')
     ax.imshow(data, norm=colors.Normalize(vmin=1, vmax=data.max()),
               interpolation='nearest', cmap=cmap)
-# CaFP
-# CaFP
-# CaFP
-# CaFP
-# CaFP
-# CaFP
-# CaFP
-# CaFP
-# CaFP
+
 
 @check_figures_equal()
 def test_spy_box(fig_test, fig_ref):

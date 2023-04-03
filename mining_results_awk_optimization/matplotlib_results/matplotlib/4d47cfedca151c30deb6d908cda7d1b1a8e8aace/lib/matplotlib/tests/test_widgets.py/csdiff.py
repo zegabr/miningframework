@@ -915,7 +915,7 @@ def test_polygon_selector():
                       + polygon_place_vertex(50, 150)
                       + polygon_place_vertex(50, 50))
     check_polygon_selector(event_sequence, expected_result, 1)
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_widgets.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_widgets.py/left.py
 
 
 def test_polygon_selector_set_props_handle_props():
@@ -1102,4 +1102,4 @@ def test_MultiCursor(horizOn, vertOn):
         assert l.get_xdata() == (.5, .5)
     for l in multi.hlines:
         assert l.get_ydata() == (.25, .25)
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_widgets.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_widgets.py/right.py

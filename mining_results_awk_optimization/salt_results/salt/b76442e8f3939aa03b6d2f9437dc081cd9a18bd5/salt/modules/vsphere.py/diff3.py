@@ -10401,7 +10401,7 @@ def list_tag_categories(
 
 
 @depends(HAS_PYVMOMI, HAS_VSPHERE_SDK)
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/vsphere.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/vsphere.py/left.py
 @_supports_proxies("vcenter")
 @_gets_service_instance_via_proxy
 def list_tags(server=None, username=None, password=None, service_instance=None):
@@ -10416,8 +10416,7 @@ def list_tags(
     verify_ssl=None,
     ca_bundle=None,
 ):
->>>>>>> /home/ze/miningframework/mining_results_version3_3/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/vsphere.py/right.py
-    # CResolvido
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/vsphere.py/right.py
     """
     List existing tags a user has access to.
 

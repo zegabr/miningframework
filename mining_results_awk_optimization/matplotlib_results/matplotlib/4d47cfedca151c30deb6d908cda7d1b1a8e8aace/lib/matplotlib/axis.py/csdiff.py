@@ -807,9 +807,8 @@ class Axis(martist.Artist):
 
         # Clear the callback registry for this axis, or it may "leak"
         self.callbacks = cbook.CallbackRegistry()
-# CaFP
-# CaFP
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/left.py
+
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/left.py
         # whether the grids are on
         self._major_tick_kw['gridOn'] = (
                 mpl.rcParams['axes.grid'] and
@@ -817,17 +816,17 @@ class Axis(martist.Artist):
 =======
         # whether the grids are on
         self._major_tick_kw['gridOn'] = 
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/right.py
 ('both', 'major')
                 mpl.rcParams['axes.grid'] and
                 mpl.rcParams['axes.grid.which'] in ('both', 'major'))
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/left.py
         self._minor_tick_kw['gridOn'] = (
                 mpl.rcParams['axes.grid'] and
                 mpl.rcParams['axes.grid.which'] in 
 =======
         self._minor_tick_kw['gridOn'] = 
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axis.py/right.py
 ('both', 'minor')
                 mpl.rcParams['axes.grid'] and
                 mpl.rcParams['axes.grid.which'] in ('both', 'minor'))

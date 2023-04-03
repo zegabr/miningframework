@@ -1686,7 +1686,7 @@ class MultiCursor(Widget):
     axes : list of `matplotlib.axes.Axes`
         The `~.axes.Axes` to attach the cursor to.
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
     useblit : bool, default: True
         Use blitting for faster drawing if supported by the backend.
         See the tutorial :doc:`/tutorials/advanced/blitting`
@@ -1694,8 +1694,7 @@ class MultiCursor(Widget):
 =======
     useblit : bool, default: True
         Use blitting for faster drawing if supported by the backend.
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
-# CReduzido
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
 
     horizOn : bool, default: False
         Whether to draw the horizontal line.
@@ -2264,7 +2263,7 @@ class SpanSelector(_SelectorWidget):
                                              direction=self.direction,
                                              line_props=props,
                                              useblit=self.useblit)
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
 
     @property
     def _handles_artists(self):
@@ -2276,19 +2275,17 @@ class SpanSelector(_SelectorWidget):
 
     @property
     def _handles_artists
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
 (
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
 =======
 self):
         if self._edge_handles is not None:
             return self._edge_handles.artists
         else:
             return (
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
 )
-# CaFP
-# CaFP
 
     def _set_cursor(self, enabled):
         """Update the canvas cursor based on direction of the selector."""

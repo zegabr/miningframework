@@ -4,24 +4,24 @@ requests in Scrapy.
 
 See documentation in docs/topics/request-response.rst
 """
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/left.py
 from typing import Callable, List, Optional, Type, TypeVar, Union
 
-||||||| /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/base.py
+||||||| /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/base.py
 =======
 import inspect
 from typing import Optional, Tuple
 
->>>>>>> /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/right.py
 from w3lib.url import safe_url_string
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/left.py
 from scrapy.http.common import obsolete_setter
-||||||| /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/base.py
+||||||| /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/base.py
 =======
 import scrapy
 from scrapy.http.common import obsolete_setter
->>>>>>> /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/right.py
 from scrapy.http.headers import Headers
 from scrapy.utils.curl import curl_to_request_kwargs
 from scrapy.utils.python import to_bytes
@@ -29,9 +29,9 @@ from scrapy.utils.trackref import object_ref
 from scrapy.utils.url import escape_ajax
 
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/left.py
 RequestTypeVar = TypeVar("RequestTypeVar", bound="Request")
-||||||| /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/base.py
+||||||| /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/base.py
 class Request(object_ref):
 =======
 class Request(object_ref):
@@ -51,7 +51,7 @@ class Request(object_ref):
     Currently used by :meth:`Request.replace`, :meth:`Request.to_dict` and
     :func:`~scrapy.utils.request.request_from_dict`.
     """
->>>>>>> /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/right.py
 
 
 class Request(object_ref):
@@ -145,12 +145,12 @@ class Request(object_ref):
     def copy(self) -> RequestTypeVar:
         return self.replace()
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/left.py
     def replace(self, *args, **kwargs) -> RequestTypeVar:
         """Create a new Request with the same attributes except for those given new values"""
         for x in ['url', 'method', 'headers', 'body', 'cookies', 'meta', 'flags',
                   'encoding', 'priority', 'dont_filter', 'callback', 'errback', 'cb_kwargs']:
-||||||| /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/base.py
+||||||| /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/base.py
     def replace(self, *args, **kwargs):
         """Create a new Request with the same attributes except for those
         given new values.
@@ -161,7 +161,7 @@ class Request(object_ref):
     def replace(self, *args, **kwargs):
         """Create a new Request with the same attributes except for those given new values"""
         for x in self.attributes:
->>>>>>> /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/c92e8ad0a5565a62bafb4f841726fe66dcccac5d/scrapy/http/request/__init__.py/right.py
             kwargs.setdefault(x, getattr(self, x))
         cls = kwargs.pop('cls', self.__class__)
         return cls(*args, **kwargs)

@@ -122,7 +122,7 @@ class BuildExtraLibraries(BuildExtCommand):
                     if enable_lto is True:
                         raise ValueError('Configuration enable_lto=True, but '
                                          '{0} contains -fno-lto'.format(name))
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/left.py
                     enable_lto = False
                 return [os.environ[name]], enable_lto
             return [], enable_lto
@@ -135,17 +135,15 @@ class BuildExtraLibraries(BuildExtCommand):
 
         _, enable_lto = prepare_flags('CFLAGS', enable_lto)  # Only check lto.
         cppflags, enable_lto = prepare_flags
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/right.py
 (
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/left.py
 'CFLAGS', enable_lto)  # Only check lto.
         cppflags, enable_lto = prepare_flags('CPPFLAGS', enable_lto
 =======
 'CPPFLAGS', enable_lto
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/right.py
 )
-# CaFP
-# CaFP
         cxxflags, enable_lto = prepare_flags('CXXFLAGS', enable_lto)
         ldflags, enable_lto = prepare_flags('LDFLAGS', enable_lto)
 

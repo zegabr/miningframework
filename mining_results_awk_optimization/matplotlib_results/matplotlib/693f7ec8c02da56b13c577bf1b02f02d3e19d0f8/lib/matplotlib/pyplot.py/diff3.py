@@ -1431,15 +1431,15 @@ def subplots(nrows=1, ncols=1, sharex=False, sharey=False, squeeze=True,
                        gridspec_kw=gridspec_kw)
     return fig, axs
 
-# CResolvido
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
+
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
 def subplot_mosaic(mosaic, *, sharex=False, sharey=False,
                    subplot_kw=None, gridspec_kw=None, empty_sentinel='.',
                    **fig_kw):
 =======
 def subplot_mosaic(mosaic, *, subplot_kw=None, gridspec_kw=None,
                    empty_sentinel='.', **fig_kw):
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
     """
     Build a layout of Axes based on ASCII art or nested lists.
 
@@ -1518,14 +1518,14 @@ def subplot_mosaic(mosaic, *, subplot_kw=None, gridspec_kw=None,
     """
     fig = figure(**fig_kw)
     ax_dict = fig.subplot_mosaic(
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
         mosaic, sharex=sharex, sharey=sharey,
         subplot_kw=subplot_kw, gridspec_kw=gridspec_kw,
 =======
         mosaic,
         subplot_kw=subplot_kw,
         gridspec_kw=gridspec_kw,
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
         empty_sentinel=empty_sentinel
     )
     return fig, ax_dict

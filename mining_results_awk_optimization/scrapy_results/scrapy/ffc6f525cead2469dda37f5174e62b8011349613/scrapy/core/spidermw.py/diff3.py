@@ -20,7 +20,7 @@ from scrapy.utils.defer import mustbe_deferred
 from scrapy.utils.python import MutableAsyncChain, MutableChain
 
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/core/spidermw.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/core/spidermw.py/left.py
 def _isiterable(possible_iterator):
     return hasattr(possible_iterator, '__iter__') or hasattr(possible_iterator, '__aiter__')
 =======
@@ -29,7 +29,7 @@ ScrapeFunc = Callable[[Union[Response, Failure], Request, Spider], Any]
 
 def _isiterable(o) -> bool:
     return isinstance(o, Iterable)
->>>>>>> /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/core/spidermw.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/core/spidermw.py/right.py
 
 
 class SpiderMiddlewareManager(MiddlewareManager):
@@ -66,7 +66,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
                 return scrape_func(Failure(), request, spider)
         return scrape_func(response, request, spider)
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/core/spidermw.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/core/spidermw.py/left.py
     def _evaluate_iterable(self, response, spider, iterable, exception_processor_index, recover_to):
         @_process_iterable_universal
         async def _evaluate_async_iterable(iterable):
@@ -92,8 +92,8 @@ class SpiderMiddlewareManager(MiddlewareManager):
             if isinstance(exception_result, Failure):
                 raise
             recover_to.extend(exception_result)
->>>>>>> /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/core/spidermw.py/right.py
-# CResolvido
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/core/spidermw.py/right.py
+
     def _process_spider_exception(self, response: Response, spider: Spider, _failure: Failure,
                                   start_index: int = 0) -> Union[Failure, MutableChain]:
         exception = _failure.value
@@ -153,9 +153,8 @@ class SpiderMiddlewareManager(MiddlewareManager):
             return MutableAsyncChain(result, recovered)
         else:
             return MutableChain(result, recovered)
-# CResolvido
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/core/spidermw.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/core/spidermw.py/left.py
     def _process_callback_output(self, response, spider, result):
         if isinstance(result, collections.abc.AsyncIterator):
             recovered = MutableAsyncChain()
@@ -164,7 +163,7 @@ class SpiderMiddlewareManager(MiddlewareManager):
 =======
     def _process_callback_output(self, response: Response, spider: Spider, result: Iterable) -> MutableChain:
         recovered = MutableChain()
->>>>>>> /home/ze/miningframework/mining_results_version3_3/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/core/spidermw.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/scrapy_results/scrapy/ffc6f525cead2469dda37f5174e62b8011349613/scrapy/core/spidermw.py/right.py
         result = self._evaluate_iterable(response, spider, result, 0, recovered)
         result = self._process_spider_output(response, spider, result)
         if isinstance(result, collections.abc.AsyncIterator):

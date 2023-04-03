@@ -140,13 +140,13 @@ plt.show()
 #    The use of the following functions, methods, classes and modules is shown
 #    in this example:
 #
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/examples/subplots_axes_and_figures/demo_tight_layout.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/examples/subplots_axes_and_figures/demo_tight_layout.py/left.py
 #    - `matplotlib.figure.Figure.tight_layout` /
 #      `matplotlib.pyplot.tight_layout`
 #    - `matplotlib.figure.Figure.add_gridspec`
 #    - `matplotlib.figure.Figure.add_subplot`
 #    - `matplotlib.pyplot.subplot2grid`
-||||||| /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/examples/subplots_axes_and_figures/demo_tight_layout.py/base.py
+||||||| /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/examples/subplots_axes_and_figures/demo_tight_layout.py/base.py
 # The use of the following functions and methods is shown in this example:
 
 import matplotlib
@@ -160,4 +160,4 @@ matplotlib.pyplot.subplot2grid
 #    - `matplotlib.figure.Figure.add_gridspec`
 #    - `matplotlib.figure.Figure.add_subplot`
 #    - `matplotlib.pyplot.subplot2grid`
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/examples/subplots_axes_and_figures/demo_tight_layout.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/examples/subplots_axes_and_figures/demo_tight_layout.py/right.py

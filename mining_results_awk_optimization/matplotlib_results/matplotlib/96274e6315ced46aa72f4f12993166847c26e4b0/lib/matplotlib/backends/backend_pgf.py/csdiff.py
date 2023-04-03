@@ -10,13 +10,13 @@ import pathlib
 import re
 import shutil
 import subprocess
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/left.py
 from tempfile import TemporaryDirectory
 =======
 import sys
 import tempfile
 from tempfile import TemporaryDirectory
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/right.py
 import weakref
 
 from PIL import Image
@@ -306,7 +306,7 @@ class LatexManager:
             [self.texcommand, "-halt-on-error"],
             stdin=subprocess.PIPE, stdout=subprocess.PIPE,
             encoding="utf-8", cwd=self.tmpdir)
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/left.py
 
         def finalize_latex
 =======
@@ -319,9 +319,8 @@ class LatexManager:
             self, finalize_latex, self.latex)
         # write header with 'pgf_backend_query_start' token
         self._stdin_writeln(self._build_latex_header
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/right.py
 (latex):
-# CaFP
             latex.kill()
             latex.communicate()
 
@@ -329,7 +328,7 @@ class LatexManager:
             self, finalize_latex, self.latex)
         # write header with 'pgf_backend_query_start' token
         self._stdin_writeln(self._build_latex_header()
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/left.py
 )
         # read all lines until our 'pgf_backend_query_start' token appears
         self._expect("*pgf_backend_query_start")
@@ -343,8 +342,7 @@ class LatexManager:
 :
         return self.latex.stdin
 
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/right.py
-# CaFP
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/right.py
     def get_width_height_descent(self, text, prop):
         """
         Get the width, total height and descent for a text typeset by the
@@ -791,12 +789,12 @@ class TmpDirCleaner:
         TmpDirCleaner._remaining_tmpdirs.add(tmpdir)
 
     @staticmethod
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/left.py
     @_api.deprecated("3.4")
     @atexit.register
 =======
     @atexit.register
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/right.py
     def cleanup_remaining_tmpdirs():
         for tmpdir in TmpDirCleaner._remaining_tmpdirs:
             error_message = "error deleting tmp directory {}".format(tmpdir)

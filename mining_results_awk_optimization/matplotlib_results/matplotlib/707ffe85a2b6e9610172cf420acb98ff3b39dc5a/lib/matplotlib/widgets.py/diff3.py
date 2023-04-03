@@ -1024,14 +1024,14 @@ class TextBox(AxesWidget):
 
         # TextBox's text object should not parse mathtext at all.
         self.text_disp = self.ax.text(
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/707ffe85a2b6e9610172cf420acb98ff3b39dc5a/lib/matplotlib/widgets.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/707ffe85a2b6e9610172cf420acb98ff3b39dc5a/lib/matplotlib/widgets.py/left.py
             self.DIST, 0.5, initial, transform=self.ax.transAxes,
             verticalalignment='center', horizontalalignment=ha)
 =======
             self.DIST_FROM_LEFT, 0.5, initial,
             transform=self.ax.transAxes, verticalalignment='center',
             horizontalalignment='left', parse_math=False)
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/707ffe85a2b6e9610172cf420acb98ff3b39dc5a/lib/matplotlib/widgets.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/707ffe85a2b6e9610172cf420acb98ff3b39dc5a/lib/matplotlib/widgets.py/right.py
 
         self._observers = cbook.CallbackRegistry()
 

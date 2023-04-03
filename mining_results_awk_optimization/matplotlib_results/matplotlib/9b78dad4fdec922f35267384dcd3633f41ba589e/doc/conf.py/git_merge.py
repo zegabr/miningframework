@@ -612,12 +612,12 @@ if link_github:
         if not fn.startswith(('matplotlib/', 'mpl_toolkits/')):
             return None
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/doc/conf.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/doc/conf.py/left.py
         version = parse(matplotlib.__version__)
         tag = 'main' if version.is_devrelease else f'v{version.public}'
         return ("https://github.com/matplotlib/matplotlib/blob"
                 f"/{tag}/lib/{fn}{linespec}")
-||||||| /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/doc/conf.py/base.py
+||||||| /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/doc/conf.py/base.py
         m = re.match(r'^.*post[0-9]+\+\w([a-z0-9]+).\w+$', matplotlib.__version__)
         if m:
             return "https://github.com/matplotlib/matplotlib/blob/%s/lib/%s%s" % (
@@ -630,6 +630,6 @@ if link_github:
         tag = 'master' if version.is_devrelease else f'v{version.public}'
         return ("https://github.com/matplotlib/matplotlib/blob"
                 f"/{tag}/lib/{fn}{linespec}")
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/doc/conf.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/doc/conf.py/right.py
 else:
     extensions.append('sphinx.ext.viewcode')

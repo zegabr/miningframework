@@ -1729,23 +1729,20 @@ default: %(va)s
         gridspec_kw = gridspec_kw or {}
         # special-case string input
         if isinstance(mosaic, str):
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
             mosaic = self._normalize_grid_string(mosaic)
         # Only accept strict bools to allow a possible future API expansion.
         _api.check_isinstance
 =======
             mosaic = self._normalize_grid_string
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 (
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
 bool, sharex=sharex, sharey=sharey
 =======
 mosaic
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 )
-# CReduzido
-
-
 
         def _make_array(inp):
             """
@@ -1855,36 +1852,31 @@ mosaic
                 # and stash this slice for later
                 this_level[(start_row, start_col)] = (name, slc, 'axes')
 
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
             # do the same thing for the nested mosaics 
 =======
             # do the same thing for the nested mosaics (simpler because these
             # can not be spans yet!)
             for 
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 (
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
 simpler because these
             # can not be spans yet!)
 =======
 j, k)
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
             for (j
 =======
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 ,
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
  k), nested_mosaic in nested.items()
 =======
  nested_mosaic in nested.items()
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 :
-# CaFP
-# CaFP
-# CaFP
-# CaFP
-
                 this_level[(j, k)] = (None, nested_mosaic, 'nested')
 
             # now go through the things in this level and add them
@@ -1905,7 +1897,7 @@ j, k)
                     )
                     output[name] = ax
                 elif method == 'nested':
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
                     nested_mosaic = arg
                     j, k = key
                     # recursively add the nested mosaic
@@ -1913,9 +1905,9 @@ j, k)
 =======
                     nested_mosaic = arg
                     j
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 ,
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
  cols = nested_mosaic.shape
                     nested_output = _do_layout
 =======
@@ -1923,7 +1915,7 @@ j, k)
                     # recursively add the nested mosaic
                     rows, cols = nested_mosaic.shape
                     nested_output = _do_layout
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 (
                         gs[j, k].subgridspec(rows, cols, **gridspec_kw),
                         nested_mosaic,
@@ -1945,7 +1937,7 @@ j, k)
         rows, cols = mosaic.shape
         gs = self.add_gridspec(rows, cols, **gridspec_kw)
         ret = _do_layout(gs, mosaic, *_identify_keys_and_nested(
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
 mosaic))
         ax0 = next(iter(ret.values()))
         for ax in ret.values():
@@ -1954,9 +1946,8 @@ mosaic))
                 ax._label_outer_xaxis(
 =======
 mosaic
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 )
-# CReduzido
             if sharey:
                 ax.sharey(ax0)
                 ax._label_outer_yaxis()
@@ -2077,18 +2068,17 @@ class SubFigure(FigureBase):
         dx = wr[self._subplotspec.colspan].sum() / wr.sum()
         dy = hr[self._subplotspec.rowspan].sum() / hr.sum()
         x0 = wr[:self._subplotspec.colspan.start].sum(
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
 =======
             x0 += np.sum(wr[:self._subplotspec.colspan.start]
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 ) / wr.sum()
         y0 = 1 - hr[:self._subplotspec.rowspan.stop].sum(
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
 =======
             y0 += 1 - (np.sum(hr[:self._subplotspec.rowspan.stop]
->>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 ) / hr.sum()
-# CReduzido
         if self.bbox_relative is None:
             self.bbox_relative = Bbox.from_bounds(x0, y0, dx, dy)
         else:

@@ -1,13 +1,13 @@
 """
     :codeauthor: Megan Wilhite <mwilhite@saltstack.com>
 """
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/tests/integration/cloud/clouds/test_vmware.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/tests/integration/cloud/clouds/test_vmware.py/left.py
 
 import socket
 
 =======
 # Create the cloud instance name to be used throughout the tests
->>>>>>> /home/ze/miningframework/mining_results_version3_3/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/tests/integration/cloud/clouds/test_vmware.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/tests/integration/cloud/clouds/test_vmware.py/right.py
 from tests.integration.cloud.helpers.cloud_test_base import TIMEOUT, CloudTest
 
 
@@ -71,13 +71,13 @@ class VMWareTest(CloudTest):
 
         create_snapshot = self.run_cloud(
             "
-<<<<<<< /home/ze/miningframework/mining_results_version3_3/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/tests/integration/cloud/clouds/test_vmware.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_awk_optimization/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/tests/integration/cloud/clouds/test_vmware.py/left.py
 -a create_snapshot {} snapshot_name='Test Cloud' memdump=True -y
 =======
 -a create_snapshot {} \
                                          snapshot_name='Test Cloud' \
                                          memdump=True -y
->>>>>>> /home/ze/miningframework/mining_results_version3_3/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/tests/integration/cloud/clouds/test_vmware.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_awk_optimization/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/tests/integration/cloud/clouds/test_vmware.py/right.py
 ".format(
                 self.instance_name
             ),
