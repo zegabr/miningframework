@@ -71,7 +71,7 @@ sum_of_diff_blocks() {
         if files_are_equal "$dir/diff3.py" "$dir/merge.py";  then
             aFP=$(count_file_conflicts "$dir/csdiff.py") || aFP=0
             if [ "$aFP" -gt 0 ]; then
-                total=$((base + left))
+                total=$(diff3 -m -A "$dir/left.py" "$dir/base.py" "$dir/right.py" | grep -c '^=======')
                 total_total=$((total_total + total))
                 echo "(aFPyes)$dir $total "
             else
