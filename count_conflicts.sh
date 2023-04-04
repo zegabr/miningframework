@@ -57,3 +57,5 @@ echo "csdiff aFN: $COUNTaFN"
 echo "diff3 FPs: $COUNTdiff3FP"
 echo "conflitos reduzidos: $COUNTCReduzido"
 echo "conflitos resolvidos: $COUNTCResolvido"
+# print the result of this equation: -$COUNTaFP - 2*$COUNTaFN + $COUNTCReduzido + 2*$COUNTCResolvido
+echo "aumento de produtividade: " $((- 2 * COUNTCResolvido - COUNTCReduzido - 2 * COUNTaFN - COUNTaFP))
