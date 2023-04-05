@@ -163,16 +163,17 @@ awk -v c_str="$comment_string" -v left="$ESCAPED_LEFT" -v base="$ESCAPED_BASE" -
   -v t_left="$ESCAPED_TEMP_LEFT" -v t_base="$ESCAPED_TEMP_BASE" -v t_right="$ESCAPED_TEMP_RIGHT" '
 BEGIN {}
 {
-  if ($0 !~ "^" c_str) {
+  # if ($0 !~ "^" c_str) {
     gsub(t_left, left, $0)
     gsub(t_base, base, $0)
     gsub(t_right, right, $0)
-  }
+  # }
   print $0
 }
 ' "$mergedFile" > "$mergedFile".tmp && wait && mv "$mergedFile".tmp "$mergedFile"
 
-sed -i -e "/^$comment_string/!s/\(=======\)\(.\+\)/\1\n\2/" $mergedFile
+# sed -i -e "/^$comment_string/!s/\(=======\)\(.\+\)/\1\n\2/" $mergedFile
+sed -i -e "s/\(=======\)\(.\+\)/\1\n\2/" $mergedFile
 sed -i -e :a -e '/^\n*$/{$d;N;ba' -e '}' "$mergedFile"
 wait
 
