@@ -1,5 +1,4 @@
 path,name
-https://github.com/matplotlib/matplotlib
 https://github.com/tensorflow/tensorflow
 https://github.com/certbot/certbot
 https://github.com/pallets/flask
@@ -9,7 +8,3 @@ https://github.com/saltstack/salt
 https://github.com/scrapy/scrapy
 https://github.com/getsentry/sentry
 https://github.com/tornadoweb/tornado
-
-
-
-
