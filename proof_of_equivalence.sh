@@ -5,13 +5,13 @@ rm -rf ./v2_results
 sed -i 's/csdiff_awk_optimization.sh/csdiff_v2.sh/g' src/main/services/dataCollectors/csDiffCollector/CSDiffRunner.groovy
 echo "running mining framework"
 ./gradlew assemble
-./gradlew run --args="-e .py -i injectors.CSDiffModule -l '( ) ,' -t 1 -s 01/01/2021 -u 03/01/2021 ./python_projects_backup.csv ./v2_results"
+./gradlew run --args="-e .py -i injectors.CSDiffModule -l '( ) ,' -t 1 -s 01/01/2021 -u 05/01/2021 ./python_projects_backup.csv ./v2_results"
 
 rm -rf ./awk_results
 # use sed to change the "dependencies/csdiff_v2.sh" on file src/main/services/dataCollectors/csDiffCollector/CSDiffRunner.groovy to be "dependencies/csdiff_awk_optimization.sh"
 sed -i 's/csdiff_v2.sh/csdiff_awk_optimization.sh/g' src/main/services/dataCollectors/csDiffCollector/CSDiffRunner.groovy
 ./gradlew assemble
-./gradlew run --args="-e .py -i injectors.CSDiffModule -l '( ) ,' -t 1 -s 01/01/2021 -u 03/01/2021 ./python_projects_backup.csv ./awk_results"
+./gradlew run --args="-e .py -i injectors.CSDiffModule -l '( ) ,' -t 1 -s 01/01/2021 -u 05/01/2021 ./python_projects_backup.csv ./awk_results"
 
 # get list of all files ending in csdiff.py for both results, sort them, and for each file awk_results, check for the difference in the same file of the v2_results
 awk_results=$(find ./awk_results | grep csdiff.py)
@@ -28,7 +28,7 @@ for file in $awk_results; do
             break
             has_difference=1
         fi
-    else 
+    else
         echo "file does not exist in v2_results"
         # stop the loop
         break
@@ -43,3 +43,5 @@ if [ -z "$has_difference" ]; then
 fi
 
 sed -i 's/csdiff_awk_optimization.sh/csdiff_v2.sh/g' src/main/services/dataCollectors/csDiffCollector/CSDiffRunner.groovy
+
+

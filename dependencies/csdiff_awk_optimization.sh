@@ -87,11 +87,11 @@ add_dolar_sign_separators() {
     {
       line = $0
       gsub(separatorString, "\n$$$$$$$&\n$$$$$$$", line)
+      gsub("=", "$=", line)
       print line
     }
     ' "$inputFile"
 }
-# gsub("=", "$=", line)
 
 # Perform the tokenization of the input file based on the provided separators
 add_dolar_sign_separators "$myFile" > "$myTempFile"
@@ -102,7 +102,6 @@ wait
 # Runs diff3 against the tokenized inputs, generating a tokenized merged file
 midMergedFile="${parentFolder}/mid_merged${fileExt}"
 diff3 -m -E "$myTempFile" "$oldTempFile" "$yourTempFile" > $midMergedFile
-# kdiff3 --auto "$oldTempFile" "$myTempFile" "$yourTempFile" -o $midMergedFile --cs "ShowInfoDialogs=0"
 
 # Removes the tokenized input files
 rm "$myTempFile"
@@ -178,12 +177,12 @@ sed -i -e :a -e '/^\n*$/{$d;N;ba' -e '}' "$mergedFile"
 wait
 
 # undoing replacement made at the beginning this should be made only after processing the "=======" strings above
-# awk '
-# {
-#   gsub("\\$=", "=", $0)
-#   print $0
-# }
-# ' "$mergedFile" > "$mergedFile".tmp && wait && mv "$mergedFile".tmp "$mergedFile"
+awk '
+{
+  gsub("\\$=", "=", $0)
+  print $0
+}
+' "$mergedFile" > "$mergedFile".tmp && wait && mv "$mergedFile".tmp "$mergedFile"
 
 # remove last empty line (at some point in this script we are inserting a new one)
 # TODO: find where we are inserting a new line to csdiff, treat this case ahd remove this code below
