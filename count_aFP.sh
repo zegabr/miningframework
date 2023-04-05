@@ -132,7 +132,7 @@ scenario_has_csdiff_aFP() {
             echo "not a csdiff aFP merge scenario"
             return 0
         fi
-        aFP=$(count_CaFP "$dir/csdiff.py") || aFP=0
+        aFP=$(count_file_conflicts "$dir/csdiff.py") || aFP=0
         total_aFP=$((total_aFP + aFP))
     done
     if [ "$total_aFP" -gt 0 ]; then
@@ -203,9 +203,17 @@ get_project_or_file_data() {
 }
 
 get_merge_scenario_data() {
-    # run this inside merge scenario
-    get_project_or_file_data
-    scenario_has_csdiff_aFP
-    scenario_has_diff3_aFP
+    # run this inside project, where we have the merge scenarios as result of ls command
+    arr=($(ls -1)) # merge scenarios
+
+    for elem in "${arr[@]}"; do
+        echo
+        echo $elem
+        cd $elem
+        get_project_or_file_data
+        scenario_has_csdiff_aFP
+        scenario_has_diff3_aFP
+        cd ..
+    done
     echo
 }
