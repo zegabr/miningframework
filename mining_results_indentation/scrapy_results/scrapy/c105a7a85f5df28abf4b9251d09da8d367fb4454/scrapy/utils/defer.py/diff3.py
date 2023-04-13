@@ -6,7 +6,7 @@ import inspect
 from asyncio import Future
 from functools import wraps
 <<<<<<< /home/ze/miningframework/mining_results/scrapy_results/scrapy/c105a7a85f5df28abf4b9251d09da8d367fb4454/scrapy/utils/defer.py/left.py
-from typing import (
+from typing import ( # CReduzido
     Any,
     AsyncGenerator,
     AsyncIterable,

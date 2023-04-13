@@ -263,7 +263,7 @@ class LossFunctionWrapper(Loss):
 <<<<<<< /home/ze/miningframework/mining_results/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/left.py
     for k, v in self._fn_kwargs.items():
       config[k] = K.eval(v) if tf_utils.is_tensor_or_variable(v) else v
-    base_config = super().get_config()
+    base_config = super().get_config() # CResolvido
 =======
     for k, v in self._fn_kwargs.items():
       config[k] = backend.eval(v) if tf_utils.is_tensor_or_variable(v) else v
@@ -2074,7 +2074,7 @@ def get(identifier):
   if identifier is None:
     return None
 <<<<<<< /home/ze/miningframework/mining_results/tensorflow_results/tensorflow/0062afb175ee4c65b649b96d9132ddd9ebb596a2/tensorflow/python/keras/losses.py/left.py
-  if isinstance(identifier, str) or isinstance(identifier, dict):
+  if isinstance(identifier, str) or isinstance(identifier, dict): # Resolvido errado, afn marcado no csdiff
 =======
   if isinstance(identifier, str):
     identifier = str(identifier)

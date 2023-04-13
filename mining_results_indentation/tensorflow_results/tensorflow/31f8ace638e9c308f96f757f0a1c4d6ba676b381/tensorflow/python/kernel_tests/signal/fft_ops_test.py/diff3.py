@@ -90,7 +90,7 @@ class BaseFFTOpsTest(test.TestCase):
 <<<<<<< /home/ze/miningframework/mining_results/tensorflow_results/tensorflow/31f8ace638e9c308f96f757f0a1c4d6ba676b381/tensorflow/python/kernel_tests/signal/fft_ops_test.py/left.py
     with self.cached_session(use_gpu=True):
 =======
-    if test.is_built_with_rocm():
+    if test.is_built_with_rocm(): # Resolveu errado, aFN marcdao no csdiff
       self.skipTest("Complex datatype not yet supported in ROCm.")
       return
     with self.cached_session():

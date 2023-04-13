@@ -1404,7 +1404,7 @@ def categorical_hinge(y_true, y_pred):
   where `neg=maximum((1-y_true)*y_pred) and pos=sum(y_true*y_pred)`
 
 <<<<<<< /home/ze/miningframework/mining_results/tensorflow_results/tensorflow/e4f2b44a7aa560808606e8b661a0337cc5913709/tensorflow/python/keras/losses.py/left.py
-  Usage:
+  Usage: # CResolvido
   ```python
   y_true = np.random.randint(0, 3, size=(2,))
   y_true = tf.keras.utils.to_categorical(y_true, num_classes=3)
