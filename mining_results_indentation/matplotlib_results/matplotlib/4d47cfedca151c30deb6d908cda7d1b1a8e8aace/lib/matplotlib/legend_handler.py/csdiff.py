@@ -810,7 +810,7 @@ class HandlerPolyCollection(HandlerBase):
                 return prop_array[0]
             else:
                 return None
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/left.py
 
         # orig_handle is a PolyCollection and legend_handle is a Patch.
         # Directly set Patch color attributes (must be RGBA tuples).
@@ -819,48 +819,56 @@ class HandlerPolyCollection(HandlerBase):
 
         # orig_handle is a PolyCollection and legend_handle is a Patch.
         # Directly set Patch color attributes 
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/right.py
 (
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/left.py
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+# CaFP
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/left.py
 orig_handle.get_facecolor()
 =======
 must be RGBA tuples
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/right.py
 ).
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/left.py
         legend_handle._edgecolor = first_color
 =======
         legend_handle._facecolor = first_color
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/right.py
 (
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/left.py
 orig_handle.get_edgecolor
 =======
 orig_handle.get_facecolor
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/right.py
 ())
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/left.py
         legend_handle._fill = orig_handle.get_fill
 =======
         legend_handle._edgecolor = first_color
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/right.py
 (
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/left.py
 =======
 orig_handle.get_edgecolor()
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/right.py
 )
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/left.py
         legend_handle._hatch = orig_handle.get_hatch
 =======
         legend_handle._fill = orig_handle.get_fill
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/right.py
 (
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/left.py
 =======
 )
         legend_handle._hatch = orig_handle.get_hatch(
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/right.py
 )
         # Hatch color is anomalous in having no getters and setters.
         legend_handle._hatch_color = orig_handle._hatch_color

@@ -25,14 +25,14 @@ Set up the cloud configuration at ``/etc/salt/cloud.providers`` or
 :depends: requests
 """
 
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/left.py
-||||||| /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/base.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/left.py
+||||||| /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/base.py
 # Import python libs
 from __future__ import absolute_import, print_function, unicode_literals
 
 =======
 
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/right.py
 import base64
 import hmac
 import logging
@@ -51,9 +51,9 @@ from salt.exceptions import (
     SaltCloudNotFound,
     SaltCloudSystemExit,
 )
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/left.py
 
-||||||| /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/base.py
+||||||| /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/base.py
 
 # Import Salt Libs
 from salt.ext import six
@@ -65,7 +65,7 @@ from salt.ext.six.moves.urllib.parse import quote as _quote
 from salt.ext.six.moves import range
 from salt.ext.six.moves.urllib.parse import quote as _quote
 
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/right.py
 try:
     import requests
 
@@ -135,18 +135,18 @@ def _compute_signature(parameters, access_key_secret, method, path):
     keys = sorted(parameters.keys())
     pairs = []
     for key in keys:
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/left.py
         val = str(parameters[key]).encode("utf-8")
         pairs.append(
             urllib.parse.quote(key, safe="") + "=" + urllib.parse.quote(val, safe="-_~")
         )
-||||||| /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/base.py
+||||||| /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/base.py
         val = six.text_type(parameters[key]).encode("utf-8")
         pairs.append(_quote(key, safe="") + "=" + _quote(val, safe="-_~"))
 =======
         val = str(parameters[key]).encode("utf-8")
         pairs.append(_quote(key, safe="") + "=" + _quote(val, safe="-_~"))
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/cloud/clouds/qingcloud.py/right.py
     qs = "&".join(pairs)
     string_to_sign += qs
 

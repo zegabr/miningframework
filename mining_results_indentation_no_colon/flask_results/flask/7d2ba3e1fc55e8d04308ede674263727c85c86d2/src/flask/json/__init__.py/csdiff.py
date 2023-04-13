@@ -178,12 +178,12 @@ def loads(s, app=None, **kwargs):
     :param kwargs: Extra arguments passed to func:`json.dump`.
 
     .. versionchanged:: 2.0
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/flask_results/flask/7d2ba3e1fc55e8d04308ede674263727c85c86d2/src/flask/json/__init__.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/flask_results/flask/7d2ba3e1fc55e8d04308ede674263727c85c86d2/src/flask/json/__init__.py/left.py
         ``encoding`` is deprecated and will be removed in 2.1. The data
         must be a string or UTF-8 bytes.
 =======
     :param kwargs: Extra arguments passed to :func:`json.loads`.
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/flask_results/flask/7d2ba3e1fc55e8d04308ede674263727c85c86d2/src/flask/json/__init__.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/flask_results/flask/7d2ba3e1fc55e8d04308ede674263727c85c86d2/src/flask/json/__init__.py/right.py
 
     .. versionchanged:: 1.0.3
         ``app`` can be passed directly, rather than requiring an app

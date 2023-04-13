@@ -1687,13 +1687,13 @@ class MultiCursor(Widget):
         The `~.axes.Axes` to attach the cursor to.
 
     useblit : bool, default: True
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
         Use blitting for faster drawing if supported by the backend.
         See the tutorial :doc:`/tutorials/advanced/blitting`
         for details.
 =======
         Use blitting for faster drawing if supported by the backend.
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
 
     horizOn : bool, default: False
         Whether to draw the horizontal line.
@@ -2845,18 +2845,20 @@ class RectangleSelector(_SelectorWidget):
 
         self.grab_range = grab_range
 
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
         if self._interactive:
 =======
+# CaFP
         if self._interactive:
             self._handle_props = {
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/left.py
+# CaFP
             self._handle_props = {
                 'markeredgecolor': 
 =======
                 'markeredgecolor': 
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/widgets.py/right.py
 (self._props or {}).get(
                     'edgecolor', 'black'),
                 **cbook.normalize_kwargs(handle_props, Line2D)}

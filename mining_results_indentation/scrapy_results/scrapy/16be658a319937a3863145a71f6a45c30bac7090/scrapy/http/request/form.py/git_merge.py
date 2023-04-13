@@ -5,14 +5,14 @@ This module implements the FormRequest class which is a more convenient class
 See documentation in docs/topics/request-response.rst
 """
 
-<<<<<<< /home/ze/miningframework/mining_results_indentation/scrapy_results/scrapy/16be658a319937a3863145a71f6a45c30bac7090/scrapy/http/request/form.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/scrapy_results/scrapy/16be658a319937a3863145a71f6a45c30bac7090/scrapy/http/request/form.py/left.py
 from urllib.parse import urljoin, urlencode, urlsplit, urlunsplit
-||||||| /home/ze/miningframework/mining_results_indentation/scrapy_results/scrapy/16be658a319937a3863145a71f6a45c30bac7090/scrapy/http/request/form.py/base.py
+||||||| /home/ze/miningframework/mining_results/scrapy_results/scrapy/16be658a319937a3863145a71f6a45c30bac7090/scrapy/http/request/form.py/base.py
 from urllib.parse import urljoin, urlencode
 =======
 from typing import Iterable, List, Optional, Tuple, Type, TypeVar, Union
 from urllib.parse import urljoin, urlencode
->>>>>>> /home/ze/miningframework/mining_results_indentation/scrapy_results/scrapy/16be658a319937a3863145a71f6a45c30bac7090/scrapy/http/request/form.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/scrapy_results/scrapy/16be658a319937a3863145a71f6a45c30bac7090/scrapy/http/request/form.py/right.py
 
 from lxml.html import FormElement, HtmlElement, HTMLParser, SelectElement
 from parsel.selector import create_root_node

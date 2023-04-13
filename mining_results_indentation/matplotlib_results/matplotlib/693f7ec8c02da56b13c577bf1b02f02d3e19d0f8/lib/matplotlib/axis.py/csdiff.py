@@ -1419,11 +1419,12 @@ class Axis(martist.Artist):
 
                 grid(color='r', linestyle='-', linewidth=2)
         """
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/left.py
         TOGGLE = object()
         UNSET = object()
         visible = kwargs.pop('visible', UNSET)
 
+        # CaFP
         if b is None
 =======
         TOGGLE = object()
@@ -1435,9 +1436,9 @@ class Axis(martist.Artist):
                 if kwargs:  # grid(color='r')
                     b = True
                 else
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/right.py
 :  # grid()
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/left.py
             if visible is UNSET:
                 if kwargs:  # grid(color='r')
                     b = True
@@ -1445,6 +1446,7 @@ class Axis(martist.Artist):
                     b = TOGGLE
             else:  # grid(visible=v)
                 b = visible
+        # CaFP
         else:
             if visible is not UNSET and bool
 =======
@@ -1453,7 +1455,7 @@ class Axis(martist.Artist):
                 b = visible
         else:
             if visible is not UNSET and bool
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/axis.py/right.py
 (b) != bool(visible):
                 # grid(True, visible=False), grid(False, visible=True)
                 raise ValueError(

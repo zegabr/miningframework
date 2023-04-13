@@ -815,18 +815,18 @@ class HandlerPolyCollection(HandlerBase):
         # Directly set Patch color attributes (must be RGBA tuples).
         legend_handle._facecolor = first_color(orig_handle.get_facecolor())
         legend_handle._edgecolor = first_color(orig_handle.get_edgecolor())
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/left.py
         legend_handle._fill = orig_handle.get_fill()
         legend_handle._hatch = orig_handle.get_hatch
 =======
-        legend_handle._fill = orig_handle.get_fill
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/right.py
+        legend_handle._fill = orig_handle.get_fill # CaFP
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/right.py
 (
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/left.py
 =======
 )
-        legend_handle._hatch = orig_handle.get_hatch(
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/right.py
+        legend_handle._hatch = orig_handle.get_hatch( # CaFP
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/legend_handler.py/right.py
 )
         # Hatch color is anomalous in having no getters and setters.
         legend_handle._hatch_color = orig_handle._hatch_color

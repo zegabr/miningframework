@@ -343,7 +343,7 @@ def show(*args, **kwargs):
     ion : Enable interactive mode, which shows / updates the figure after
           every plotting command, so that calling ``show()`` is not necessary.
     ioff :
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
  Disable interactive mode.
     savefig : Save the figure to an image file instead of showing it on screen.
 
@@ -359,11 +359,13 @@ def show(*args, **kwargs):
     if you keep a reference to the figure and use `.Figure.savefig`.
 =======
  Disable interactive mode.
+# CaFP
     savefig : Save the figure to an image file instead of showing it on screen.
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
 
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
     **Auto-show in jupyter notebooks**
+# CaFP
 
     The jupyter backends (activated via ``%matplotlib inline``,
     ``%matplotlib notebook``, or ``%matplotlib widget``), call ``show()`` at
@@ -387,7 +389,7 @@ def show(*args, **kwargs):
     ``%matplotlib notebook``, or ``%matplotlib widget``), call ``show()`` at
     the end of every cell by default. Thus, you usually don't have to call it
     explicitly there.
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
     """
     _warn_if_gui_out_of_main_thread()
     return _backend_mod.show(*args, **kwargs)

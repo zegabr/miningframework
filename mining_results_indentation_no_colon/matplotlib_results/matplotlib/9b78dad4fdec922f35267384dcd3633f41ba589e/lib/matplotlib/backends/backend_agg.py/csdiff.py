@@ -158,15 +158,24 @@ class RendererAgg(RendererBase):
                         "Exceeded cell block limit in Agg.\n\n"
                         "Please reduce the value of "
                         f"rcParams['agg.path.chunksize'] (
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
+                            # CaFP
+                            # CaFP
+                            # CaFP
+                            # CaFP
+                            # CaFP
+                            # CaFP
+                            # CaFP
+                            # CaFP
+                            # CaFP
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
 currently {nmax}) 
 =======
 currently {nmax}) "
                         "or increase the path simplification threshold
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
 "
                         "
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
 or increase the path simplification threshold"
                         "(rcParams['path.simplify_threshold'] = "
                         f"{mpl.rcParams['path.simplify_threshold']:.2f} by "
@@ -177,25 +186,25 @@ or increase the path simplification threshold"
                         f"{mpl.rcParams['path.simplify_threshold']:.2f} by "
                         "default and path.simplify_threshold = "
                         f"{path.simplify_threshold:.2f} on the input
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
 )."
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
                     )
                     raise OverflowError(msg
 =======
                     
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
 )
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
  from None
 =======
                     raise OverflowError(msg) from None
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
         else:
             try:
                 self._renderer.draw_path(gc, path, transform, rgbFace)
             except OverflowError as err:
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
                 cant_chunk = ''
                 if rgbFace is not None:
                     cant_chunk += "- can not split filled path\n"
@@ -235,12 +244,12 @@ or increase the path simplification threshold"
 
                 else:
                     inc_threshold = 
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
 (rcParams['path.simplify_threshold'] = "
                         f
                         "or increase the path simplification threshold"
                         "
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
 {mpl.rcParams['path.simplify_threshold']} "
                         "by default and path.simplify_threshold "
                         f"= {path.simplify_threshold} "
@@ -257,25 +266,25 @@ or increase the path simplification threshold"
                         )
                     if nmax > 100:
                         msg = 
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
 (
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
                             
 =======
                             "Exceeded cell block limit in Agg.  Please reduce 
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
 "Exceeded cell block limit in Agg.  Please reduce "
                             "the value of rcParams['agg.path.chunksize'] "
                             f"
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
 (currently {nmax}) {inc_threshold}
 =======
                             "the value of rcParams['agg.path.chunksize'] "
                             f"(currently {nmax}) {inc_threshold}
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
 "
                         )
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
                     else:
                         msg = (
                             "Exceeded cell block limit in Agg.  Please set 
@@ -284,9 +293,9 @@ or increase the path simplification threshold"
                         msg = (
                             "Exceeded cell block limit in Agg.  Please set "
                             "the value of rcParams['agg.path.chunksize'], 
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
 "
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/left.py
                             "the value of rcParams['agg.path.chunksize'], "
                             f"(currently {nmax}) to be greater than 100 "
                             + inc_threshold
@@ -299,7 +308,7 @@ or increase the path simplification threshold"
                         )
 
                 raise OverflowError(msg
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backends/backend_agg.py/right.py
 ) from None
 
     def draw_mathtext(self, gc, x, y, s, prop, angle):

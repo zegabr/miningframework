@@ -136,17 +136,17 @@ class SubplotBase:
                 self.set_ylabel("")
             self.yaxis.set_tick_params(which="both", labelleft=False)
             if self.yaxis.offsetText.get_position
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/left.py
 (
 =======
 
     try
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/right.py
 )[0] == 0:
                 self.yaxis.offsetText.set_visible(False)
         if not ss.is_last_col():  # Remove right label/ticklabels/offsettext.
             if label_position == "right":
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/left.py
                 self.set_ylabel
 =======
         # if we have already wrapped this class, declare victory!
@@ -154,7 +154,7 @@ class SubplotBase:
             return axes_class
 
         return type
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/axes/_subplots.py/right.py
 ("")
             self.yaxis.set_tick_params(which="both", labelright=False)
             if self.yaxis.offsetText.get_position()[0] == 1:

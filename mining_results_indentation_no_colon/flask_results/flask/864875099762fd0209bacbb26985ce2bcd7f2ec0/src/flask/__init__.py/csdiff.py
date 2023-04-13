@@ -44,9 +44,9 @@ from .templating import render_template as render_template
 from .templating import render_template_string as render_template_string
 
 __version__ = "
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/flask_results/flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/__init__.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/flask_results/flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/__init__.py/left.py
 2.0.1.dev0
 =======
 1.1.4
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/flask_results/flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/__init__.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/flask_results/flask/864875099762fd0209bacbb26985ce2bcd7f2ec0/src/flask/__init__.py/right.py
 "

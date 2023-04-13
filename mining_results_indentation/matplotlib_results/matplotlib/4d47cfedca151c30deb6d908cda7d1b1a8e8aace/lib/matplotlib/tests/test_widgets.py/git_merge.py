@@ -2,16 +2,16 @@ from matplotlib._api.deprecation import MatplotlibDeprecationWarning
 import matplotlib.colors as mcolors
 import matplotlib.widgets as widgets
 import matplotlib.pyplot as plt
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_widgets.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_widgets.py/left.py
 from matplotlib.testing.decorators import check_figures_equal, image_comparison
 from matplotlib.testing.widgets import do_event, get_ax, mock_event
-||||||| /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_widgets.py/base.py
+||||||| /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_widgets.py/base.py
 from matplotlib.testing.decorators import image_comparison
 from matplotlib.testing.widgets import do_event, get_ax
 =======
 from matplotlib.testing.decorators import image_comparison
 from matplotlib.testing.widgets import do_event, get_ax, mock_event
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_widgets.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_widgets.py/right.py
 
 from numpy.testing import assert_allclose
 
@@ -923,7 +923,7 @@ def test_polygon_selector():
                       + polygon_place_vertex(50, 150)
                       + polygon_place_vertex(50, 50))
     check_polygon_selector(event_sequence, expected_result, 1)
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_widgets.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_widgets.py/left.py
 
 
 def test_polygon_selector_set_props_handle_props():
@@ -1069,7 +1069,7 @@ def test_polygon_selector_redraw():
     # After removing two verts, only one remains, and the
     # selector should be automatically resete
     assert tool.verts == verts[0:2]
-||||||| /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_widgets.py/base.py
+||||||| /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_widgets.py/base.py
 =======
 
 
@@ -1111,4 +1111,4 @@ def test_MultiCursor(horizOn, vertOn):
         assert l.get_xdata() == (.5, .5)
     for l in multi.hlines:
         assert l.get_ydata() == (.25, .25)
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_widgets.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/tests/test_widgets.py/right.py

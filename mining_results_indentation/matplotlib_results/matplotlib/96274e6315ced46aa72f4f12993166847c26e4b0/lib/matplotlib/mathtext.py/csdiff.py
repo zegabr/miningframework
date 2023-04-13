@@ -566,7 +566,7 @@ class MathTextParser:
         r"""
         Get the depth of a mathtext string.
 
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/mathtext.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/mathtext.py/left.py
 =======
     def shrink(self):
         Node.shrink(self)
@@ -2597,7 +2597,7 @@ class MathTextParser:
 
     def get_depth(self, texstr, dpi=120, fontsize=14):
         r"""
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/mathtext.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/mathtext.py/right.py
         Parameters
         ----------
         texstr : str

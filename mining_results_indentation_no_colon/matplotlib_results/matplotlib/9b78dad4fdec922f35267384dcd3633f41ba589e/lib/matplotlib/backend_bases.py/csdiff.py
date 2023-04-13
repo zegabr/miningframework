@@ -1295,27 +1295,27 @@ class LocationEvent(Event):
         Event location in pixels from bottom left of canvas.
     inaxes : `~.axes.Axes` or None
         The `~.axes.Axes` instance over which the mouse is, if any.
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backend_bases.py/left.py
-    xdata
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backend_bases.py/left.py
+    xdata # CaFP
 =======
     xdata, ydata : float or None
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backend_bases.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backend_bases.py/left.py
-, ydata : float or None
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backend_bases.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backend_bases.py/left.py
+, ydata : float or None # CaFP
 =======
         Data coordinates of the mouse within *inaxes*
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backend_bases.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backend_bases.py/left.py
-        Data coordinates of the mouse within *inaxes*
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backend_bases.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backend_bases.py/left.py
+        Data coordinates of the mouse within *inaxes* # CaFP
 =======
 , or *None* if the mouse
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backend_bases.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backend_bases.py/left.py
-, or *None* if the mouse
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backend_bases.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backend_bases.py/left.py
+, or *None* if the mouse # CaFP
         is not over an Axes.
 =======
         is not over an Axes.
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backend_bases.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/backend_bases.py/right.py
     """
 
     lastevent = None  # the last event that was triggered before this one

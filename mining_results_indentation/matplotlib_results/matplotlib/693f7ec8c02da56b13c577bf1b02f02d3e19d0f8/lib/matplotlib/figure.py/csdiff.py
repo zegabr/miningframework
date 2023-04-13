@@ -1729,19 +1729,19 @@ default: %(va)s
         gridspec_kw = gridspec_kw or {}
         # special-case string input
         if isinstance(mosaic, str):
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
             mosaic = self._normalize_grid_string(mosaic)
         # Only accept strict bools to allow a possible future API expansion.
         _api.check_isinstance
 =======
             mosaic = self._normalize_grid_string
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 (
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
 bool, sharex=sharex, sharey=sharey
 =======
 mosaic
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 )
 
         def _make_array(inp):
@@ -1853,26 +1853,30 @@ mosaic
                 this_level[(start_row, start_col)] = (name, slc, 'axes')
 
             # do the same thing for the nested mosaics (
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
 simpler because these
+# CaFP
             # can not be spans yet!)
 =======
 simpler because these
             # can not be spans yet!
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 )
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+# CaFP
             for 
 =======
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+# CaFP
 (j
 =======
             for (j
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 , k), nested_mosaic in nested.items():
                 this_level[(j, k)
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+# CaFP
 ] = (None, nested_mosaic, 'nested')
 
             # now go through the things in this level and add them
@@ -1897,9 +1901,10 @@ simpler because these
             # in order left-to-right top-to-bottom
             for key in sorted(this_level):
                 name
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 ,
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+# CaFP
  **{'label': str
 =======
  arg, method = this_level[key]
@@ -1911,49 +1916,54 @@ simpler because these
                     # add a single axes
                     if name in output:
                         raise ValueError
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 (
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+# CaFP
 name), **subplot_kw}
 =======
 f"There are duplicate keys {name} "
                                          f"in the layout\n{mosaic!r}"
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
                     )
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+# CaFP
                     output[name] = ax
                 elif method == 'nested'
 =======
                     ax = self.add_subplot(
                         gs[slc], **{'label'
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 : str(name), **subplot_kw}
                     )
                     output[name] = ax
                 elif method == 'nested':
                     nested_mosaic = arg
                     j, k = key
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+# CaFP
                     nested_mosaic = arg
                     j
 =======
                     # recursively add the nested mosaic
                     rows
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 ,
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+# CaFP
  k = key
                     # recursively add the nested mosaic
                     rows
 =======
  cols = nested_mosaic.shape
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+# CaFP
 , cols = nested_mosaic.shape
                     nested_output = _do_layout
 =======
                     nested_output = _do_layout
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 (
                         gs[j, k].subgridspec(rows, cols, **gridspec_kw),
                         nested_mosaic,
@@ -1975,7 +1985,8 @@ f"There are duplicate keys {name} "
         rows, cols = mosaic.shape
         gs = self.add_gridspec(rows, cols, **gridspec_kw)
         ret = _do_layout(gs, mosaic, *_identify_keys_and_nested(
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+            # CReduzido
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
 mosaic))
         ax0 = next(iter(ret.values()))
         for ax in ret.values():
@@ -1986,7 +1997,7 @@ mosaic))
                 ax.sharey(ax0
 =======
 mosaic
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 )
                 ax._label_outer_yaxis()
         for k, ax in ret.items():
@@ -2107,20 +2118,21 @@ class SubFigure(FigureBase):
         dy = hr[self._subplotspec.rowspan].sum() / hr.sum()
         x0 = wr[:self._subplotspec.colspan.start].sum() / wr.sum()
         y0 = 1 - hr[:
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+        # CReduzido
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
 self._subplotspec.rowspan.stop].sum
 =======
             x0 += np.sum(wr[:self._subplotspec.colspan.start]) / np.sum(wr)
 
         y0 = 0
         if not self._subplotspec.is_last_row
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 () / hr.sum(
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/left.py
 =======
 hr[:self._subplotspec.rowspan.stop]) /
                        np.sum
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/figure.py/right.py
 )
         if self.bbox_relative is None:
             self.bbox_relative = Bbox.from_bounds(x0, y0, dx, dy)

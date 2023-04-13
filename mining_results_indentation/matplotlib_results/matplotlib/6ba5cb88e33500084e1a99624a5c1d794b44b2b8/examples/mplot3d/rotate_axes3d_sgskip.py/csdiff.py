@@ -44,11 +44,11 @@ for angle in range(0, 360*4 + 1):
 
     # Update the axis view and title
     ax.view_init(elev, azim,
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/6ba5cb88e33500084e1a99624a5c1d794b44b2b8/examples/mplot3d/rotate_axes3d_sgskip.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/6ba5cb88e33500084e1a99624a5c1d794b44b2b8/examples/mplot3d/rotate_axes3d_sgskip.py/left.py
  roll
 =======
  angle, 0
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/6ba5cb88e33500084e1a99624a5c1d794b44b2b8/examples/mplot3d/rotate_axes3d_sgskip.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/6ba5cb88e33500084e1a99624a5c1d794b44b2b8/examples/mplot3d/rotate_axes3d_sgskip.py/right.py
 )
     plt.title('Elevation: %d°, Azimuth: %d°, Roll: %d°' % (elev, azim, roll))
 

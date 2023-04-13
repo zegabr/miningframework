@@ -347,8 +347,8 @@ latex_logo = None
 latex_engine = 'xelatex'  # or 'lualatex'
 
 latex_elements = {}
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
-
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
+# CReduzido
 # Keep babel usage also with xelatex (Sphinx default is polyglossia)
 # If this key is removed or changed, latex build directory must be cleaned
 latex_elements['babel'] = r'\usepackage{babel}'
@@ -425,21 +425,21 @@ latex_elements['babel'] = r'\usepackage{babel}'
 # Sphinx default since 2.x is GNU FreeFont
 latex_elements['fontpkg'] = r'\setmainfont{DejaVu Serif}'
 
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
 # Additional stuff for the LaTeX preamble.
 latex_elements['preamble'] = r"""
    % One line per author on title page
    \DeclareRobustCommand{\and}%
      {\end{tabular}\kern-\tabcolsep\\\begin{tabular}[t]{c}}%
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
    \usepackage{etoolbox}
    \AtBeginEnvironment{sphinxthebibliography}{\appendix\part{Appendices}}
 =======
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
    \usepackage{expdlist}
    \let\latexdescription=\description
    \def\description{\latexdescription{}{} \breaklabel}
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/left.py
    % But expdlist old LaTeX package requires fixes:
    % 1) remove extra space
    \makeatletter
@@ -455,6 +455,7 @@ latex_elements['preamble'] = r"""
       }%
    }
    \makeatother
+   # CReduzido
 =======
    % But expdlist old LaTeX package requires fixes:
    % 1) remove extra space
@@ -472,7 +473,7 @@ latex_elements['preamble'] = r"""
       }%
    }
    \makeatother
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/doc/conf.py/right.py
 """
 # Sphinx 1.5 provides this to avoid "too deeply nested" LaTeX error
 # and usage of "enumitem" LaTeX package is unneeded.

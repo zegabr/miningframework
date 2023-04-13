@@ -1058,19 +1058,21 @@ class PolarAxes(Axes):
         # Parsing all permutations of *args, **kwargs is tricky; it is simpler
         # to let set_xlim() do it and then validate the limits.
         if abs(new_max - new_min) > 2 * np.pi:
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/projections/polar.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/projections/polar.py/left.py
             self.set_xlim(orig_lim)  # un-accept the change
             raise ValueError
 =======
             self.set_xlim
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/projections/polar.py/right.py
+            # CaFP
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/projections/polar.py/right.py
 (
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/projections/polar.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/projections/polar.py/left.py
+            # CaFP
 "The angle range must be less than a full circle"
 =======
 orig_lim)  # un-accept the change
             raise ValueError("The angle range must be less than a full circle"
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/projections/polar.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/projections/polar.py/right.py
 )
         return tuple(np.rad2deg((new_min, new_max)))
 

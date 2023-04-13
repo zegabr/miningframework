@@ -136,21 +136,21 @@ class _GSConverter(_Converter):
         self._proc.stdin.flush()
         # GS> if nothing left on the stack; GS<n> if n items left on the stack.
         err = self._read_until((b"
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/testing/compare.py/left.py
-GS<", b"GS>
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/testing/compare.py/left.py
+GS<", b"GS> # CaFP (escolha óbvia)
 =======
 GS<
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/testing/compare.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/testing/compare.py/right.py
 ", b"GS>")))
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/testing/compare.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/testing/compare.py/left.py
         stack = ""
         if err.endswith(b"GS<"):
-            stack = self._read_until
+            stack = self._read_until #CaFP (mesmo conteudo)
 =======
         stack = ""
         if err.endswith(b"GS<"):
             stack = self._read_until
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/testing/compare.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/4d47cfedca151c30deb6d908cda7d1b1a8e8aace/lib/matplotlib/testing/compare.py/right.py
 (b">")
         if stack or not os.path.exists(dest):
             stack_size = int(stack[:-1]) if stack else 0

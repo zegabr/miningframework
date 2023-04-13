@@ -1,11 +1,11 @@
 """
     :codeauthor: Megan Wilhite <mwilhite@saltstack.com>
 """
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/tests/integration/cloud/clouds/test_vmware.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/tests/integration/cloud/clouds/test_vmware.py/left.py
 
 import socket
 
-||||||| /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/tests/integration/cloud/clouds/test_vmware.py/base.py
+||||||| /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/tests/integration/cloud/clouds/test_vmware.py/base.py
 
 # Import Python Libs
 from __future__ import absolute_import, print_function, unicode_literals
@@ -16,7 +16,7 @@ from salt.ext import six
 # Create the cloud instance name to be used throughout the tests
 =======
 # Create the cloud instance name to be used throughout the tests
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/tests/integration/cloud/clouds/test_vmware.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/tests/integration/cloud/clouds/test_vmware.py/right.py
 from tests.integration.cloud.helpers.cloud_test_base import TIMEOUT, CloudTest
 
 
@@ -79,9 +79,9 @@ class VMWareTest(CloudTest):
         self.assertInstanceExists(ret_val)
 
         create_snapshot = self.run_cloud(
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/tests/integration/cloud/clouds/test_vmware.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/tests/integration/cloud/clouds/test_vmware.py/left.py
             "-a create_snapshot {} snapshot_name='Test Cloud' memdump=True -y".format(
-||||||| /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/tests/integration/cloud/clouds/test_vmware.py/base.py
+||||||| /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/tests/integration/cloud/clouds/test_vmware.py/base.py
             "-a create_snapshot {0} \
                                          snapshot_name='Test Cloud' \
                                          memdump=True -y".format(
@@ -89,7 +89,7 @@ class VMWareTest(CloudTest):
             "-a create_snapshot {} \
                                          snapshot_name='Test Cloud' \
                                          memdump=True -y".format(
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/tests/integration/cloud/clouds/test_vmware.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/tests/integration/cloud/clouds/test_vmware.py/right.py
                 self.instance_name
             ),
             timeout=TIMEOUT,

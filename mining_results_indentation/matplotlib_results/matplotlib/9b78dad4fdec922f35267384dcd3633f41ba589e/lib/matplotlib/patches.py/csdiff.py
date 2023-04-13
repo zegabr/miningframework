@@ -416,6 +416,8 @@ class Patch(artist.Artist):
         self.stale = True
 
     def set_linestyle(self, ls):
+        # CaFP
+        # CaFP
         """
         Set the patch linestyle.
 
@@ -426,19 +428,19 @@ class Patch(artist.Artist):
         ``'--'`` or  ``'dashed'``                   dashed line
         ``'-.'`` or  ``'dashdot'``                  dash-dotted line
         ``':
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/patches.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/patches.py/left.py
 '`` or ``'dotted'``                     dotted line
         ``'none'``
 =======
 '`` or ``'dotted'``                     dotted line
         ``'none'``, ``'None'``, ``' '``, or ``''``  draw nothing
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/patches.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/patches.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/patches.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/patches.py/left.py
 , ``'None'``, ``' '``, or ``''``  draw nothing
         ==========================================  =================
 =======
         ==========================================  =================
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/patches.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/patches.py/right.py
 
         Alternatively a dash tuple of the following form can be provided::
 

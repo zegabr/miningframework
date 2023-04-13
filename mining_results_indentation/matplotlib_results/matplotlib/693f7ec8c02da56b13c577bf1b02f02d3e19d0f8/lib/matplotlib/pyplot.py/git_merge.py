@@ -340,7 +340,7 @@ def show(*args, **kwargs):
 
     See Also
     --------
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
     ion : Enable interactive mode, which shows / updates the figure after
           every plotting command, so that calling ``show()`` is not necessary.
     ioff : Disable interactive mode.
@@ -358,7 +358,7 @@ def show(*args, **kwargs):
     if you keep a reference to the figure and use `.Figure.savefig`.
 
     **Auto-show in jupyter notebooks**
-||||||| /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/base.py
+||||||| /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/base.py
     ion : enable interactive mode
     ioff : disable interactive mode
 =======
@@ -366,14 +366,14 @@ def show(*args, **kwargs):
           every plotting command, so that calling ``show()`` is not necessary.
     ioff : Disable interactive mode.
     savefig : Save the figure to an image file instead of showing it on screen.
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
 
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
     The jupyter backends (activated via ``%matplotlib inline``,
     ``%matplotlib notebook``, or ``%matplotlib widget``), call ``show()`` at
     the end of every cell by default. Thus, you usually don't have to call it
     explicitly there.
-||||||| /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/base.py
+||||||| /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/base.py
 =======
     Notes
     -----
@@ -392,7 +392,7 @@ def show(*args, **kwargs):
     ``%matplotlib notebook``, or ``%matplotlib widget``), call ``show()`` at
     the end of every cell by default. Thus, you usually don't have to call it
     explicitly there.
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
     """
     _warn_if_gui_out_of_main_thread()
     return _backend_mod.show(*args, **kwargs)
@@ -1463,17 +1463,17 @@ def subplots(nrows=1, ncols=1, sharex=False, sharey=False, squeeze=True,
     return fig, axs
 
 
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
 def subplot_mosaic(mosaic, *, sharex=False, sharey=False,
                    subplot_kw=None, gridspec_kw=None, empty_sentinel='.',
                    **fig_kw):
-||||||| /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/base.py
+||||||| /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/base.py
 def subplot_mosaic(layout, *, subplot_kw=None, gridspec_kw=None,
                    empty_sentinel='.', **fig_kw):
 =======
 def subplot_mosaic(mosaic, *, subplot_kw=None, gridspec_kw=None,
                    empty_sentinel='.', **fig_kw):
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
     """
     Build a layout of Axes based on ASCII art or nested lists.
 
@@ -1552,10 +1552,10 @@ def subplot_mosaic(mosaic, *, subplot_kw=None, gridspec_kw=None,
     """
     fig = figure(**fig_kw)
     ax_dict = fig.subplot_mosaic(
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/left.py
         mosaic, sharex=sharex, sharey=sharey,
         subplot_kw=subplot_kw, gridspec_kw=gridspec_kw,
-||||||| /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/base.py
+||||||| /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/base.py
         layout,
         subplot_kw=subplot_kw,
         gridspec_kw=gridspec_kw,
@@ -1563,7 +1563,7 @@ def subplot_mosaic(mosaic, *, subplot_kw=None, gridspec_kw=None,
         mosaic,
         subplot_kw=subplot_kw,
         gridspec_kw=gridspec_kw,
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/693f7ec8c02da56b13c577bf1b02f02d3e19d0f8/lib/matplotlib/pyplot.py/right.py
         empty_sentinel=empty_sentinel
     )
     return fig, ax_dict

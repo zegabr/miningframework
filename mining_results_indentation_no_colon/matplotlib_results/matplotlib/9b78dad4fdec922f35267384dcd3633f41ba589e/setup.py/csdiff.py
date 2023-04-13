@@ -58,14 +58,15 @@ def has_flag(self, flagname):
         f.write('int main (int argc, char **argv) { return 0; }')
         try:
             self.compile([f.name], extra_postargs=[flagname])
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setup.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setup.py/left.py
+# CaFP
         except Exception as exc:
 =======
         except Exception as exc:
             # https://github.com/pypa/setuptools/issues/2698
             if type(exc).__name__ != "CompileError":
                 raise
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setup.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setup.py/right.py
             # https://github.com/pypa/setuptools/issues/2698
             if type(exc).__name__ != "CompileError":
                 raise

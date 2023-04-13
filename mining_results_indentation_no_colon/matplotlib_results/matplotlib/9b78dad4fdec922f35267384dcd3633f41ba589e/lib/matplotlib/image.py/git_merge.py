@@ -520,13 +520,13 @@ class _ImageBase(martist.Artist, cm.ScalarMappable):
                 if isinstance(self.norm, mcolors.LogNorm) and s_vmin <= 0:
                     # Don't give 0 or negative values to LogNorm
                     s_vmin = np.finfo(scaled_dtype).eps
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/left.py
                 # Block the norm from sending an update signal during the
                 # temporary vmin/vmax change
                 with self.norm.callbacks.blocked(), \
                      cbook._setattr_cm(self.norm, vmin=s_vmin, vmax=s_vmax):
                     output = self.norm(resampled_masked)
-||||||| /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/base.py
+||||||| /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/base.py
                 with cbook._setattr_cm(self.norm,
                                        vmin=s_vmin,
                                        vmax=s_vmax,
@@ -541,7 +541,7 @@ class _ImageBase(martist.Artist, cm.ScalarMappable):
                                            vmax=s_vmax,
                                            ):
                         output = self.norm(resampled_masked)
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/right.py
             else:
                 if A.ndim == 2:  # _interpolation_stage == 'rgba'
                     self.norm.autoscale_None(A)

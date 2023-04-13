@@ -173,11 +173,11 @@ def loads(s, app=None, **kwargs):
     some defaults from application configuration.
 
     :param s: JSON string to deserialize.
-<<<<<<< /home/ze/miningframework/mining_results_indentation/flask_results/flask/7d2ba3e1fc55e8d04308ede674263727c85c86d2/src/flask/json/__init__.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/flask_results/flask/7d2ba3e1fc55e8d04308ede674263727c85c86d2/src/flask/json/__init__.py/left.py
     :param app: Use this app's config instead of the active app context
         or defaults.
     :param kwargs: Extra arguments passed to func:`json.dump`.
-||||||| /home/ze/miningframework/mining_results_indentation/flask_results/flask/7d2ba3e1fc55e8d04308ede674263727c85c86d2/src/flask/json/__init__.py/base.py
+||||||| /home/ze/miningframework/mining_results/flask_results/flask/7d2ba3e1fc55e8d04308ede674263727c85c86d2/src/flask/json/__init__.py/base.py
     :param app: App instance to use to configure the JSON decoder.
         Uses ``current_app`` if not given, and falls back to the default
         encoder when not in an app context.
@@ -187,7 +187,7 @@ def loads(s, app=None, **kwargs):
         Uses ``current_app`` if not given, and falls back to the default
         encoder when not in an app context.
     :param kwargs: Extra arguments passed to :func:`json.loads`.
->>>>>>> /home/ze/miningframework/mining_results_indentation/flask_results/flask/7d2ba3e1fc55e8d04308ede674263727c85c86d2/src/flask/json/__init__.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/flask_results/flask/7d2ba3e1fc55e8d04308ede674263727c85c86d2/src/flask/json/__init__.py/right.py
 
     .. versionchanged:: 2.0
         ``encoding`` is deprecated and will be removed in 2.1. The data

@@ -114,11 +114,12 @@ class BuildExtraLibraries(BuildExtCommand):
             """
             Prepare *FLAGS from the environment.
 
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/left.py
             If set, return them, and also check whether LTO is disabled in each
             one, raising an error if Matplotlib config explicitly enabled LTO.
             """
             if name in os.environ:
+                # CaFP
 =======
             If set, return them, and also check whether LTO is disabled in each
             one, raising an error if Matplotlib config explicitly enabled LTO.
@@ -127,19 +128,21 @@ class BuildExtraLibraries(BuildExtCommand):
                 if '-fno-lto' in os.environ[name]:
                     if enable_lto is True:
                         raise ValueError('Configuration enable_lto=True, but '
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/left.py
                 if '-fno-lto' in os.environ[name]:
                     if enable_lto is True:
+                # CaFP
                         raise ValueError('Configuration enable_lto=True, but '
                                          '{0} contains -fno-lto'.format
 =======
                                          '{0} contains -fno-lto'.format
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/right.py
 (name)
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/left.py
 )
                     enable_lto = False
+                # CaFP
                 return [os.environ[name]], enable_lto
             return []
 =======
@@ -149,20 +152,22 @@ class BuildExtraLibraries(BuildExtCommand):
             return [], enable_lto
 
         _
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/left.py
+                # CaFP
 , enable_lto
 
         _
 =======
 , enable_lto = prepare_flags('CFLAGS', enable_lto)  # Only check lto.
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/left.py
 , enable_lto = prepare_flags('CFLAGS', enable_lto)  # Only check lto.
         cppflags
 =======
+                # CaFP
         cppflags
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/setup.py/right.py
 , enable_lto = prepare_flags('CPPFLAGS', enable_lto)
         cxxflags, enable_lto = prepare_flags('CXXFLAGS', enable_lto)
         ldflags, enable_lto = prepare_flags('LDFLAGS', enable_lto)

@@ -78,16 +78,16 @@ class RunnerClient(mixins.SyncClientMixin, mixins.AsyncClientMixin):
 
         eauth_creds = {
             i: low.pop(i)
-<<<<<<< /home/ze/miningframework/mining_results_indentation/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/runner.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/runner.py/left.py
 =======
-            for i in [
->>>>>>> /home/ze/miningframework/mining_results_indentation/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/runner.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/runner.py/left.py
-            for i in [
+            for i in [# CaFP
+>>>>>>> /home/ze/miningframework/mining_results/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/runner.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/runner.py/left.py
+            for i in [# CaFP
                 
 =======
                 
->>>>>>> /home/ze/miningframework/mining_results_indentation/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/runner.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/runner.py/right.py
 "username",
                 "password",
                 "eauth",

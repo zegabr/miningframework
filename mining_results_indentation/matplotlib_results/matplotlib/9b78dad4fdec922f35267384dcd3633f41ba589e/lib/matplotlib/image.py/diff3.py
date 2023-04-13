@@ -520,7 +520,7 @@ class _ImageBase(martist.Artist, cm.ScalarMappable):
                 if isinstance(self.norm, mcolors.LogNorm) and s_vmin <= 0:
                     # Don't give 0 or negative values to LogNorm
                     s_vmin = np.finfo(scaled_dtype).eps
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/left.py
                 # Block the norm from sending an update signal during the
                 # temporary vmin/vmax change
                 with self.norm.callbacks.blocked(), \
@@ -534,8 +534,8 @@ class _ImageBase(martist.Artist, cm.ScalarMappable):
                                            vmin=s_vmin,
                                            vmax=s_vmax,
                                            ):
-                        output = self.norm(resampled_masked)
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/right.py
+                        output = self.norm(resampled_masked) # D3FP
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/image.py/right.py
             else:
                 if A.ndim == 2:  # _interpolation_stage == 'rgba'
                     self.norm.autoscale_None(A)

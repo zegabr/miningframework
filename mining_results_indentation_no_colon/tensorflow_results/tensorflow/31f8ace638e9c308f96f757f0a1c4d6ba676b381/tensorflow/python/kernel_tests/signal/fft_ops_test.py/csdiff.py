@@ -88,7 +88,7 @@ class BaseFFTOpsTest(test.TestCase):
   def _check_grad_complex(self, func, x, y, result_is_complex=True,
                           rtol=1e-2, atol=1e-2):
     with self.cached_session():
-
+# CaFN (era pra ter aceitado os 2 lados, csdiff aceitou um só)
       def f(inx, iny):
         inx.set_shape(x.shape)
         iny.set_shape(y.shape)

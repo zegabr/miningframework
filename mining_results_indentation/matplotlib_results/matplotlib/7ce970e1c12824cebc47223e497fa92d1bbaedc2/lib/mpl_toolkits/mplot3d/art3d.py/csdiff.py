@@ -471,71 +471,71 @@ class Patch3DCollection(PatchCollection):
         vxs, vys, vzs, vis = proj3d.proj_transform_clip(xs, ys, zs,
                                                         self.axes.M)
         self._vzs = vzs
-        super().set_offsets(np.column_stack([vxs,
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+        super().set_offsets(np.column_stack([vxs, #CaFP
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
  vys])
 =======
  vys]
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 )
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
 
-        if vzs.size > 0:
+        if vzs.size > 0: #CaFP
 =======
 )
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
             return min(vzs
 =======
 
-        if vzs.size > 0:
+        if vzs.size > 0:# CaFP
             return min(vzs
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 )
         else:
             return np.nan
 
     def _maybe_depth_shade_and_sort_colors(self, color_array)
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
-:
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+: # CaFP
 =======
 :
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
-        color_array = 
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+        color_array = # CaFP
 =======
         color_array = 
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 (
             _zalpha(color_array, self._vzs)
             if self._vzs is not None and self._depthshade
             else color_array
         )
         if len(color_array)
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
- > 1:
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+ > 1: # CaFP
 =======
  > 1:
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
             color_array = color_array[self._z_markers_idx]
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
-        return mcolors.to_rgba_array
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+        return mcolors.to_rgba_array # CaFP
 =======
             color_array = color_array[self._z_markers_idx]
         return mcolors.to_rgba_array
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 (color_array, self._alpha)
 
     def get_facecolor(self)
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
-:
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+: # CaFP
 =======
 :
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
 =======
-        return self._maybe_depth_shade_and_sort_colors
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
+        return self._maybe_depth_shade_and_sort_colors # CaFP
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
         return self._maybe_depth_shade_and_sort_colors(super(super().get_facecolor())
 
     def get_edgecolor(self):
@@ -544,26 +544,26 @@ class Patch3DCollection(PatchCollection):
         # edge colour should be identical to the face colour.
         if cbook._str_equal(self._edgecolors, 'face'):
             return self.get_facecolor()
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
-        return self._maybe_depth_shade_and_sort_colors
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+        return self._maybe_depth_shade_and_sort_colors # CaFP
 =======
         return self._maybe_depth_shade_and_sort_colors(super(
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
-(super(
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+(super( # CaFP
 =======
 ).get_edgecolor(
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
-).get_edgecolor(
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+).get_edgecolor( # CaFP
 =======
 )
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
-))
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+)) # CaFP
 =======
 )
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 
 
 class Path3DCollection(PathCollection):
@@ -612,7 +612,7 @@ class Path3DCollection(PathCollection):
             xs = []
             ys = []
         self._offsets3d = juggle_axes(xs, ys, np.atleast_1d(zs), zdir)
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
         # In the base draw methods we access the attributes directly which
         # means we can not resolve the shuffling in the getter methods like
         # we do for the edge and face colors.
@@ -640,7 +640,7 @@ class Path3DCollection(PathCollection):
         self._sizes3d = self._sizes
         self._linewidths3d = self._linewidths
         xs
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 , ys, zs = self._offsets3d
 
         # Sort the points based on z coordinates
@@ -696,7 +696,7 @@ class Path3DCollection(PathCollection):
             self._sizes = self._sizes3d[z_markers_idx]
 
         if len(self._linewidths3d) > 1:
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
             self._linewidths = self._linewidths3d[z_markers_idx]
 
         # Re-order items
@@ -704,11 +704,11 @@ class Path3DCollection(PathCollection):
         vxs = vxs[z_markers_idx]
         vys = vys[z_markers_idx]
 =======
-            self._linewidths = self._linewidths3d[z_markers_idx]
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+            self._linewidths = self._linewidths3d[z_markers_idx] # CaFP
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
 
-        PathCollection.set_offsets
+        PathCollection.set_offsets # CaFP
 =======
 
         # Re-order items
@@ -717,25 +717,25 @@ class Path3DCollection(PathCollection):
         vys = vys[z_markers_idx]
 
         PathCollection.set_offsets
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 (self, np.column_stack((vxs, vys)))
 
         return np.min(vzs) if vzs.size else np.nan
 
     def _maybe_depth_shade_and_sort_colors(self, color_array):
-        color_array = (
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+        color_array = ( # CaFP
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
 =======
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
 =======
-            _zalpha
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+            _zalpha # CaFP
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
             _zalpha(color_array, self._vzs
 =======
-(color_array, self._vzs
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
+(color_array, self._vzs # CaFP
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 )
             if self._vzs is not None and self._depthshade
             else color_array
@@ -748,21 +748,21 @@ class Path3DCollection(PathCollection):
         return self._maybe_depth_shade_and_sort_colors(super().get_facecolor())
 
     def get_edgecolor(self):
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
         # We need this check here to make sure we do not double-apply the depth
         #  based alpha shading when the edge color is 
 =======
         # We need this check here to make sure we do not double-apply the depth
         # based alpha shading when the edge color is 
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 "face" which means the
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
         #  edge colour should be identical to the face colour.
         if cbook._str_equal
 =======
         # edge colour should be identical to the face colour.
         if cbook._str_equal
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 (self._edgecolors, 'face'):
             return self.get_facecolor()
         return self._maybe_depth_shade_and_sort_colors(super().get_edgecolor())
@@ -906,7 +906,7 @@ class Poly3DCollection(PolyCollection):
         """
         Perform the 3D projection for this object.
         """
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
         if self._A is not None:
             # force update of color mapping because we re-order them
             # below.  If we do not do this here, the 2D draw will call
@@ -927,9 +927,9 @@ class Poly3DCollection(PolyCollection):
             # passed in) and sort the 2D version by view depth.
             copy_state = self._update_dict['array']
             self.update_scalarmappable
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
 ()
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/left.py
             if self._face_is_mapped:
                 self._facecolor3d = self._facecolors
             if self._edge_is_mapped:
@@ -940,7 +940,7 @@ class Poly3DCollection(PolyCollection):
                     self._facecolor3d = self._facecolors
                 if self._edge_is_mapped:
                     self._edgecolor3d = self._edgecolors
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/mpl_toolkits/mplot3d/art3d.py/right.py
         txs, tys, tzs = proj3d._proj_transform_vec(self._vec, self.axes.M)
         xyzlist = [(txs[sl], tys[sl], tzs[sl]) for sl in self._segslices]
 

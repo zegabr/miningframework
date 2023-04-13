@@ -121,19 +121,19 @@ class Request(object_ref):
     def encoding(self) -> str:
         return self._encoding
 
-<<<<<<< /home/ze/miningframework/mining_results_indentation/scrapy_results/scrapy/e7d3fad00eab9aaeedf8896739e969db92c1e408/scrapy/http/request/__init__.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/scrapy_results/scrapy/e7d3fad00eab9aaeedf8896739e969db92c1e408/scrapy/http/request/__init__.py/left.py
     def __repr__(self):
-||||||| /home/ze/miningframework/mining_results_indentation/scrapy_results/scrapy/e7d3fad00eab9aaeedf8896739e969db92c1e408/scrapy/http/request/__init__.py/base.py
+||||||| /home/ze/miningframework/mining_results/scrapy_results/scrapy/e7d3fad00eab9aaeedf8896739e969db92c1e408/scrapy/http/request/__init__.py/base.py
     def __str__(self):
 =======
     def __str__(self) -> str:
->>>>>>> /home/ze/miningframework/mining_results_indentation/scrapy_results/scrapy/e7d3fad00eab9aaeedf8896739e969db92c1e408/scrapy/http/request/__init__.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/scrapy_results/scrapy/e7d3fad00eab9aaeedf8896739e969db92c1e408/scrapy/http/request/__init__.py/right.py
         return f"<{self.method} {self.url}>"
 
-<<<<<<< /home/ze/miningframework/mining_results_indentation/scrapy_results/scrapy/e7d3fad00eab9aaeedf8896739e969db92c1e408/scrapy/http/request/__init__.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/scrapy_results/scrapy/e7d3fad00eab9aaeedf8896739e969db92c1e408/scrapy/http/request/__init__.py/left.py
     def copy(self):
         """Return a copy of this Request"""
-||||||| /home/ze/miningframework/mining_results_indentation/scrapy_results/scrapy/e7d3fad00eab9aaeedf8896739e969db92c1e408/scrapy/http/request/__init__.py/base.py
+||||||| /home/ze/miningframework/mining_results/scrapy_results/scrapy/e7d3fad00eab9aaeedf8896739e969db92c1e408/scrapy/http/request/__init__.py/base.py
     __repr__ = __str__
 
     def copy(self):
@@ -142,7 +142,7 @@ class Request(object_ref):
     __repr__ = __str__
 
     def copy(self) -> "Request":
->>>>>>> /home/ze/miningframework/mining_results_indentation/scrapy_results/scrapy/e7d3fad00eab9aaeedf8896739e969db92c1e408/scrapy/http/request/__init__.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/scrapy_results/scrapy/e7d3fad00eab9aaeedf8896739e969db92c1e408/scrapy/http/request/__init__.py/right.py
         return self.replace()
 
     def replace(self, *args, **kwargs) -> "Request":

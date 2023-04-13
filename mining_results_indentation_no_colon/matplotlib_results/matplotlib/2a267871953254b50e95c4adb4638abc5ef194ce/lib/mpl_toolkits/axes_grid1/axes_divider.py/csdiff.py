@@ -627,13 +627,13 @@ def _calc_offsets(summed_sizes, karray):
 
 # Helper for HBoxDivider/VBoxDivider (see above re: variable naming).
 def _locate(
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/2a267871953254b50e95c4adb4638abc5ef194ce/lib/mpl_toolkits/axes_grid1/axes_divider.py/left.py
-x
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/2a267871953254b50e95c4adb4638abc5ef194ce/lib/mpl_toolkits/axes_grid1/axes_divider.py/left.py
+x # CaFP (o correto seria pegar essa linha)
 =======
-self, nx, 0, nx1 if nx1 is not None else nx + 1, 1)
+self, nx, 0, nx1 if nx1 is not None else nx + 1, 1) 
 
-    def _locate(self, x
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/2a267871953254b50e95c4adb4638abc5ef194ce/lib/mpl_toolkits/axes_grid1/axes_divider.py/right.py
+    def _locate(self, x # essa linha causaria runtime error
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/2a267871953254b50e95c4adb4638abc5ef194ce/lib/mpl_toolkits/axes_grid1/axes_divider.py/right.py
 , y, w, h, summed_widths, equal_heights, fig_w, fig_h, anchor):
     karray = _determine_karray(
         summed_widths, equal_heights,
@@ -673,7 +673,7 @@ class HBoxDivider(SubplotDivider):
             specified. Otherwise location of columns spanning between *nx*
             to *nx1* (but excluding *nx1*-th column) is specified.
         """
-        return AxesLocator(self, nx, 0, nx1, None)
+        return AxesLocator(self, nx, 0, nx1, None) # CaFN
 
     def locate(self, nx, ny, nx1=None, ny1=None, axes=None, renderer=None):
         # docstring inherited

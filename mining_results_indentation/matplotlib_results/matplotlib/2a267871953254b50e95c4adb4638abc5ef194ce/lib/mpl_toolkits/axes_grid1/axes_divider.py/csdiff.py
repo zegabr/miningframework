@@ -635,12 +635,12 @@ def _locate(x, y, w, h, summed_widths, equal_heights, fig_w, fig_h, anchor):
     ww = (ox[-1] - ox[0]) / fig_w
     h0_r, h0_a = equal_heights[0]
     hh = (karray[0]*h0_r + h0_a) / fig_h
-    pb = mtransforms.Bbox.from_bounds(x, y, w,
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/2a267871953254b50e95c4adb4638abc5ef194ce/lib/mpl_toolkits/axes_grid1/axes_divider.py/left.py
+    pb = mtransforms.Bbox.from_bounds(x, y, w, # CaFP (isso devia ta la embaixo)
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/2a267871953254b50e95c4adb4638abc5ef194ce/lib/mpl_toolkits/axes_grid1/axes_divider.py/left.py
  h
 =======
  nx1 if nx1 is not None else nx + 1, 1
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/2a267871953254b50e95c4adb4638abc5ef194ce/lib/mpl_toolkits/axes_grid1/axes_divider.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/2a267871953254b50e95c4adb4638abc5ef194ce/lib/mpl_toolkits/axes_grid1/axes_divider.py/right.py
 )
     pb1 = mtransforms.Bbox.from_bounds(x, y, ww, hh)
     pb1_anchored = pb1.anchored(anchor, pb)
@@ -671,7 +671,7 @@ class HBoxDivider(SubplotDivider):
             specified. Otherwise location of columns spanning between *nx*
             to *nx1* (but excluding *nx1*-th column) is specified.
         """
-        return AxesLocator(self, nx, 0, nx1, None)
+        return AxesLocator(self, nx, 0, nx1, None) # CaFN (o diff3 acertou isso)
 
     def locate(self, nx, ny, nx1=None, ny1=None, axes=None, renderer=None):
         # docstring inherited

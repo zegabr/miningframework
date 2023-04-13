@@ -144,7 +144,7 @@ def _create_examples_tree(prefix_dir, examples_list):
 if __name__ == "__main__":
   parser = argparse.ArgumentParser(
       description="Starting script for TFLM project generation")
-<<<<<<< /home/ze/miningframework/mining_results_indentation/tensorflow_results/tensorflow/d1651e0c4f91d8518a51c99a43a9212cdf32ce79/tensorflow/lite/micro/tools/project_generation/create_tflm_tree.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/tensorflow_results/tensorflow/d1651e0c4f91d8518a51c99a43a9212cdf32ce79/tensorflow/lite/micro/tools/project_generation/create_tflm_tree.py/left.py
   parser.add_argument("output_dir",
                       help="Output directory for generated TFLM tree")
   parser.add_argument("--makefile_options",
@@ -168,7 +168,7 @@ if __name__ == "__main__":
       "--makefile_options=\"TARGET=<target> "
       "OPTIMIZED_KERNEL_DIR=<optimized_kernel_dir> "
       "TARGET_ARCH=corex-m4\"")
->>>>>>> /home/ze/miningframework/mining_results_indentation/tensorflow_results/tensorflow/d1651e0c4f91d8518a51c99a43a9212cdf32ce79/tensorflow/lite/micro/tools/project_generation/create_tflm_tree.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/tensorflow_results/tensorflow/d1651e0c4f91d8518a51c99a43a9212cdf32ce79/tensorflow/lite/micro/tools/project_generation/create_tflm_tree.py/right.py
   args = parser.parse_args()
 
   _create_tflm_tree(args.output_dir, args.makefile_options)

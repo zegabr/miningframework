@@ -1275,47 +1275,47 @@ class Artist:
             # ScalarMappable.format_cursor_data.
             n = self.cmap.N
             if np.ma.getmask(
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
-data):
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
+data): # CaFP
 =======
 data):
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
                 return 
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
-                return 
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
+                return # CaFP
 =======
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
 "[]"
             normed = self.norm(data)
             if np.isfinite(
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
-normed)
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
+normed)# CaFP
 =======
 normed):
                 # Midpoints of neighboring color intervals.
                 neighbors = self.norm.inverse
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
-:
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
+:# CaFP
                 # Midpoints of neighboring color intervals.
                 neighbors = self.norm.inverse(
 =======
 (
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
                     (int(self.norm(data)
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
  * n) + np.array([0, 1])) / n)
-                delta = abs
+                delta = abs# CaFP
 =======
  * n) + np.array([0, 1])
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
 (neighbors - data)
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
-.max
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
+.max# CaFP
 =======
  / n)
                 delta = abs(neighbors - data).max
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
 ()
                 g_sig_digits = cbook._g_sig_digits(data, delta)
             else:

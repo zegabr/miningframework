@@ -229,7 +229,7 @@ def test_interruptible_core_debugger():
         raise KeyboardInterrupt()
 
     tracer_orig = sys.gettrace()
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/left.py
     try:
         with patch.object
 =======
@@ -237,27 +237,27 @@ def test_interruptible_core_debugger():
     tracer_orig = sys.gettrace()
     try:
         with patch.object
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/right.py
 (builtins, "input", raising_input):
             debugger.InterruptiblePdb().set_trace()
             # The way this test will fail is by set_trace() never exiting,
             # resulting in a timeout by the test runner. The alternative
             # implementation would involve a subprocess, but that adds issues
             # with interrupting subprocesses that are rather complex,
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/left.py
  so it's
             # simpler just to do it this way.
     finally:
 =======
  so it's
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/left.py
         # restore the original trace function
         sys.settrace
 =======
             # simpler just to do it this way.
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/left.py
 (tracer_orig)
 
 =======
@@ -265,7 +265,7 @@ def test_interruptible_core_debugger():
         # restore the original trace function
         sys.settrace(tracer_orig)
 
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/right.py
 
 @skip_win32
 def test_xmode_skip():

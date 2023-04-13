@@ -540,21 +540,23 @@ class Axes(maxes.Axes):
             return
         if b is None:
             b = (
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/axisartist/axislines.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/axisartist/axislines.py/left.py
 self.axes.xaxis._minor_tick_kw["gridOn"]
                  or self.axes.xaxis._major_tick_kw["gridOn"]
                  or self.axes.yaxis._minor_tick_kw["gridOn"]
+                 # CaFP
 =======
 self.axes.xaxis._minor_tick_kw["gridOn"]
                  or self.axes.xaxis._major_tick_kw["gridOn"]
                  or self.axes.yaxis._minor_tick_kw[
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/axisartist/axislines.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/axisartist/axislines.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/axisartist/axislines.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/axisartist/axislines.py/left.py
+                 # CaFP
                  or self.axes.yaxis._major_tick_kw[
 =======
 "gridOn"]
                  or self.axes.yaxis._major_tick_kw[
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/axisartist/axislines.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/axisartist/axislines.py/right.py
 "gridOn"])
         self.gridlines.set(which=which, axis=axis, visible=b)
         self.gridlines.set(**kwargs)

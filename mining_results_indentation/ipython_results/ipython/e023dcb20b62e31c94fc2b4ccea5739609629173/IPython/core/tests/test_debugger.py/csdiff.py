@@ -230,28 +230,28 @@ def test_interruptible_core_debugger():
 
     tracer_orig = sys.gettrace()
     try:
-<<<<<<< /home/ze/miningframework/mining_results_indentation/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/left.py
         with patch.object
 =======
 
     tracer_orig = sys.gettrace()
     try:
         with patch.object
->>>>>>> /home/ze/miningframework/mining_results_indentation/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/right.py
 (builtins, "input", raising_input):
             debugger.InterruptiblePdb().set_trace()
             # The way this test will fail is by set_trace() never exiting,
             # resulting in a timeout by the test runner. The alternative
             # implementation would involve a subprocess, but that adds issues
             # with interrupting subprocesses that are rather complex, so it's
-<<<<<<< /home/ze/miningframework/mining_results_indentation/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/left.py
             # simpler just to do it this way.
     finally:
         # restore the original trace function
         sys.settrace(tracer_orig)
 =======
             # simpler just to do it this way.
->>>>>>> /home/ze/miningframework/mining_results_indentation/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/ipython_results/ipython/e023dcb20b62e31c94fc2b4ccea5739609629173/IPython/core/tests/test_debugger.py/right.py
     finally:
         # restore the original trace function
         sys.settrace(tracer_orig)

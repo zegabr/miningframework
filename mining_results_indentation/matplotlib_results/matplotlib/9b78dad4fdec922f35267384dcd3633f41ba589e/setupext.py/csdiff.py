@@ -525,8 +525,9 @@ def add_libagg_flags_and_sources(ext):
         os.path.join("extern", "agg24-svn", "src", x) for x in agg_sources)
 
 
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
 def get_ccompiler():
+        # CaFP
     """
     Return a new CCompiler instance.
 
@@ -546,9 +547,10 @@ def get_ccompiler():
     with a list of extension modules that claims to be truthy, but is actually
     empty, and then running the Distribution's build_ext command.  (If using
     a plain empty ext_modules
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
 ,
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+        # CaFP
  and then running the Distribution's build_ext command.  (If using
     a plain empty ext_modules, build_ext would early-return without doing
     anything.)
@@ -557,7 +559,7 @@ def get_ccompiler():
  build_ext would early-return without doing
     anything.)
     "
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
 ""
 
     class L(list):
@@ -636,48 +638,55 @@ class FreeType(SetupPackage):
                     var: value
                     for var, value in sysconfig.get_config_vars().items()
                     if var in {"CC", "CFLAGS", "CXX", "CXXFLAGS", "
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+        # CaFP
 LD"
 =======
 LD",
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+        # CaFP
 ,
                                "LDFLAGS
 =======
                                "LDFLAGS
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
 "
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+        # CaFP
 }
                 }
 =======
 }
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+        # CaFP
 ,
 =======
                 },
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
             }
             env["CFLAGS"] = env.get(
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+        # CaFP
 "CFLAGS", "") + " -fPIC"
 =======
 "CFLAGS"
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+        # CaFP
             configure = [
 =======
 , ""
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/left.py
+        # CaFP
                 
 =======
 ) + " -fPIC"
             configure = [
                 
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/setupext.py/right.py
 "./configure", "--with-zlib=no", "--with-bzip2=no",
                 "--with-png=no", "--with-harfbuzz=no", "--enable-static",
                 "--disable-shared"

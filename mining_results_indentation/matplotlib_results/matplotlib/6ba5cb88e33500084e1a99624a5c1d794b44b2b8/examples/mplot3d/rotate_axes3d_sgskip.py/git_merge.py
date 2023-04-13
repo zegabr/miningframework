@@ -46,8 +46,8 @@ for angle in range(0, 360*4 + 1):
     ax.view_init(elev, azim, roll)
     plt.title('Elevation: %d°, Azimuth: %d°, Roll: %d°' % (elev, azim, roll))
 
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/6ba5cb88e33500084e1a99624a5c1d794b44b2b8/examples/mplot3d/rotate_axes3d_sgskip.py/left.py
-||||||| /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/6ba5cb88e33500084e1a99624a5c1d794b44b2b8/examples/mplot3d/rotate_axes3d_sgskip.py/base.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/6ba5cb88e33500084e1a99624a5c1d794b44b2b8/examples/mplot3d/rotate_axes3d_sgskip.py/left.py
+||||||| /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/6ba5cb88e33500084e1a99624a5c1d794b44b2b8/examples/mplot3d/rotate_axes3d_sgskip.py/base.py
 # rotate the axes and update
 for angle in range(0, 360):
     ax.view_init(30, angle)
@@ -55,6 +55,6 @@ for angle in range(0, 360):
 # rotate the axes and update
 for angle in range(0, 360):
     ax.view_init(30, angle, 0)
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/6ba5cb88e33500084e1a99624a5c1d794b44b2b8/examples/mplot3d/rotate_axes3d_sgskip.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/6ba5cb88e33500084e1a99624a5c1d794b44b2b8/examples/mplot3d/rotate_axes3d_sgskip.py/right.py
     plt.draw()
     plt.pause(.001)

@@ -243,7 +243,7 @@ def test_scatter3d_color():
     ax = fig.add_subplot(projection='3d')
 
     # Check that 'none' color works; these two should overlay to produce the
-    # same as setting just `color`.
+    # same as setting just `color`. # CaFN
     ax.scatter(np.arange(10), np.arange(10), np.arange(10),
                facecolor='r', edgecolor='none', marker='o')
 
@@ -1331,7 +1331,7 @@ def test_colorbar_pos():
     fig.canvas.draw()
     # check that actually on the bottom
     assert cbar.ax.get_position().extents[1] < 0.2
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/tests/test_mplot3d.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/tests/test_mplot3d.py/left.py
 
 
 def test_shared_axes_retick():
@@ -1435,4 +1435,4 @@ def test_scalarmap_update(fig_test, fig_ref):
     # ref
     ax_ref = fig_ref.add_subplot(111, projection='3d')
     sc_ref = ax_ref.scatter(x, y, z, c=c, s=40, cmap='viridis')
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/tests/test_mplot3d.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/mpl_toolkits/tests/test_mplot3d.py/right.py

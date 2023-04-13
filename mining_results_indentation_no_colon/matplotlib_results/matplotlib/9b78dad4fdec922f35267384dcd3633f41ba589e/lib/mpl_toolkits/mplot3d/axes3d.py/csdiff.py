@@ -658,18 +658,20 @@ class Axes3D(Axes):
         else:
             self.xy_dataLim.update_from_data_x(X, not had_data)
             self.xy_dataLim.update_from_data_y(
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/left.py
+# CaFP
 Y, not had_data)
 =======
 Y, not had_data)
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/right.py
         if Z is not None:
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/left.py
+# CaFP
         if Z is not None:
             self.zz_dataLim.update_from_data_x
 =======
             self.zz_dataLim.update_from_data_x
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/right.py
 (Z, not had_data)
         # Let autoscale_view figure out how to use this data.
         self.autoscale_view()
@@ -2124,18 +2126,20 @@ Y, not had_data)
         Parameters
         ----------
         X, Y, Z : array-like
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/left.py
+# CaFP
 ,
 =======
 ,
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/left.py
+# CaFP
             Input data. See `~matplotlib.axes.Axes.contour` for acceptable
             data shapes.
 =======
             Input data. See `~matplotlib.axes.Axes.contour` for acceptable
             data shapes.
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/right.py
         extend3d : bool, default: False
             Whether to extend contour in 3D.
         stride : int
@@ -3390,11 +3394,12 @@ pivot='tail', normalize=False, **kwargs)
         return mtransforms.Bbox.union(batch)
 
     @_preprocess_data()
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/left.py
 =======
+# CaFP
 
     @_preprocess_data()
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/mpl_toolkits/mplot3d/axes3d.py/right.py
     def stem(self, x, y, z, *, linefmt='C0-', markerfmt='C0o', basefmt='C3-',
              bottom=0, label=None, orientation='z'):
         """

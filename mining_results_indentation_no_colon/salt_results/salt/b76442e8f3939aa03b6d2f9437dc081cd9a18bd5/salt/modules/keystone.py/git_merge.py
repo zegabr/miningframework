@@ -51,14 +51,14 @@ Module for handling openstack keystone calls.
         salt '*' keystone.tenant_list profile=openstack1
 """
 
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
-||||||| /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/base.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+||||||| /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/base.py
 # Import Python libs
 from __future__ import absolute_import, print_function, unicode_literals
 
 =======
 
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
 import logging
 
 import salt.utils.http
@@ -405,16 +405,16 @@ def endpoint_list(profile=None, **connection_args):
             value: getattr(endpoint, value)
             for value in dir(endpoint)
             if not value.startswith("_")
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
             and isinstance(getattr(endpoint, value), ((str,), dict, bool))
         }
-||||||| /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/base.py
+||||||| /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/base.py
             and isinstance(getattr(endpoint, value), (six.string_types, dict, bool))
         )
 =======
             and isinstance(getattr(endpoint, value), (str, dict, bool))
         }
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
     return ret
 
 
@@ -580,16 +580,16 @@ def role_list(profile=None, **connection_args):
             value: getattr(role, value)
             for value in dir(role)
             if not value.startswith("_")
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
             and isinstance(getattr(role, value), ((str,), dict, bool))
         }
-||||||| /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/base.py
+||||||| /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/base.py
             and isinstance(getattr(role, value), (six.string_types, dict, bool))
         )
 =======
             and isinstance(getattr(role, value), (str, dict, bool))
         }
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
     return ret
 
 
@@ -657,16 +657,16 @@ def service_get(service_id=None, name=None, profile=None, **connection_args):
         value: getattr(service, value)
         for value in dir(service)
         if not value.startswith("_")
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
         and isinstance(getattr(service, value), ((str,), dict, bool))
     }
-||||||| /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/base.py
+||||||| /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/base.py
         and isinstance(getattr(service, value), (six.string_types, dict, bool))
     )
 =======
         and isinstance(getattr(service, value), (str, dict, bool))
     }
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
     return ret
 
 
@@ -687,16 +687,16 @@ def service_list(profile=None, **connection_args):
             value: getattr(service, value)
             for value in dir(service)
             if not value.startswith("_")
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
             and isinstance(getattr(service, value), ((str,), dict, bool))
         }
-||||||| /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/base.py
+||||||| /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/base.py
             and isinstance(getattr(service, value), (six.string_types, dict, bool))
         )
 =======
             and isinstance(getattr(service, value), (str, dict, bool))
         }
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
     return ret
 
 
@@ -845,16 +845,16 @@ def tenant_get(tenant_id=None, name=None, profile=None, **connection_args):
         value: getattr(tenant, value)
         for value in dir(tenant)
         if not value.startswith("_")
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
         and isinstance(getattr(tenant, value), ((str,), dict, bool))
     }
-||||||| /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/base.py
+||||||| /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/base.py
         and isinstance(getattr(tenant, value), (six.string_types, dict, bool))
     )
 =======
         and isinstance(getattr(tenant, value), (str, dict, bool))
     }
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
     return ret
 
 
@@ -911,16 +911,16 @@ def tenant_list(profile=None, **connection_args):
             value: getattr(tenant, value)
             for value in dir(tenant)
             if not value.startswith("_")
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
             and isinstance(getattr(tenant, value), ((str,), dict, bool))
         }
-||||||| /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/base.py
+||||||| /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/base.py
             and isinstance(getattr(tenant, value), (six.string_types, dict, bool))
         )
 =======
             and isinstance(getattr(tenant, value), (str, dict, bool))
         }
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
     return ret
 
 
@@ -994,16 +994,16 @@ def tenant_update(
         value: getattr(updated, value)
         for value in dir(updated)
         if not value.startswith("_")
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
         and isinstance(getattr(updated, value), ((str,), dict, bool))
     }
-||||||| /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/base.py
+||||||| /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/base.py
         and isinstance(getattr(updated, value), (six.string_types, dict, bool))
     )
 =======
         and isinstance(getattr(updated, value), (str, dict, bool))
     }
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
 
 
 def project_update(
@@ -1098,16 +1098,16 @@ def user_list(profile=None, **connection_args):
             value: getattr(user, value, None)
             for value in dir(user)
             if not value.startswith("_")
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
             and isinstance(getattr(user, value, None), ((str,), dict, bool))
         }
-||||||| /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/base.py
+||||||| /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/base.py
             and isinstance(getattr(user, value, None), (six.string_types, dict, bool))
         )
 =======
             and isinstance(getattr(user, value, None), (str, dict, bool))
         }
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
         tenant_id = getattr(user, "tenantId", None)
         if tenant_id:
             ret[user.name]["tenant_id"] = tenant_id
@@ -1146,16 +1146,16 @@ def user_get(user_id=None, name=None, profile=None, **connection_args):
         value: getattr(user, value, None)
         for value in dir(user)
         if not value.startswith("_")
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
         and isinstance(getattr(user, value, None), ((str,), dict, bool))
     }
-||||||| /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/base.py
+||||||| /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/base.py
         and isinstance(getattr(user, value, None), (six.string_types, dict, bool))
     )
 =======
         and isinstance(getattr(user, value, None), (str, dict, bool))
     }
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
 
     tenant_id = getattr(user, "tenantId", None)
     if tenant_id:
@@ -1584,16 +1584,16 @@ tenant_id=7167a092ece84bae8cead4bf9d15bb3b
                 value: getattr(role, value)
                 for value in dir(role)
                 if not value.startswith("_")
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/left.py
                 and isinstance(getattr(role, value), ((str,), dict, bool))
             }
-||||||| /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/base.py
+||||||| /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/base.py
                 and isinstance(getattr(role, value), (six.string_types, dict, bool))
             )
 =======
                 and isinstance(getattr(role, value), (str, dict, bool))
             }
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/salt_results/salt/b76442e8f3939aa03b6d2f9437dc081cd9a18bd5/salt/modules/keystone.py/right.py
     else:
         for role in kstone.roles.roles_for_user(user=user_id, tenant=tenant_id):
             ret[role.name] = {

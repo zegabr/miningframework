@@ -10,13 +10,13 @@ import pathlib
 import re
 import shutil
 import subprocess
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/left.py
 from tempfile import TemporaryDirectory
 =======
 import sys
 import tempfile
 from tempfile import TemporaryDirectory
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/right.py
 import weakref
 
 from PIL import Image
@@ -769,12 +769,12 @@ class TmpDirCleaner:
         TmpDirCleaner._remaining_tmpdirs.add(tmpdir)
 
     @staticmethod
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/left.py
     @_api.deprecated("3.4")
     @atexit.register
 =======
     @atexit.register
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/96274e6315ced46aa72f4f12993166847c26e4b0/lib/matplotlib/backends/backend_pgf.py/right.py
     def cleanup_remaining_tmpdirs():
         for tmpdir in TmpDirCleaner._remaining_tmpdirs:
             error_message = "error deleting tmp directory {}".format(tmpdir)

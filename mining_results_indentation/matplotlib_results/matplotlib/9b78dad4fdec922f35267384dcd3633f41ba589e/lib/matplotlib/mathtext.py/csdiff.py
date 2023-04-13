@@ -36,49 +36,56 @@ _log = logging.getLogger(__name__)
 class __getattr__:
     locals().update({
         name:
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
+        # CaFP
+        # CaFP
+        # CaFP
+        # CaFP
+        # CaFP
+        # CaFP
+        # CaFP
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
  _api.deprecated("3.4")(
 =======
  _api.deprecated("3.4")
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
             property
 =======
 (
             property
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
 (lambda self, _mod=mod, _name=name: getattr(_mod, _name)))
         for mod, names in [
             (
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
 _mathtext, ["SHRINK_FACTOR", "GROW_FACTOR", "NUM_SIZE_LEVELS"]),
 =======
 _mathtext, ["SHRINK_FACTOR"
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
 =======
 , "GROW_FACTOR"
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
             (_mathtext_data,
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
  [
                 "latex_to_bakoma"
 =======
  "NUM_SIZE_LEVELS"])
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
 ,
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
  "latex_to_cmex"
 =======
             (_mathtext_data
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
 ,
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/left.py
  "latex_to_standard"
 =======
  [
                 "latex_to_bakoma", "latex_to_cmex", "latex_to_standard"
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/mathtext.py/right.py
 ,
                 "stix_virtual_fonts", "tex2uni"])]
         for name in names})

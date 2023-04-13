@@ -1107,18 +1107,18 @@ class Line2D(Artist):
               ``'--'`` or  ``'dashed'``                   dashed line
               ``'-.'`` or  ``'dashdot'``                  dash-dotted line
               ``':
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/lines.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/lines.py/left.py
 '`` or ``'dotted'``                     dotted line
 =======
 '`` or ``'dotted'``                     dotted line
-              ``'none'``, ``'None'``, ``' '``, or ``''``  draw nothing
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/lines.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/lines.py/left.py
-              ``'none'``, ``'None'``, ``' '``, or ``''``  draw nothing
+              ``'none'``, ``'None'``, ``' '``, or ``''``  draw nothing # CaFP
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/lines.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/lines.py/left.py
+              ``'none'``, ``'None'``, ``' '``, or ``''``  draw nothing #CaFP
               ==========================================  =================
 =======
               ==========================================  =================
->>>>>>> /home/ze/miningframework/mining_results_indentation/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/lines.py/right.py
+>>>>>>> /home/ze/miningframework/mining_results/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/lines.py/right.py
 
             - Alternatively a dash tuple of the following form can be
               provided::

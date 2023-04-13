@@ -969,17 +969,17 @@ class FigureFrameWx(wx.Frame):
         self.figmgr.frame = None
         # remove figure manager from Gcf.figs
         Gcf.destroy(self.figmgr)
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_wx.py/left.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_wx.py/left.py
         # Carry on with close event propagation, frame & children destruction
 =======
-        # Carry on with close event propagation
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_wx.py/right.py
-<<<<<<< /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_wx.py/left.py
+        # Carry on with close event propagation # CaFP (facil)
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_wx.py/right.py
+<<<<<<< /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_wx.py/left.py
         event.Skip
 =======
 , frame & children destruction
-        event.Skip
->>>>>>> /home/ze/miningframework/mining_results_indentation_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_wx.py/right.py
+        event.Skip # CaFP (facil olhando o de cima)
+>>>>>>> /home/ze/miningframework/mining_results_version3_no_colon/matplotlib_results/matplotlib/7ce970e1c12824cebc47223e497fa92d1bbaedc2/lib/matplotlib/backends/backend_wx.py/right.py
 ()
 
     def GetToolBar(self):
