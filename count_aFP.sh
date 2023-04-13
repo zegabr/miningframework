@@ -96,12 +96,12 @@ count_aFP_on_csdiff() {
           aFP=$(count_file_conflicts "$dir/csdiff.py") || aFP=0
           total_aFP=$((total_aFP + aFP))
           if [ "$aFP" -gt 0 ]; then
-            echo "$dir"
+            # echo "$dir"
             total_csdiff_files_with_aFP=$((total_csdiff_files_with_aFP + 1))
           fi
         fi
     done
-    echo "jonatas csdiff aFP: $total_aFP"
+    # echo "jonatas csdiff aFP: $total_aFP"
     echo "jonatas csdiff aFP files: $total_csdiff_files_with_aFP"
 }
 
@@ -118,7 +118,7 @@ count_aFP_on_diff3() {
           fi
         fi
     done
-    echo "jonatas diff3 aFP: $total_aFP"
+    # echo "jonatas diff3 aFP: $total_aFP"
     echo "jonatas diff3 aFP files: $total_diff3_files_with_aFP"
 }
 
@@ -198,7 +198,7 @@ get_project_or_file_data() {
     count_aFP_on_csdiff
     count_aFP_on_diff3
     count_csdiff_possible_aFN
-    count_diff3_possible_aFN
+    # count_diff3_possible_aFN
     echo
 }
 
@@ -208,8 +208,10 @@ get_merge_scenario_data() {
 
     for elem in "${arr[@]}"; do
         echo
+        echo "---------------"
         echo $elem
         cd $elem
+        count_conflicts
         get_project_or_file_data
         scenario_has_csdiff_aFP
         scenario_has_diff3_aFP
