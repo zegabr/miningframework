@@ -39,7 +39,8 @@ echo "csdiff conflicts = " $csdiff_conflicts
 echo "diff3 conflicts = " $diff3_conflicts
 echo "csdiff files different than diff3 and equal to merge =" $files_with_csdiff_different_than_diff3_and_equal_to_merge
 
-echo
+echo -n "$csdiff_files_with_conflicts,$diff3_files_with_conflicts,$csdiff_conflicts,$diff3_conflicts,$files_with_csdiff_different_than_diff3_and_equal_to_merge," >> ~/Desktop/a.csv
+
 # Set the directory to search in (defaults to current directory)
 DIR=${1:-.}
 

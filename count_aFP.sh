@@ -103,6 +103,7 @@ count_aFP_on_csdiff() {
     done
     # echo "jonatas csdiff aFP: $total_aFP"
     echo "jonatas csdiff aFP files: $total_csdiff_files_with_aFP"
+    echo -n "$total_csdiff_files_with_aFP," >> ~/Desktop/a.csv
 }
 
 count_aFP_on_diff3() {
@@ -120,6 +121,7 @@ count_aFP_on_diff3() {
     done
     # echo "jonatas diff3 aFP: $total_aFP"
     echo "jonatas diff3 aFP files: $total_diff3_files_with_aFP"
+    echo -n "$total_diff3_files_with_aFP," >> ~/Desktop/a.csv
 }
 
 scenario_has_csdiff_aFP() {
@@ -130,6 +132,7 @@ scenario_has_csdiff_aFP() {
     for dir in $(find . -name "csdiff.py" -type f | xargs dirname); do
         if ! files_are_equal "$dir/diff3.py" "$dir/merge.py"; then
             echo "not a csdiff aFP merge scenario"
+            echo -n "FALSO," >> ~/Desktop/a.csv
             return 0
         fi
         aFP=$(count_file_conflicts "$dir/csdiff.py") || aFP=0
@@ -137,9 +140,11 @@ scenario_has_csdiff_aFP() {
     done
     if [ "$total_aFP" -gt 0 ]; then
         echo "is csdiff aFP merge scenario"
+        echo -n "VERDADEIRO," >> ~/Desktop/a.csv
         return 0
     fi
     echo "not a csdiff aFP merge scenario"
+    echo -n "FALSO," >> ~/Desktop/a.csv
     return 0
 }
 
@@ -151,6 +156,7 @@ scenario_has_diff3_aFP() {
     for dir in $(find . -name "diff3.py" -type f | xargs dirname); do
         if ! files_are_equal "$dir/csdiff.py" "$dir/merge.py"; then
             echo "not a diff3 aFP merge scenario"
+            echo -n "FALSO," >> ~/Desktop/a.csv
             return 0
         fi
         aFP=$(count_file_conflicts "$dir/diff3.py") || aFP=0
@@ -158,9 +164,11 @@ scenario_has_diff3_aFP() {
     done
     if [ "$total_aFP" -gt 0 ]; then
         echo "is diff3 aFP merge scenario"
+        echo -n "VERDADEIRO," >> ~/Desktop/a.csv
         return 0
     fi
     echo "not a diff3 aFP merge scenario"
+    echo -n "FALSO," >> ~/Desktop/a.csv
     return 0
 }
 
@@ -177,6 +185,7 @@ count_csdiff_possible_aFN() {
         fi
     done
     echo "possible csdiff aFN files: $possible_aFN_files"
+    echo -n "$possible_aFN_files," >> ~/Desktop/a.csv
 }
 
 count_diff3_possible_aFN() {
@@ -205,11 +214,11 @@ get_project_or_file_data() {
 get_merge_scenario_data() {
     # run this inside project, where we have the merge scenarios as result of ls command
     arr=($(ls -1)) # merge scenarios
-
+    echo "" > ~/Desktop/a.csv
     for elem in "${arr[@]}"; do
-        echo
-        echo "---------------"
-        echo $elem
+        echo "" >> ~/Desktop/a.csv
+        echo "$elem"
+        echo -n "$elem," >> ~/Desktop/a.csv
         cd $elem
         count_conflicts
         get_project_or_file_data
@@ -217,5 +226,6 @@ get_merge_scenario_data() {
         scenario_has_diff3_aFP
         cd ..
     done
-    echo
+    echo "cat ~/Desktop/a.csv"
+    cat ~/Desktop/a.csv
 }
