@@ -12,7 +12,7 @@ setup(
 =======
         "Werkzeug >= 0.15, < 2.0",
         "Jinja2 >= 2.10.1, < 3.0",
-        "itsdangerous >= 0.24, < 2.0",
+        "itsdangerous >= 0.24, < 2.0", # CReduzido
         "click >= 5.1, < 8.0",
 >>>>>>> /home/ze/miningframework/mining_results_indentation/flask_results/flask/5bd959fbec98cb14c785868e8890d6850971038e/setup.py/right.py
     ],

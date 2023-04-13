@@ -52,10 +52,10 @@ COUNTdiff3FP=$(rg -c "D3FP" "$DIR" | awk -F ':' '{sum += $2} END {print sum}')
 
 # Print the results
 echo "below was manually counted"
-echo "csdiff aFP: $COUNTaFP"
-echo "csdiff aFN: $COUNTaFN"
-echo "diff3 FPs: $COUNTdiff3FP"
-echo "conflitos reduzidos: $COUNTCReduzido"
-echo "conflitos resolvidos: $COUNTCResolvido"
+# echo "csdiff extra conflicts: $COUNTaFP"
+# echo "csdiff aFN: $COUNTaFN"
+# echo "diff3 FPs: $COUNTdiff3FP"
+# echo "conflitos reduzidos: $COUNTCReduzido"
+# echo "conflitos resolvidos: $COUNTCResolvido"
 # print the result of this equation: -$COUNTaFP - 2*$COUNTaFN + $COUNTCReduzido + 2*$COUNTCResolvido
 echo "aumento de produtividade: " $((- 2 * COUNTCResolvido - COUNTCReduzido - 2 * COUNTaFN - COUNTaFP))
