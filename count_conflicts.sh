@@ -59,4 +59,5 @@ COUNTdiff3FP=$(rg -c "D3FP" "$DIR" | awk -F ':' '{sum += $2} END {print sum}')
 # echo "conflitos resolvidos: $COUNTCResolvido"
 # print the result of this equation: -$COUNTaFP - 2*$COUNTaFN + $COUNTCReduzido + 2*$COUNTCResolvido
 echo "aumento de produtividade: " $((2 * COUNTCResolvido + COUNTCReduzido - 2 * COUNTaFN - COUNTaFP))
+echo -n $((2 * COUNTCResolvido + COUNTCReduzido - 2 * COUNTaFN - COUNTaFP))"," >> ~/Desktop/a.csv
 echo

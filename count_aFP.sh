@@ -63,8 +63,7 @@ sum_of_line_diffs() {
     echo "total: $total_total"
 }
 
-# function that do the same as sum_of_line_diffs but counting the numer of conflicting blocks between base/left and base/right
-sum_of_diff_blocks() {
+sum_of_diff_blocks_aFP() {
     echo "sum of conflict diff between base left and right:"
     total_total=0
     for dir in $(find . -name "csdiff.py" -type f | xargs dirname); do
@@ -86,6 +85,27 @@ sum_of_diff_blocks() {
     echo "total: $total_total"
 }
 
+sum_of_diff_blocks_general(){
+    total_total=0
+    for dir in $(find . -name "csdiff.py" -type f | xargs dirname); do
+        left=$(diff "$dir/base.py" "$dir/left.py" | grep -c '^[0-9]')
+        right=$(diff "$dir/base.py" "$dir/right.py" | grep -c '^[0-9]')
+        total=$(diff3 -m -A "$dir/left.py" "$dir/base.py" "$dir/right.py" | grep -c '^=======')
+        total_total=$((total_total + total))
+    done
+    echo " $total_total"
+}
+
+get_sum_diff_blocks() {
+    # run this inside project, where we have the merge scenarios as result of ls command
+    arr=($(exa -D)) # merge scenarios
+    for elem in "${arr[@]}"; do
+        echo -n "$elem"
+        cd $elem
+        sum_of_diff_blocks_general
+        cd ..
+    done
+}
 
 count_aFP_on_csdiff() {
     # number of '^=======$' ocurrences in csdiff.py when diff3.py is equal to merge.py
