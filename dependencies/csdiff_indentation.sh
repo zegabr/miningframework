@@ -133,9 +133,9 @@ midMergedFile="${parentFolder}/mid_merged${fileExt}"
 diff3 -m -E "$myTempFile" "$oldTempFile" "$yourTempFile" > $midMergedFile
 
 # Removes the tokenized input files
-rm "$myTempFile"
-rm "$oldTempFile"
-rm "$yourTempFile"
+# rm "$myTempFile"
+# rm "$oldTempFile"
+# rm "$yourTempFile"
 wait
 
 # Removes the tokens from the merged file, generating the final merged file
