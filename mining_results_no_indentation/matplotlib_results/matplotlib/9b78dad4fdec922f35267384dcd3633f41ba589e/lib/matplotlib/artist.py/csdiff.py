@@ -1281,6 +1281,7 @@ class Artist:
             if np.isfinite(normed):
                 # Midpoints of neighboring color intervals.
                 neighbors = self.norm.inverse
+# FCR
 =======
             normed = self.norm
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
@@ -1288,14 +1289,13 @@ class Artist:
 <<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/left.py
                     (int(self.norm
 =======
+# FCR
             if np.isfinite(normed):
                 # Midpoints of neighboring color intervals.
                 neighbors = self.norm.inverse(
                     (int(self.norm
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/9b78dad4fdec922f35267384dcd3633f41ba589e/lib/matplotlib/artist.py/right.py
 (data) * n) + np.array([0, 1])) / n)
-# CaFP
-# CaFP
                 delta = abs(neighbors - data).max()
                 g_sig_digits = cbook._g_sig_digits(data, delta)
             else:

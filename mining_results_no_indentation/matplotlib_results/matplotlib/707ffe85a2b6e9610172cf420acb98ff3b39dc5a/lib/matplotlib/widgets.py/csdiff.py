@@ -1030,10 +1030,10 @@ class TextBox(AxesWidget):
 <<<<<<< /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/707ffe85a2b6e9610172cf420acb98ff3b39dc5a/lib/matplotlib/widgets.py/left.py
  horizontalalignment=ha
 =======
+# CReduzido
  parse_math=False
 >>>>>>> /home/ze/miningframework/mining_results_version3_3/matplotlib_results/matplotlib/707ffe85a2b6e9610172cf420acb98ff3b39dc5a/lib/matplotlib/widgets.py/right.py
 )
-# CReduzido
 
         self._observers = cbook.CallbackRegistry()
 

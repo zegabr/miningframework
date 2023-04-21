@@ -42,7 +42,7 @@ def onselect(xmin, xmax):
 
 =======
 
-    if len(region_x) >= 2:
+    if len(region_x) >= 2: # CReduzido
         line2.set_data(region_x, region_y)
         ax2.set_xlim(region_x[0], region_x[-1])
         ax2.set_ylim(region_y.min(), region_y.max())
