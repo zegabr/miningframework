@@ -2,7 +2,7 @@
 
 # Run this inside proof_of_equivalence folder
 
-MININGFRAMEWORK_DIR="$(dirname "$(pwd)")/"
+MININGFRAMEWORK_DIR="$(dirname "$(pwd)")"
 
 run_csdiff(){
     bash $MININGFRAMEWORK_DIR/dependencies/csdiff_$1.sh -s "( ) , :" ./left.py ./base.py ./right.py
@@ -15,11 +15,12 @@ csdiff_v2 ()
 
 csdiff_awk ()
 {
-   run_csdiff awk_optimization
+   run_csdiff awk_simplification
 }
 
 # ===== MAIN =====
 # step1: run csdiff_v2 inside big_file_example directory
+echo "running v2"
 cd $MININGFRAMEWORK_DIR/proof_of_equivalence/big_file_example
 csdiff_v2
 cd ..
@@ -28,6 +29,7 @@ cp -r $MININGFRAMEWORK_DIR/proof_of_equivalence/big_file_example $MININGFRAMEWOR
 
 
 # step 3: run csdiff awk inside big_file_example directory
+echo "running awk simplification"
 cd $MININGFRAMEWORK_DIR/proof_of_equivalence/big_file_example
 csdiff_awk
 cd ..

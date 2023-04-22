@@ -67,15 +67,14 @@ myTempFile="${myFile}_temp${fileExt}"
 oldTempFile="${oldFile}_temp${fileExt}"
 yourTempFile="${yourFile}_temp${fileExt}"
 
-add_dolar_sign_separators() {
+add_dollar_sign_separators() {
     local inputFile="$1"
     awk -v seps="$(echo "${separators[@]}" | tr ' ' '\n')" '
     # https://www.regular-expressions.info/charclass.html here is how to match any character. Only some of them need to be escaped
     BEGIN {
-    split(seps, separators, "\n")
-      separatorString="["
-      for (i in separators) {
-        separator = separators[i]
+    separatorString="["
+    for (i=1; i<=length(seps); i++) {
+        separator = substr(seps, i, 1)
         if (separator == "]" || separator == "\\" || separator == "^" || separator == "-") {
           separator = "\\" separator
         }
@@ -90,10 +89,11 @@ add_dolar_sign_separators() {
     ' "$inputFile"
 }
 
+
 # Perform the tokenization of the input file based on the provided separators
-add_dolar_sign_separators "$myFile" > "$myTempFile"
-add_dolar_sign_separators "$yourFile" > "$yourTempFile"
-add_dolar_sign_separators "$oldFile" > "$oldTempFile"
+add_dollar_sign_separators "$myFile" > "$myTempFile"
+add_dollar_sign_separators "$yourFile" > "$yourTempFile"
+add_dollar_sign_separators "$oldFile" > "$oldTempFile"
 
 # Runs diff3 against the tokenized inputs, generating a tokenized merged file
 midMergedFile="${parentFolder}/mid_merged${fileExt}"

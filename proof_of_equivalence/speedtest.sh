@@ -15,7 +15,7 @@ csdiff_v2 ()
 
 csdiff_awk ()
 {
-   run_csdiff awk_optimization
+   run_csdiff awk_simplification
 }
 
 NUMBER_OF_TIMES=10
