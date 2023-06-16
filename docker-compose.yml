@@ -1,0 +1,9 @@
+version: '3'
+services:
+  miningframework:
+    container_name: mining-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/miningframework
